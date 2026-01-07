@@ -7,10 +7,12 @@ Lightweight application containers containing app + all dependencies.
 <!-- INDEX_START -->
 
 - [Key Points](#key-points)
+- [Breaking Changes](#breaking-changes)
 - [Docker on Ubuntu](#docker-on-ubuntu)
 - [Volumes](#volumes)
 - [Docker Scan](#docker-scan)
 - [Buildx](#buildx)
+- [Docker Build Best Practices](#docker-build-best-practices)
 - [Sharing Cache between hosts](#sharing-cache-between-hosts)
 - [Clean up Docker](#clean-up-docker)
 - [Dockerfile](#dockerfile)
@@ -40,6 +42,11 @@ Lightweight application containers containing app + all dependencies.
   - [DNS Issues](#dns-issues)
   - [Elasticsearch 5.0 Docker error](#elasticsearch-50-docker-error)
   - [Slow `COPY` during build on Windows](#slow-copy-during-build-on-windows)
+- [Memes](#memes)
+  - [How Docker Was Born](#how-docker-was-born)
+  - [Works on My Computer](#works-on-my-computer)
+  - [Says "Works on My Machine" One More Time](#says-works-on-my-machine-one-more-time)
+  - [Using Docker](#using-docker)
 
 <!-- INDEX_END -->
 
@@ -74,6 +81,15 @@ Download the `ubuntu:latest` image for spawning containers from:
 ```shell
 docker pull ubuntu # :tag or @<digestvalue>
 ```
+
+## Breaking Changes
+
+People cite Docker as the solution to [Python](python.md) breaking things that used to work.
+
+However, Docker builds break even more often because you have package and other OS breaking changes added on top.
+
+Even with `FROM` pinning, older OS version package repos are removed, forcing you to upgrade
+and then all sorts of breakages have to be resolved, including those Python breaking changes you were trying to avoid.
 
 ## Docker on Ubuntu
 
@@ -180,6 +196,12 @@ install/install_docker_buildx.sh
 docker buildx ...
 ```
 
+## Docker Build Best Practices
+
+<https://docs.docker.com/build/building/best-practices>
+
+<https://sysdig.com/learn-cloud-native/dockerfile-best-practices/>
+
 ## Sharing Cache between hosts
 
 <https://docs.docker.com/engine/reference/commandline/build/#specifying-external-cache-sources>
@@ -270,7 +292,7 @@ See [Podman & Buildah](podman.md) doc.
 
 ## Container Diff
 
-<https://github.com/GoogleContainerTools/container-diff>
+[:octocat: GoogleContainerTools/container-diff](https://github.com/GoogleContainerTools/container-diff)
 
 ## Java Licensing Problem in Docker
 
@@ -419,7 +441,7 @@ Some highlights:
 
 ## Captain
 
-<https://github.com/harbur/captain>
+[:octocat: harbur/captain](https://github.com/harbur/captain)
 
 Converts Git workflow to Docker containers, CLI `captain push` from CI to build docker containers from CI for each commit
 
@@ -498,9 +520,9 @@ docker service create --replicas=1 --name prometheus -p 9090:9090 -v prometheus.
 
 ## Third Party Tools
 
-<ctophttps://github.com/bcicen/ctop>
+[:octocat: bcicen/ctop](https://github.com/bcicen/ctop)
 
-<https://github.com/jesseduffield/lazydocker>
+[:octocat: jesseduffield/lazydocker](https://github.com/jesseduffield/lazydocker)
 
 ## Troubleshooting
 
@@ -520,7 +542,7 @@ vim /etc/resolv.conf  # to 4.2.2.1 works
 
 ### Elasticsearch 5.0 Docker error
 
-```none
+```text
 ERROR: bootstap checks failed
 max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
 ```
@@ -546,5 +568,23 @@ This is a small files problem that can manifest in very high CPU usage showing a
 If the above is taking a disproportionate amount of time, try disabling the anti-virus from scanning the agent directory where the workdir is.
 
 For example, adding this exclusion in Semantec anti-virus resulted in a build going from timing out after 2 hours to 2 minutes in Azure DevOps Pipelines on Windows - a shocking performance difference.
+
+## Memes
+
+### How Docker Was Born
+
+![How Docker Was Born](images/how_docker_was_born.jpeg)
+
+### Works on My Computer
+
+![Works on My Computer](images/not_giving_your_computer_to_client_docker.webp)
+
+### Says "Works on My Machine" One More Time
+
+![Say "Works on My Machine" One More Time](images/says_works_on_my_machine_one_more_time.jpeg)
+
+### Using Docker
+
+![Using Docker](images/orly_using_docker_until_you_get_beached.png)
 
 **Partial port from private Knowledge Base page 2014+**

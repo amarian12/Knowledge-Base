@@ -6,9 +6,10 @@ Encrypt traffic between 2 locations.
 
 - [SSL vs IPSec VPNs](#ssl-vs-ipsec-vpns)
 - [OpenVPN](#openvpn)
-    - [OpenVPN Client](#openvpn-client)
+  - [OpenVPN Client](#openvpn-client)
   - [Tunnelblick](#tunnelblick)
 - [Client VPNs](#client-vpns)
+  - [Uninstalling GlobalProtect.app](#uninstalling-globalprotectapp)
 - [Consumer VPNs](#consumer-vpns)
 - [Browser Fingerprinting](#browser-fingerprinting)
 
@@ -29,7 +30,7 @@ Encrypt traffic between 2 locations.
 
 Several products are build on this open source base software and use it under the hood, eg. Tunnelblick.
 
-#### OpenVPN Client
+### OpenVPN Client
 
 <https://openvpn.net/client/>
 
@@ -41,7 +42,32 @@ Standard open source GUI client on Mac that can connect to OpenVPN.
 
 - [OpenVPN Client](https://openvpn.net/client/)
 - [Perimeter 81](https://www.perimeter81.com/) - user friendly VPN
-- Global Protect by Palo Alto Networks
+- [Global Protect](https://www.paloaltonetworks.com/sase/globalprotect) by Palo Alto Networks
+
+### Uninstalling GlobalProtect.app
+
+Killing `GlobalProtect.app` on Mac, either with terminal via `kill` or with Activity Monitor via `Force Quit` to try to
+drag the `/Applications/GlobalProtect.app` to the bin doesn't work - it respawns due to launchtl.
+
+Even launchctl unloads don't work:
+
+```shell
+sudo launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangpa.plist
+sudo launchctl unload /Library/LaunchDaemons/com.paloaltonetworks.gp.pangps.plist
+```
+
+```text
+Unload failed: 5: Input/output error
+Try running `launchctl bootout` as root for richer errors.
+```
+
+Do a full uninstall instead:
+
+```shell
+sudo /Applications/GlobalProtect.app/Contents/Resources/uninstall_gp.sh
+```
+
+This stops and deletes the app.
 
 ## Consumer VPNs
 
@@ -79,4 +105,4 @@ Documentation:
 
 Open source library (TODO read this code):
 
-<https://github.com/fingerprintjs/fingerprintjs>
+[:octocat: fingerprintjs/fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)

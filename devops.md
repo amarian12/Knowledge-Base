@@ -4,6 +4,13 @@
 
 - [Misc Tools Pending Reallocation](#misc-tools-pending-reallocation)
 - [DevOps is not entry-level](#devops-is-not-entry-level)
+- [Meme](#meme)
+  - [Rock Star Developer](#rock-star-developer)
+  - [Bash Scripting: Essential DevOps](#bash-scripting-essential-devops)
+  - [The Dev to Ops Developer](#the-dev-to-ops-developer)
+  - [The Desert Developer](#the-desert-developer)
+  - [The Lead Developer](#the-lead-developer)
+  - [The DevOps Guide to Dealing with Management](#the-devops-guide-to-dealing-with-management)
 
 <!-- INDEX_END -->
 
@@ -53,7 +60,7 @@ It requires extensive experience in the following areas:
   if you're any good
 - [Shell Scripting](shell.md)
 - [Cloud](cloud.md) - at least one cloud platform 6-12 technologies each, probably 2-3 such platforms
-- [CI/CD](ci-cd.md) - at least 1-2 technologies
+- [CI/CD](cicd.md) - at least 1-2 technologies
 - [Databases](databases.md), DBA administration & [SQL](sql.md) - usually at least 2-3 different databases, probably more
 - [NoSQL](README.md#nosql) - at least 1-2 technologies
 - [Caching](README.md#caching)
@@ -67,5 +74,31 @@ decades of technologies on any given day.
 This is why you will see most of the best DevOps guys have 15-20 years of experience at this point.
 
 Unless you a top 1% IQ talent, do not expect to be that good after a mere 5 years.
+
+## Meme
+
+### Rock Star Developer
+
+![Rock Star Developer](images/rock_star_developer.png)
+
+### Bash Scripting: Essential DevOps
+
+![Bash Scripting: Essential DevOps](images/orly_bash_scripting_essential_devops.png)
+
+### The Dev to Ops Developer
+
+![Dev to Ops Developer](images/orly_dev_to_ops_developer.png)
+
+### The Desert Developer
+
+![Desert Developer](images/orly_desert_developer.png)
+
+### The Lead Developer
+
+![Lead Developer](images/orly_lead_developer.png)
+
+### The DevOps Guide to Dealing with Management
+
+![DevOps Guide to Dealing with Management](images/orly_devops_guide_to_dealing_with_management.png)
 
 **Ported from private Knowledge Base pages 2015+**

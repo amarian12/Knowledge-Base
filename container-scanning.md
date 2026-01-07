@@ -2,6 +2,8 @@
 
 Scan for known CVEs from online databases.
 
+See also the [AMI Scanning](ami-scanning.md) page.
+
 <!-- INDEX_START -->
 
 - [Open Source](#open-source)
@@ -9,6 +11,7 @@ Scan for known CVEs from online databases.
   - [Grype](#grype)
   - [Clair](#clair)
 - [Proprietary](#proprietary)
+  - [AWS Inspector](#aws-inspector)
   - [Aqua Security](#aqua-security)
   - [Twistlock](#twistlock)
   - [Tenable.io](#tenableio)
@@ -21,17 +24,25 @@ Scan for known CVEs from online databases.
 
 ### Trivy
 
-<https://github.com/aquasecurity/trivy>
+[:octocat: aquasecurity/trivy](https://github.com/aquasecurity/trivy)
+
+<https://trivy.dev/latest/>
 
 See [Trivy](trivy.md) doc.
 
 ### Grype
 
-<https://github.com/anchore/grype>
+[:octocat: anchore/grype](https://github.com/anchore/grype)
+
+<https://anchore.com/opensource/>
 
 ### Clair
 
-<https://github.com/coreos/clair>
+[:octocat: coreos/clair](https://github.com/coreos/clair)
+
+<https://clairproject.org/>
+
+[Documentation](https://quay.github.io/clair/whatis.html)
 
 Open source static analysis image vulnerability scanner by CoreOS.
 
@@ -41,6 +52,10 @@ see [this issue](https://github.com/quay/clair/issues/1756)
 See [Clair](clair.md) page.
 
 ## Proprietary
+
+### AWS Inspector
+
+<https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html>
 
 ### Aqua Security
 
@@ -64,6 +79,10 @@ Scanner for docker images (company behind Nessus) - one client's tech hub had th
 <https://checkmarx.com/resource/documents/en/34965-19110-container-scans.html>
 
 ## Container Scanning on Jenkins
+
+From [HariSekhon/Jenkins](https://github.com/HariSekhon/Jenkins) and
+[HariSekhon/Diagrams-as-Code](https://github.com/HariSekhon/Diagrams-as-Code#jenkins-cicd-on-kubernetes)
+repos:
 
 ![](https://raw.githubusercontent.com/HariSekhon/Diagrams-as-Code/master/images/jenkins_kubernetes_cicd.svg)
 

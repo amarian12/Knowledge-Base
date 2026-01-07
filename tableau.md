@@ -8,10 +8,19 @@ Tableau is a widely used visualization tool.
 
 - [Tableau User Authentication](#tableau-user-authentication)
 - [SSH Config](#ssh-config)
-- [On the Tableau Server](#on-the-tableau-server)
+- [Tableau Server Administration](#tableau-server-administration)
+  - [TSM - Tableau Services Manager](#tsm---tableau-services-manager)
+  - [Tsm Command Line](#tsm-command-line)
+  - [Tabcmd](#tabcmd)
+  - [Backup Tableau Server](#backup-tableau-server)
+  - [Restore Tableau Server](#restore-tableau-server)
+- [Dashboards](#dashboards)
+  - [Data Extract Refreshes](#data-extract-refreshes)
 - [Troubleshooting](#troubleshooting)
   - [Disk Space](#disk-space)
+    - [Logs](#logs)
   - [Unable to proceed because of an error from the data source / Unable to connect to the Tableau Data Extract Server ""](#unable-to-proceed-because-of-an-error-from-the-data-source--unable-to-connect-to-the-tableau-data-extract-server-)
+  - [Recover Server Admin with no remaining LDAP server admins](#recover-server-admin-with-no-remaining-ldap-server-admins)
 
 <!-- INDEX_END -->
 
@@ -49,9 +58,13 @@ ssh tableau
 
 ## Tableau Server Administration
 
+Switch to the tableauadmin user:
+
 ```shell
 sudo su - tableauadmin
 ```
+
+Show server status:
 
 ```shell
 tsm status
@@ -59,8 +72,36 @@ tsm status
 
 output should look like:
 
-```none
+```text
 Status: RUNNING
+```
+
+Show individual component statuses:
+
+```shell
+tsm status -v
+```
+
+Show license expiry:
+
+```shell
+tsm licenses list
+```
+
+List configuration keys:
+
+```shell
+tsm configuration list
+```
+
+Show each configuration value:
+
+```shell
+tsm configuration list |
+while read -r key; do
+  echo -n "$key:  ";
+  tsm configuration get -k "$key";
+done
 ```
 
 Edit the `tableauadmin` user's crontab:
@@ -74,6 +115,149 @@ and put this in it to clean up disk space every midnight:
 ```crontab
 0 0 * * * tsm maintenance cleanup -a
 ```
+
+### TSM - Tableau Services Manager
+
+TSM is designed primarily for managing and configuring the underlying Tableau Server instance itself,
+for server administration tasks such as installation, configuration, maintenance, and upgrades.
+
+Here you can configure server health email alerts or LDAP integration.
+
+But you cannot use it to manage user permissions or roles within Tableau Server.
+
+### Tsm Command Line
+
+[Tsm Command Line Reference](https://help.tableau.com/current/server/en-us/tsm.htm)
+
+Note: `tsm` and `tabcmd` use different ports as they communicate with different services in Tableau.
+
+See also `tsm` commands shown above in administration section for some common basics.
+
+```shell
+tsm version  # -s "https://$TABLEAU_SERVER:8850"
+```
+
+```shell
+tsm jobs list
+```
+
+You can add multiple licenses to add more user seats:
+
+```shell
+tsm licenses list
+```
+
+```shell
+tsm licenses activate --license-key "$PRODUCT_KEY"
+```
+
+If the Tableau server doesn't have access to the internet due to egress filtering,
+then create an offline activation file using the UI or CLI:
+
+```shell
+tsm licenses get-offline-activation-file -k "$PRODUCT_KEY" -o .
+```
+
+and then upload the resulting `TableauOfflineActivationRequest.tlq` to
+<https://activation.tableausoftware.com/LicenseActivation> and download the `activation.tlf`.
+
+It might give you a newer license key and make you repeat the above step before giving you the
+`activation.tlf` download.
+
+```shell
+tsm licenses activate --license-file activation.tlf
+```
+
+```shell
+tsm licenses list
+```
+
+The licenses will show up in the Admin UI but not in the normal UI on the users page until you restart Tableau:
+
+```shell
+tsm restart
+```
+
+### Tabcmd
+
+Note: `tsm` and `tabcmd` use different ports as they communicate with different services in Tableau.
+
+Login:
+
+```shell
+tabcmd login -s "https://$TABLEAU_SERVER" -u admin -p adminpassword
+```
+
+Grant my LDAP user the ServerAdmnistrator role:
+
+```shell
+tabcmd edituser --username hari --role ServerAdministrator
+```
+
+```shell
+tabcmd logout
+```
+
+### Backup Tableau Server
+
+[Backup & Restore Documentation](https://help.tableau.com/current/server/en-us/backup_restore.htm)
+
+**The backup process can take a long time to run during which no other jobs can run, so backup out of business hours.**
+
+Create a backup archive of the Tableau Server, optionally encrypted to protect the sensitive contents.
+
+```shell
+tsm maintenance backup -f "tableau-backup-$(date '+%F_%H%M%S').tsbak"  # --encrypt-password "$password"
+```
+
+This will create a local backup file in the following naming convention:
+
+```text
+tableau-backup-2024-11-13_143341.tsbak
+```
+
+Indicating it was done at `14:33:41` local time on the 13th Nov 2024.
+We leave out the colons in the filename which can cause issues.
+
+It saves the backup file to this default location:
+
+```text
+/var/opt/tableau/tableau_server/data/tabsvc/files/backups
+```
+
+Full output:
+
+```text
+Job id is '24', timeout is 1440 minutes.
+7% - Starting the Active Repository instance, File Store, and Cluster Controller.
+14% - Waiting for the Active Repository, File Store, and Cluster Controller to start.
+Running - Installing backup services.
+21% - Installing backup services.
+28% - Estimating required disk space.
+35% - Gathering disk space information from all nodes.
+42% - Analyzing disk space information.
+50% - Checking if sufficient disk space is available on all nodes.
+57% - Backing up configuration.
+64% - Backing up object storage data.
+71% - Backing up database.
+78% - Assembling the tsbak archive.
+85% - Stopping the Active Repository if necessary.
+92% - Waiting for the Active Repository to stop if necessary.
+100% - Uninstalling backup services.
+Backup written to '/var/opt/tableau/tableau_server/data/tabsvc/files/backups/tableau-backup-2024-11-13_143341.tsbak' on the controller node.
+```
+
+### Restore Tableau Server
+
+```shell
+tsm maintenance restore -f "tableau-backup-2024-11-13_143341.tsbak"  # --encrypt-password "$password"
+```
+
+## Dashboards
+
+### Data Extract Refreshes
+
+You can schedule data extract refreshes on the Dashboard's `Extract Refreshes` tab.
 
 ## Troubleshooting
 
@@ -112,7 +296,7 @@ source` / `Unable to connect to the Tableau Data Extract Server ""` (which previ
 
 Web UI still giving this error (used to work before out of disk space issue):
 
-```none
+```text
 Unable to proceed because of an error from the data source
 
 Try connecting again. If the problem persists, disconnect from the data source and contact the data source owner.
@@ -129,7 +313,7 @@ Tableau server still had error:
 tsm status
 ```
 
-```none
+```text
 The server encountered an unexpected error processing the request. Look at the server logs for more information.
 
 See '/home/tableauadmin/.tableau/tsm/tsm.log' for more information.
@@ -139,7 +323,7 @@ See '/home/tableauadmin/.tableau/tsm/tsm.log' for more information.
 tsm restart
 ```
 
-```none
+```text
 Stopping service...
 
 Service failed to stop properly.
@@ -175,10 +359,68 @@ tsm stop
 tsm start
 ```
 
-```none
+```text
 Starting service...
 Starting service...
 The last successful run of StartServerJob took 11 minute(s).
 
 Job id is '21', timeout is 30 minutes.
+```
+
+### Recover Server Admin with no remaining LDAP server admins
+
+If you have no remaining Server Administrator accounts because the guy left and didn't grant the role to his successor.
+
+Solutions:
+
+1. Reset his LDAP (AD) password in AD and use it temporarily to grant Server Administrator to your user account
+
+or
+
+2. Do a Server Admin Recovery procedure (below)
+
+[Backup the Tableau Server](#backup-tableau-server) first.
+
+```shell
+tsm authentication set-identity-store --type local
+```
+
+```shell
+tsm pending-changes apply
+```
+
+```shell
+password="$(pwgen -s 15)"
+```
+
+```shell
+tsm user-identity create --username "admin" --password "$password"
+```
+
+Log in to Tableau Server using the newly created local admin account.
+
+Use the Tableau Server web interface or `tabcmd` to promote an LDAP user to Server Administrator:
+
+```shell
+tabcmd login -s "https://$TABLEAU_SERVER" -u admin -p "$password"
+```
+
+```shell
+tabcmd edituser --username hari --role ServerAdministrator
+```
+
+Switch back to LDAP authentication:
+
+```shell
+tsm authentication set-identity-store --type ldap
+```
+
+```shell
+tsm pending-changes apply
+```
+
+May need to restart Tableau:
+
+```shell
+tsm restart
 ```

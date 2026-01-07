@@ -1,5 +1,7 @@
 # tgswitch
 
+[:octocat: warrensbox/tgswitch](https://github.com/warrensbox/tgswitch)
+
 Installs multiple versions of Terragrunt to `~/.terragrunt.versions` and allows fast switching between them similar
 to what [tfenv](tfenv.md) does for Terraform.
 
@@ -15,16 +17,26 @@ This is more recently updated than [tgenv](https://github.com/cunymatthieu/tgenv
 
 ## Install
 
-<https://github.com/warrensbox/tgswitch?tab=readme-ov-file#installation>
+[:octocat: warrensbox/tgswitch](https://github.com/warrensbox/tgswitch#installation)
+
+On Mac:
 
 ```shell
 brew install warrensbox/tap/tgswitch
 ```
 
-or
+On Linux:
+
+The repo's installer script tries to install to `/usr/local/bin/` and gets permission denied on Linux:
 
 ```shell
 curl -L https://raw.githubusercontent.com/warrensbox/tgswitch/release/install.sh | bash
+```
+
+Instead use this script from [DevOps-Bash-tools](devops-bash-tools.md) repo:
+
+```shell
+install_tgswitch.sh
 ```
 
 ## Usage

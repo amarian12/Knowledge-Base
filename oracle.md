@@ -9,6 +9,7 @@ Most of this was not retained to be ported and I don't work on Oracle any more t
 <!-- INDEX_START -->
 
 - [Key Points](#key-points)
+- [AWS RDS Limitations](#aws-rds-limitations)
 - [Install Oracle Client Packages - SQL*Plus, JDBC, ODBC, SDK](#install-oracle-client-packages---sqlplus-jdbc-odbc-sdk)
   - [SQL*Plus Readline Support](#sqlplus-readline-support)
 - [Local Login as Admin](#local-login-as-admin)
@@ -24,6 +25,8 @@ Most of this was not retained to be ported and I don't work on Oracle any more t
     - [Execute Shortcut](#execute-shortcut)
 - [SQL Scripts](#sql-scripts)
 - [SQL](#sql)
+  - [`dual` - the pseudo-table](#dual---the-pseudo-table)
+  - [Get Date](#get-date)
   - [Get Oracle Version](#get-oracle-version)
   - [List Tablespaces](#list-tablespaces)
   - [List Tables](#list-tables)
@@ -45,6 +48,12 @@ Most of this was not retained to be ported and I don't work on Oracle any more t
   - [Investigate Tablespaces Space](#investigate-tablespaces-space)
   - [Investigate Big Tables with Free Space](#investigate-big-tables-with-free-space)
   - [Shrink Table](#shrink-table)
+  - [Shrink Tablespaces](#shrink-tablespaces)
+    - [Shrink Permanent Tablespace](#shrink-permanent-tablespace)
+      - [Big File Tablespace](#big-file-tablespace)
+      - [Small File Tablespace](#small-file-tablespace)
+    - [Shrink Temporary Tablespace](#shrink-temporary-tablespace)
+    - [Shrink Undo Tablespace](#shrink-undo-tablespace)
 - [Restore table from adjacent backup table](#restore-table-from-adjacent-backup-table)
 - [Troubleshooting](#troubleshooting)
   - [Oracle Client Install `Error: Invalid version flag: or`](#oracle-client-install-error-invalid-version-flag-or)
@@ -61,7 +70,8 @@ Most of this was not retained to be ported and I don't work on Oracle any more t
 - Good security and encryption
 - Cloud - available on major clouds as a managed database
   - eg. [AWS](aws.md) RDS, [GCP](gcp.md) Cloud SQL, [Azure](azure.md) Database
-- SQL, and PL/SQL scripting language for querying and managing data
+- PL/SQL - Procedural Language/Structured Query Language adds more programming logic as a superset of SQL
+  - analogous to Microsoft SQL Server's T-SQL (Transact SQL)
 - Oracle Autonomous Database automates tasks like tuning, backups, and patching using machine learning
 - High Availability - RAC (Real Application Clusters) and Data Guard offer high availability and disaster recovery
 - Clients - SQL*Plus, SQLcl, and SQL Developer for database management and development
@@ -69,6 +79,22 @@ Most of this was not retained to be ported and I don't work on Oracle any more t
 | Port | Description       |
 |------|-------------------|
 | 1521 | Oracle SQL port   |
+
+## AWS RDS Limitations
+
+If you use Oracle on [AWS](aws.md) RDS then you'll face the following
+[restrictions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Concepts.limitations.html#Oracle.Concepts.dba-limitations).
+
+Including no use of these commands:
+
+- `ALTER DATABASE`
+- `ALTER SYSTEM`
+- `CREATE ANY DIRECTORY`
+- `DROP ANY DIRECTORY`
+- `GRANT ANY PRIVILEGE`
+- `GRANT ANY ROLE`
+
+[AWS Oracle DBA Tasks PDF](https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/UserGuide/rds-ug.pdf).
 
 ## Install Oracle Client Packages - SQL*Plus, JDBC, ODBC, SDK
 
@@ -84,7 +110,7 @@ install_oracle_client.sh
 
 If you get this RPM install error:
 
-```none
+```text
 Error: Invalid version flag: or
 ```
 
@@ -159,7 +185,7 @@ pointing to `/usr/local/sqlcl/bin/sql` for `$PATH` convenience.
 
 If you get an error running `sqlcl` or `/usr/local/sqlcl/bin/sql` like this:
 
-```none
+```text
 Error: Could not find or load main class oracle.dbtools.raptor.scriptrunner.cmdline.SqlCli
 Caused by: java.lang.ClassNotFoundException: oracle.dbtools.raptor.scriptrunner.cmdline.SqlCli
 ```
@@ -330,6 +356,19 @@ repeat 10 1
 
 SQL Developer - free and widely used Oracle-specific IDE.
 
+This is better
+than using a generic client like [DBeaver](sql.md#dbeaver) because you can use Oracle specific commands like:
+
+```sql
+SHOW PARAMETER undo_retention;
+```
+
+which will fail on DBeaver like this:
+
+```sql
+SQL Error [900] [42000]: ORA-00900: invalid SQL statement
+```
+
 Alternatives:
 
 - Toad for Oracle
@@ -352,14 +391,14 @@ On Mac you can find this in your `Applications` pop-up menu along with the usual
 or you can open it from the CLI using this command:
 
 ```shell
-open -a "SQLDeveloper.app"
+open -a "SQLDeveloper"
 ```
 
 ### Using SQL Developer
 
 #### Execute Shortcut
 
-Hit `Cmd`-`Enter` (Windows) or `Ctrl`-`Enter` (Mac) when the cursor is on a query in the Query Builder SQL Worksheet to
+Hit `Ctrl`-`Enter` on Windows or Mac when the cursor is on a query in the Query Builder SQL Worksheet to
 quickly execute the SQL statement (must be ended with a semi-colon `;` to separate it from the next query)
 without having to click the green triangle run button.
 
@@ -372,6 +411,16 @@ Scripts for DBA administration and performance engineering:
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=SQL-scripts&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/SQL-scripts)
 
 ## SQL
+
+### `dual` - the pseudo-table
+
+If you want to `SELECT` a value from a function or built-in value that does require querying data from a real table or view, in Oracle you need to provide a fake pseudo-table called `DUAL` to pass the syntax check of the `SELECT` query, eg. when selecting the current date (see next section for example).
+
+### Get Date
+
+```sql
+SELECT SYSDATE FROM dual;
+```
 
 ### Get Oracle Version
 
@@ -552,9 +601,25 @@ PURGE TABLE table_name;
 
 This is for all user's recyclebins.
 
-Use
+Show the recyclebin contents for all users:
+
 [oracle_show_dba_recyclebin.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_show_dba_recyclebin.sql)
-to see the recyclebin contents for all users.
+
+```sql
+SELECT
+    owner,
+    object_name,
+    original_name,
+    type,
+    droptime,
+    space
+FROM
+    dba_recyclebin
+ORDER BY
+    owner,
+    droptime
+DESC;
+```
 
 Then purge it:
 
@@ -562,19 +627,208 @@ Then purge it:
 PURGE DBA_RECYCLEBIN;
 ```
 
-Then re-run
+On [AWS](aws.md) RDS you will need to call this instead due to AWS restricting some system procedures:
+
+```sql
+EXEC rdsadmin.rdsadmin_util.purge_dba_recyclebin;
+```
+
+See [this doc](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.Database.html)
+for more details.
+
+Then re-run the show recyclebin query to check:
+
 [oracle_show_dba_recyclebin.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_show_dba_recyclebin.sql)
-to check.
+
+```sql
+SELECT
+    owner,
+    object_name,
+    original_name,
+    type,
+    droptime,
+    space
+FROM
+    dba_recyclebin
+ORDER BY
+    owner,
+    droptime
+DESC;
+```
 
 ### Investigate Tablespaces Space
 
+These scripts calculations assume an 8KB block size, verify that using this query first:
+
+```sql
+SELECT value FROM v$parameter WHERE name = 'db_block_size';
+```
+
+Should show value = `8192`.
+
+Show Tablespace Size, Space Used vs Free in GB and as a Percentage:
+
 [HariSekhon/SQL-scripts - oracle_tablespace_space.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_tablespace_space.sql)
 
+```sql
+SELECT
+    df.tablespace_name "Tablespace",
+    df.bytes / (1024 * 1024 * 1024) "Size (GB)",
+    (df.bytes - SUM(fs.bytes)) / (1024 * 1024 * 1024) "Used Space (GB)",
+    ROUND(SUM(fs.bytes) / (1024 * 1024 * 1024), 2) "Free Space (GB)",
+    ROUND(SUM(fs.bytes) / df.bytes * 100, 2) "Free Space %"
+FROM
+    dba_free_space fs,
+    (SELECT
+        tablespace_name,
+        SUM(bytes) bytes
+    FROM
+        dba_data_files
+    GROUP BY
+        tablespace_name) df
+WHERE
+    fs.tablespace_name (+) = df.tablespace_name
+        AND
+    UPPER(fs.tablespace_name) LIKE '%UNDO%'
+GROUP BY
+     df.tablespace_name,
+     df.bytes
+ORDER BY
+     "Free Space (GB)" DESC,
+     "Used Space (GB)" DESC;
+```
+
+Show Tablespace Size, Space Used GB and Percentage Used:
+
 [HariSekhon/SQL-scripts - oracle_tablespace_space2.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_tablespace_space2.sql)
+
+```sql
+SELECT
+    tablespace_name "Tablespace",
+    -- convert used_space in blocks to GB as each block is 8KB
+    ROUND(used_space * 8 / 1024 / 1024, 2) AS "Used Space (GB)",
+    -- convert tablespace_size in blocks to GB as each block is 8KB
+    ROUND(tablespace_size * 8 / 1024 / 1024, 2) AS "Total Space (GB)",
+    ROUND(used_percent, 2) AS "Used Space %"
+FROM
+    dba_tablespace_usage_metrics
+ORDER BY
+    "Used Space %" DESC;
+```
 
 ### Investigate Big Tables with Free Space
 
 [HariSekhon/SQL-scripts - oracle_table_space.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_table_space.sql)
+
+```sql
+SELECT
+    owner,
+    table_name,
+    -- each block is 8KB, multiply it to GB, round to two decimal places
+    ROUND(blocks * 8 / 1024 / 1024, 2) AS total_gb,
+    -- estimate data size from rows vs average row size, round to two decimal places
+    ROUND(num_rows * avg_row_len / 1024 / 1024 / 1024, 2) AS actual_data_gb,
+    -- estimate free space by subtracting the two above calculations
+    ROUND((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024), 2) AS free_space_gb,
+    -- calculate free space percentage from the above three calculations
+    ROUND(
+        ( (blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024) ) /
+        (blocks * 8 / 1024 / 1024) * 100, 2) AS free_space_pct
+FROM
+    dba_tables
+WHERE
+    blocks > 0
+        AND
+    num_rows > 0
+        AND
+    ((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024)) /
+    (blocks * 8 / 1024 / 1024) > 0.2  -- TUNE: currently only showing tables over 20% utilized
+        AND
+    owner NOT IN
+      ('SYS', 'SYSTEM', 'SYSAUX', 'RDSADMIN')
+ORDER BY
+    free_space_gb DESC,
+    total_gb DESC;
+```
+
+To investigate tables space in only a given schema eg. `USERS`:
+
+```sql
+SELECT
+    t.owner,
+    t.table_name,
+    ROUND(t.blocks * 8 / 1024 / 1024, 2) AS total_gb_from_tables,
+    ROUND(s.bytes / 1024 / 1024 / 1024, 2) AS total_gb_from_segments,
+    ROUND(t.num_rows * t.avg_row_len / 1024 / 1024 / 1024, 2) AS actual_data_gb,
+    ROUND(((t.blocks * 8 / 1024) - (t.num_rows * t.avg_row_len / 1024 / 1024)) / 1024, 2) AS estimated_free_space_gb,
+    ROUND(((t.blocks * 8) - (t.num_rows * t.avg_row_len / 1024)) / (t.blocks * 8) * 100, 2) AS estimated_free_space_pct,
+    t.last_analyzed
+FROM
+    dba_tables t
+JOIN
+    dba_segments s
+ON
+    t.owner = s.owner
+        AND
+    t.table_name = s.segment_name
+WHERE
+    t.blocks > 0
+        AND
+    t.num_rows > 0
+        AND
+    -- TUNE: currently only showing tables over 20% utilized
+    ((t.blocks * 8 / 1024) - (t.num_rows * t.avg_row_len / 1024 / 1024)) / (t.blocks * 8 / 1024) > 0.2
+        AND
+    t.owner = 'INFA_STG2'
+ORDER BY
+    estimated_free_space_gb DESC,
+    total_gb_from_segments DESC;
+```
+
+To investigate segments in the given schema eg. `USERS`:
+
+```sql
+SELECT
+    segment_name,
+    segment_type,
+    tablespace_name,
+    bytes/1024/1024/1024 AS size_gb,
+    blocks
+FROM
+    dba_segments
+WHERE
+    owner = 'USERS'  -- XXX: Edit this
+        AND
+    segment_type = 'TABLE'
+        AND
+    blocks > 8
+    -- to look at only specific tables
+    --    AND
+    --segment_name IN
+    --('MY_TABLE', 'MY_TABLE2')
+ORDER BY
+    size_gb DESC;
+```
+
+Find table candidates to move / shrink in a given tablespace:
+
+```sql
+SELECT
+    segment_name,
+    segment_type,
+    ROUND(SUM(bytes)/1024/1024/1024, 2) AS size_gb
+FROM
+    dba_segments
+WHERE
+    tablespace_name = 'USERS' -- XXX: Edit
+GROUP BY
+    segment_name,
+    segment_type
+HAVING
+    SUM(bytes)/1024/1024/1024 > 1
+ORDER BY
+    size_gb DESC;
+```
 
 ### Shrink Table
 
@@ -583,13 +837,32 @@ to check.
 Then `SHRINK SPACE` of the table to reduce space allocated to it by removing unused space from its data blocks
 (optimizes storage and improves performance).
 
+```sql
+ALTER TABLE mytable ENABLE ROW MOVEMENT;
+```
+
 `CASCADE` also shrinks dependent objects eg. indexes:
 
 ```sql
 ALTER TABLE mytable SHRINK SPACE CASCADE;
 ```
 
-Check the space again by running scripts in [HariSekhon/SQL-scripts](https://github.com/HariSekhon/SQL-scripts).
+```text
+--Start time  Thu Oct 10 13:56:13 GST 2024
+--Finish time Thu Oct 10 14:01:10 GST 2024
+```
+
+```sql
+ALTER TABLE mytable DISABLE ROW MOVEMENT;
+```
+
+Regenerate stats on table otherwise you won't see the space change:
+
+```sql
+CALL DBMS_STATS.GATHER_TABLE_STATS('myschema', 'mytable');
+```
+
+Check the space again by running scripts / queries above in [HariSekhon/SQL-scripts](https://github.com/HariSekhon/SQL-scripts).
 
 [Investigate table](#investigate-table) to check it looks ok.
 
@@ -600,6 +873,202 @@ DROP TABLE mytable_backup;
 ```
 
 Rollback if any problem following [Restore table from adjacent backup table](#restore-table-from-adjacent-backup-table).
+
+### Shrink Tablespaces
+
+On [AWS](aws.md) RDS follow this [doc](https://repost.aws/knowledge-center/rds-oracle-resize-tablespace) and this
+[doc](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.ResizeTempSpaceReadReplica.html).
+
+#### Shrink Permanent Tablespace
+
+```sql
+ALTER TABLESPACE users COALESCE;
+```
+
+```sql
+ALTER TABLESPACE users RESIZE 500G;
+```
+
+```text
+SQL Error [3297] [42000]: ORA-03297: file contains used data beyond requested RESIZE value
+```
+
+##### Big File Tablespace
+
+Add new temp tablespace and then remove old one:
+
+```sql
+CREATE TEMPORARY TABLESPACE
+  temp2
+TEMPFILE '/path/to/new_tempfile.dbf'
+SIZE 50G REUSE
+AUTOEXTEND ON NEXT 1G MAXSIZE 500G;
+```
+
+Switch default tempspace to the new one:
+
+```sql
+ALTER DATABASE DEFAULT TEMPORARY TABLESPACE temp2;
+```
+
+Switch all users tempspaces to the new one:
+
+```sql
+BEGIN
+  FOR r IN (SELECT username FROM dba_users WHERE temporary_tablespace = 'TEMP') LOOP
+    EXECUTE IMMEDIATE 'ALTER USER ' || r.username || ' TEMPORARY TABLESPACE temp2';
+  END LOOP;
+END;
+/
+```
+
+Wait for old user sessions to complete:
+
+```sql
+SELECT
+  username, tablespace, blocks
+FROM
+  v$tempseg_usage
+WHERE
+  tablespace = 'TEMP';
+```
+
+Then drop the old temp tablespace:
+
+```sql
+DROP TABLESPACE TEMP INCLUDING CONTENTS AND DATAFILES;
+```
+
+##### Small File Tablespace
+
+Create new temporary tablespace tempfile with a new size first to avoid Oracle having any period of time with no sort /
+index rebuild space:
+
+```sql
+ALTER TABLESPACE temp ADD TEMPFILE '/path/to/new_tempfile.dbf' SIZE 1000M;
+```
+
+Find the path to the old tempfile:
+
+```sql
+SELECT file_name, tablespace_name, bytes/1024/1024 AS size_mb FROM v$tempfile;
+```
+
+or
+
+```sql
+SELECT file_name, tablespace_name, bytes/1024/1024 AS size_mb FROM dba_temp_files;
+```
+
+Edit the filename path in this `ALTER` statement to delete that tempfile when no session is using the temp tablespace:
+
+```sql
+ALTER DATABASE TEMPFILE '/path/to/old_tempfile.dbf' DROP;
+```
+
+#### Shrink Temporary Tablespace
+
+If this is overallocated you can drop and create it smaller.
+
+Use this query to find out if it's a Bigfile or Smallfile tablespace. [AWS](aws.md) RDS uses Bigfile tablespaces.
+
+```sql
+SELECT TABLESPACE_NAME, CONTENTS, BIGFILE FROM DBA_TABLESPACES;
+```
+
+**WARNING**: dropping temp tablespace or tablespace file can disrupt active sessions using sorts, large queries,
+or index rebuilds, all of which use the temporary tablespace and can get hit with errors like:
+
+```text
+ORA-01187: cannot read from file because it failed verification tests
+```
+
+or
+
+```text
+ORA-01110: data file name of the tempfile
+```
+
+You should add a new temp tablespace for a bigfile tablespace
+or add a new temp tablespace datafile for smallfile tablespace.
+
+Check for a low activity time and that there are no currently active sessions using temp tablespace
+before dropping the old temporary file.
+
+Show User Sessions Using Temporary Tablespace:
+
+[HariSekhon/SQL-scripts - oracle_show_sessions_using_temp_tablespace.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/oracle_show_sessions_using_temp_tablespace.sql)
+
+```sql
+SELECT
+    s.sid,
+    s.username,
+    t.tablespace,
+    t.blocks,
+    t.segfile#,
+    t.segblk#,
+    t.contents,
+    t.sql_id
+FROM
+    v$sort_usage t,
+    v$session s
+WHERE
+    t.session_addr = s.saddr;
+```
+
+#### Shrink Undo Tablespace
+
+You cannot shrink it but must replace it with a smaller one.
+
+Check how long your Undo retention is:
+
+```sql
+SHOW PARAMETER undo_retention;
+```
+
+This is in seconds, ie. 15 minutes:
+
+```text
+NAME           TYPE    VALUE
+-------------- ------- -----
+undo_retention integer 900
+```
+
+Create a new smaller 'undo' tablespace:
+
+```sql
+CREATE UNDO TABLESPACE new_undo_ts DATAFILE SIZE 100G AUTOEXTEND ON NEXT 1G MAXSIZE 500G;
+```
+
+Switch to the new undo tablespace.
+On AWS RDS this is actually quite a bit problem since the `ALTER SYSTEM` command is not allowed
+and therefore requires a database restart.
+
+Set system to use new undo tablespace:
+
+```sql
+ALTER SYSTEM SET UNDO_TABLESPACE = new_undo_ts;
+```
+
+**Important***: Wait until no active connections is using the old `UNDO` tablespace:
+
+```sql
+SELECT tablespace_name FROM dba_tablespaces WHERE contents = 'UNDO';
+```
+
+**only then drop the old undo tablespace**:
+
+You can reduce the Undo Retention period like this to try to expedite this:
+
+```sql
+ALTER SYSTEM SET undo_retention = 900;  -- Set to 15 minutes temporarily
+```
+
+Once there is nothing using it, drop the old undo tablespace:
+
+```sql
+DROP TABLESPACE old_undo_ts INCLUDING CONTENTS AND DATAFILES;
+```
 
 ## Restore table from adjacent backup table
 

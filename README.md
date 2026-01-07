@@ -2,9 +2,19 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/network)
+[![LineCount](https://sloc.xyz/github/HariSekhon/Knowledge-Base/?badge-bg-color=2081C2)](https://github.com/boyter/scc/)
+[![Cocomo](https://sloc.xyz/github/HariSekhon/Knowledge-Base/?badge-bg-color=2081C2&category=cocomo)](https://github.com/boyter/scc/)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/HariSekhon/Knowledge-Base/blob/master/LICENSE)
 [![My LinkedIn](https://img.shields.io/badge/LinkedIn%20Profile-HariSekhon-blue?logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIGZpbGw9IiNmZmZmZmYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TGlua2VkSW48L3RpdGxlPjxwYXRoIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPgo=)](https://www.linkedin.com/in/HariSekhon/)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/commits/master)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/commits/main)
+
+[![Codacy](https://app.codacy.com/project/badge/Grade/242849a282a646e09672da8b25085654)](https://app.codacy.com/gh/HariSekhon/Knowledge-Base/dashboard)
+[![CodeFactor](https://www.codefactor.io/repository/github/harisekhon/knowledge-base/badge)](https://www.codefactor.io/repository/github/harisekhon/knowledge-base)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_Knowledge-Base&metric=alert_status)](https://sonarcloud.io/dashboard?id=HariSekhon_Knowledge-Base)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_Knowledge-Base&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_Knowledge-Base)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_Knowledge-Base&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_Knowledge-Base)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_Knowledge-Base&metric=security_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_Knowledge-Base)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_Knowledge-Base&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=HariSekhon_Knowledge-Base)
 
 [![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://harisekhon.github.io/CI-CD/)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-2088FF?logo=github)](https://github.com/HariSekhon/Knowledge-Base)
@@ -14,7 +24,9 @@
 
 [![Index](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/index.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/index.yaml)
 [![Markdown](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown.yaml)
+[![Markdown Links](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_links.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_links.yaml)
 [![Markdown References](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_references.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_references.yaml)
+[![Images](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/images.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/images.yaml)
 [![Gist Sync](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/gist-sync.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/gist-sync.yaml)
 [![Validation](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/validate.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/validate.yaml)
 [![Kics](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/kics.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/kics.yaml)
@@ -29,19 +41,49 @@ I'm gradually migrating my huge private personal knowledge base into this public
 
 Hit the watch button on the top right for updates.
 
-Some of these pages are still in progress pending porting and populated yet from my private knowledge base pages,
-some are stubs pending migration.
-
-Much more advanced knowledge is captured in code and code comments. References to my major
-[GitHub Repos](https://github.com/HariSekhon?tab=repositories&q=&type=&language=&sort=stargazers) are provided
-throughout where relevant.
+Some of these pages are still in progress pending porting from my private knowledge base pages,
+some are still stubs pending migration.
 
 References to official docs and some classic books are provided for those who want to thoroughly cover the basics.
 
-## Index
+Even more deep advanced knowledge is captured in well commented code - references to my major
+[GitHub Repos](https://github.com/HariSekhon?tab=repositories&q=&type=&language=&sort=stargazers)
+are provided throughout where relevant.
+
+## Highlights
+
+A few highlight pages:
+
+- [![Travel](https://img.shields.io/badge/Travel%20Tips-50%2B%20countries%20%2F%20150%2B%20cities-029F00?logo=nordvpn&logoColor=white)](travel.md)
+- [![Remote](https://img.shields.io/badge/Remote%20Working-Digital%20Nomad-blue?logo=nordvpn&logoColor=white)](remote-working.md)
+- [![IT Best Practices](https://img.shields.io/badge/Tech-Best--Practices-029F00?logo=techcrunch)](best-practices.md)
+- [![macOS](https://img.shields.io/badge/mac-OS-blue?logo=apple)](mac.md)
+  - [![iOS](https://img.shields.io/badge/iOS-builds-blue?logo=apple)](ios.md) /
+    [![Android](https://img.shields.io/badge/Android-builds-blue?logo=android&logoColor=white)](android.md)
+- [![Linux](https://img.shields.io/badge/GNU-Linux-blue?logo=linux&logoColor=white)](linux.md)
+- [![Bash](https://img.shields.io/badge/Bash-Shell-blue?logo=gnubash&logoColor=white)](bash.md)
+- [![Git](https://img.shields.io/badge/Git-Revision%20Control-blue?logo=git&logoColor=white)](git.md)
+  - [![GitHub](https://img.shields.io/badge/GitHub-management-blue?logo=github)](github.md)
+    - [![GitHub Workflows](https://img.shields.io/badge/CI/CD-GitHub%20Workflows-blue?logo=github)](git.md)
+- [![IntelliJ](https://img.shields.io/badge/IntelliJ-IDE-purple?logo=intellijidea)](intellij.md) /
+  [![Vim](https://img.shields.io/badge/ViM-Editor-purple?logo=vim)](vim.md)
+- [![AWS](https://img.shields.io/badge/Cloud-AWS-blue?logo=)](aws.md)
+- [![Python](https://img.shields.io/badge/Programming-Python-blue?logo=python&logoColor=white)](aws.md)
+- [![Docker](https://img.shields.io/badge/Containerization-Docker-blue?logo=docker&logoColor=white)](docker.md)
+- [![Kubernetes](https://img.shields.io/badge/Containerization-Kubernetes-blue?logo=kubernetes&logoColor=white)](kubernetes.md)
+- [![Documentation](https://img.shields.io/badge/Documentation-Tips-blue?logo=googledocs&logoColor=white)](documentation.md)
+  - [![Markdown](https://img.shields.io/badge/Documentation-Markdown-blue?logo=markdown&logoColor=white)](markdown.md)
+  - [![Diagrams-as-Code](https://img.shields.io/badge/Documentation-Diagrams--as--Code-blue?logo=diagrams.net&logoColor=white)](diagrams.md)
+
+You can find the other more specialist stuff below in the full index.
+
+## Summary Index
+
+The full index is further down.
 
 <!-- INDEX_START -->
 
+- [Travel](#travel)
 - [GitHub Repos](#github-repos)
 - [Systems](#systems)
   - [Operating Systems](#operating-systems)
@@ -64,6 +106,7 @@ References to official docs and some classic books are provided for those who wa
 - [Programming](#programming)
   - [Languages](#languages)
   - [Build Systems](#build-systems)
+  - [Mobile Builds](#mobile-builds)
   - [Artifact Registries](#artifact-registries)
   - [Code Scanning](#code-scanning)
 - [Infrastructure-as-Code](#infrastructure-as-code)
@@ -94,33 +137,45 @@ References to official docs and some classic books are provided for those who wa
   - [Performance Engineering](#performance-engineering)
 - [AI & Automation](#ai--automation)
 - [Work](#work)
+  - [Remote Working & Digital Nomad](#remote-working--digital-nomad)
   - [Training & Interview Materials](#training--interview-materials)
   - [Banking Industry](#banking-industry)
-  - [Travel](#travel)
 - [Miscellaneous](#miscellaneous)
-  - [Dev / DevOps / Open Source](#dev--devops--open-source)
+  - [Dev / DevOps / Open Source / Agile](#dev--devops--open-source--agile)
   - [Vendors](#vendors)
   - [Multimedia](#multimedia)
   - [Marketing](#marketing)
+  - [Blogging](#blogging)
   - [Crypto](#crypto)
   - [Old Docs](#old-docs)
 - [Star History](#star-history)
 - [Memes](#memes)
+  - [This is the Lost Documentation](#this-is-the-lost-documentation)
 - [More Core Repos](#more-core-repos)
   - [Knowledge](#knowledge)
   - [DevOps Code](#devops-code)
-  - [Containerization](#containerization)
-  - [CI/CD](#cicd)
+  - [Containerization Repos](#containerization-repos)
+  - [CI/CD Repos](#cicd-repos)
   - [DBA - SQL](#dba---sql)
   - [DevOps Reloaded](#devops-reloaded)
   - [Templates](#templates)
   - [Misc](#misc)
+- [Other Resources](#other-resources)
 
 <!-- INDEX_END -->
 
-**This is the lost documentation.**
+## Travel
 
-![Finally Found The Documentation](images/finally_found_documentation.jpeg)
+- [Travel Knowledge](travel.md) - tips from travelling the world extensively for both fun and profit - consulted on 4
+  continents, worked as a digital nomad and travel the world 52 weeks a year - life is short, take it:
+  - my favourite restaurants
+  - flights & accommodation
+  - mobile internet access & e-sim providers
+  - visas
+  - driving around Europe on road trips each summer
+  - various other travel tips specific to each of 40+ countries and 100+ towns and cities across 4 continents
+- [Remote Working & Digital Nomad](remote-working.md) - specific notes on remote working and as a digital nomad
+- [Blogging](blogging.md) - because sharing is caring...
 
 ## GitHub Repos
 
@@ -154,12 +209,15 @@ This one is used widely throughout these pages:
 - [Mac](mac.md)
   - [Homebrew](brew.md)
 - [Shell](shell.md)
-  - [Bash](bash.md)
+  - [Bash Scripting](bash.md)
+    - [Sudo](sudo.md)
   - [direnv / `.envrc`](direnv.md)
+  - [Shell One Liners](shell-one-liners.md)
   - [Advanced & Third Party Commands](commands.md)
 - [Disk Management](disk.md)
 - [Logging](logging.md)
   - [Syslog-ng](syslog-ng.md)
+  - [RSyslog](rsyslog.md)
 
 ### Core Services - DNS, DHCP, SSH, FTP
 
@@ -185,6 +243,7 @@ This one is used widely throughout these pages:
 ## Architecture & Documentation
 
 - [Architecture](architecture.md) TODO
+- [Best Practices](best-practices.md)
 - [Product Selection](product-selection.md) TODO
 - [Diagrams-as-Code](diagrams.md)
   - [D2 lang](d2.md)
@@ -194,7 +253,7 @@ This one is used widely throughout these pages:
   - [MkDocs](mkdocs.md)
 - [Microservices](microservices.md) TODO
 - [Medium.com](medium.md) (blog)
-- [Systems Design](systems-design.md)
+- [System Design](system-design.md)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Diagrams-as-Code&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Diagrams-as-Code)
 
@@ -203,10 +262,10 @@ This one is used widely throughout these pages:
 - [Git](git.md)
   - [Git Workflow Branching Strategies](git-workflow-branching-strategies.md)
 - Git Repo Hosting Providers:
-  - [GitHub](github.md) TODO
+  - [GitHub](github.md) (TODO: partially ported)
   - [GitLab](gitlab.md)
-  - [Azure DevOps](azure-devops.md) TODO
-  - [Bitbucket](bitbucket.md) TODO
+  - [Azure DevOps](azure-devops.md)
+  - [Bitbucket](bitbucket.md) (TODO: partially ported)
 - [Pre-Commit](pre-commit.md)
 
 ## Cloud
@@ -214,12 +273,15 @@ This one is used widely throughout these pages:
 - [Cloud](cloud.md)
 - Cloud Platforms:
   - [AWS](aws.md)
+    - [AMI Scanning](ami-scanning.md)
   - [GCP](gcp.md)
+    - [Firebase](firebase.md)
   - [Azure](azure.md)
   - [Digital Ocean](digital-ocean.md)
 - Third Party Tools:
   - [MinIO](minio.md)
   - [HashiCorp Vault](vault.md)
+  - [Keeper](keeper.md)
 - [PaaS](paas.md)
 
 ## Containerization
@@ -251,7 +313,8 @@ This one is used widely throughout these pages:
 
 #### Cloud Hosted Kubernetes
 
-- [AWS EKS](eks.md) TODO
+- [AWS EKS](eks.md) TODO partial
+  - [EKS Upgrades](eks-upgrades.md)
 - [GKE](gke.md) TODO
 - [AKS](aks.md) TODO
 - [Karpenter](karpenter.md)
@@ -314,6 +377,7 @@ This one is used widely throughout these pages:
 - [Python](python.md)
   - [Anaconda](anaconda.md)
 - [Golang](golang.md) TODO
+- [Rust](rust.md)
 - [Ruby](ruby.md)
 - [R](r.md) TODO
 - [TCL / Expect](programming.md#expect)
@@ -327,6 +391,8 @@ This one is used widely throughout these pages:
   - [JRuby](ruby.md#jruby)
   - [SDKman](sdkman.md)
   - [log4j](log4j.md)
+- [JavaScript / NodeJS](javascript.md)
+- [Lua](lua.md)
 - [APIs](api.md)
 - [Regular Expressions](regex.md)
 - [Testing](testing.md)
@@ -338,6 +404,15 @@ This one is used widely throughout these pages:
 - [Maven](maven.md)
 - [Gradle](gradle.md)
 - [SBT](sbt.md)
+- [Fastlane](fastlane.md)
+
+### Mobile Builds
+
+- [Mobile Builds](mobile-builds.md)
+- [iOS](ios.md)
+  - [iXGuard](ixguard.md)
+- [Android](android.md)
+- [Fastlane](fastlane.md)
 
 ### Artifact Registries
 
@@ -351,9 +426,9 @@ This one is used widely throughout these pages:
   - [Trivy](trivy.md)
   - [Grype](grype.md)
 - [Code Quality](code-quality.md)
-- [SonarQube](sonarqube.md)
-- [CodeClimate](codeclimate.md)
-- [Codefresh](codefresh.md)
+  - [SonarQube](sonarqube.md)
+  - [SonarCloud](sonarcloud.md)
+  - [CodeClimate](codeclimate.md)
 
 ## Infrastructure-as-Code
 
@@ -363,8 +438,10 @@ This one is used widely throughout these pages:
     - [tgswitch](tgswitch.md)
   - [Atlantis](atlantis.md)
 - [Pulumi](pulumi.md)
+- [Packer](packer.md)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Terraform&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Terraform)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
 
 ## Configuration Management
 
@@ -383,7 +460,11 @@ This one is used widely throughout these pages:
 
 ## CI/CD
 
-- [CI/CD](ci-cd.md)
+- [CI/CD](cicd.md)
+- [Mobile CI/CD](cicd-mobile.md)
+  - [Mobile Builds](mobile-builds.md)
+  - [Fastlane](fastlane.md)
+  - [Firebase](firebase.md)
 - Self-Hosted CI/CD:
   - [Jenkins](jenkins.md)
     - [Jenkins-on-Kubernetes](jenkins-on-kubernetes.md)
@@ -400,6 +481,7 @@ This one is used widely throughout these pages:
 - 3rd Party hosted CI/CD:
   - [CircleCI](circleci.md)
   - [TravisCI](travis.md)
+  - [Codefresh](codefresh.md)
   - [Drone.io](drone.io.md)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
@@ -497,6 +579,7 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 - [Airflow](airflow.md) TODO
 - [Apache Camel](camel.md)
 - [JSON](json.md)
+- [DVC](dvc.md)
 - [Informatica](informatica.md)
 
 ### Data Formats
@@ -531,7 +614,8 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 - [Data Science](data-science.md) TODO
 - [Machine Learning](machine-learning.md) TODO
 - [Python](python.md)
-  - [Anaconda](anaconda.md) TODO
+  - [Anaconda](anaconda.md)
+- [DVC](dvc.md)
 - [R](r.md) TODO
 - [Octave](octave.md) TODO
 
@@ -553,13 +637,22 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 ## Security
 
 - [Security](security.md) TODO
-- [SSL](ssl.md) TODO
+- [Encryption](encryption.md):
+  - [SSL](ssl.md) TODO
+  - [VeraCrypt](veracrypt.md)
+  - [Mac Native Encryption](mac.md#encrypt-apfs-filesystem)
 - [Kerberos](kerberos.md) TODO
 - [FreeIPA](freeipa.md) TODO
 - [Keycloak](keycloak.md)
 - [Penetration Testing](pentesting.md) TODO
-- [Secrets Managers](secrets-managers.md)
+- [Secret Managers](secret-managers.md)
+  - [HashiCorp Vault](vault.md)
+  - [Keeper](keeper.md)
 - [SOC - Security Operations Center](security-operations-center.md)
+- [Code Scanning](code-scanning.md)
+- [Code Quality](code-quality.md)
+- [Container Scanning](container-scanning.md)
+- [AMI Scanning](ami-scanning.md)
 
 ## Virtualization
 
@@ -597,9 +690,9 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 
 - [Monitoring](monitoring.md)
 - [Nagios](nagios.md)
-- [Prometheus](prometheus.md) TODO
+- [Prometheus](prometheus.md)
 - [Thanos](thanos.md) TODO
-- [Grafana](grafana.md) TODO
+- [Grafana](grafana.md) TODO (partial)
 - [Notifications](notifications.md)
   - [OpsGenie](opsgenie.md)
   - [PagerDuty](pagerduty.md) TODO
@@ -621,6 +714,11 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 
 ## Work
 
+### Remote Working & Digital Nomad
+
+- [Remote Working & Digital Nomad](remote-working.md)
+  - [Travel](travel.md)
+
 ### Training & Interview Materials
 
 - [Training](training.md)
@@ -630,32 +728,49 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 
 - [Banking Industry](banking-industry.md)
 
-### Travel
-
-- [Travel](travel.md)
-
 ## Miscellaneous
 
-### Dev / DevOps / Open Source
+### Dev / DevOps / Open Source / Agile
 
 - [DevOps Misc](devops.md)
 - [Dev Misc](dev.md)
 - [Open Source](open-source.md)
+- [Internet Miscellaneous](internet-misc.md)
+- [TamperMonkey](tampermonkey.md)
+- [Jira](jira.md)
+- [Agile](agile.md)
+- [Google Drive](google-drive.md)
+- [Spreadsheets](spreadsheets.md)
 - [IRC](irc.md)
+- [Communications - Chat & Video Conferencing](comms.md)
 
 ### Vendors
 
 - [Hashicorp](hashicorp.md)
 - [Confluent](confluent.md)
 - [Atlassian](atlassian.md)
+  - [Jira](jira.md)
 
 ### Multimedia
 
 - [Multimedia](multimedia.md)
+  - [PDF](pdf.md)
+  - [Image](image.md)
+  - [Video](video.md)
+  - [Audio](audio.md)
+- [Download Tools](downloads.md)
+- [File Upload & Code Pastebin Sites](upload-sites.md)
+- [Memes](memes.md)
+- [Social Media](social-media.md)
 
 ### Marketing
 
 - [Marketing](marketing.md)
+
+### Blogging
+
+- [Blogging](blogging.md)
+- [Wordpress](wordpress.md)
 
 ### Crypto
 
@@ -665,7 +780,7 @@ This section is probably the most financially important thing you'll ever learn.
   - more financially beneficial than your Tech knowledge
   - the most important knowledge along with avoiding
   [feminist divorce law](https://www.amazon.co.uk/Men-Strike-Boycotting-Marriage-Fatherhood/dp/1594037620/)
-- [Crypto](crypto.md)
+- [Crypto](crypto.md) - TODO
   - every day you're not in crypto you're losing money due to constant inflationary money printing by central banks and
   governments to fund budgetary deficits caused by universal suffrage spending liabilities
   - even many investments, which are also taxed and often confiscated by governments or ex-wives, are losing ground to
@@ -675,6 +790,7 @@ This section is probably the most financially important thing you'll ever learn.
 
 - [Hazelcast](hazelcast.md)
 - [Mesos](mesos.md)
+- [DataHash](datahash.md)
 
 ## Star History
 
@@ -682,15 +798,42 @@ This section is probably the most financially important thing you'll ever learn.
 
 ## Memes
 
+### This is the Lost Documentation
+
+Here the TODOs are all getting filled in gradually... because we've all been here:
+
+<!--
+
+  Doesn't render in IntelliJ markdown if the key=value pairs are split over lines
+
+    https://youtrack.jetbrains.com/issue/IDEA-365229/Markdown-plugin-Preview-does-not-show-Image-from-HTML-tag-if-the-keyvalue-pairs-are-split-over-newlines
+
+-->
+<img src="images/finally_found_documentation.jpeg" alt="Finally Found The Documentation" width="50%" />
+
 From my [LinkedIn](https://linkedin.com/in/HariSekhon):
 
-![BForbidden Unix Knowledge](images/devops_apprentice_reads_from_ancient_books_of_forbidden_unix_knowledge.jpeg)
+![Forbidden Unix Knowledge](images/devops_apprentice_reads_from_ancient_books_of_forbidden_unix_knowledge.jpeg)
+
+<!--
+<img src="images/devops_apprentice_reads_from_ancient_books_of_forbidden_unix_knowledge.jpeg" alt="Forbidden Unix Knowledge" width="50%" />
+-->
+
+<br />
+<br />
+
+<img src="images/orly_excuses_for_no_documentation.jpg" alt="Forbidden Unix Knowledge" width="50%" />
+
+<br />
 
 I tried to make these docs as short as possible... but as you can see above, I didn't quite make it.
 
 I've been both the bottom and top of this meme:
 
+<!--
 ![Reading vs Trying](images/reading_documentation_for_30_mins_vs_4_hours_trying_and_failing_until_it_works.jpeg)
+-->
+<img src="images/reading_documentation_for_30_mins_vs_4_hours_trying_and_failing_until_it_works.jpeg" alt="Reading vs Trying" width="50%" />
 
 ## More Core Repos
 
@@ -724,12 +867,12 @@ Does nothing:
 [![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=f8f551332440f1ca8897ff010e363e03)](https://gist.github.com/HariSekhon/f8f551332440f1ca8897ff010e363e03)
 -->
 
-### Containerization
+### Containerization Repos
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Dockerfiles&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Dockerfiles)
 
-### CI/CD
+### CI/CD Repos
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Jenkins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Jenkins)
@@ -765,3 +908,7 @@ Pre-built Docker images are available on my [DockerHub](https://hub.docker.com/u
 ![](https://hit.yhype.me/github/profile?user_id=2211051)
 
 <!-- OTHER_REPOS_END -->
+
+## Other Resources
+
+[:octocat: papers-we-love/papers-we-love](https://github.com/papers-we-love/papers-we-love)

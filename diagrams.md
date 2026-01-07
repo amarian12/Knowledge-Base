@@ -14,7 +14,13 @@ The cutting edge is Diagrams-as-Code.
 - [Templates](#templates)
 - [Diagrams-as-Code Languages](#diagrams-as-code-languages)
 - [GUI / Online Diagrams tools](#gui--online-diagrams-tools)
-- [Important Icon Sets](#important-icon-sets)
+- [Icons](#icons)
+  - [D2lang Icons](#d2lang-icons)
+  - [Python Diagrams Icons](#python-diagrams-icons)
+  - [Kubernetes & CNCF Icons](#kubernetes--cncf-icons)
+  - [Cloud Provider Icons](#cloud-provider-icons)
+  - [Other Icon Sets](#other-icon-sets)
+  - [Icon Tips](#icon-tips)
 - [Interactive Playground Editors](#interactive-playground-editors)
 - [GraphViz](#graphviz)
 - [Hex Colour Codes](#hex-colour-codes)
@@ -22,6 +28,7 @@ The cutting edge is Diagrams-as-Code.
   - [Complexity](#complexity)
 - [Diagram of Diagrams-as-Code Tools](#diagram-of-diagrams-as-code-tools)
 - [UML Class Diagrams](#uml-class-diagrams)
+- [Graph Generation Repos](#graph-generation-repos)
 
 <!-- INDEX_END -->
 
@@ -107,26 +114,32 @@ For more control and complex architecture diagrams.
 - [Gliffy](https://www.gliffy.com/)
 - [Visual Paradigm](https://www.visual-paradigm.com/) - enterprise, does archimate diagrams, complicated, I used this at an investment bank, not my favourite, fine for enterprise architects rather than engineers
 - [Cloudairy](https://chart.cloudairy.com/cloudchart) - new, buggy UI when I tried it
+- [ASCIIflow](https://asciiflow.com/#/) - interactive ASCII boxes and lines, seems pretty useless
 - [Swimm](https://docs.swimm.io/) - AI to generate diagrams from code and documentation sources
 
-## Important Icon Sets
+## Icons
 
-Especially to import into D2, but also to supplement other languages and libraries as necessary.
+### D2lang Icons
+
+- [D2 Icons](https://icons.terrastruct.com/) - limited set, borrow some from Python Diagrams below
+
+### Python Diagrams Icons
 
 Python Diagrams has the best in-built library, some highlights are below, but check their adjacent categories too:
 
-- [D2 Icons](https://icons.terrastruct.com/)
-
-<!-- -->
-
-- [Python Diagrams On-Premise](https://diagrams.mingrammer.com/docs/nodes/onprem)
+- [Python Diagrams On-Premise](https://diagrams.mingrammer.com/docs/nodes/onprem) - open source, databases, big data analytics, CI/CD etc.
 - [Python Diagrams AWS](https://diagrams.mingrammer.com/docs/nodes/aws)
 - [Python Diagrams GCP](https://diagrams.mingrammer.com/docs/nodes/gcp)
 - [Python Diagrams Azure](https://diagrams.mingrammer.com/docs/nodes/azure)
 - [Python Diagrams Generic](https://diagrams.mingrammer.com/docs/nodes/generic) - OS, Virtualization, Network Hardware
 - [Python Diagrams Kubernetes](https://diagrams.mingrammer.com/docs/nodes/k8s)
+- [Python Diagrams SaaS](https://diagrams.mingrammer.com/docs/nodes/saas)
+  - Snowflake
+  - CDNs eg. Akamai, Cloudflare, Fastly
+  - IdP eg. Okta, Auth0
+  - Monitoring & Alerting eg. Datadog, Newrelic, Pagerduty
 
-<!-- -->
+### Kubernetes & CNCF Icons
 
 - [Official Kubernetes Icons](https://github.com/kubernetes/community/tree/master/icons)
 
@@ -136,9 +149,7 @@ Python Diagrams has the best in-built library, some highlights are below, but ch
 
 <!-- -->
 
-- [SimpleIcons](https://simpleicons.org/)
-
-<!-- -->
+### Cloud Provider Icons
 
 - [Official AWS Icons](https://aws.amazon.com/architecture/icons/)
 
@@ -149,8 +160,25 @@ Python Diagrams has the best in-built library, some highlights are below, but ch
 <!-- -->
 
 - [Official Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+
+### Other Icon Sets
+
+- [SimpleIcons](https://simpleicons.org/) - famous for use with [Shield.io](markdown.md#shieldsio) for badging GitHub repos
+
+<!-- -->
+
 - [Benco Azure Icons](https://code.benco.io/icon-collection/azure-icons/)
 - [Icon8 Azure Icons](https://icons8.com/icons/set/azure)
+
+<!-- -->
+
+- [SVGrepo](https://www.svgrepo.com/) - 500,000 SVG icons
+
+<!-- -->
+
+- [World Vector Logo](https://worldvectorlogo.com/) - these silently fail to import into D2 resulting in diagrams with
+  missing icon placeholders
+  ([terrastruct/d2 issue 2367](https://github.com/terrastruct/d2/issues/2367))
 
 <!-- -->
 
@@ -166,13 +194,47 @@ Python Diagrams has the best in-built library, some highlights are below, but ch
 
 <!-- -->
 
+- [FreebieSupply logos](https://freebiesupply.com/logos/)
+
+<!-- -->
+
 - [Iconify.design](https://icon-sets.iconify.design/) - Massive 200,000 open source SVG icon set
 
+<!-- -->
+
+- [SeekLogo](https://seeklogo.com/) - gives icons as zip, less useful for Diagrams-as-Code
+
+<!-- -->
+
+- [IconDuck](https://iconduck.com/) - doesn't give direct download links you can use in Diagrams-as-Code
+
+### Icon Tips
+
+If all else fails, there is always [Google Image Search](https://images.google.com/).
+
+Some sites use funny tricks to stop you having direct download links.
+
+If you Google Image search and just right-click and Open Image in New Tab, you'll get a direct asset link to a CDN or
+similar you can use.
+
+However, CDN asset links tend to disappear after some months / years when websites get updated, so you should download and
+commit the source icon to your repo when using it in Diagrams-as-Code to prevent future time-wasting breakages.
+
 ## Interactive Playground Editors
+
+[![Text-to-Diagram Comparison Playground](https://img.shields.io/badge/Text--To--Diagram-playground-4A6FF3?logo=pending&logoColor=white)](https://text-to-diagram.com/)
+[![D2](https://img.shields.io/badge/D2-playground-4A6FF3?logo=pending&logoColor=white)](https://play.d2lang.com/)
+[![MermaidJS](https://img.shields.io/badge/MermaidJS-Live%20Editor-FF3399.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDQ5MSA0OTEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyI+CiAgICA8cGF0aCBkPSJNNDkwLjE2LDg0LjYxQzQ5MC4xNiwzNy45MTIgNDUyLjI0OCwwIDQwNS41NSwwTDg0LjYxLDBDMzcuOTEyLDAgMCwzNy45MTIgMCw4NC42MUwwLDQwNS41NUMwLDQ1Mi4yNDggMzcuOTEyLDQ5MC4xNiA4NC42MSw0OTAuMTZMNDA1LjU1LDQ5MC4xNkM0NTIuMjQ4LDQ5MC4xNiA0OTAuMTYsNDUyLjI0OCA0OTAuMTYsNDA1LjU1TDQ5MC4xNiw4NC42MVoiIHN0eWxlPSJmaWxsOnJnYigyNTUsNTQsMTEyKTsiLz4KICAgIDxwYXRoIGQ9Ik00MDcuNDgsMTExLjE4QzMzNS41ODcsMTA4LjEwMyAyNjkuNTczLDE1Mi4zMzggMjQ1LjA4LDIyMEMyMjAuNTg3LDE1Mi4zMzggMTU0LjU3MywxMDguMTAzIDgyLjY4LDExMS4xOEM4MC4yODUsMTY4LjIyOSAxMDcuNTc3LDIyMi42MzIgMTU0Ljc0LDI1NC44MkMxNzguOTA4LDI3MS40MTkgMTkzLjM1LDI5OC45NTEgMTkzLjI3LDMyOC4yN0wxOTMuMjcsMzc5LjEzTDI5Ni45LDM3OS4xM0wyOTYuOSwzMjguMjdDMjk2LjgxNiwyOTguOTUzIDMxMS4yNTUsMjcxLjQyIDMzNS40MiwyNTQuODJDMzgyLjU5NiwyMjIuNjQ0IDQwOS44OTIsMTY4LjIzMyA0MDcuNDgsMTExLjE4WiIgc3R5bGU9ImZpbGw6d2hpdGU7ZmlsbC1ydWxlOm5vbnplcm87Ii8+Cjwvc3ZnPgo=)](https://mermaid.live/edit)
+[![GraphvizOnline](https://img.shields.io/badge/GraphViz-Online-5d6d7e?logo=pending&logoColor=white)](https://dreampuf.github.io/GraphvizOnline/)
+[![CloudGram](https://img.shields.io/badge/CloudGram-editor-8B72C2?logo=pending&logoColor=white)](https://cloudgram.dedalusone.com/index.html)
+[![PlantUML](https://img.shields.io/badge/PlantUML-editor-blue?logo=pending&logoColor=white)](https://www.planttext.com/)
+[![Excalidraw](https://img.shields.io/badge/Excalidraw-editor-6965DB?logo=excalidraw&logoColor=white)](https://excalidraw.com/)
+[![Miro](https://img.shields.io/badge/Miro-dashboard-FEDD33.svg?logo=miro)](https://miro.com/app/dashboard/)
 
 - [Text-to-Diagram Comparison Playground](https://text-to-diagram.com/)
 - [D2 lang](https://play.d2lang.com/)
 - [MermaidJS](https://mermaid.live/)
+- [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 - [CloudGram](https://cloudgram.dedalusone.com/index.html)
 - GraphViz:
   - <https://dreampuf.github.io/GraphvizOnline>
@@ -187,6 +249,9 @@ Python Diagrams has the best in-built library, some highlights are below, but ch
   - [Supported URL parameters](https://www.drawio.com/doc/faq/supported-url-parameters) - to instantly load the above icon sets, set dark etc.
 - [LucidChart](https://lucid.app/)
 - [CloudCraft](https://app.cloudcraft.co/)
+- [PlantUML](https://www.planttext.com/)
+- [Excalidraw](https://excalidraw.com/)
+- [Miro](https://miro.com/app/dashboard/)
 - [Creately](https://app.creately.com/)
 - [Visual Paradigm](https://online.visual-paradigm.com/)
   - [Online Dashboard](https://online.visual-paradigm.com/drive/#diagramlist:proj=0&dashboard)
@@ -262,5 +327,11 @@ or achieving high availability being left to separate diagrams for each one.
 ## UML Class Diagrams
 
 ![UML Class Diagrams Cheatsheet](images/uml_diagrams.gif)
+
+## Graph Generation Repos
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Graph-Commit-Times&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Graph-Commit-Times)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Repos-MermaidJS-Gantt-Chart&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Repos-MermaidJS-Gantt-Chart)
 
 **Ported from various private Knowledge Base pages 2020+**

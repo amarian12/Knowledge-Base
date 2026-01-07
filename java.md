@@ -8,13 +8,41 @@ NOT PORTED YET.
 - [SDKman - Install and Manage Multiple Versions of Java at the same time](#sdkman---install-and-manage-multiple-versions-of-java-at-the-same-time)
 - [Show Java Classpath](#show-java-classpath)
 - [Inspect JAR contents](#inspect-jar-contents)
+- [JKS - Java Key Store (SSL)](#jks---java-key-store-ssl)
 - [Java Decompilers](#java-decompilers)
 - [Libraries](#libraries)
+  - [JitPack.io](#jitpackio)
 - [JShell](#jshell)
 - [JBang](#jbang)
   - [JBang CLI](#jbang-cli)
 - [GraalJS](#graaljs)
 - [Clojure](#clojure)
+- [ProGuard](#proguard)
+  - [ProGuard Core](#proguard-core)
+  - [ProGuard Assembler / Disassembler](#proguard-assembler--disassembler)
+  - [Kotlin Metadata Printer](#kotlin-metadata-printer)
+  - [ProGuard iXGuard](#proguard-ixguard)
+- [JVM Distributions](#jvm-distributions)
+  - [Corretto](#corretto)
+  - [Gluon](#gluon)
+  - [GraalVM](#graalvm)
+  - [Java.net](#javanet)
+  - [JetBrains](#jetbrains)
+  - [Liberica](#liberica)
+  - [Mandrel](#mandrel)
+  - [Microsoft](#microsoft)
+  - [Oracle](#oracle)
+  - [SapMachine](#sapmachine)
+  - [Semeru](#semeru)
+  - [Temurin](#temurin)
+  - [Tencent](#tencent)
+  - [Zulu](#zulu)
+- [Memes](#memes)
+  - [Books That Made You Cry](#books-that-made-you-cry)
+  - [Porting Your Language to the JVM](#porting-your-language-to-the-jvm)
+  - [Imported Package Tariffs](#imported-package-tariffs)
+  - [Santa, Want Dragon](#santa-want-dragon)
+  - [Balancing Dog](#balancing-dog)
 
 <!-- INDEX_END -->
 
@@ -77,6 +105,10 @@ tar tvf mysql-connector-j-*.jar
 The directory layout of the class files corresponds to the class hierarchy eg.
 is accessed as `com.mysql.jdbc.Driver` in Java code.
 
+## JKS - Java Key Store (SSL)
+
+See [SSL](ssl.md) doc.
+
 ## Java Decompilers
 
 Use these to decompile JAR or .class files to read the Java source code.
@@ -113,6 +145,40 @@ Some libraries of interest:
 
 - [Faker](https://github.com/DiUS/java-faker) - generates fake but realistic data for unit testing
 
+### JitPack.io
+
+<https://jitpack.io/>
+
+<https://docs.jitpack.io/>
+
+Package repo for JVM and Android projects.
+
+Builds Git projects on demand and provides ready-to-use artifacts (jar, aar).
+
+To check if a Jitpack dependency target is valid:
+
+```shell
+GITHUB_REPO="markomilos/paginate"
+VERSION="v1.0.0"
+```
+
+```shell
+curl -IsSLf "https://jitpack.io/com/github/$GITHUB_REPO/$VERSION/${GITHUB_REPO##*/}-$VERSION.jar"
+
+```
+
+For an Android dependency, check for the `.aar` artifact instead of `.jar`
+
+```shell
+curl -IsSLf "https://jitpack.io/com/github/$GITHUB_REPO/$VERSION/${GITHUB_REPO##*/}-$VERSION.aar"
+```
+
+Check build log to show what was built by JitPack:
+
+```shell
+curl "https://jitpack.io/com/github/$GITHUB_REPO/$VERSION/" && echo
+```
+
 ## JShell
 
 Command line or interactive Java Shell.
@@ -136,6 +202,8 @@ groovysh
 ## JBang
 
 <https://www.jbang.dev/>
+
+<https://github.com/jbangdev>
 
 Packages executable self-contained source-only Java programs.
 
@@ -253,5 +321,147 @@ Just a jar, no dependency like Scala predef.
 ```shell
 java -jar my.jar
 ```
+
+## ProGuard
+
+### ProGuard Core
+
+<https://www.guardsquare.com/proguard>
+
+<https://www.guardsquare.com/manual/home>
+
+<https://playground.proguard.com/>
+
+[:octocat: Guardsquare/proguard-core](https://github.com/Guardsquare/proguard-core)
+
+Shrinker, optimizer, and obfuscator for Java and Kotlin code.
+
+### ProGuard Assembler / Disassembler
+
+[:octocat: GuardSquare/proguard-assembler](https://github.com/guardsquare/proguard-assembler)
+
+### Kotlin Metadata Printer
+
+[:octocat: GuardSquare/kotlin-metadata-printer](https://github.com/Guardsquare/kotlin-metadata-printer)
+
+### ProGuard iXGuard
+
+<https://www.guardsquare.com/ixguard>
+
+Obfuscates iOS code. See [iXGuard](ixguard.md) page.
+
+## JVM Distributions
+
+<https://sdkman.io/jdks>
+
+These are the options you'll see when you install [SDKman](sdkman.md) and `sdk list java`.
+
+[Temurin](#temurin) is the default open source distribution that SDKman uses.
+
+### Corretto
+
+Amazon's OpenJDK distribution with long-term support and performance enhancements.
+
+<https://aws.amazon.com/corretto/>
+
+### Gluon
+
+Mobile-focused OpenJDK distribution optimized for JavaFX applications.
+
+<https://gluonhq.com/products/mobile/>
+
+### GraalVM
+
+High-performance JDK with ahead-of-time compilation and polyglot capabilities.
+
+<https://www.graalvm.org/>
+
+### Java.net
+
+Official OpenJDK reference builds provided by Oracle.
+
+<https://jdk.java.net/>
+
+### JetBrains
+
+Custom JDK distribution optimized for JetBrains IDEs.
+
+[:octocat: JetBrains/JetBrainsRuntime](https://github.com/JetBrains/JetBrainsRuntime)
+
+### Liberica
+
+Full OpenJDK distribution with JavaFX support from BellSoft.
+
+<https://bell-sw.com/liberica/>
+
+### Mandrel
+
+GraalVM-based JDK optimized for Quarkus applications.
+
+[:octocat: graalvm/mandrel](https://github.com/graalvm/mandrel)
+
+### Microsoft
+
+Microsoft's OpenJDK distribution with enterprise support.
+
+<https://learn.microsoft.com/en-us/java/openjdk/>
+
+### Oracle
+
+Official Oracle JDK with commercial support and licensing requirements.
+
+<https://www.oracle.com/java/technologies/downloads/>
+
+### SapMachine
+
+SAP's OpenJDK distribution optimized for SAP workloads.
+
+<https://sap.github.io/SapMachine/>
+
+### Semeru
+
+IBM's OpenJDK distribution with Eclipse OpenJ9 for performance optimizations.
+
+<https://developer.ibm.com/languages/java/semeru-runtimes/>
+
+### Temurin
+
+Community-driven OpenJDK distribution maintained by Adoptium.
+
+<https://adoptium.net/>
+
+### Tencent
+
+Tencent's OpenJDK distribution optimized for cloud environments.
+
+[:octocat: Tencent/TencentKona-8](https://github.com/Tencent/TencentKona-8)
+
+### Zulu
+
+Azul's OpenJDK distribution with commercial support and JavaFX options.
+
+<https://www.azul.com/downloads/zulu/>
+
+## Memes
+
+### Books That Made You Cry
+
+![Books That Made You cry](images/books_that_made_you_cry_java_data_structures.jpeg)
+
+### Porting Your Language to the JVM
+
+![Porting Your Language to the JVM](images/orly_porting_your_language_to_jvm.png)
+
+### Imported Package Tariffs
+
+![Imported Package Tariffs](images/imported_package_tariffs.jpeg)
+
+### Santa, Want Dragon
+
+![Santa, Want Dragon](images/santa_want_dragon_java_less_verbose.jpeg)
+
+### Balancing Dog
+
+![Balancing Dog](images/balancing_dog_object_oriented_programming.jpeg)
 
 **Ported from various private Knowledge Base pages 2010+**

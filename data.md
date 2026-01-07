@@ -4,13 +4,18 @@
 
 - [Big Data](#big-data)
 - [Data Validation](#data-validation)
+- [Data Generation](#data-generation)
 - [Data Integration](#data-integration)
   - [Mulesoft](#mulesoft)
   - [Spring Integration](#spring-integration)
 - [Data Visualization](#data-visualization)
+  - [Power BI](#power-bi)
 - [Diagrams](#diagrams)
   - [Top 9 Systems Integrations](#top-9-systems-integrations)
   - [Encoding vs Encryption vs Tokenization](#encoding-vs-encryption-vs-tokenization)
+- [Memes](#memes)
+  - [Trump Tariff CSV Imports](#trump-tariff-csv-imports)
+  - [USB vs Floppy](#usb-vs-floppy)
 
 <!-- INDEX_END -->
 
@@ -27,12 +32,35 @@ and [DevOps-Bash-tools](devops-bash-tools.md) repos.
 
 Then proceed to more advanced content validation.
 
+## Data Generation
+
+'Faker' libraries are available in many languages inspired by the original
+[Perl library](https://metacpan.org/dist/Data-Faker).
+
+Perl version: <https://metacpan.org/dist/Data-Faker>
+
+Java version: :octocat: [DiUS/java-faker](https://github.com/DiUS/java-faker)
+
+Python version :octocat: [joke2k/faker](https://github.com/joke2k/faker) -
+comes with a `faker` command convenient for shell scripts:
+
+Generate 10 fake addresses:
+
+```shell
+faker -r 10 address
+```
+
 ## Data Integration
 
 - [DBT](https://www.getdbt.com) - open-source data pipeline workflow tool
-- [Informatica](informatica.md) - proprietary legacy now available via SaaS, with self-hosted agents on VMs or Kubernetes
-- [Airbyte](https://airbyte.com/product/airbyte-open-source) - [open source](https://github.com/airbytehq/airbyte)
+- [DVC](dvc.md) - data version control
+- [Informatica](informatica.md) - proprietary legacy now available via SaaS, with self-hosted agents on VMs or
+  [Kubernetes](kubernetes.md)
+- [Airbyte](https://airbyte.com/product/airbyte-open-source) - open source
   self-hosted or SaaS proprietary with 300+ connectors
+  - :octocat: [airbytehq/airbyte](https://github.com/airbytehq/airbyte)
+- [Meltano](https://meltano.com/) - open-source CLI based ELT
+  - :octocat: [meltano/meltano](https://github.com/meltano/meltano)
 - [Apache Camel](camel.md) - open source with 100+ connectors
 - Spring Integration - XML config, only use for Spring heavy shops
 - Mulesoft - XML config, only use for proprietary connectors
@@ -52,6 +80,12 @@ TODO
 
 See the [Diagrams](diagrams.md) and [Visualization](visualization.md) docs.
 
+### Power BI
+
+Free for desktop version:
+
+<https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop>
+
 ## Diagrams
 
 ### Top 9 Systems Integrations
@@ -61,5 +95,15 @@ See the [Diagrams](diagrams.md) and [Visualization](visualization.md) docs.
 ### Encoding vs Encryption vs Tokenization
 
 ![Encoding vs Encryption vs Tokenization](images/encoding_vs_encryption_vs_tokenization.gif)
+
+## Memes
+
+### Trump Tariff CSV Imports
+
+![Trump Tariff CSV Imports](images/trump_25%25_tariff_on_csv_imports.jpeg)
+
+### USB vs Floppy
+
+![USB vs Floppy](images/usb_tells_floppy_lose_some_weight_fatty.jpeg)
 
 **Ported from private Knowledge Base pages 2016+**

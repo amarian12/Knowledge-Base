@@ -9,12 +9,17 @@ Good replacement for [Maven](maven.md).
 <!-- INDEX_START -->
 
 - [Key Points](#key-points)
-- [Plugins](#plugins)
-- [Uber jar](#uber-jar)
-- [SonarQube](#sonarqube)
-- [VersionEye](#versioneye)
+- [Templates](#templates)
 - [Gradle Wrapper](#gradle-wrapper)
 - [build.gradle](#buildgradle)
+  - [Specifying Java version](#specifying-java-version)
+- [Plugins](#plugins)
+  - [Kotlin](#kotlin)
+  - [Uber jar](#uber-jar)
+  - [SonarQube Gradle Plugin](#sonarqube-gradle-plugin)
+    - [SonarQube](#sonarqube)
+    - [SonarQube CLI Properties](#sonarqube-cli-properties)
+  - [VersionEye](#versioneye)
 
 <!-- INDEX_END -->
 
@@ -39,77 +44,18 @@ or if changing versions, gradle only manages its current version, so:
 pkill -f org.gradle.launcher.daemon.bootstrap.GradleDaemon
 ```
 
-## Plugins
+## Templates
 
-Adds support for compiling languages:
+`build.gradle` and `gradle.properties` templates can be found here:
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
 
 ```shell
-apply plugin: 'java'
-apply plugin: 'scala'
-apply plugin: 'groovy'
-```
-
-adds `install` task for publishing to Maven repo, generates poms under `build/poms/`:
-
-```groovy
-apply plugin: 'maven'
-```
-
-There is also a factory method for generating the pom without uploading to a Maven repo:
-
-see <https:docs.gradle.org/current/userguide/maven_plugin.html#N13A3E>
-
-executable jar:
-
-```groovy
-apply plugin: 'application'
-mainClassName = 'com.linkedin.harisekhon.Main'
-```
-
-## Uber jar
-
-- ShadowJar
-- Application plugin
-
-## SonarQube
-
-<http:docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle>
-
-A build.gradle plugin.
-
-Configure `~/.gradle/gradle.properties`:
-
-```groovy
-systemProp.sonar.host.url
-# optionally
-systemProp.sonar.login
-systemProp.sonar.password
+wget -nc https://raw.githubusercontent.com/HariSekhon/Templates/master/build.gradle
 ```
 
 ```shell
-gradle sonarqube -Dsonar.host.url=http:sonar.mycompany.com \
-                 -Dsonar.jdbc.password=myPassword \
-                 -Dsonar.verbose=true
-```
-
-## VersionEye
-
-See [HariSekhon/lib-java](https://github.com/HariSekhon/lib-java):
-
-`build.gradle`:
-
-```groovy
-plugins { id "org.standardout.versioneye" version "1.4.0" }
-```
-
-`gradle.properties`:
-
-```groovy
-versioneye.projectid=<long_num_from_project_page_no_spaces>
-```
-
-```shell
-gradle versionEyeUpdate
+wget -nc https://raw.githubusercontent.com/HariSekhon/Templates/master/gradle.properties
 ```
 
 ## Gradle Wrapper
@@ -137,7 +83,7 @@ In future gradle commands just substitute `gradle` for `./gradlew`.
 
 This downloads same gradle version as original builder to
 
-```none
+```text
 .gradle/wrapper/dists/gradle-2.11-bin/
 ```
 
@@ -216,6 +162,109 @@ Show tree graph of dependencies for different stages, test:
 gradle dependencies
 ```
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
+### Specifying Java version
+
+```groovy
+compileOptions {
+    sourceCompatibility JavaVersion.VERSION_21
+    targetCompatibility JavaVersion.VERSION_21
+}
+
+kotlinOptions {
+    jvmTarget = '21'
+}
+```
+
+## Plugins
+
+Adds support for compiling languages:
+
+```shell
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'groovy'
+```
+
+adds `install` task for publishing to Maven repo, generates poms under `build/poms/`:
+
+```groovy
+apply plugin: 'maven'
+```
+
+There is also a factory method for generating the pom without uploading to a Maven repo:
+
+see <https:docs.gradle.org/current/userguide/maven_plugin.html#N13A3E>
+
+executable jar:
+
+```groovy
+apply plugin: 'application'
+mainClassName = 'com.linkedin.harisekhon.Main'
+```
+
+### Kotlin
+
+<https://kotlinlang.org/docs/gradle.html>
+
+<https://kotlinlang.org/docs/gradle-best-practices.html#use-remote-build-cache>
+
+<https://kotlinlang.org/docs/gradle-compilation-and-caches.html>
+
+### Uber jar
+
+- ShadowJar
+- Application plugin
+
+### SonarQube Gradle Plugin
+
+<http:docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle>
+
+<https://docs.sonarsource.com/sonarqube-cloud/advanced-setup/ci-based-analysis/sonarscanner-for-gradle/>
+
+SonarQube Gradle plugin - add to `build.gradle`.
+
+Unfortunately the gradle sonar plugin seems to not support
+[sonar-project.properties](https://github.com/HariSekhon/Templates/blob/master/sonar-project.properties)
+
+#### SonarQube
+
+Configure `~/.gradle/gradle.properties`:
+
+```groovy
+systemProp.sonar.host.url=...
+# optionally
+systemProp.sonar.login=...
+systemProp.sonar.password=...
+```
+
+#### SonarQube CLI Properties
+
+Passing SonarQube options on the command line:
+
+```shell
+gradle sonarqube -Dsonar.host.url=http:sonar.mycompany.com \
+                 -Dsonar.jdbc.password=myPassword \
+                 -Dsonar.verbose=true
+```
+
+### VersionEye
+
+See [HariSekhon/lib-java](https://github.com/HariSekhon/lib-java):
+
+`build.gradle`:
+
+```groovy
+plugins { id "org.standardout.versioneye" version "1.4.0" }
+```
+
+`gradle.properties`:
+
+```groovy
+versioneye.projectid=<long_num_from_project_page_no_spaces>
+```
+
+```shell
+gradle versionEyeUpdate
+```
 
 **Ported from private Knowledge Base page 2016+**

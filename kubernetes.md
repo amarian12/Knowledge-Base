@@ -5,11 +5,12 @@
 - [Local Dev](#local-dev)
 - [Cloud](#cloud)
 - [On Premise](#on-premise)
-- [Machine Learning for Kubernetes](#machine-learning-for-kubernetes)
-- [Kubernetes Configs](#kubernetes-configs)
-- [Kubernetes Scripts](#kubernetes-scripts)
-- [Kubernetes `.envrc`](#kubernetes-envrc)
-- [Kubernetes Networking](#kubernetes-networking)
+- [AI & Machine Learning](#ai--machine-learning)
+- [Configs](#configs)
+- [Scripts](#scripts)
+- [`.envrc`](#envrc)
+- [Scheduling](#scheduling)
+- [Networking](#networking)
   - [CNI - Container Network Interface](#cni---container-network-interface)
     - [Flannel](#flannel)
     - [Calico](#calico)
@@ -19,11 +20,24 @@
     - [Installing a CNI Plugin](#installing-a-cni-plugin)
     - [Plugins by Feature](#plugins-by-feature)
   - [Network Troubleshooting](#network-troubleshooting)
+- [Ingress](#ingress)
+  - [Ingress Controllers](#ingress-controllers)
+- [Autoscaling](#autoscaling)
+  - [HPA - Horizontal Pod Autoscaler](#hpa---horizontal-pod-autoscaler)
+  - [VPA - Vertical Pod Autoscaler](#vpa---vertical-pod-autoscaler)
+  - [KEDA - Kubernetes Event-Driven Autoscaling](#keda---kubernetes-event-driven-autoscaling)
 - [Tips](#tips)
+  - [K9s](#k9s)
+  - [Kubecolor](#kubecolor)
+  - [Increase StatefulSet disk size](#increase-statefulset-disk-size)
   - [Quick Port-Forwarding to a Pod](#quick-port-forwarding-to-a-pod)
+  - [Krew - Kubectl Plugin Manager](#krew---kubectl-plugin-manager)
+- [Cluster Backup](#cluster-backup)
 - [Troubleshooting](#troubleshooting)
   - [Capture Pod Logs & Stats](#capture-pod-logs--stats)
   - [Killing a Namespace that's stuck](#killing-a-namespace-thats-stuck)
+- [Memes](#memes)
+  - [Is Kubernetes Easy](#is-kubernetes-easy)
 
 <!-- INDEX_END -->
 
@@ -33,7 +47,7 @@
 - [MiniKube](https://minikube.sigs.k8s.io/docs/start/)
 - [MiniShift](https://github.com/minishift/minishift) - for OpenShift upstream [okd](https://www.okd.io/)
 - [K3d](k3d.md) - quickly boots a [K3s](k3s.md) minimal kubernetes distro (fully functional)
-- [Kind](kind.md) - Kubernetes-in-Docker - for testing Kubernetes and use in [CI/CD](ci-cd.md).
+- [Kind](kind.md) - Kubernetes-in-Docker - for testing Kubernetes and use in [CI/CD](cicd.md).
   Examples of its use are in the [HariSekhon/Kubernetes-configs](https://github.com/HariSekhon/Kubernetes-configs)
   GitHub Actions CI/CD workflows.
 
@@ -53,26 +67,41 @@
 - [RKE2](rke2.md)
 - [Portworx](portworx.md)
 
-## Machine Learning for Kubernetes
+## AI & Machine Learning
 
+- [K8sGPT](https://k8sgpt.ai/)
 - [Kubeflow](https://www.kubeflow.org/)
 
-## Kubernetes Configs
+## Configs
 
 [HariSekhon/Kubernetes-configs](https://github.com/HariSekhon/Kubernetes-configs)
 
 **Security: most ingresses I write have IP filters to private addresses and Cloudflare Proxied IPs. You may need to expand this to VPN / office addresses, or the wider internet if you are running public services which really require direct public access without WAF proxied protection like Cloudflare**
 
-## Kubernetes Scripts
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
+
+## Scripts
 
 [DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools#kubernetes)
 `kubernetes/` directory.
 
-## Kubernetes `.envrc`
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+
+## `.envrc`
 
 See [direnv](direnv.md)
 
-## Kubernetes Networking
+## Scheduling
+
+Kubernetes node size is important and a trade-off of efficiency -
+too small and you won't be able to fit the requested pod for an application or batch job on the new node vs
+too big leaves the rest of the node's resources unutilized - for which you're paying cloud billing.
+
+If the app resources more resources than a new node size,
+the scheduler will realize that even spinning up a new node of the configured size won't be enough to run the app / job
+and it will become stuck in an unschedulable state.
+
+## Networking
 
 Kubernetes requires:
 
@@ -86,7 +115,7 @@ Kubeadm - must choose network up front. Can switch later but an awful lot of eff
 
 - standard for pluggable networking in Kubernetes
 - configure with JSON, see here:
-  <https://github.com/containernetworking/cni>
+  [:octocat: containernetworking/cni](https://github.com/containernetworking/cni)
 
 #### Flannel
 
@@ -160,11 +189,41 @@ Readiness probe failed: calico/node is not ready: BIRD is not ready: Failed to s
 hostname -f > /var/lib/calico/nodename
 ```
 
-```none
+```text
 Readiness probe failed: calico/node is not ready: BIRD is not ready: Error querying BIRD: unable to connect to BIRDv4 socket: dial unix /var/run/bird/bird.ctl: connect: no such file or directory
 ```
 
 `bird` is run via containerd.
+
+## Ingress
+
+### Ingress Controllers
+
+Set up a stable HTTPS entrypoint to your apps with DNS and SSL.
+
+- [Nginx](https://kubernetes.github.io/ingress-nginx/) ([config](https://github.com/HariSekhon/Kubernetes-configs/blob/master/ingress-nginx/base/))
+- [Kong](https://konghq.com/) ([config](https://github.com/HariSekhon/Kubernetes-configs/blob/master/kong/base/))
+- [Traefik](https://traefik.io/traefik/) ([config](https://github.com/HariSekhon/Kubernetes-configs/blob/master/traefik/base/))
+- [HAProxy](https://haproxy.org/) ([config](https://github.com/HariSekhon/Kubernetes-configs/blob/master/haproxy))
+- [Ambassador](https://getambassador.io/)
+
+## Autoscaling
+
+Scales by adjusting the number of requested replicas in Deployments or Statefulsets.
+
+### HPA - Horizontal Pod Autoscaler
+
+- v1 - scale on a simple rudimentary metric like pod average % utilization
+- v2 - scale on multiple metrics
+  - unfortunatately [ArgoCD does not support v2 yet](https://github.com/argoproj/argo-cd/issues/9145)
+
+### VPA - Vertical Pod Autoscaler
+
+Monitors the pod resource usage, gives recommendations for right-sizing, can adjust the resource requests.
+
+### KEDA - Kubernetes Event-Driven Autoscaling
+
+[KEDA](https://keda.sh/) autoscales on more practical accurate metrics like requests per second.
 
 ## Tips
 
@@ -172,24 +231,67 @@ Readiness probe failed: calico/node is not ready: BIRD is not ready: Error query
   - use `name: http` for target instead of `number: 80` as some services use 80 and some 8080, so you'll get an HTTP 503 error if you get it wrong
   - compare the name and number to the service you're pointing to
 
+### K9s
+
+<https://k9scli.io/>
+
+### Kubecolor
+
+[:octocat: kubecolor/kubecolor](https://github.com/kubecolor/kubecolor)
+
+<https://kubecolor.github.io/>
+
+### Increase StatefulSet disk size
+
+See [Jenkins-on-Kubernetes](jenkins-on-kubernetes.md#increase-jenkins-server-disk-space-on-kubernetes) doc
+for a real world example.
+
 ### Quick Port-Forwarding to a Pod
 
 In most cases you should `kubectl port-forward` to a service, but in cases where you need a specific pod or no service
 is available, such as [Spark-on-Kubernetes](spark.md) or other batch jobs, this is a real convenience.
 
 From [DevOps-Bash-tools](devops-bash-tools.md) repo, gives an interactive list of pods which can be pre-filtered by name
-or label arg, and can automatically open the forwarding localhost URLs:
+or label arg, and can automatically open the forwarded localhost URL:
 
 ```shell
 kubectl_port_forward.sh
 ```
 
-Especially useful for [Spark-on-Kubernetes](spark.md) jobs, this sub-script variant has the Spark driver label filter
-automatically added so less args needed:
+eg.
 
 ```shell
-kubectl_port_forward_spark.sh
+kubectl_port_forward.sh "$NAMESPACE" spark-role=driver
 ```
+
+For [Spark-on-Kubernetes](spark.md) jobs, this sub-script variant already includes the `spark-role=driver` label filter
+to make the command shorter:
+
+```shell
+kubectl_port_forward_spark.sh "$NAMESPACE"
+```
+
+### Krew - Kubectl Plugin Manager
+
+[:octocat: https://github.com/kubernetes-sigs/krew](kubernetes-sigs/krew)
+
+<https://krew.sigs.k8s.io/>
+
+Installs and updates `kubectl` plugins.
+
+From [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+install_kubectl_plugin_krew.sh
+```
+
+Usage instructions:
+
+[Krew Quickstart User Guide](https://krew.sigs.k8s.io/docs/user-guide/quickstart/)
+
+## Cluster Backup
+
+[:octocat: vmware-tanzu/velero](https://github.com/vmware-tanzu/velero)
 
 ## Troubleshooting
 
@@ -224,7 +326,7 @@ kubectl delete ns "$NAMESPACE" --force --grace-period 0
 
 Sometimes this isn't enough, and it gets stuck on finalizers or cert-manager pending challenges:
 
-```none
+```text
 NAME                                                                STATE     DOMAIN                 AGE
 challenge.acme.cert-manager.io/jenkins-tls-1-1371220808-214553451   pending   jenkins.domain.co.uk   3h1m
 ```
@@ -235,5 +337,11 @@ patching:
 ```shell
 kubernetes_delete_stuck_namespace.sh <namespace>
 ```
+
+## Memes
+
+### Is Kubernetes Easy
+
+![Is Kubernetes Easy](images/is_kubernetes_easy.jpg)
 
 **Partial port from private Knowledge Base page 2015+**

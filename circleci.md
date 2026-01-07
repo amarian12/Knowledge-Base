@@ -10,6 +10,7 @@ One of the original hosted CI/CD systems.
 - [UI App](#ui-app)
 - [CircleCI CLI](#circleci-cli)
 - [Master Config Template](#master-config-template)
+- [Validate Config](#validate-config)
 - [Configs in Public Repos](#configs-in-public-repos)
 - [Self-Hosted Runner on Kubernetes](#self-hosted-runner-on-kubernetes)
 - [CLI Usage](#cli-usage)
@@ -60,6 +61,18 @@ Copy to `.circleci/config.yml` in the root of a Git repo and edit:
 [HariSekhon/Templates - circleci-config.yml](https://github.com/HariSekhon/Templates/blob/master/circleci-config.yml)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
+
+## Validate Config
+
+```shell
+circleci config validate ./.circleci/config.yml
+```
+
+This script from [DevOps-Bash-tools](devops-bash-tools.md) validates all `.circleci/config.yml` files it finds in the tree:
+
+```shell
+check_circleci_config.sh
+```
 
 ## Configs in Public Repos
 
@@ -157,7 +170,7 @@ Can debug failing jobs with SSH, see [this doc](https://circleci.com/docs/ssh-ac
 - No way to list namespaces in the CLI
 - Conditionals - looks like it's all or nothing for a workflow or a step, whereas I want a job to be conditional - I could wrap all job's steps in a when step, but can't exclude all steps otherwise get this validation error
 
-```none
+```text
       [#/jobs/docker_build/steps] expected minimum item count: 1, found: 0
       |   |   SCHEMA:
       |   |     minItems: 1

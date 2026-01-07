@@ -7,7 +7,18 @@ use [Jenkins](jenkins.md) for self-hosted or more powerful / flexible / extensiv
 
 - [Key Points](#key-points)
   - [Limitations](#limitations)
+- [GitHub Actions Runners](#github-actions-runners)
+- [GitHub Actions Marketplace](#github-actions-marketplace)
+- [Mac Runner Versions vs XCode versions](#mac-runner-versions-vs-xcode-versions)
+- [GitHub Actions Master Template & Reusable Workflows](#github-actions-master-template--reusable-workflows)
+- [Cloud OIDC Integration](#cloud-oidc-integration)
+  - [AWS](#aws)
+    - [AWS OIDC Provider](#aws-oidc-provider)
+    - [AWS OIDC IAM Role](#aws-oidc-iam-role)
+    - [AWS IAM Role Permissions](#aws-iam-role-permissions)
+    - [AWS Credentials Step](#aws-credentials-step)
 - [GitHub Actions Best Practices](#github-actions-best-practices)
+  - [Security Hardening for GitHub Actions](#security-hardening-for-github-actions)
   - [Pin 3rd party GitHub Actions to Git Hashrefs, not tags](#pin-3rd-party-github-actions-to-git-hashrefs-not-tags)
   - [Avoid `${{ inputs }}` Shell Injection](#avoid--inputs--shell-injection)
   - [Validate all `${{ inputs }}`](#validate-all--inputs-)
@@ -20,11 +31,19 @@ use [Jenkins](jenkins.md) for self-hosted or more powerful / flexible / extensiv
     - [No More `save-state` or `set-output` commands](#no-more-save-state-or-set-output-commands)
   - [Deduplicate Code Using Environment Variables grouped in top-level `env` section](#deduplicate-code-using-environment-variables-grouped-in-top-level-env-section)
   - [Begin Workflow Jobs with an Environment Printing Step](#begin-workflow-jobs-with-an-environment-printing-step)
+  - [Avoid putting Sensitive information such as Secrets in Global Environment Variables](#avoid-putting-sensitive-information-such-as-secrets-in-global-environment-variables)
+  - [Look up GitHub Actions Contexts Fields and Environment Variables](#look-up-github-actions-contexts-fields-and-environment-variables)
+  - [Sparse Checkouts](#sparse-checkouts)
+  - [Import Reusable Workflows using Tags](#import-reusable-workflows-using-tags)
+- [Reusable Workflow Updates Lifecycle](#reusable-workflow-updates-lifecycle)
+  - [Trunk-based changes automatically inherited by calling workflows](#trunk-based-changes-automatically-inherited-by-calling-workflows)
+  - [GitHub Tagged workflows imported by calling workflows](#github-tagged-workflows-imported-by-calling-workflows)
 - [GitHub Actions vs Jenkins](#github-actions-vs-jenkins)
 - [Diagrams](#diagrams)
   - [GitHub Actions CI/CD to auto-(re)generate diagrams from code changes (Python)](#github-actions-cicd-to-auto-regenerate-diagrams-from-code-changes-python)
   - [GitHub Actions CI/CD to auto-(re)generate diagrams from code changes (D2lang)](#github-actions-cicd-to-auto-regenerate-diagrams-from-code-changes-d2lang)
 - [Troubleshooting](#troubleshooting)
+  - [Workflow hangs indefinitely - Waiting for a runner to pick up this job...](#workflow-hangs-indefinitely---waiting-for-a-runner-to-pick-up-this-job)
   - [Executable `/opt/hostedtoolcache/...` not found](#executable-opthostedtoolcache-not-found)
 
 <!-- INDEX_END -->
@@ -54,25 +73,231 @@ use [Jenkins](jenkins.md) for self-hosted or more powerful / flexible / extensiv
 - can't export environment variables to GitHub Actions / Reusable Workflows
 - Secrets must be passed explicitly via `${ secrets.<name> }`
 
+## GitHub Actions Runners
+
+<https://github.com/actions/runner-images#available-images>
+
+## GitHub Actions Marketplace
+
+Don't forget to search here for useful actions!
+
+<https://github.com/marketplace>
+
+## Mac Runner Versions vs XCode versions
+
+Read the READMEs here to see what versions for XCode are available in different macOS runner verisons:
+
+<https://github.com/actions/runner-images/tree/main/images/macos>
+
+[:octocat: maxim-lobanov/setup-xcode](https://github.com/maxim-lobanov/setup-xcode)
+
+<https://github.com/marketplace/actions/setup-xcode-version>
+
+## GitHub Actions Master Template & Reusable Workflows
+
+The code snippet examples on the rest of this page are copied from this real-world repo
+which has been used in production and supports all of my public GitHub projects:
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
+
+## Cloud OIDC Integration
+
+[OIDC Overview](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
+
+This allows workflows to get short lived tokens and assume roles with permissions to cloud resources without having to use static AWS Access Keys,
+which may be disallowed in some enterprises by guardrail policies.
+
+[Configure OIDC to AWS](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
+
+[Configure OIDC to Azure](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure)
+
+[Configure OIDC to Google Cloud](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-google-cloud-platform)
+
+[Configure OIDC to HashiCorp Vault](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-hashicorp-vault)
+
+### AWS
+
+#### AWS OIDC Provider
+
+Check your current OIDC providers:
+
+<https://console.aws.amazon.com/iam/home?#/identity_providers>
+
+```shell
+aws iam list-open-id-connect-providers
+```
+
+```shell
+aws iam list-open-id-connect-providers --query OpenIDConnectProviderList --output text
+```
+
+If you've already got one for GitHub Actions:
+
+```text
+arn:aws:iam::123456789012:oidc-provider/token.actions.githubusercontent.com
+```
+
+See details for each OIDC provider, to check the
+[GitHub Actions OIDC thumbprints](https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/):
+
+```shell
+aws iam list-open-id-connect-providers --query OpenIDConnectProviderList --output text |
+xargs -L1 aws iam get-open-id-connect-provider --open-id-connect-provider-arn
+```
+
+If there isn't one already, create it:
+
+[AWS IAM UserGuide OIDC Provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
+
+You can omit the thumbprint and it'll figure it out from the cert:
+
+```shell
+aws iam create-open-id-connect-provider \
+          --url https://token.actions.githubusercontent.com \
+          --client-id-list sts.amazonaws.com
+          #--thumbprint-list 6938fd4d98bab03faadb97b34396831e3780aea1,1c58a3a8518e8759bf075b76b750d4f2df264fcd
+```
+
+[AWS IAM UserGuide OIDC Verify Thumbprint](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc_verify-thumbprint.html)
+
+<!--
+
+You can verify the GitHub Actions SSL thumbprint like this:
+
+```shell
+openssl s_client -showcerts -connect token.actions.githubusercontent.com:443 </dev/null 2>/dev/null \
+  | awk '/BEGIN CERTIFICATE/,/END CERTIFICATE/{print}' \
+  | openssl x509 -noout -fingerprint -sha1
+```
+
+Fingerprint doesn't match the doc, not sure why yet
+
+-->
+
+#### AWS OIDC IAM Role
+
+Create the AWS IAM Role to allow GitHub Actions to assume it:
+
+```shell
+OWNER="$(gh repo view --json owner -q .owner.login | tee /dev/stderr)"
+```
+
+```shell
+REPO="$(gh repo view --json name -q .name | tee /dev/stderr)"
+```
+
+```shell
+aws iam create-role \
+          --role-name GitHubActionsRole \
+          --assume-role-policy-document "{
+            \"Version\": \"2012-10-17\",
+            \"Statement\": [
+              {
+                \"Effect\": \"Allow\",
+                \"Principal\": {
+                  \"Federated\": \"arn:aws:iam::$AWS_ACCOUNT_ID:oidc-provider/token.actions.githubusercontent.com\"
+                },
+                \"Action\": \"sts:AssumeRoleWithWebIdentity\",
+                \"Condition\": {
+                  \"StringLike\": {
+                    \"token.actions.githubusercontent.com:aud\": \"sts.amazonaws.com\",
+                    \"token.actions.githubusercontent.com:sub\": \"repo:$OWNER/$REPO:ref:refs/heads/${BRANCH:-*}\"
+                  }
+                }
+              }
+            ]
+          }"
+```
+
+If the GitHub Actions workflow is using an environemtn, the condition should instead use
+`repo:$OWNER/$REPO:environment:$ENVIRONMENT` - don't forget to define your `ENVIRONMENT` environment variable first.
+
+Check it in UI:
+
+<https://console.aws.amazon.com/iam/home#/roles/details/GitHubActionsRole>
+
+#### AWS IAM Role Permissions
+
+Grant the role permissions to the resources,
+such as an S3 bucket containing the proprietary [iXGuard](ixguard.md) installer:
+
+```shell
+BUCKET=my-s3-cicd-installables
+```
+
+```shell
+aws iam put-role-policy \
+          --role-name GitHubActionsRole \
+          --policy-name ReadS3BucketPolicy \
+          --policy-document "{
+            \"Version\": \"2012-10-17\",
+            \"Statement\": [
+              {
+                \"Effect\": \"Allow\",
+                \"Action\": [
+                  \"s3:GetObject\",
+                  \"s3:ListBucket\"
+                ],
+                \"Resource\": [
+                  \"arn:aws:s3:::$BUCKET\",
+                  \"arn:aws:s3:::$BUCKET/*\"
+                ]
+              }
+            ]
+          }"
+```
+
+#### AWS Credentials Step
+
+The credentials step should look like this:
+
+```yaml
+- name: Configure AWS credentials
+  uses: aws-actions/configure-aws-credentials@v4
+  with:
+    role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsRole
+    role-session-name: github-actions-ixguard-download
+    aws-region: eu-west-1
+    audience: sts.amazonaws.com
+```
 
 ## GitHub Actions Best Practices
 
-Look at real-world production workflows for inspiration:
+### Security Hardening for GitHub Actions
 
-eg. [HariSekhon/GitHub-Actions](https://github.com/HariSekhon/GitHub-Actions) -
-specifically the
-[main.yaml](https://github.com/HariSekhon/GitHub-Actions/blob/master/main.yaml) template
-and the [.github/workflows/*.yaml](https://github.com/HariSekhon/GitHub-Actions/tree/master/.github/workflows).
+Read this doc carefully:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
+<https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions>
 
 ### Pin 3rd party GitHub Actions to Git Hashrefs, not tags
 
-For security, pin 3rd party GitHub Actions to a `@<git_hashref>` rather than a git tag.
+For security, pin 3rd party GitHub Actions to a `@<git_hashref>` rather than a git tag, and comment what tag the hashref
+represents.
 
 Otherwise a compromised 3rd party GitHub Actions repo can be retagged with any arbitrary code which to induce
 malicious code injection into your repo under your permissions when next called.
+
+You can use
+[github_tag_hashref.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/github/github_tag_hashref.sh)
+script to quickly get the hashref of a given Github Actions `owner/action@tag`:
+
+```shell
+github_tag_hashref.sh owner/action@tag
+```
+
+```text
+5f066a372ec13036ab7cb9a8adf18c936f8d2043
+```
+
+You can also do this manually like this:
+
+```shell
+git ls-remote --tags "https://github.com/$owner/$repo" "$tag"
+```
+
+```text
+5f066a372ec13036ab7cb9a8adf18c936f8d2043        refs/tags/v0.5.3
+```
 
 ### Avoid `${{ inputs }}` Shell Injection
 
@@ -113,10 +338,6 @@ Instead, validate the `env` quoted content of the resulting environment variable
 Make any unhandled error code in shell steps fail, including in subshells or unset variables,
 and trace the output for immediately easier debugging to see which shell command line failed.
 
-Taken from [HariSekhon/GitHub-Actions](https://github.com/HariSekhon/GitHub-Actions) -
-[main.yaml](https://github.com/HariSekhon/GitHub-Actions/blob/master/main.yaml) template and
-[.github/workflows/*.yaml](https://github.com/HariSekhon/GitHub-Actions/tree/master/.github/workflows):
-
 Add this near the top of your workflow:
 
 ```yaml
@@ -153,10 +374,6 @@ echo "$var"
 ```
 
 ### Serialize Workflows with Steps sensitive to Race Conditions
-
-Taken from [HariSekhon/GitHub-Actions](https://github.com/HariSekhon/GitHub-Actions) -
-[main.yaml](https://github.com/HariSekhon/GitHub-Actions/blob/master/main.yaml) template and
-[.github/workflows/*.yaml](https://github.com/HariSekhon/GitHub-Actions/tree/master/.github/workflows):
 
 ```yaml
 concurrency:
@@ -203,20 +420,20 @@ NO:
 
 ```yaml
 - name: Save state
-run: echo "::save-state name={name}::{value}"
+  run: echo "::save-state name={name}::{value}"
 
 - name: Set output
-run: echo "::set-output name={name}::{value}"
+  run: echo "::set-output name={name}::{value}"
 ```
 
 Yes:
 
 ```yaml
 - name: Save state
-run: echo "{name}={value}" >> "$GITHUB_STATE"
+  run: echo "{name}={value}" >> "$GITHUB_STATE"
 
 - name: Set output
-run: echo "{name}={value}" >> "$GITHUB_OUTPUT"
+  run: echo "{name}={value}" >> "$GITHUB_OUTPUT"
 ```
 
 Documentation:
@@ -244,10 +461,6 @@ This aids in debugging as it costs nothing computationally or time wise but mean
 environment of the job and any variables you expect to be set, whether implicitly available in the system or set by
 yourself at a top level `env` section as per the section above.
 
-Taken from [HariSekhon/GitHub-Actions](https://github.com/HariSekhon/GitHub-Actions) -
-[main.yaml](https://github.com/HariSekhon/GitHub-Actions/blob/master/main.yaml) template and
-[.github/workflows/*.yaml](https://github.com/HariSekhon/GitHub-Actions/tree/master/.github/workflows)
-
 ```yaml
     steps:
       - name: Environment
@@ -272,6 +485,118 @@ debugging:
           echo
           env | sort
 ```
+
+### Avoid putting Sensitive information such as Secrets in Global Environment Variables
+
+Secrets should of course go in secrets instead of environment variables...
+
+Secrets are not accessible to 3rd party actions unless explicitly passed to them.
+
+However, Global Environment Variables are available to 3rd party actions,
+so you must not put reference Secrets into Global Environment Variables if using 3rd party actions.
+
+eg. don't do this:
+
+```yaml
+env:
+  MY_SECRET: ${{ secrets.MY_SECRET }}  # env.MY_SECRET is now readable by 3rd party actions
+```
+
+Even consider restricting semi-sensitive environment variable content to specific steps where they're needed instead of
+Global Environment Variables.
+
+### Look up GitHub Actions Contexts Fields and Environment Variables
+
+I provide this repo:
+
+[HariSekhon/GitHub-Actions-Contexts](https://github.com/HariSekhon/GitHub-Actions-Contexts)
+
+which runs workflows weekly to show the real Environment Variables and GitHub Actions Context fields available.
+
+These are not always well documented and up to date in GitHub documentation
+so this is useful to see what is actually available and what the field contents look like right now.
+
+The context fields changes for different trigger types such as `Push` vs manually triggered `Workflow Dispatch`,
+see the badge in the README and click the different types to compare.
+
+### Sparse Checkouts
+
+If you are working with a big repo, such as in monorepos,
+and only need the workflow to operate on a subset of the directory tree, then you may want to sparse checkout instead
+for efficiency:
+
+```yaml
+uses: actions/checkout@v4
+with:
+  ref: "master"
+  sparse-checkout: |
+    charts
+  sparse-checkout-cone-mode: false  # false = patterns, true = literal directories
+```
+
+For more details, read:
+
+<https://git-scm.com/docs/git-sparse-checkout>
+
+### Import Reusable Workflows using Tags
+
+This prevents your calling workflow from breaking
+when the reusable workflow has updates to its behaviour or especially its input parameters.
+
+```yaml
+uses: HariSekhon/GitHub-Actions/.github/workflows/some-workflow.yaml@1.0.0
+```
+
+See the [Reusable Workflow Updates Lifecycle](#reusable-workflow-updates-lifecycle) section for more details.
+
+## Reusable Workflow Updates Lifecycle
+
+When making changes and updates to GitHub reusable workflows, this can be handled in two ways.
+
+### Trunk-based changes automatically inherited by calling workflows
+
+Calling workflows import reusable workflows directly from branch eg.
+
+```yaml
+uses: HarSekhon/GitHub-Actions/.github/workflows/mobile-ios-fastlane.yaml@main
+```
+
+When updates are merged to trunk all calling workflows automatically receive the updates.
+
+This is risky in that if you change any input parameters it will break production client workflows.
+
+There is no nice way to stagger releases of major changes.
+
+They must be simultaneously coordinated across all client workflows.
+
+Breaking changes to a reusable workflow need to be coordinated by finding all production calling workflows and updating
+their input parameters to match, and then merge everything across all repos at the same time.
+
+One hacky workaround that has been done is forking a reusable workflow file to another file and make updates there,
+and then updating client workflows to call that different workflow file to get the updates. Needless to say, that sucks.
+
+### GitHub Tagged workflows imported by calling workflows
+
+Calling workflows import reusable workflows using a fixed git tag eg.
+
+```yaml
+uses: HariSekhon/GitHub-Actions/.github/workflows/mobile-ios-fastlane.yaml@fastlane-1.0.0
+```
+
+GitHub workflow updates are merged to the trunk branch (`main` or `master`) and then git tagged.
+
+This is preferred to pin calling client workflows to these tags because it means that even breaking changes to the
+reusable workflow will not impact existing production workflows which will still be using the previous tag.
+
+Production calling workflows have to be updated to explicitly call the newer tag, and this can be staggered and tested
+one by one, at leisure when they want to receive the improvements and verifying that their input parameters match any
+updates to the reusable workflow.
+
+The drawback is that this adds an extra step to receive updates / improvements.
+
+One must find all calling workflows and manually commit `@<tag>` updates to each of them to import the newer workflow.
+
+This is still the preferred method as it is more production-robust.
 
 ## GitHub Actions vs Jenkins
 
@@ -327,9 +652,37 @@ Open [Diagrams-as-Code README.md](https://github.com/HariSekhon/Diagrams-as-Code
 
 ## Troubleshooting
 
+### Workflow hangs indefinitely - Waiting for a runner to pick up this job...
+
+If your workflow hangs indefinitely on this message:
+
+```text
+Waiting for a runner to pick up this job...
+```
+
+It may be caused by specifying a runner image that doesn't exist, such as:
+
+```yaml
+runs-on: macos-14.1
+```
+
+but if you check here:
+
+<https://github.com/actions/runner-images#available-images>
+
+only integer macOS versions are available, change it to this to get it to be picked up and run:
+
+```yaml
+runs-on: macos-14
+```
+
+This is not intuitive, it should really tell you that there is no such runner version available instead of just hanging.
+
+Have raised this issue as product feedback [here](https://github.com/orgs/community/discussions/156776).
+
 ### Executable `/opt/hostedtoolcache/...` not found
 
-```none
+```text
 Executable `/opt/hostedtoolcache/Ruby/3.3.4/x64/bin/ruby` not found
 ```
 
@@ -340,7 +693,7 @@ Solution: Delete the Cache and then re-run.
 
 Via UI:
 
-```none
+```text
 https://github.com/<OWNER>/<REPO>/actions/caches
 ```
 
@@ -353,7 +706,16 @@ gh cache list
 ```
 
 ```shell
-gh cache delete "$cache_id"  # from above command
+gh cache delete "$CACHE_ID"  # from above command
 ```
+
+or lazily, copy this to blast all caches in the current repo:
+
+```shell
+gh cache ls --json 'key' --jq '.[].key' |
+while read -r key; do gh cache delete "$key"; done
+```
+
+(this is safe to do as they'll just get rebuilt and clear the above error)
 
 **Ported from private Knowledge Base page 2019+**

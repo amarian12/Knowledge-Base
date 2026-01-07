@@ -10,6 +10,8 @@
   - [Mount the new volume by unchanging UUID for maximum stability](#mount-the-new-volume-by-unchanging-uuid-for-maximum-stability)
   - [/tmp permissions](#tmp-permissions)
 - [Mac](#mac)
+- [Meme](#meme)
+  - [Backing Up Data](#backing-up-data)
 
 <!-- INDEX_END -->
 
@@ -23,7 +25,7 @@ This example is from [Adding a new EBS volume to a running AWS EC2 instance](aws
 cat /proc/partitions
 ```
 
-```none
+```text
 major minor  #blocks  name
 
  259        0  314572800 nvme0n1
@@ -67,7 +69,7 @@ See the new partition:
 cat /proc/partitions
 ```
 
-```none
+```text
 ...
  259        7  524285952 nvme1n1p1
 ```
@@ -133,7 +135,7 @@ sudo fdisk -l
 
 otherwise gets this error as regular user:
 
-```none
+```text
 fdisk: cannot open /dev/nvme0n1: Permission denied
 ```
 
@@ -179,7 +181,7 @@ Check new mounted partition and space is available:
 df -Th /tmp
 ```
 
-```none
+```text
 Filesystem     Type  Size  Used Avail Use% Mounted on
 /dev/nvme1n1p1 xfs   500G  3.6G  497G   1% /tmp
 ```
@@ -196,3 +198,9 @@ sudo chmod 1777 /tmp
 ## Mac
 
 See [Mac - Disk Management](mac.md#disk-management)
+
+## Meme
+
+### Backing Up Data
+
+![Backing Up Data](images/orly_backing_up_data_copying_from_dying_drives.jpg)

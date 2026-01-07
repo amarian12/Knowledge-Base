@@ -15,8 +15,18 @@
   - [IPAM - IP Address Management](#ipam---ip-address-management)
 - [Support Numbers](#support-numbers)
   - [WhatsApp Desktop Links](#whatsapp-desktop-links)
-- [Animated GIF images of running commands](#animated-gif-images-of-running-commands)
+- [Create Animated GIFs of Commands](#create-animated-gifs-of-commands)
 - [Meme](#meme)
+  - [Writing Documentation](#writing-documentation)
+  - [Excuses for Not Writing Documentation](#excuses-for-not-writing-documentation)
+  - [Yoda Documentation](#yoda-documentation)
+  - [Cheetah Documentation](#cheetah-documentation)
+  - [Debugging Code After Handover](#debugging-code-after-handover)
+  - [Copying and Pasting from Stack Overflow](#copying-and-pasting-from-stack-overflow)
+  - [Postmortem Analysis - Explaining Production Outages](#postmortem-analysis---explaining-production-outages)
+  - [Mentoring Juniors](#mentoring-juniors)
+  - [Peacocking Your Code](#peacocking-your-code)
+  - [The Handover](#the-handover)
 
 <!-- INDEX_END -->
 
@@ -91,7 +101,7 @@ There are many different Wiki softwares:
   (`README.md` - see [Markdown](markdown.md) tips page)
   - [GitLab](https://docs.gitlab.com/ee/user/project/wiki/) and
   [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops)
-  also have Wikis, but see [CI/CD](ci-cd.md) for why not to bother with those platforms any more
+  also have Wikis, but see [CI/CD](cicd.md) for why not to bother with those platforms any more
 
 and too many other minor open source ones to list.
 
@@ -173,14 +183,106 @@ Also, if you have my real number, please do not call it.
 Always message me on [LinkedIn](https://www.linkedin.com/in/HariSekhon) instead after reading my profile's summary
 bullet point criteria - it'll give you nearly everything you need to know about my availability and preferences.
 
-## Animated GIF images of running commands
+Extra Tip:
+I wrote a TamperMonkey script to convert `+tel:...` phone number links to WhatsApp clickable links on 3rd party websites
+for convenience, you can find it here:
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=TamperMonkey&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/TamperMonkey)
+
+## Create Animated GIFs of Commands
 
 If you want to get fancy:
 
-<https://github.com/faressoft/terminalizer>
+[:octocat: icholy/ttygif](https://github.com/icholy/ttygif)
+
+[:octocat: asciinema/asciinema](https://github.com/asciinema/asciinema)
+
+[:octocat: faressoft/terminalizer](https://github.com/faressoft/terminalizer)
+
+<https://www.screentogif.com/>
+
+From [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+ttygif.sh
+```
+
+```shell
+asciinema.sh
+```
+
+```shell
+terminalizer.sh
+```
+
+Create custom Terminalizer config:
+
+```shell
+terminalizer init
+```
+
+```text
+The global config directory is created at
+/Users/hari/.config/terminalizer
+```
+
+Then edit:
+
+```shell
+vim ~/.config/terminalizer/config.yml
+```
+
+![Gif All the Things](images/gif_all_the_things.jpeg)
 
 ## Meme
+
+### Writing Documentation
+
+![Writing Documentation](images/orly_writing_documentation_todo.png
+)
+
+### Excuses for Not Writing Documentation
+
+![Excuses for Not Writing Documentation](images/orly_excuses_for_no_documentation.jpg)
+
+### Yoda Documentation
+
+If someone gives you this response, send them here to show them how it's done. :wink:
+
+![yoda documentation](images/yoda_new_developer_asks_documentation.jpeg)
+
+### Cheetah Documentation
 
 ![senior_guides_and_teaches](images/non_toxic_senior_who_guides_and_teaches_me_I_will_fight_for_you.jpeg)
 
 **I may well call upon you to defeat tedious Agile ceremonies!**
+
+### Debugging Code After Handover
+
+Make friends with the departing techie and get his WhatsApp.
+
+You're going to need it.
+
+![Debuggging Code After Handover](images/orly_debugging_code_after_handover_flying_blind.png)
+
+### Copying and Pasting from Stack Overflow
+
+![Copying and Pasting from Stack Overflow](images/orly_copying_pasting_stack_overflow.jpg)
+
+### Postmortem Analysis - Explaining Production Outages
+
+![Postmortem Analysis](images/orly_postmortem_analysis_explaining_production_outages.png)
+
+### Mentoring Juniors
+
+![Mentoring Juniors](images/orly_mentoring_juniors.png)
+
+### Peacocking Your Code
+
+![Peacocking Your Code](images/orly_peacocking_your_code.jpeg)
+
+### The Handover
+
+Without good documentation, this is the handover.
+
+![The Handover](images/the_handover.jpeg)

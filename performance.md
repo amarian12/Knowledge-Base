@@ -2,15 +2,53 @@
 
 <!-- INDEX_START -->
 
+- [Quick Dump All Stats](#quick-dump-all-stats)
+  - [Dump Stats Locally](#dump-stats-locally)
+  - [Dump Stats Across Servers Using SSH](#dump-stats-across-servers-using-ssh)
 - [CPU](#cpu)
 - [RAM / Memory](#ram--memory)
   - [OOM Killer - Out of Memory Killer](#oom-killer---out-of-memory-killer)
 - [Disk](#disk)
-- [Linux CLI tools](#linux-cli-tools)
-  - [APM - Application Performance Management](#apm---application-performance-management)
-  - [Hunting down elusive sources of I/O wait](#hunting-down-elusive-sources-of-io-wait)
+  - [I/O](#io)
+- [Network](#network)
+- [System Calls](#system-calls)
+- [APM - Application Performance Management](#apm---application-performance-management)
+- [Hunting down elusive sources of I/O wait](#hunting-down-elusive-sources-of-io-wait)
 
 <!-- INDEX_END -->
+
+## Quick Dump All Stats
+
+Using scripts from [DevOps-Bash-tools](devops-bash-tools.md) repo..
+
+### Dump Stats Locally
+
+```bash
+dump_stats.sh
+```
+
+Generates:
+
+```text
+stats-bundle.YYYY-MM-DD-HHSS.tar.gz
+```
+
+If `export NO_REMOVE_STATS_DIR=1` is set,
+then leaves the intermediate `stats-bundle.YYYY-MM-DD-HHSS` directory with text files.
+
+### Dump Stats Across Servers Using SSH
+
+```bash
+ssh_dump_stats.sh "$server1" "$server2" "$server3"
+```
+
+Generates:
+
+```text
+server1.stats-bundle.YYYY-MM-DD-HHSS.tar.gz
+server2.stats-bundle.YYYY-MM-DD-HHSS.tar.gz
+server3.stats-bundle.YYYY-MM-DD-HHSS.tar.gz
+```
 
 ## CPU
 
@@ -21,6 +59,22 @@
 - high CPU % usage by anti-virus on Windows can be caused by scanning lots of small file changes
   - example Azure DevOps agent on Windows doing Docker build with this in Dockerfile: `COPY --from=builder node_modules .` (NodeJS directory full of small library files)
     - Fix/Workaround: configure the anti-virus software to not scan the CI/CD agent workdir where Docker is building - this resulted in speed up from 2 hours build timeout to 2 minutes!
+
+Top is better on Linux than Mac:
+
+```shell
+top
+```
+
+Top snapshot on Linux:
+
+```shell
+top -H -b -n 1
+```
+
+```shell
+mpstat -P ALL 1 5
+```
 
 ## RAM / Memory
 
@@ -38,6 +92,34 @@ If you have limited physical RAM then it can be valid to use swap partition / pa
 
 <https://www.linuxatemyram.com/>
 
+Linux commands:
+
+```shell
+free -g
+```
+
+```shell
+vmstat 1 5
+```
+
+```shell
+sar -u 1 5
+```
+
+```shell
+sar -A
+```
+
+Mac commands:
+
+```shell
+memory_pressure
+```
+
+```shell
+top -l 1 -stats pid,command,cpu,th,pstate,time,cpu -ncols 16 | head -n "$LINES"
+```
+
 ### OOM Killer - Out of Memory Killer
 
 Linux specific algorithm in the linux kernel that activates when out of both physical RAM and swap - it finds the app taking up the most memory and kills it to save the rest of the OS and other applications.
@@ -49,6 +131,16 @@ But often that killed app was the main big app that you want to run on a server!
 However, it's still usually the better option than the entire system seizing up and becoming unresponsive as you can just restart the application, and a seized up computer often requires a hard power cycle which is the worst option.
 
 There is however the risk of data loss of unflushed data buffers as it's essentially a `kill -9` without warning to the app, but no worse than a hard power cycle.
+
+You can see this in the kernel logs, try:
+
+```shell
+less /var/log/messages
+```
+
+```shell
+dmesg
+```
 
 ## Disk
 
@@ -63,17 +155,74 @@ There is however the risk of data loss of unflushed data buffers as it's essenti
   - more expensive / smaller sizes for the same money
   - use these if you have the money or care about performance
 
-## Linux CLI tools
+Show Used vs Available Disk Space in human readable units eg. MB or GB or TB:
 
 ```shell
-lsof
+df -h
 ```
+
+If disk space isn't being removed after removing files, it's possible they are being held open by a running process.
+
+To see open files:
 
 ```shell
-strace
+lsof -n
 ```
 
-### APM - Application Performance Management
+(the `-n` switch skips DNS resolution to speed up the command
+or prevent it from hanging temporarily trying to reverse resolve IP addresses to DNS FQDNs)
+
+### I/O
+
+Monitoring ongoing disk I/O stats in real-time:
+
+```shell
+iostat -c 5
+```
+
+Write I/O test using `dd` and bypassing the filesystem cache:
+
+```shell
+dd if=/dev/zero of="/path/to/dir/file" bs=64m count=64 oflag=direct
+```
+
+From [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+disk_write_speed_sequential_dd.sh "$directory"
+```
+
+This is useful for testing:
+
+- different disks' speeds
+- different cables' speeds with the same disk
+- different ports' speeds on Macs (right ports may be slower)
+
+I wrote this because I discovered a huge performance and estimated time to restore speed difference using
+[macOS Time Machine recovery](mac.md#reinstall-macos--restore-data) while using USB 2 vs USB 3 cables with the same
+SanDisk Extreme Pro SSD external backup disk.
+
+**WARNING: Don't re-run this on SSDs frequently as they have a limited number of writes and you'll wear the disk out prematurely**
+
+## Network
+
+See [Networking](networking.md) page for tools.
+
+## System Calls
+
+Linux:
+
+```shell
+strace "$program"
+```
+
+Mac:
+
+```shell
+dtruss -f "$program"
+```
+
+## APM - Application Performance Management
 
 [AppDynamics](https://www.appdynamics.com/) and [New Relic](https://newrelic.com/) are the two most famous ones.
 
@@ -82,7 +231,7 @@ strace
 - follows from entry point all threads, JDBC calls etc and gives automatic diagram with stats, breakdowns, drilldowns to method calls taking time
 - server can be SaaS or self-hosted
 
-### Hunting down elusive sources of I/O wait
+## Hunting down elusive sources of I/O wait
 
 ```shell
 /etc/init.d/syslog stop
@@ -104,7 +253,7 @@ head
 
 output:
 
-```none
+```text
 1526 mysqld
 819 httpd
 429 kjournald
@@ -117,7 +266,8 @@ output:
 3 spamc
 ```
 
-In my specific situation, it looks like MySQL is the biggest abuser of my disk, followed by Apache and the filesystem journaling. As expected, qmail is a large contender, too.
+In my specific situation, it looks like MySQL is the biggest abuser of my disk, followed by Apache
+and the filesystem journaling. As expected, qmail is a large contender, too.
 
 Don't forget to set things back to their normal state when you're done!
 

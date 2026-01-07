@@ -1,5 +1,7 @@
 # tfenv
 
+[:octocat: tfutils/tfenv](https://github.com/tfutils/tfenv)
+
 Installs multiple versions of Terraform to `~/.tfenv` in order to maintain compatibility with different Terraform code
 bases.
 
@@ -9,6 +11,7 @@ other clients who will be forced to upgrade to the same version in order to run 
 <!-- INDEX_START -->
 
 - [Install](#install)
+- [Usage](#usage)
   - [Environment Variables](#environment-variables)
   - [`.terraform-version`](#terraform-version)
 
@@ -21,6 +24,14 @@ On Mac, install tfenv:
 ```shell
 brew install tfenv
 ```
+
+Install on Linux (git clones / pulls updates to `~/.tfenv`), using script from [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+install_tfenv.sh
+```
+
+## Usage
 
 List available versions:
 

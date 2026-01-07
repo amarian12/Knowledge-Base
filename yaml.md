@@ -10,6 +10,8 @@ YAML is used for configuration by many technologies as it's easier and cleaner t
 - [Advanced YAML](#advanced-yaml)
   - [Anchors and References](#anchors-and-references)
   - [Override / Extend - Anchors and References](#override--extend---anchors-and-references)
+- [Meme](#meme)
+  - [Fixing YAML](#fixing-yaml)
 
 <!-- INDEX_END -->
 
@@ -71,7 +73,7 @@ From [DevOps-Python-tools](devops-python-tools.md), recursively find and lint al
 validate_yaml.py .
 ```
 
-I run these automatically in all [my GitHub repos](https://github.com/HariSekhon) via [CI/CD](ci-cd.md).
+I run these automatically in all [my GitHub repos](https://github.com/HariSekhon) via [CI/CD](cicd.md).
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
@@ -86,3 +88,9 @@ Use `&` prefix anchor to mark a section and `*` to reference to it later in the 
 ### Override / Extend - Anchors and References
 
 Prefix the `*<name>` reference with `<<:` to allow you to add more fields underneath it. Same name fields are overridden.
+
+## Meme
+
+### Fixing YAML
+
+![Fixing YAML](images/homer_simpson_fixing_yaml.jpeg)

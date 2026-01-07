@@ -2,7 +2,17 @@
 
 Regular expressions are a core skill for any half decent programmer.
 
-I use them extensively in languages from Python and Perl to Java/Scala/Groovy and even in shell scripts in Bash
+There is a saying:
+
+> _"The plural of regex is regrets"_
+
+But it would be more accurate to say:
+
+> _"Not learning regex properly leads to regrets"_
+
+One regex, many regex... on [my GitHub](https://github.com/HariSekhon).
+
+I use them extensively in languages from Python and Perl to Java/Scala/Groovy and even in many shell scripts in Bash
 for grep, sed & awk.
 
 <!-- INDEX_START -->
@@ -18,6 +28,9 @@ for grep, sed & awk.
 - [Library of Regex in Python](#library-of-regex-in-python)
 - [Library of Regex in Bash](#library-of-regex-in-bash)
 - [Examples of Real-world Regex Used Extensively](#examples-of-real-world-regex-used-extensively)
+- [Meme](#meme)
+  - [Googling for the Regex](#googling-for-the-regex)
+  - [Expert Regex](#expert-regex)
 
 <!-- INDEX_END -->
 
@@ -103,3 +116,13 @@ PCRE regex - see especially anonymize.py / anonymize.pl in these repos among man
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Perl-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Perl-tools)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
+
+## Meme
+
+### Googling for the Regex
+
+![Googling for Regex](images/orly_googling_for_the_regex.jpg)
+
+### Expert Regex
+
+![Expert Regex](images/orly_expert_regex_by_trial_and_error.jpg)

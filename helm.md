@@ -21,7 +21,8 @@ mechanism of deploying public Kubernetes applications.
   - [Install Custom Chart](#install-custom-chart)
 - [Chart Repo](#chart-repo)
   - [GitHub](#github)
-  - [GCS](#gcs)
+  - [AWS ECR](#aws-ecr)
+  - [GCP GCS](#gcp-gcs)
 - [Helm + Kustomize](#helm--kustomize)
   - [Kustomize + Helm dynamically](#kustomize--helm-dynamically)
   - [Kustomize + Helm statically](#kustomize--helm-statically)
@@ -226,7 +227,7 @@ helm rollback "$name" "$revision"
 
 Extract Chart and templates from cache, copy `values.yaml` to `custom.yaml`:
 
-```none
+```text
 ~/.cache/helm/repository/mariadb-7.3.14.tgz
 ```
 
@@ -298,7 +299,7 @@ helm create "$name"
 
 creates a `$name/` directory with `tree` contents:
 
-```none
+```text
 $name/
 ├── Chart.yaml   # names app and remote dependency charts
 ├── charts       # for dependency charts, you probably won't need this
@@ -370,7 +371,58 @@ Turn a GitHub repo into helm chart repo:
 
 <https://helm.sh/docs/howto/chart_releaser_action/>
 
-### GCS
+### AWS ECR
+
+AWS ECR can be used as an OCI repo, requires Helm 3.7+.
+
+OCI registries do not support the `helm repo add` command.
+
+Helm uses `oci://` protocol directly with `helm push` / `helm pull` / `helm install`.
+
+IAM role used needs to have IAM permissions to ECR repo:
+
+```text
+ecr:GetAuthorizationToken
+ecr:BatchCheckLayerAvailability
+ecr:BatchGetImage
+ecr:GetDownloadUrlForLayer
+```
+
+Log Helm in to AWS:
+
+```shell
+aws ecr get-login-password |
+helm registry login \
+      --username AWS \
+      --password-stdin \
+      "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com"
+```
+
+Package your chart to `my-chart-0.1.0.tgz`:
+
+```shell
+helm package my-chart
+```
+
+Push it to AWS ECR using OCI:
+
+```shell
+helm push my-chart-0.1.0.tgz "oci://$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com"
+```
+
+Pull a chart from AWS ECR using OCI to a local file `my-chart-0.1.0.tgz`:
+
+```shell
+helm pull "oci://$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/my-chart" --version 0.1.0
+```
+
+Install a chart (implicitly pulls if needed):
+
+```shell
+helm install my-release "oci://$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/my-chart" --version 0.1.0
+```
+
+### GCP GCS
 
 Manual Repo on [GCS](https://cloud.google.com/storage):
 
@@ -440,7 +492,7 @@ helm fetch --untar stable/mariadb
 helm template -f values.yaml mariadb/ > mariadb.yaml
 ```
 
-#### Longer way
+Or Manually:
 
 ```shell
 mkdir -p charts

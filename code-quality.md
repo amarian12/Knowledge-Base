@@ -5,6 +5,11 @@
 - [Code Quality](#code-quality)
 - [Peer Review](#peer-review)
 - [Code Coverage](#code-coverage)
+- [Meme](#meme)
+  - [Removed Bad Code](#removed-bad-code)
+  - [Refactoring](#refactoring)
+  - [Worst Code I've Ever Run](#worst-code-ive-ever-run)
+  - [Code Quality Metrics](#code-quality-metrics)
 
 <!-- INDEX_END -->
 
@@ -43,3 +48,29 @@ Hosted Git providers like GitHub and GitLab already have mature peer review in t
 - Coverage
 - [Codecov](https://about.codecov.io/)
 - [Coverity](https://scan.coverity.com/)
+
+## Meme
+
+### Removed Bad Code
+
+![Removed Bad Code](images/removed_bad_code_whats_left.jpeg)
+
+### Refactoring
+
+Imagine how bad this would be if trying to refactor AI generated code…
+
+Not that anyone in the new generation will know what refactoring is… 😂
+
+![Refactoring](images/refactoring_bugs_found.jpeg)
+
+### Worst Code I've Ever Run
+
+Let's be honest, you've been on both sides of this PR review.
+
+If you haven't, send your PR to me to review and you will be... 😂
+
+![Worst Code I've Ever Run](images/worst_code_ever_run_but_it_runs.jpeg)
+
+### Code Quality Metrics
+
+![Code Quality Metrics](images/orly_code_quality_metrics.jpeg)

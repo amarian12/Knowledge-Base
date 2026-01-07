@@ -19,14 +19,27 @@ eg. [check_puppet.rb](https://github.com/HariSekhon/Nagios-Plugins/blob/master/c
   - [Interesting Gems](#interesting-gems)
   - [List Installed Gems](#list-installed-gems)
   - [Install from Custom Gem Server](#install-from-custom-gem-server)
+- [rbenv](#rbenv)
+  - [rbenv install](#rbenv-install)
+  - [rbenv install ruby versions](#rbenv-install-ruby-versions)
+  - [rbenv local](#rbenv-local)
+  - [rbenv global](#rbenv-global)
+  - [rbenv shell](#rbenv-shell)
+  - [rbenv gem](#rbenv-gem)
 - [RVM - Ruby Version Manager](#rvm---ruby-version-manager)
   - [RVM Install](#rvm-install)
   - [RVM Usage](#rvm-usage)
 - [Code](#code)
+- [Linting](#linting)
+  - [Rubocop](#rubocop)
 - [JRuby](#jruby)
   - [Rubinius](#rubinius)
   - [Ludicrous](#ludicrous)
-- [RubyMine](#rubymine)
+- [Ruby IDEs](#ruby-ides)
+  - [RubyMine](#rubymine)
+  - [Alternatives](#alternatives)
+- [Meme](#meme)
+  - [Porting Your Language to the JVM](#porting-your-language-to-the-jvm)
 
 <!-- INDEX_END -->
 
@@ -103,10 +116,12 @@ mdl README.md
 
 ### Interesting Gems
 
+- `dotenv` - load `.env` or `.envrc` files
 - `irb` - Interactive Ruby interpreter
 - `mdl` - Markdown lint
 - `lolcat` - turns text into rainbow colours
 - `gitlab` - GitLab CLI
+- `fastlane` - see [Fastlane](fastlane.md) doc
 - `jgrep`
 - `httparty`
 - `gist`
@@ -122,7 +137,7 @@ Configure `gem` command to install gems to user writable `$HOME/.gem/ruby/<versi
 
 In `$HOME/.gemrc`:
 
-```none
+```text
 gem: --user-install
 ```
 
@@ -153,6 +168,165 @@ gem install cheat
 
 ```shell
 gem install --source http://server
+```
+
+## rbenv
+
+[:octocat: rbenv/rbenv](https://github.com/rbenv/rbenv)
+
+[:octocat: rbenv/ruby-build](https://github.com/rbenv/ruby-build)
+
+### rbenv install
+
+Installs to `~/rbenv` (`RBENV_ROOT`):
+
+```shell
+brew install rbenv
+```
+
+Adds to `~/.bash_profile`:
+
+```shell
+rbenv init
+```
+
+Open a new login shell:
+
+```shell
+bash -l
+```
+
+or source:
+
+```shell
+source ~/.bash_profile
+```
+
+### rbenv install ruby versions
+
+List installed ruby versions:
+
+```shell
+rbenv versions
+```
+
+```text
+* system
+```
+
+List latest stable versions:
+
+```shell
+rbenv install -l
+```
+
+List all local versions:
+
+```shell
+rbenv install -L
+```
+
+Install a Ruby version:
+
+```shell
+rbenv install 3.4.1
+```
+
+### rbenv local
+
+Set the local Ruby version for this directory (creates a `.ruby-version` file):
+
+```shell
+rbenv local 3.4.1
+```
+
+Show the local configured version:
+
+```shell
+rbenv local
+```
+
+Undo the local ruby setting:
+
+```shell
+rbenv local --unset
+```
+
+### rbenv global
+
+Set the global ruby version by setting `~/.rbenv/version`:
+
+```shell
+rbenv global 3.4.1
+```
+
+### rbenv shell
+
+Set the Ruby version in the local shell only with environment variable `RBENV_VERSION`:
+
+```shell
+rbenv shell 3.4.1
+```
+
+```shell
+which irb
+```
+
+```text
+/Users/hari/.rbenv/shims/irb
+```
+
+```shell
+rbenv which irb
+```
+
+```text
+/Users/hari/.rbenv/versions/3.4.1/bin/irb
+```
+
+### rbenv gem
+
+Check your gem is using the rbenv ruby version:
+
+```shell
+gem env home
+```
+
+```text
+/Users/hari/.rbenv/versions/3.4.1/lib/ruby/gems/3.4.0
+```
+
+```shell
+rbenv which gem
+```
+
+```text
+/Users/hari/.rbenv/versions/3.4.1/bin/gem
+```
+
+Then gem install as usual:
+
+```shell
+gem install bundler
+```
+
+```shell
+rbenv versions
+```
+
+```text
+rbenv versions
+  system
+* 3.4.1 (set by /Users/hari/github/.../.ruby-version)
+```
+
+```shell
+rbenv version
+```
+
+```text
+rbenv version
+3.4.1 (set by /Users/hari/github/.../.ruby-version)
 ```
 
 ## RVM - Ruby Version Manager
@@ -197,11 +371,13 @@ You will likely get a warning to remove the user gem setting from `$HOME/.gemrc`
 
 In `$HOME/.gemrc`, remove:
 
-```none
+```text
 gem: --user-install
 ```
 
 ### RVM Usage
+
+[:octocat: rvm/rvm](https://github.com/rvm/rvm)
 
 <https://rvm.io/rvm/basics>
 
@@ -243,8 +419,50 @@ object.to_yaml
 
 Path to code modules:
 
-```none
+```text
 $LOAD_PATH
+```
+
+## Linting
+
+### Rubocop
+
+[:octocat: rubocop/rubocop](https://github.com/rubocop/rubocop)
+
+```shell
+gem install rubocop
+```
+
+```shell
+rubocop
+```
+
+Auto-correct the file(s) at your own peril:
+
+(make sure you `git commit` before running this to see the changes / revert)
+
+```shell
+rubocop -a
+```
+
+will annoyingly space all:
+
+```ruby
+#comment_out_code
+```
+
+lines to
+
+```ruby
+# comment_out_code
+```
+
+but where they are opening blocks it won't indent the block contents to stay aligned by 2 space indents:
+
+```ruby
+# lane :build do |options|
+#  puts "Building version #{options[:version]}"
+# end
 ```
 
 ## JRuby
@@ -289,7 +507,7 @@ include_package "org.xxx.yyy"
 
 ### Rubinius
 
-<https://github.com/rubinius/rubinius#readme>
+[:octocat: rubinius/rubinius](https://github.com/rubinius/rubinius#readme)
 
 JIT for Ruby
 
@@ -302,7 +520,9 @@ JIT for Ruby
 Experimental last I checked and performance roughly on par with YARV (Yet Another Ruby VM bytecode interpreter) which
 has since been merged into official Ruby 1.9 interpreter 2007.
 
-## RubyMine
+## Ruby IDEs
+
+### RubyMine
 
 <https://www.jetbrains.com/ruby/>
 
@@ -312,6 +532,16 @@ Unfortuntely,
 this is proprietary paid for only and doesn't have a free version like [PyCharm](#pycharm) or main
 [IntelliJ](intellij.md).
 
-<br>
+### Alternatives
+
+VS Code, Sublime or Gleany.
+
+See [Editors & IDEs](editors.md) page.
+
+## Meme
+
+### Porting Your Language to the JVM
+
+![Porting Your Language to the JVM](images/orly_porting_your_language_to_jvm.png)
 
 **Ported from private Knowledge Base page 2012+**

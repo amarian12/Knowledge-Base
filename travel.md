@@ -1,149 +1,289 @@
 # Travel
 
-I've worked on 4 continents.
+[![Nomads Profile](https://img.shields.io/badge/Nomads%20Profile-HariSekhon-blue?logo=nomad&logoColor=white)](https://nomads.com/@harisekhon)
+[![GitHub stars](https://img.shields.io/github/stars/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/stargazers)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/commits/main)
 
-Whether Consulting internationally or visiting for a holiday, here are some useful tips from my travels.
+[![Total Countries](https://img.shields.io/badge/Total%20Countries-54-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2024](https://img.shields.io/badge/in%202024-19-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2025](https://img.shields.io/badge/in%202025-34-blue)](https://nomads.com/@harisekhon)
+[![Unique Countries 2024+](https://img.shields.io/badge/Unique%20Countries%202024+-45-blue)](https://nomads.com/@harisekhon)
+
+[![Total Cities](https://img.shields.io/badge/Total%20Cities-174-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2024](https://img.shields.io/badge/in%202024-68-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2025](https://img.shields.io/badge/in%202025-87-blue)](https://nomads.com/@harisekhon)
+[![Unique Cities 2024+](https://img.shields.io/badge/Unique%20Cities%202024+-149-blue)](https://nomads.com/@harisekhon)
+
+Short links to this page:
+
+[tinyurl.com/hari-travels](https://tinyurl.com/hari-travels)
+
+[bit.ly/hari-travels](https://bit.ly/hari-travels)
+
+Travel Log: <https://nomads.com/@harisekhon>
+
+I've worked on 4 continents and travelled to 40+ countries and 100+ cities.
+
+Whether Consulting internationally or visiting for a holiday, here are some useful tips from my extensive travels.
+
+Updated regularly as I travel the world 52 weeks a year.
 
 <!-- INDEX_START -->
 
+- [Countries](#countries)
+  - [Europe](#europe)
+  - [Asia](#asia)
+  - [Africa & Middle East](#africa--middle-east)
+  - [North America](#north-america)
+    - [Central America](#central-america)
+  - [South America](#south-america)
 - [Booking Sites](#booking-sites)
+- [Travel Checklist](#travel-checklist)
 - [Flights](#flights)
-- [Hotels vs Airbnb](#hotels-vs-airbnb)
-  - [Parking](#parking)
+  - [Flight Booking Sites](#flight-booking-sites)
+  - [Flight Deals from the US](#flight-deals-from-the-us)
+  - [Flight Gotchas](#flight-gotchas)
+    - [Return / Onwards Flights Required for Check-In](#return--onwards-flights-required-for-check-in)
+    - [Luggage](#luggage)
+    - [Transfer Flight Timings](#transfer-flight-timings)
+    - [Self Transfer](#self-transfer)
+    - [Change Airport](#change-airport)
+    - [Charging Your Devices on Flights](#charging-your-devices-on-flights)
+- [Accommodation - Hotels vs Hostels vs Airbnb](#accommodation---hotels-vs-hostels-vs-airbnb)
+  - [Internet - Hotel vs Airbnb](#internet---hotel-vs-airbnb)
+  - [Parking - Hotel, Hostel & Airbnb](#parking---hotel-hostel--airbnb)
+  - [Hostel Tips](#hostel-tips)
+    - [Lockers](#lockers)
+    - [Towels](#towels)
+    - [Shower Gel](#shower-gel)
+    - [Pillows](#pillows)
+    - [WorldPackers](#worldpackers)
+- [Taxis](#taxis)
+- [Wifi](#wifi)
+  - [Wifi Hotels](#wifi-hotels)
+  - [Wifi Cafes & Restaurants](#wifi-cafes--restaurants)
+  - [Wifi Speeds](#wifi-speeds)
 - [Mobile Internet Access](#mobile-internet-access)
-  - [EU](#eu)
-  - [Rest of World](#rest-of-world)
-    - [Digital e-sims](#digital-e-sims)
-- [Dining Out](#dining-out)
+  - [EU Roaming](#eu-roaming)
+  - [Mobile e-Sims](#mobile-e-sims)
+  - [Conserve Mobile Data - Pre-Download Offline Google Maps, Translate & Spotify Playlists](#conserve-mobile-data---pre-download-offline-google-maps-translate--spotify-playlists)
+  - [International Calls using VoIP over the Internet](#international-calls-using-voip-over-the-internet)
+- [ATMs and Foreign Cash Withdrawals](#atms-and-foreign-cash-withdrawals)
+- [Restaurants & Dining Out](#restaurants--dining-out)
 - [Translation](#translation)
+- [Seasons - Timing Matters](#seasons---timing-matters)
+- [Mosquito Repellent](#mosquito-repellent)
+- [Health Insurance](#health-insurance)
 - [Beware Foreign Police & Customs](#beware-foreign-police--customs)
   - [Carry Your Official Documents Everywhere For When You _Are_ Stopped](#carry-your-official-documents-everywhere-for-when-you-_are_-stopped)
   - [Don't Speed](#dont-speed)
   - [Do Not Even Jaywalk](#do-not-even-jaywalk)
 - [Driving](#driving)
+  - [Car Insurance](#car-insurance)
+  - [International Driving Insurance](#international-driving-insurance)
+    - [Temporary Car Insurance Cover](#temporary-car-insurance-cover)
   - [Driving Checklist](#driving-checklist)
   - [Additional EU Driving Checklist](#additional-eu-driving-checklist)
+  - [EU Motorway Tolls](#eu-motorway-tolls)
   - [Do Not Speed](#do-not-speed)
-  - [EU Roaming](#eu-roaming)
+  - [Parking](#parking)
+- [Travel Days Planning](#travel-days-planning)
+  - [Spreadsheet to Auto-Recalculate Dates](#spreadsheet-to-auto-recalculate-dates)
+  - [Digital Nomadding](#digital-nomadding)
+  - [EU Schengen Visa Calculator](#eu-schengen-visa-calculator)
 - [Emigration](#emigration)
   - [Taxes](#taxes)
   - [Mail Redirection](#mail-redirection)
-- [Countries](#countries)
-  - [Austria](#austria)
-    - [Vienna](#vienna)
-  - [Belgium](#belgium)
-    - [Antwerp](#antwerp)
-    - [Brussels](#brussels)
-    - [Bruges / Brugge](#bruges--brugge)
-    - [Ghent / Gent](#ghent--gent)
-    - [Liege](#liege)
-    - [Waterloo](#waterloo)
-  - [Canada](#canada)
-    - [Abbotsford](#abbotsford)
-  - [Czech Republic / Czechia](#czech-republic--czechia)
-    - [Prague](#prague)
-  - [Cyprus](#cyprus)
-  - [Estonia](#estonia)
-    - [Tallinn](#tallinn)
-  - [France](#france)
-    - [Dunkirk](#dunkirk)
-    - [Paris](#paris)
-  - [Georgia](#georgia)
-    - [Tibilisi](#tibilisi)
-  - [Germany](#germany)
-    - [Driving in Germany](#driving-in-germany)
-    - [Bonn](#bonn)
-    - [Berlin](#berlin)
-    - [Brandenburg](#brandenburg)
-    - [Cologne](#cologne)
-    - [Dusseldorf](#dusseldorf)
-    - [Essen](#essen)
-    - [Frankfurt](#frankfurt)
-    - [Hanover](#hanover)
-    - [Königswinter](#königswinter)
-    - [Potsdam](#potsdam)
-  - [Italy](#italy)
-    - [Rome](#rome)
-    - [Venice](#venice)
-  - [Moldova](#moldova)
-    - [Chisinau](#chisinau)
-  - [Latvia](#latvia)
-    - [Riga](#riga)
-  - [Lithuania](#lithuania)
-    - [Vilinus](#vilinus)
-  - [Morocco](#morocco)
-    - [Morocco Taxis](#morocco-taxis)
-    - [Tangiers](#tangiers)
-  - [Norway](#norway)
-    - [Oslo](#oslo)
-  - [Poland](#poland)
-    - [Bydgoszcz](#bydgoszcz)
-    - [Częstochowa](#częstochowa)
-    - [Gdansk](#gdansk)
-    - [Katowice](#katowice)
-    - [Krakow](#krakow)
-    - [Łódź](#łódź)
-    - [Nowy Sącz](#nowy-sącz)
-    - [Poznan](#poznan)
-    - [Sopot](#sopot)
-    - [Warsaw](#warsaw)
-  - [Hungary](#hungary)
-    - [Avoid northern counties](#avoid-northern-counties)
-    - [Budapest](#budapest)
-    - [Szolnok](#szolnok)
-  - [Philipines](#philipines)
-    - [Manilla](#manilla)
-  - [Serbia](#serbia)
-    - [Indoor Smoking, Outdoor Smoking, Smoking Everywhere](#indoor-smoking-outdoor-smoking-smoking-everywhere)
-    - [Belgrade Taxis](#belgrade-taxis)
-    - [Driving in Serbia](#driving-in-serbia)
-    - [Belgrade](#belgrade)
-    - [Novi Sad](#novi-sad)
-  - [Slovakia](#slovakia)
-    - [Kosice](#kosice)
-  - [South Africa](#south-africa)
-    - [Johannesburg](#johannesburg)
-      - [Sandton](#sandton)
-      - [Rosebank](#rosebank)
-  - [Sweden](#sweden)
-    - [Stockholm](#stockholm)
-  - [Turkey](#turkey)
-    - [Istanbul](#istanbul)
-  - [UAE](#uae)
-    - [Dubai](#dubai)
-    - [Dubai Taxis](#dubai-taxis)
-    - [Visa](#visa)
-    - [Weather](#weather)
-    - [Banking](#banking)
-  - [United Kingdom](#united-kingdom)
-  - [USA](#usa)
-    - [California](#california)
-      - [Irvine](#irvine)
-      - [Los Angeles](#los-angeles)
-      - [Palo Alto](#palo-alto)
-      - [San Diego](#san-diego)
-      - [San Francisco](#san-francisco)
 
 <!-- INDEX_END -->
 
+## Countries
+
+Countries: 54
+
+Cities: 174
+
+- Countries in 2024: 19
+  - Cities in 2024: 68
+  - Countries: UAE, France, Belgium, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia, Morocco,
+    Moldova, Turkey, Georgia, Thailand, Vietnam
+  - plus my extensive month long
+    [Tour of England and Wales](https://medium.com/@harisekhon/the-uk-decline-what-i-learnt-from-my-uk-tour-2024-84347efced9b)
+    (the latter was borderline a different country, there are actually Welsh signs I can't read)
+- Countries in 2025: 34
+  - Cities in 2025: 87
+  - Countries: Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria, Romania,
+    Hungary, Slovakia, Austria, Czechia, Poland, Germany, UK, Slovenia, Croatia, Montenegro, Albania, North Macedonia, Bosnia and
+    Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala, El Salvador, Costa Rica, Panama
+- Unique Countries since Emigrating from the UK in 2024: 45
+  - Unique Cities since Emigrating from the UK in 2024: 149
+
+Country pages with specific tips for each country:
+
+(a ⭐ next to a country represents it's one of my preferred ones)
+
+### Europe
+
+- [Albania](travel/albania.md) ⭐
+- [Austria](travel/austria.md)
+- [Belgium](travel/belgium.md)
+- [Bosnia](travel/bosnia.md)
+- [Bulgaria](travel/bulgaria.md)
+- [Croatia](travel/croatia.md)
+- [Cyprus](travel/cyprus.md)
+- [Czechia](travel/czechia.md) ⭐
+- [Denmark](travel/denmark.md)
+- [Estonia](travel/estonia.md)
+- [France](travel/france.md)
+- [Georgia](travel/georgia.md)
+- [Germany](travel/germany.md)
+- [Hungary](travel/hungary.md)
+- [Italy](travel/italy.md)
+- [Latvia](travel/latvia.md)
+- [Lithuania](travel/lithuania.md)
+- [Moldova](travel/moldova.md)
+- [Montenegro](travel/montenegro.md)
+- [Netherlands](travel/netherlands.md)
+- [North Macedonia](travel/north-macedonia.md)
+- [Norway](travel/norway.md)
+- [Poland](travel/poland.md) ⭐
+- [Romania](travel/romania.md)
+- [Serbia](travel/serbia.md) ⭐
+- [Slovakia](travel/slovakia.md)
+- [Slovenia](travel/slovenia.md)
+- [Spain](travel/spain.md) ⭐
+- [Sweden](travel/sweden.md)
+- [Ukraine](travel/ukraine.md)
+- [United Kingdom](travel/uk.md)
+
+### Asia
+
+- [Cambodia](travel/cambodia.md)
+- [Indonesia](travel/indonesia.md) ⭐
+- [Laos](travel/laos.md)
+- [Malaysia](travel/malaysia.md) ⭐
+- [Philippines](travel/philippines.md)
+- [Singapore](travel/singapore.md)
+- [Taiwan](travel/taiwan.md)
+- [Thailand](travel/thailand.md) ⭐
+- [Vietnam](travel/vietnam.md) ⭐
+
+### Africa & Middle East
+
+- [Jordan](travel/jordan.md) ⭐
+- [Lebanon](travel/lebanon.md)
+- [Morocco](travel/morocco.md)
+- [South Africa](travel/south-africa.md)
+- [Turkey](travel/turkey.md)
+- [Tunisia](travel/tunisia.md)
+- [UAE](travel/uae.md) ⭐
+
+### North America
+
+- [USA](travel/usa.md)
+- [Canada](travel/canada.md)
+
+#### Central America
+
+Capital cities here are not the attraction, but more transit points - the attractions are usually the coasts, nature,
+volcanos, or historic archaeological sites.
+
+[Spanish Crash Course](travel/spanish.md) - you will need this for the following countries:
+
+- [Mexico](travel/mexico.md)
+- [Guatemala](travel/guatemala.md)
+- [El Salvador](travel/elsalvador.md)
+- [Honduras](travel/honduras.md) (skipped due to long visa bureaucracy)
+- [Nicaragua](travel/nicaragua.md) (skipped due to lack of attractions and awkward flights)
+- [Costa Rica](costarica.md)
+- [Panama](panama.md)
+
+### South America
+
+[Spanish Crash Course](travel/spanish.md) - you will need this for the following countries as most people don't speak English
+like much of the rest of the world.
+
+- [Colombia](colombia.md) ⭐
+
 ## Booking Sites
+
+Always compare 2-3 sites as you might think one will always get you a better deal,
+but once in a while it'll screw you with a much higher price than the others.
+
+[Rome2Rio](https://www.rome2rio.com/) - discover how to get anywhere by plane, train, bus, ferry and car. Especially
+useful if you're touring a region like Europe where things are not very far apart.
+
+[Agoda.com](https://www.agoda.com/) - the best site for use in Asia, and you really need to go to Asia, it's amazing.
+
+[HostelWorld.com](https://www.hostelworld.com/) - best for solo hostel travellers - sometimes more expensive than Agoda
+for the same places, but sometimes has hostels that other sites don't have at all.
+People are often willing to pay a slight premium to book through HostelWorld just to get access to it's unique city chat
+feature to meet other solo travellers to socialize.
+The chat is a bit sluggish and buggy, so I use this chat to collect the IGs and then start a better Insta group chat.
+HostelWorld usually takes a deposit (which doesn't go to the hostel and is non-refundable if you cancel), and then you
+pay the hostel when you arrive.
+This means you are slightly better off booking a shorter time on the app to pay less deposit but still get access to
+the city chat and then extending your stay locally with the hostel - as long as the hostel isn't likely to run out of
+capacity!
+There is a limitation in the app / website that you cannot change your booked duration once purchased,
+and beware that if you cancel the booking (eg. because you want to shorten the duration for example at the request of
+your hostel to free up the bed on their system) you will lose both your deposit and access to the chat, and the customer
+service support cannot undo the cancellation for you either.
+
+[Kayak.com](https://www.kayak.com/) - usually cheaper than SkyScanner and had cheaper flights not found on Expedia.
+  lI prefer Kayak to SkyScanner because I can filter for flights including luggage in the price
+  and when following through to [eDreams](https://www.edreams.com/) or [Trip.com](https://trip.com/) flights I can
+  upgrade to 25kg luggage for ~£4, which is important because I got charged $30 for having 22kg checked luggage -
+  2kg over the 20kg default luggage allowance of many airlines.
+  Booking.com and Kiwi.com are bad for this only option of adding 20kg checked luggage
 
 [SkyScanner.net](https://www.skyscanner.net/) - had cheaper flights that weren't even found on Expedia,
 and cheaper on the same flights too
 
-[Kayak.com](https://www.kayak.com/) - even cheaper than SkyScanner and had cheaper flights not found on Expedia
+[Booking.com](https://www.booking.com) - cheaper and more hotels than Expedia, but sucks because it only allows you to add 20kg checked
+luggage, which left me getting screwed for a $30 surcharge for being 2kg over on my checked luggage
 
-[Expedia](https://expedia.co.uk) - was my usual go to as it usually had the most options at the last minute, until SkyScanner and Kayak
-showed it up
+[Expedia](https://expedia.co.uk) - LEGACY DO NOT USE.
+Was my usual go to as it usually had the most options at the last minute, until SkyScanner and Kayak
+showed it up.
+Beware if you are trying
+to get a hotel immediately for a missed flight the app will shunt the results to the next day
+and you will end up booking the wrong night and then having a horrible battle trying to get it refunded.
+Booking.com is better for that scenario.
+Also, if you book the wrong date or there is any issue Expedia support are the worst ever.
+You will struggle to get any refund.
+Use them to find the hotels and flights,
+then go book directly with the airline or hotel and deal with them directly if there is any problem.
+You'll usually get a slight discount or other perk and when there is a problem you will not be stuck suffering Expedia
+chat support.
 
 [AirBnb](https://www.airbnb.com) - compare the cost of apartments to hotels in each area, it alternates which is
-cheaper.
+cheaper depending on the country.
 
 [LastMinute.com](https://lastminute.com) - ok for package holidays but assumed return flights,
 less good for a digital nomad who is going one way and bouncing to the next place.
 
 [OnTheBeach.co.uk](https://www.onthebeach.co.uk/) - good prices but nothing available for same/next day for last minute
 travellers like me.
+
+## Travel Checklist
+
+- Passport
+- Visa
+  - booked exit flight proof is required to enter some countries like Mexico
+- Laptop (optional)
+- Chargers - phone, laptop, electric toothbruth, USB-to-USB-c cable for plane
+- Travel Adapters
+- [Hostel Checklist](#hostel-tips) - padlock, towel, shower gel etc.
+- Clothes for climate (check your weather app for the destination, it might be hotter / colder /
+  rainier than you guess)
+
+Optional:
+
+- toiletries - you can buy toiletries almost anywhere, but you may prefer to take your favourite brands from home rather
+  than make do with whatever you find there
+- book or other entertainment for flight
+- water bottle to refill after security takes your water off you
 
 ## Flights
 
@@ -154,16 +294,153 @@ Same goes for ferries if driving.
 Favourite Airline: Air Arabia because they didn't tell me to put my laptop away during takeoff. One less pointless rule
 enforced.
 
-Beware there is no `CHANGE AIRPORT` stopover as you'd have to go through security all over again and could miss your
-connecting flight.
+### Flight Booking Sites
 
-## Hotels vs Airbnb
+Ranked by my success in finding affordable flights
+
+- [Kayak.com](https://www.kayak.com/) - even cheaper than SkyScanner and had cheaper flights not found on Expedia
+- [SkyScanner.net](https://www.skyscanner.net/) - had cheaper flights that weren't even found on Expedia, and cheaper on the same flights too
+- [Booking.com](https://www.booking.com)
+- [Agoda.com](https://www.agoda.com/) - better for hotels than flights
+- [Expedia](https://expedia.co.uk) - fewer and more expensive flights
+- [Google Flights](https://www.google.com/travel/flights)
+
+### Flight Deals from the US
+
+If you just want to go on hols and don't mind where, then you can use:
+
+<https://www.going.com/>
+
+Enter your nearest airport(s) and they will send you cheap deals to random destinations.
+
+Unfortunately they do not serve airports outside the US at time of writing.
+
+### Flight Gotchas
+
+#### Return / Onwards Flights Required for Check-In
+
+Some airlines / countries require proof of outbound flights,
+and refuse to check you in or even luggage drop without it,
+which can leave you scrambling to book an outbound flight from your destination country before the check-in closes.
+
+This has hit me travelling to:
+
+- [Mexico](mexico.md) with Iberojet airline
+- [Costa Rica](costarica.md) with Avianca airline
+- [Panama](panama.md) with Copa airline
+- [Colombia](colombia.md) with Avianca airline
+
+In [Panama](panama.md) and [Costa Rica](costarica.md) the immigration officer did ask for my outbound flight and
+accommodation, whereas in [Mexico](mexico.md) and [Colombia](colombia.md) they asked for my accommodation details but
+not my outbound flight.
+
+Regardless, the airlines will not let you check-in without an outbound flight when travelling to some countries.
+
+Check the country's immigration rules ahead of time and get to the airline at least 3-4 hours
+before take off to give yourself 30-60 minutes to scour and book outbound / onwards flights if you need to.
+
+Technically it could be outbound bus to a nearby country,
+or you could book a flexible flight that you could change the date later
+as it can be quite disruptive to force travel plans to specific dates when you don't know how long you want to explore
+a country
+(I've stayed longer than intended in several countries due to finding recommended holiday towns, seas, volcanos etc).
+
+#### Luggage
+
+Be careful with your luggage weight. I got charged $30 in Asia for being 2kg overweight.
+
+It is usually much cheaper to just book a larger luggage weight in advance, such as 25kg instead of 20kg.
+
+If doing short trips, you might be better off not taking checked luggage at all as budget airlines like Whizz Air charge
+you a lot extra on top of the initial flight cost to have a checked luggage, and if only going somewhere for 2-3 days
+you really only need a change of clothes and minimal toiletries.
+
+The real problem is if you have lots of toiletries for skincare routines etc,
+as it can be hard to get it through the airport security and need that checked luggage.
+
+If going away for longer, such as travelling South America, then ditch the carry-on luggage as they often charge a
+similar amount extra for it as for checked luggage, and just putting everything in one large checked-in suitcase works
+out cheaper.
+
+#### Transfer Flight Timings
+
+**Do not take transfer flights with less than 3-4 hours between them.**
+
+It is common for the first flight to be delayed by 1.5 hours
+and then you don't have enough time to catch the second flight.
+Even more so if you have to go through security again which can delay you by another 30-60 minutes.
+
+I have gotten stranded overnight in Warsaw like this on the way from London to Tbilisi, with no replacement flight for
+24 hours.
+And of course there is no hotel availability at 11:30pm except for £200-300+ per night hotels.
+
+#### Self Transfer
+
+Avoid `Self Transfer`.
+
+This is a hack by comparison sites matching unrelated airline flights.
+
+If the first flight is delayed, which is common, the other airline won't care or wait for you.
+
+You will lose the second flight you paid for.
+They try to sell you additional insurance in this case to potentially offer you another
+flight but who's to say that will be the next decent flight instead of the cheapest possible.
+
+This is how you can get stranded at airports for awfully long periods of time wearing you down.
+
+I've learnt this one the hard way when my flight from Tbilisi, Georgia, to Antalya, Turkey, was delayed by 1hr30mins
+so I had no chance of catching the other flight which was only 2 hours apart.
+Worse still it was at another terminal
+that was 2km away so I even had to take a taxi to the other terminal for the other flight.
+
+You will also lose time collecting luggage, going through a new check-in, security again etc.
+
+Stick to the same airline transfers, they will be aware that their counterpart flight was delayed
+and are more likely to hold the flight to give everyone time to transfer.
+
+#### Change Airport
+
+Beware there is no `CHANGE AIRPORT` stopover as you'd have to travel between airports across a city or region
+and this makes it even more likely that you'll miss a connecting flight.
+
+It's even worse than the `Self Transfer`.
+
+#### Charging Your Devices on Flights
+
+Many planes have been around for a long time such that they only have classic old large USB ports to charge devices,
+whereas most modern smartphones and laptops have USB charging ports.
+
+Bring a USB-to-USB-c charging cable of at least medium length
+to be able to charge your smartphone - medium length to be able for it to reach to the pouch on the back of the seat in
+front of you where you may want to rest your phone.
+
+## Accommodation - Hotels vs Hostels vs Airbnb
+
+This is usually one of the biggest travel expenses,
+so check in advance and avoid places with high accommodation costs, or shorten your stays there.
+
+After a lot of travelling, I have come to the conclusion that you can judge a place by the cost of its accommodation.
+
+In Croatia for example, you can pay £30-50 per night for hostel,
+which is ridiculous as you could stay in a full private hotel room in Dubai for £55.
+
+If a place has expensive accommodation, either consider travelling to somewhere else better value if holidaying,
+or shorten your trip there and then go somewhere better value for longer.
+
+**If you're travelling alone, don't waste your time & money on Hotels or Airbnbs, use hostels, they're more social and**
+**1/3 of the price.
+Save your money and spend it on good food in restaurants instead.
+Hostels have lockers for your valuables like laptops (you may want to take your own stronger padlock).**
 
 Hotels and [Airbnb](https://airbnb.com) vary as to which one is cheaper by location.
 
 Check both.
 
 The earlier you book the better deals you'll get.
+
+Unlike restaurants where the food and prices are consistent,
+hotels prices and availability fluctuate wildly, so I don't believe in trying for specific hotels -
+search and see what is good at that time.
 
 I have on many occasions booked accommodation in the airport lounge minutes before boarding planes
 but I do not recommend this.
@@ -172,25 +449,143 @@ I have have private hosts cancel my accommodations the day before or even the sa
 
 It's annoying to be booking at the last minute because you'll get the least good places for the most expensive prices.
 
-### Parking
+### Internet - Hotel vs Airbnb
+
+Hotel wifi is probably the worst wifi ever,
+often averaging around 10Mbit/s, sometimes 7Mbit/s, I've even recorded it as low at 2Mbit/s,
+and they tend to have frequent random outages.
+
+The slow speeds - especially throughput and latency variability - can ruin even your audio conference calls, never mind
+your video conference calls, especially if you are forced to do them through a corporate Windows Virtual Desktop which
+is far more network expensive and latency sensitive.
+
+I have been bitten by this several times.
+
+If Digital Nomadding, try to get out to a cafe with good internet for conference calls, and test their speeds (see the
+doc [Network - Speed Test](networking.md#network-speed-test)).
+If it's less than 20Mbit/s, find somewhere else.
+I've observed good places having wifi speeds of even 70-90Mbit/s and almost no contention due to low number of users.
+
+Internet in Airbnb is either good high speed broadband or broken entirely for the duration.
+
+At one hotel in Thailand, the room wifi was broken the entire week I was there.
+I had to sit in the lobby to use the wifi network there, as did others,
+and sometimes even that didn't work due to having run out of IP addresses from their DHCP address pool -
+a trivial problem to fix if they had even an average IT engineer on hand or over the phone.
+I spent all week hassling the reception staff daily pleading to put one on the phone for me to tell them how to fix
+it without success).
+It still wasn't working when I left there.
+
+Hostels tend to be nearer the hotel end of the wifi internet spectrum, but not usually as bad as hotels in my experience
+as the younger crowd of hostels is much more internet dependent and they know this.
+
+### Parking - Hotel, Hostel & Airbnb
 
 If driving, make sure to double check parking at hotels or Airbnbs.
 
 If Expedia shows `Parking Available` include of `Parking Included`, that means there will be parking charges,
 which can be quite high.
 
-You have to scroll all the way to the bottom of the hotel listing to found out what the charges are in the small print.
+You have to scroll all the way to the bottom of the hotel listing to find out what the charges are in the small print.
 
-I often prefer booking places a bit away from the centers to get easier parking as many central accomodations,
-both hotels and airbnbs lack good parking.
+When driving, I often prefer booking places a bit away from the centers to get easier parking as many central
+accomodations, both hotels and airbnbs lack good parking.
 
 Also, if you're only going into the centres in the evenings, often you can get cheap or even free parking.
 
+Hostels are usually more central and have no parking, so that's an extra challenge to find external parking locations if
+driving, such as my European Summer Road Trip Tours.
+
+### Hostel Tips
+
+#### Lockers
+
+Hostels usually have lockers for valuables (check thel listing before booking).
+
+Some have lockers with a key, others expect you to have a padlock (which they can usually rent to you).
+
+If using hostels repeatedly, get yourself a padlock with a key rather than combination lock,
+because aside from the fact someone can just spend a few hours to try all combinations, when you're putting stuff away
+late at night, it's must easier with a key than trying to do a combination in the dark with your phone light.
+
+#### Towels
+
+Some hostels provide towels, others rent them to you, and others don't provide them at all.
+
+If using hostels repeatedly,
+buy yourself a nice fluffy towel with a high thread count instead of renting them,
+it'll work out cheaper in the long run anyway.
+
+#### Shower Gel
+
+At most hostels you will need to take your own shower gel.
+
+#### Pillows
+
+Pillows tend to not be great in hostels.
+
+So in Europe where I road trip, which gives me greater flexibility and luggage capacity, I take my 2 memory foam
+pillows.
+
+One could make do with taking one good pillow, but if flying even this might take up valuable space and weight in your
+checked luggage suitcase.
+
+#### WorldPackers
+
+You can use [WorldPackers](https://www.worldpackers.com/) to volunteer at hostels in exchange for free board,
+which is a great way of seeing the world when young on budget.
+
+## Taxis
+
+Airport taxis are a rip off all over the world. Do not use them.
+
+Use the taxi apps for the specific country,
+as each country has a different selection of apps that work there,
+which are listed on each country's page.
+
+Compare the different apps to get the best price, it only takes 2 minutes.
+
+Among taxi apps InDrive is generally cheaper than Uber although often requires that you pay in cash.
+
+Taxis in some countries only accept cash anyway,
+even when ordering them using apps, such as in Albania,
+or the airport taxis in Moldova and Malaysia.
+
+Taxis in Thailand and Malaysia have stopped at ATMs to get me to withdraw cash for them.
+
+See the [ATM and Foreign Cash Withdrawals](#atms-and-foreign-cash-withdrawals) section below.
+
+## Wifi
+
+### Wifi Hotels
+
+Hotel wifi is often awful, in both signal reliability and speed, even at relatively nice hotels.
+
+### Wifi Cafes & Restaurants
+
+Preserve your mobile data and battery life by not using 4G/5G except when you have to,
+always get on the cafe / restaurant wifi.
+
+### Wifi Speeds
+
+I have listed wifi speeds at various venues I've used to digital nomad around as I live on wifi.
+
+_"X/Y Mbit wifi"_ shorthand means X Mbit/s download and Y Mbit/s upload eg.
+50/30 means 50 Mbit/s download speed and 30Mbit/s upload speed, as tested using
+[network speed test](networking.md#speedtestnet).
+
 ## Mobile Internet Access
 
-### EU
+Always ensure you have mobile internet before you leave the airport or cross the border by car / coach.
 
-If you're not an EU resident or don't have an EU sim, skip to the next section [Rest of World](#rest-of-world).
+Use the airport wifi to set up one of your e-sims using the lists below, or sims at the airports.
+
+On rare occasion I wasn't able to get airport wifi working, and that could be a problem so it's better to sort the e-sim
+on the wifi of your departing airport before you take off than arrive at the other end.
+
+### EU Roaming
+
+If you're not an EU resident or don't have an EU sim, skip to the next section [Mobile e-Sims](#mobile-e-sims).
 
 I've used my UK sim from [Smarty](https://smarty.co.uk) across all the EU countries I visited as it permits use of your
 plan's bundled service within EU countries at no extra charge, and the monthly contract is cheap as chips.
@@ -209,20 +604,120 @@ There is a tweak you need to make to your phone to enable it for roaming:
 
 which basically comes down to changing your Mobile Service data MMS APN to `mob.asm.net` in your phone settings.
 
-### Rest of World
+My UK phone number worked across all European countries I travelled through, including:
 
-#### Digital e-sims
+- Austria
+- Bulgaria
+- Croatia
+- Estonia
+- France
+- Germany
+- Hungary
+- Lithuania
+- Latvia
+- Poland
+- Romania
+- Sweden
+- Slovakia
+- Slovenia
+
+It stopped working when I got to Serbia which is not in the EU.
+
+Going from EU to non-EU was a bit of a jarring experience.
+
+There may be something to the EU integration project after all.
+
+### Mobile e-Sims
 
 You can buy data plans for a certain number of days.
+
+Follow the installation instructions and make sure to enable `Data Roaming`
+under the e-sim settings otherwise the internet won't connect.
+
+Prices fluctuate and alternate by country so compare the top 3 providers before choosing:
+
+- [Nomad](https://www.getnomad.app/) - a bit cheaper than Airalo,, I've started using this the most
+- [Airalo](https://www.airalo.com/) - I used this a lot originally, second cheapest option
+- [Saily](https://saily.com/) - if the price is the same I prefer this one because you don't have to install a new e-Sim each time but
+  can actually just add data for a new country to your already loaded e-Sim.
+  My travel buddy who also travels all year has had issues with Saily, finding it to be
+  be unreliable and had to get refunds from them 3 times across different countries, but it worked ok for me, and
+  I've had such issues with the other providers...
+- [AloSim](https://alosim.com/) - took a punt and used this for Bosnia as it was the cheapest there
+
+Others:
+
+- [Eskimo](https://www.eskimo.travel/en) - global data plans so you don't lose your remainder and can use it in other
+  countries, but in my experience the price per GB is so much more experience that this isn't worth it
+- [Holafly](https://esim.holafly.com/) - offers unlimited data but very expensive, usually not worth it given you typically don't use more
+  than 1-3GB unless you're watching lots of videos on 4G instead of hotel wifi
+
+Not tried these:
+
+- [sSim.sm](https://esim.sm/)
+- [Gjirafa eSIM](https://travel.gjirafa.com/en/esim)
+
+<!-- -->
+
+- [Fonus](https://www.fonusmobile.com/) - unlimited worldwide mobile plans
+
+<!-- -->
+
+- [Silent.link](https://silent.link) - Pay-as-You-Go prepaid, anonymous (no KYC, no name or even email),
+  pay in [Bitcoin](bitcoin.md) or other [Crypto](crypto.md), account balance doesn't expire,
+  but the per GB data rates are higher, priced in USD, and can vary quite substantially even within the same country eg.
+  in Thailand it may be \$1.32 on a couple networks and then over \$7 on the True Thailand network.
+  The e-sims above usually work out cheaper.
+  Get Silent Link as a backup non-expiring balance in case the airport wifi doesn't work to get your e-sim above set up
+  or the e-sim loses reception provider and you need GPS for navigation or emergencies
 
 Google [travel e-sims](https://www.google.com/search?q=travel+e-sims)
 and add the country you are travelling to for more options.
 
-- <https://www.airalo.com/> - follow the installation instructions and make sure to enable `Data Roaming`
-  under the e-sim settings otherwise the internet won't connect
-- <https://esim.holafly.com/>
+### Conserve Mobile Data - Pre-Download Offline Google Maps, Translate & Spotify Playlists
 
-## Dining Out
+Most of my data usage was caused by Google Maps and Spotify
+(you can see this on iPhone under `Settings` -> `Mobile Service` further down the page).
+
+Pre-cache your usage when on Wifi to avoid using up too much precious mobile e-sim data:
+
+- Google Maps - download an offline map for your city or area under settings -  you need to keep Google Maps open until
+  the download is complete
+- Spotify - click the downloaded option on your playlists - by default this will only download on wifi
+- Google Translate - download the language (the icon to the left of each language on the language selection drop down)
+
+Give each time to complete and check their progress before setting out and leaving your wifi connection behind.
+
+### International Calls using VoIP over the Internet
+
+Because banks and other legacy providers will force you to call them, you can use one of these services:
+
+- [Viber](https://account.viber.com/en/call-united-kingdom) - 1 week free trial, £5.99 afterwards for unlimited calls (or £1.79 for 100 mins a month),
+  but again does not apply to premium or non-geographic numbers like banks often use,
+  worked on Barclays number that MoreMins was not processing voice
+- [MoreMins](https://www.moremins.com/) - quick, cheap and easy, has an app, £5 for 30 days of unlimited calls,
+  use 0800 number to your bank, as premium / national numbers like banks are often using will incur high per-minute
+  charges. Blocked me from using Barclays 0800 number. Possible bust option
+- [Google Voice](https://voice.google.com/rates) - cheaper than Skype for national calls but hard to use as a foreigner,
+  limited to 10 countries, need to use a [VPN](vpn.md) just to try to access it, disappointing usability
+- [Skype](https://www.skype.com/en/international-calls/) - £5 for 400 minutes, expensive for national numbers like most
+  banks and businesses use
+
+## ATMs and Foreign Cash Withdrawals
+
+ATMs in some countries charge a flat fee of between £5-7 for any withdrawal amount -
+Thailand, Cambodia, Croatia and Albania spring to mind.
+
+This means it's better to estimate how much you need up front and make fewer larger withdrawals.
+
+Do not use your Wise card to withdraw cash from ATM machines overseas - they charged me almost \$7 as an
+_'ATM withdrawal fee'_... on top of the \$5 the Cambodian ATM charged me.
+
+My bank by comparison charged me only the exchange rate, which was very close to accurate, I checked.
+
+Obviously don't withdraw cash using credit cards, they'll likely have the worst / highest unscrupulous charges.
+
+## Restaurants & Dining Out
 
 Use [Google Maps](https://maps.google.com) (see [Mobile Internet Access](#mobile-internet-access) section).
 
@@ -232,11 +727,18 @@ Filter by:
 - Distance
 - Price eg. `£, ££` or `£££` if it's date night
 - Prefer restaurants with higher number of reviews to reduce likelihood of fake reviews swaying / gaming the system
+- Places with soft piano music are upmarket (expensive)
 
 Places just outside the centres are often better value for money and top quality food,
 but some central places are great too.
 
-I leave a couple recommendations in each location listed below.
+Restaurants that close earlier are usually better foodie places, often with more reasonable prices. You'll often pay a
+premium for places that are open later, because there are less rival choices open at that time.
+
+Do not look at the menu pictures from 2+ years ago because the prices will be wrong with all the government inflationary
+money printing of fiat currency and you will get a surprise when you get there.
+
+I leave a couple recommendations in each location on the country specific pages.
 
 Some places don't have English menus -
 these are often the best places that aren't so spoilt by foreign money and tourist trap
@@ -256,6 +758,35 @@ If travelling to a non-English speaking country, I recommend downloading the
 - Large list of supported languages
 - Optional: download language support when on wifi
   - didn't notice this making much impact on my data plan either way
+
+## Seasons - Timing Matters
+
+Don't bother with Europe outside of June to August,
+the weather is miserable 9 months out of the year and still awful even in late May, supposedly end of Spring,
+as well as by September.
+
+## Mosquito Repellent
+
+Buy a good mosquito repellent if you're travelling anywhere near the Mediterranean, Asia or Africa -
+I even got eaten in Belgium in summer time!
+
+I find that cream works better than spray.
+
+It is no fun being itchy all the time because these little bastards are biting you every day and night and leaving
+lumps all over you.
+
+And you can't feel them land to catch them and can never seem to kill enough of them.
+
+You *need* mosquito repellent. Don't miss it.
+
+## Health Insurance
+
+Not used these personally yet.
+
+- [True Traveller](https://www.truetraveller.com/)
+- [Genki](https://genki.world/)
+- [Safety Wing](https://safetywing.com/)
+- [Globelink](https://www.globelink.eu/)
 
 ## Beware Foreign Police & Customs
 
@@ -298,7 +829,7 @@ you never know how they will treat you in a foreign place and it varies signific
 
 ## Driving
 
-Ferries are surprisingly expensive, similar in price to an air fair.
+Ferries are surprisingly expensive, similar or more in price compared a plane ticket.
 
 This probably works out a little more economical if having more than one person in the car.
 
@@ -308,6 +839,40 @@ EU countries have town symbols along routes which automatically drop the speed l
 explicitly or not.
 
 This is a local knowledge that will get you done and your license revoked if you hit 100kmph. See [Latvia](#latvia).
+
+### Car Insurance
+
+Car insurance often includes 30-90 days cover in Europe, check each provider for details.
+
+**Beware: UK car insurance covers only EU countries and one or two others like Switzerland and Serbia, but NOT**
+**Montenegro, Albania or North Macedonia.**
+
+Not coincidentally these are 3 out of the 4 non-EU countries left in the Balkans
+and for good reason as they are clearly the least developed countries.
+
+**You will be forced by the police to buy expensive insurance at the border in those countries if you cannot prove you**
+**have a specific insurance covering their country.**
+
+Top car comparison sites:
+
+- [MoneySupermarket.com](https://www.moneysupermarket.com)
+- [CompareTheMarket.com](https://comparethemarket.com)
+- [Confused.com](https://motor.confused.com)
+
+### International Driving Insurance
+
+- [TourInsure](https://www.tourinsure.de/)
+- [Lobagola](https://www.lobagola-insurance.com/)
+  - [Lobagola Balkans](https://www.lobagola-insurance.com/insurance/balkans.html)
+
+#### Temporary Car Insurance Cover
+
+These are relatively very expensive in my experience so I avoid them.
+
+- [GoShorty](https://goshorty.co.uk/temporary-car-insurance/european-car-insurance/) - extremely expensive, £30-36 for
+  3 hours!
+- [TempCover](https://motor.tempcover.com/) - expensive, quoted me £273 for just 28 days
+- [DayInsure](https://www.dayinsure.com/)
 
 ### Driving Checklist
 
@@ -322,6 +887,7 @@ Police may refuse you entry or blackmail you out of money if you don't have all 
 - UK driver's license
 - International driver's permit (get this from the Post Office it's only around £5 but requires a passport photo)
 - Insurance certificate
+  - check it covers the specific country, see note above that non-EU countries are often not covered
 - Vehicle Registration V5C paper proof of ownership
   - [Serbian](#serbia) police refused to accept digital proof of ownership via insurance certificate
   - they insisted on physical original paper copy
@@ -340,6 +906,19 @@ Headlamp converters are basically headlamp stickers that change the glare direct
 way because you drive on the right in Europe instead of the left like in the UK.
 
 Apparently the French police are likely to pull you over and fine you if you don't have these.
+
+### EU Motorway Tolls
+
+Socialist Europeans find extra ways to tax you
+and you need to buy motorway passes when driving in several European countries or face fines.
+
+There are automated cameras so you are likely to get hit with fines if you don't buy one of these in advance.
+
+See here for some details of which countries and prices.
+
+<https://www.autoeurope.com/travel-tips/vignette-stickers/>
+
+Specific countries purchase apps and websites are listed under each country.
 
 ### Do Not Speed
 
@@ -361,25 +940,49 @@ between the countries.
 
 Let cars overtake you than fall for this unmarked police car entrapment.
 
-### EU Roaming
+### Parking
 
-My UK phone number worked across all European countries I travelled through, including:
+Use [Parkopedia](https://www.parkopedia.com/) to find parking and see its pricing up front to not get ripped off.
+Occasionally the parking might be slightly more expensive than Parkopedia's latest knowledge.
 
-- France
-- Germany
-- Poland
-- Lithuania
-- Latvia
-- Estonia
-- Sweden
-- Slovakia
-- Hungary
+There are apps for Parkopedia for iPhone and Android.
 
-It stopped working when I got to Serbia which is not in the EU.
+In the Parkopedia app, once you've selected the car park you can, share it to Waze to plan the journey there.
 
-Going from EU to non-EU was a bit of a jarring experience.
+Do not use Waze to get to the city and then try to find parking, that's more difficult, and Waze will often send you to
+some random part of a city, which has little there.
 
-There may be something to the EU integration project after all.
+## Travel Days Planning
+
+### Spreadsheet to Auto-Recalculate Dates
+
+If you want to see how to create a spreadsheet to auto-recalculate your travel dates from just the number of days
+you want to spend there, see the [Spreadsheets](spreadsheets.md#auto-calculate-dates) page which has section explaining
+how to do this.
+
+This is super useful to:
+
+- track how many days you intend to stay in each place
+- track your dates to book flights and accommodation for
+- sum the days per country or region such as EU Schengen for visa purposes (tourist visa doesn't reset across EU
+  countries!)
+
+### Digital Nomadding
+
+See also [Nomads.com](https://nomads.com/@harisekon) which has some overlap with the spreadsheet above as described in
+the [Remote Working & Digital Nomad](remote-working.md#digital-nomad) digital nomad section.
+
+### EU Schengen Visa Calculator
+
+The following basic EU visa days calculator sites are also useful, in addition to the above spreadsheet.
+
+This one is easy to use as you just have to click your entry / exit dates:
+
+<https://schengenareacalculator.com/>
+
+This one is less easy to use because you have to manually enter the dates:
+
+<https://www.visa-calculator.com/>
 
 ## Emigration
 
@@ -391,884 +994,33 @@ HMRC.
 It's best to plan ahead and leave just before April 5th to not contaminate another next tax year with HMRC able to claim
 tax off you that quite frankly the UK doesn't deserve at this point.
 
+Read this article on [my Medium](https://medium.com/@harisekhon) for more:
+
+[Tax Advice for Emigrating or Going Digital Nomad](https://medium.com/@harisekhon/tax-advice-for-emigrating-or-going-digital-nomad-c100fba461ed)
+
 ### Mail Redirection
 
 Brits may want to [redirect their mail overseas](https://www.postoffice.co.uk/mail/redirection) or
 get a [PO Box](https://www.royalmail.com/receiving/po-box) to collect on return visits.
 
-## Countries
+<!--
 
-Some more specific tips for different countries.
+Kosovo
 
-Number of Countries: 26
+Pristina
 
-### Austria
+- [Liburnia](https://maps.app.goo.gl/PAmycbRJ2gk2nTEJ9) - highly recommended by my travel buddy
+- [Bukë e Zemër](https://maps.app.goo.gl/DNi7sLHCn3PCmeEt9) - recommended by a frequent travel buddy of mine
 
-#### Vienna
+-->
 
-A good destination for a long weekend. This capital feels sparse to a Londoner.
+<!--
 
-The taxi driver said young people leave because there isn't enough to do,
-but it's good for a weekend city break with the girlfriend, especially if you like central european architecture,
-and just for this next recommendation.
+Luxembourg
 
-[Casino Wien](https://www.casinos.at/casinos/wien/casino-restaurant) is probably the best restaurant in Vienna. It is
-above the casino, which was surprisingly not fancy at all, smokey and low grade.
-But the restaurant above was a different story.
+**Not Recommended**:
 
-Try the Chateaubriand for two with your girlfriend - only top restaurants do it.
+- [Cyrano](https://www.tripadvisor.co.uk/Restaurant_Review-g190356-d950848-Reviews-Cyrano-Luxembourg_City.html) -
+  my travel bro said this was a waste of €30, could get better for half the price even back home in London
 
-### Belgium
-
-Nice small country, easy to drive from the UK, perhaps 2-3 hours after a ferry from Dover to Calais.
-
-#### Antwerp
-
-Port city, not much there from what I recall, been to a good restaurant there but can't remember its name.
-
-#### Brussels
-
-A bit of a western capital dump with high immigration, graffiti etc.
-
-#### Bruges / Brugge
-
-West Belgium is nicer, with Bruges having a historic town catering to tourists with restaurants, ice creams and
-coffee shops.
-
-[Marco Polo Noodles](https://www.marco-polo-noodles.com/) is recommended on the main strip.
-
-#### Ghent / Gent
-
-City with a mix of old and new, not quite as nice as Bruges, but better than Brussels.
-
-[Seli's Noodle Bar](https://www.selinoodlebar.be/) and [Soup Lounge](https://www.souplounge.be/) are both recommended
-here, and both are very affordable.
-
-#### Liege
-
-Liege is worse than Brussels, with high incidence of homelessness and street begging.
-
-#### Waterloo
-
-Gentrified town just south of Brussels where Napoleon lost the famous battle.
-
-[Le Bar À Soupe](https://www.facebook.com/people/Le-Bar-%C3%A0-Soupe/100063541241931/),
-Savage Burger and [Thai Cafe](https://thai.cafe/en) are recommended here, with the latter being more expensive.
-You will need your Google Translate camera app to translate the menu as they don't speak English.
-
-### Canada
-
-It's been most of a lifetime since I've been.
-
-Similar to the US, but with cheaper healthcare.
-
-#### Abbotsford
-
-Just outside Vancouver, the basements of their houses are bigger than UK houses.
-They often have gyms, cinema rooms, and pool tables there, as well as spare bedrooms.
-
-Coming back to the UK from there was quite a downgrade.
-
-### Czech Republic / Czechia
-
-Sorry but I can't call it Czechia.
-
-It's too close in naming to the war torn Chechnia.
-They didn't think about about the negative branding on this rename.
-
-#### Prague
-
-A brilliant historic capital, famed for cheap beer and English stag parties.
-There are literally signs on the front of venues that say *"No English stag parties"*.
-Such is the bad reputation of the English lads on holiday!
-
-Prague has many good restaurants and excellent architecture in the old town.
-
-### Cyprus
-
-Excellent holiday destination, but be warned, it is too hot in August.
-
-### Estonia
-
-The best of the three Baltic countries IMO, with prettier women and just generally feels slightly more developed.
-
-#### Tallinn
-
-Tallinn, the capital, can be done in 2 days. There are plenty of good restaurants to visit.
-
-[Olde Hansa](https://www.oldehansa.ee/) medievil restaurant is highly recommended. It's expensive but worth it.
-It has live medieval music, the staff are tunics, and the food is fit for royalty. You can even get bear on the menu.
-
-### France
-
-A surprising number of people in France do not speak English at all.
-
-If you've been travelling to other countries where they often accommodate English speakers this might come as a
-surprise for a country close to England.
-
-#### Dunkirk
-
-Good for a stopover on your way to Beligum from the UK ferrying to Calais.
-
-#### Paris
-
-*"A less good version of London"* as my colleague described it.
-
-The capital is heavily immigrated from Africa, with lots of graffiti and not very nice metro.
-
-I have literally been told off for not speaking French as a visitor. Much less welcoming than other parts of the world.
-
-The many Chateaux outside of Paris in the French countryside are nice though
-(I used to go every year with a company for retreats).
-
-### Georgia
-
-#### Tibilisi
-
-### Germany
-
-#### Driving in Germany
-
-The autobahn - the german highway - is long.
-
-If you have a need for speed, Germany is probably one of the best places to drive your car.
-
-Germany is a much bigger country which you feel after driving through Belgium and then hitting the much more vast
-driving distances in Germany.
-
-You can expect to drive for 8 hours to go from West to East Germany.
-
-#### Bonn
-
-TODO
-
-#### Berlin
-
-Berlin is a relatively affordable capital with good restaurants
-and what feels like much lower population density than London.
-
-It is not as popping as London at 9pm on a Saturday night as a result though.
-
-#### Brandenburg
-
-A small town to the West of Berlin with some old gothic buildings, a good place to walk around with an ice cream.
-
-#### Cologne
-
-Large cathedral city with a selection of restaurants.
-
-[Fräulein Herborths](https://www.fraeuleinherborths.de/) is recommended here.
-
-#### Dusseldorf
-
-A city with a great selection of restaurants.
-
-"Shawarma city" takeaway is recommended here, good food and good prices.
-There is often a queue around the corner for it across the hours of the evening.
-
-#### Essen
-
-Surprisingly mass immigrated with a lot of graffiti, with homeless people along the high street.
-
-Limited dining options, middle eastern probably being among the best options.
-
-#### Frankfurt
-
-Large metropolitan multicultural city with many restaurants.
-
-[MA'LOA Poké Bowl](https://maloa.com/) is recommended, and [BKK Thai Street Food](https://bkkthaistreetfood.com/) is also popular.
-
-#### Hanover
-
-A city with a lot of middle eastern restaurants.
-
-[Zambezi Springs](https://www.zambezi-springs.de/) is recommended here - rare access to good African cuisine.
-
-#### Königswinter
-
-Lovely small germanic town. This is what I imagined German paradise to look like.
-
-[Gasthaus Lichtenberg](https://gasthaus-lichtenberg.de/) is recommended here.
-
-#### Potsdam
-
-City just outside the west of Berlin.
-
-[KOI Sushi, Grill & Soup](https://koi-sushi-grill.eatbu.com/) is highly recommended here. They don't speak English but
-it's worth the translation effort, excellent food and good prices.
-The Thai tom yum soup and the sushi are recommended.
-
-### Italy
-
-#### Rome
-
-Been a long time, there are Gelato ice cream places everywhere.
-
-#### Venice
-
-Steps everywhere, do not go with children and especially not with a buggy. You will spend all day carrying the buggy up
-and down steps, which is hardly a holiday.
-
-Somewhat expensive, don't go for more than a long weekend.
-
-Also, got caught in a storm just before leaving, check the weather forecasts.
-
-### Moldova
-
-#### Chisinau
-
-You'll need to withdraw local currency before you leave the airport.
-
-There were hardly any taxis outside the airport and lots of people waiting around for them.
-
-The wall said 150-200 Moldovan Leu to the centre but when taxi drivers finally showed up they started quoting me
-300-400 and cash only.
-
-After my experience in Turkey and this I have started to dislike how taxi drivers are taking tourists for mugs.
-
-I ended up taking the Number 30 bus to the centre instead which was easy (again cash only, thanks to a good samaritan
-because I made the mistake of not withdrawing cash before leaving the airport).
-Some of these less developed countries like Moldova and Morocco demand cash usage (probably to evade taxes).
-
-- [La Placinte](https://maps.app.goo.gl/6yVUsipRBWWSfpBp8) - affordable but good quality chain restaurant, there are
-  several of them you don't have to go to this location
-
-- [Andy's](https://maps.app.goo.gl/Fewkr3FsDjW2rZfUA) - affordable chain known for pizzas,
-  the central one is 24x7 and packed at midnight on a Saturday as one of the few late night places available.
-
-- [Keller Holz Gastropub](https://maps.app.goo.gl/pr7sK1L7MnSwy5py5) - good food and beer menus, very good ambience and
-  location
-
-- [Sensei Cafe](https://maps.app.goo.gl/7vMPz3KZbppy3iudA) - good looking menu, little pricey by local standards,
-  outside terrace, has wifi, good ambience but shisha smokey indoors
-
-- [Cartal](https://maps.app.goo.gl/aDCJVHnDE2z2rWKQ7) - decent food, moderate prices, small indoor bar seating,
-  all restaurant seating is outdoors, card ok until 10pm, takes only cash 10pm-12am closing time
-
-- [Daily Dose](https://maps.app.goo.gl/LoncFKxbs6hvBCwJ6) - busy trendy late night cocktails and desserts venue,
-  no hot drinks for late night workers
-
-- [Amor Amar](https://maps.app.goo.gl/EroDq4vsNi2Zzd78A) - trendy small late night drinks & dessert venue with good
-  music, slightly expensive due to late night premium open until 2am
-
-- [Grill House](https://maps.app.goo.gl/WBD1c5GHKspgDf8A6) - established in 1995, decent quality, price `£££` -
-  the traditional Georgian soup Kharcho with veal is slightly spicey but very good and much bigger than anticipated,
-  watch out you can still handle your main.
-  New York Cheesecake was good, and fillet steak was decent but far from the best I've had internationally.
-  For non-alcoholics with a sweet tooth the local Compot fruit juice drink is recommended,
-  I had 3 of them and was probably well over my sugar intake a result.
-  Regarding, steak on a price trade off I'd probably try one of the other steak places next time.
-
-### Latvia
-
-The sour cabbage soup in a bread bowl is the local speciality.
-
-See the [Do Not Speed](#do-not-speed) section.
-
-#### Riga
-
-Riga, the capital, is nice for a visit for perhaps 2 days.
-
-You will run out of things to do.
-
-[Rozengrāls](https://rozengrals.lv/en/#nav) medieval restaurant is recommended.
-They do a suckling piglet spit roast only on Friday and Saturdays.
-
-Check out the view from St Peter's Church, they will charge €9 for entry to the tower.
-Capitalism applies even to the church it seems.
-
-### Lithuania
-
-Lithuania is noticeably poorer than Poland.
-
-There is a common Georgian restaurant chain which is well worth a visit for their traditional soup.
-
-#### Vilinus
-
-Vilnius, the capital, is worth a visit but you don't really need more than a couple days as it's not that big.
-
-[Chačapuri](https://www.facebook.com/GeorgianBakery/) is a recommended restaurant. It's a Georgian chain with an
-excellent traditional Georgian soup with beef and vegetables with a bit of spice.
-Another traditional dish Khachapuri is basically a similar to a pizza but with more dough around the edges.
-A bit bready for my liking but something you may want to try once.
-
-### Morocco
-
-The menus are in French!
-
-There are stray cats everywhere.
-
-I got food poisoning in Morocco.
-
-If you have a curious nose, Morocco is a land of intrigue with a bounty of interesting produce in bazaars.
-Not all smells are pleasant though.
-If you have a sensitive nose you may have had your nasal fill pretty quickly
-(or if you're struggling with food poisoning with many smells making your frequently stomach churn for days).
-Do not book a long time in Morocco on your first visit in case you don't like the constant smells.
-
-In the bazaars, do not let local people _"help"_ you by leading to you places,
-they are clearing getting kickbacks by the owners to lead you to 3.7 star places that you would not choose.
-When you decide to not stay, and they don't get their kickbacks, they then start hassling your for direct *tips*.
-
-Use Google Maps instead (see the [e-sim data section](#digital-e-sims) above) and rely on reviews of places with high
-numbers of reviews to reduce the likelihood of swaying / gaming the system fake reviews.
-
-Below are some I have visited personally and the better ones I'd recommend.
-
-There are also old women almost shouting at you as you pass by in native language (presumably aggressive begging).
-This is probably what western feminists would be doing if they weren't
-[stealing so much of your income](https://avoiceformen.com/featured/research-finds-that-as-a-group-only-men-pay-tax/)
-via the high tax and inflationary money printing feminist-socialist welfare state.
-I prefer the Moroccan system here as this situation implies more consent for men (you can safely ignore them),
-but actually the Moroccan tax rates are still far too high (of course they are, they have universal suffrage).
-
-#### Morocco Taxis
-
-- [InDrive](https://indrive.com/en-ma) - cheaper and good taxi app, you can pre-agree the fee up front
-  (still have to pay cash not in app)
-- [Careem](https://www.careem.com/) - the same super popular Careem app that I still had installed from [Dubai](#dubai)
-  worked here without having to change anything
-- Airport Taxis are the worst - do not use them - they overcharged me 3x
-  - they quote every idiot coming out of the airport 150 MAD which I only realized was a rip off when I asked a local
-    and was recommended to use the InDrive app to go back to the airport - it quoted me only 54 MAD for an instant
-    guarantee of any driver in the area without me bidding a price which could be lower
-  - The Airport Taxis are thieves, and they also even insist on cash
-
-#### Tangiers
-
-Beach city in northern Morocco.
-
-[Le Mekong](https://maps.app.goo.gl/Kot4Ec67qZNFuxTy8) - great sushi and vietnamese food.
-The spicy shrimp with rice was great and
-the Isla Blanca fried sushi with pineapple was excellent.
-They also do wooden boats filled with a selection of sushi.
-Has Wifi.
-
-[Boutique Burger](https://maps.app.goo.gl/k1D2MvJyEvzLWZcf6) - possibly the best fries I've ever had anywhere, crispy
-deep fried on the outside and light and fluffy on the inside.
-The popular Texas pulled beef burger was great,
-the greek salad was a good size with very good ingredients but an average dressing.
-Of course there is fresh orange juice at a reasonable price, as there is in many places in Morocco.
-Bring your travel adapter because there's Wifi and plugs by the tables.
-
-[Restaurant Cafe La Playa](https://maps.app.goo.gl/Lrep4uahqy88cERR6) - cash only but great Moroccan food, prices and
-service, with a very comfortable upstairs lounge area and wifi.
-I recommend the Tajine with beef and prunes,
-the Moroccan salad (side) and the lentils starters. The bread is home made and very good too,
-fresh squeezed juices are both well priced and good sizes.
-Wifi and plugs available upstairs, and if you site on one end youhave an open window view of the sea.
-Worth the discovery.
-Cash only.
-
-[Abou Tayssir](https://maps.app.goo.gl/MNNY17v67nSgrCZ16) - the Fattoush salad was amazing, the meat + rice dish of the day was ok
-but I'd probably go with individual plates next time.
-Fresh squeezed juice was good.
-Prices were similar to other places.
-No wifi, cash only.
-
-[Alma Kitchen & Coffee](https://maps.app.goo.gl/9bD1hQnonnX2w3TZ8) - good but a bit expensive by local standards.
-
-### Norway
-
-#### Oslo
-
-Nice to visit for a couple days,
-but everything was closed and quiet at 4pm on a Sunday afternoon when I arrive,
-very different to the hustle and bustle of London.
-
-### Poland
-
-One of my favourite countries.
-
-I was very surprised how nice Poland was upon arriving, not just in one or two places either, but across the country's
-major towns and cities.
-
-- Low immigration
-- Feels safer than the UK (supported by crime stats)
-- Food is good and reasonably priced
-- Airbnbs are expensive though
-- Poland is not a cheap country any more
-- Large country tht takens 6-8 hours to drive across
-- Parking is often cheap or free after 8pm, which is great for going out to get dinner in the centres.
-- Good and cheap Metro
-
-#### Bydgoszcz
-
-Historic town with lovely centre and plenty of good restaurants.
-
-An excellent stopover choice when driving across Poland.
-
-[Apteka Restauracja & Koktajlbar](https://restauracjaapteka.pl/menu/) is a recommended stop here for dinner and drinks.
-
-#### Częstochowa
-
-Not much there, dead if you're trying to use it for a late night stopover.
-
-#### Gdansk
-
-A large port city in the north of Poland.
-
-Good restaurants and old town.
-
-Not cheap. My Airbnb cost me more than in Dubai.
-
-One of my colleagues is a contractor in Gdansk so gave me the local tour.
-
-Taxis may rip you off if they hear you speak English.
-He said you can get away without paying them if they don't put the meter on.
-I don't know if this is true as I was driving so didn't try it.
-
-He compared Uber like taxis apps when we went out.
-
-Gdansk has ferry connections to Sweden.
-There was zero border control coming off the ferry from Sweden to Gdansk, which surprised me.
-
-[Slaska 19](https://www.tripadvisor.com/Restaurant_Review-g274725-d13810673-Reviews-Slaska_19-Gdansk_Pomerania_Province_Northern_Poland.html)
-is a good restaurant away from the centre with an affordable weekday lunch menu and good wifi.
-
-#### Katowice
-
-Surprisingly busy city with large central communal areas and nightlife.
-
-[Tatiana](https://www.restauracjatatiana.pl/) restaurant is recommended here.
-
-[Alahamora - magiczna kawiarnia](https://alahamora.pl/) is a cafe treat for Harry Potter fans.
-Unfortunately they have no wifi.
-
-#### Krakow
-
-Tourist hotspot.
-
-*"F\*ck Warsaw, go to Krakow!"*, one of my Polish colleagues told me. He was right.
-
-#### Łódź
-
-Medium sized city, mall and restaurants, but lacks the historical centre attraction of other Polish cities.
-
-#### Nowy Sącz
-
-Nice small centre, good for a coffee stopover.
-
-[Sofi Len Cafe](https://www.instagram.com/sofilen_kawiarnia) is recommended here.
-
-#### Poznan
-
-Historic town with lovely centre and plenty of good restaurants.
-
-My first stopover in Poland when driving from Germany. I was pleasantly surprised how nice it was.
-
-An excellent stopover choice when driving across Poland.
-
-#### Sopot
-
-The most expensive area in Poland, near Gdansk.
-
-Good beaches, restaurants, and walkways.
-
-#### Warsaw
-
-Decent low pressure capital.
-
-One of my colleagues moved back to Warsaw as a contractor.
-
-### Hungary
-
-#### Avoid northern counties
-
-Do not drive through the north Hungarian counties, there are serious ghettos that feel very unsafe:
-
-Story here:
-
-<https://medium.com/@harisekhon/the-revelation-of-why-hungary-is-so-anti-immigration-059259e51cf2>
-
-#### Budapest
-
-An excellent holiday destination for a long weekend with the girlfriend.
-
-[Caviar & Bull](https://caviarandbull.hu/menu/) is an amazing dining experience to take the girlfriend if you're in the
-mood to drop £300 on a fancy night out. The food is easily among the best I've ever haad around the world.
-
-#### Szolnok
-
-A modest town with a small centre to the east of the country.
-
-A useful stopover point but there is not much to do there, don't spend more than a couple days there.
-
-You will struggle to get fed once it hits 9pm as the kichens close much earlier than their, so make sure you dine earlier.
-
-[Bajnok Étterem](http://uj.bajnoketterem.hu/) is the best place I ate at here, followed by
-[New York café & bistro](https://www.newyorkbistro.hu/).
-[OneBistro](https://maps.app.goo.gl/fswF1W8nTAVzz9N97) is a late night cheap eat open until 10pm.
-
-[Guri Sörbisztró](https://www.facebook.com/profile.php?id=100040639554637) is best late night drinking spot open until
-midnight when everything else is dead. Try the pink tonic if you're non alcoholic.
-
-[Korzó Kávéház](https://maps.app.goo.gl/RarMxm48ziz5TxMX9) is another drinks only place open until midnight.
-
-[TiszapArt Café](https://tiszamozi.hu/) is open until 11pm, with good lemonades.
-
-Despite it's 4.5 rating on Google, I was not impressed with the food,
-either starter or main, at [Evezős Csárda](http://www.evezoscsarda.hu/Etlap.cshtml) and would give it a miss.
-
-### Philipines
-
-A very hot, mosquito-ridden country with overpopulated streets and wealth inequality,
-which means a foreigner can live well with Western money.
-
-Famed for its more traditional women,
-many men known as *"Passport Bros"* go to find something more resembling wives than even married men in the West have.
-
-There are a lot of missing signs, apparently because locals take them down and melt them for money.
-
-#### Manilla
-
-In the capital, the malls were relatively sparse since a lot of the poorer locals were kept out by security.
-
-Kidnappings and random of the children of the rich are also a problem, with gated communities having their own security
-forces.
-
-### Serbia
-
-I used the <https://www.airalo.com/> e-sim data only for $14 for 5GB valid for 30 days.
-
-#### Indoor Smoking, Outdoor Smoking, Smoking Everywhere
-
-It is still legal to smoke indoors in Serbia.
-
-This really isn't the EU.
-
-Unfortunately people seem to smoke a lot in Serbia.
-I've changed tables while dinning outdoors at al fresco restaurants, only to have someone else then start smoking next
-to me at another table.
-
-I've moved indoor tables to escape from smokers,
-and even cut short a coffee evening in frustration with people chain-smoking nearby due to getting fed up with all the
-smoke inside the coffee shop.
-
-You have to feel sorry for the Serbian wait staff subjected to second-hand smoke all day every day at work.
-
-Quite shocking that Serbia permits this.
-
-I've asked the locals about this and they said there are a couple non-smoking venues *"but nobody goes there"*.
-
-#### Belgrade Taxis
-
-[Car Go](https://appcargo.com/en) - like Uber. Didn't find any drivers, had to use Pink Taxi instead.
-
-[Pink Taxi](https://pinktaxi.info/) has mixed reviews, but it worked.
-
-Lux Taxi app couldn't even register using my UK mobile number - I got
-[this error](https://www.linkedin.com/posts/harisekhon_imagine-having-a-top-taxi-app-in-belgrade-activity-7242252581597585409-MRlJ)
-🤪
-
-#### Driving in Serbia
-
-Expect a 3 hour queues at the Serbian border.
-
-I asked a guy in the queue of cars in front of me and he said 3-4 hours was common.
-
-**IMPORTANT** - Make sure you have every document possible including your vehicle registration otherwise the Serbian police
-will either refuse to let you in or blackmail you out money. Don't ask me how I know this.
-
-See the [Driving Checklist](#driving-checklist) above.
-
-I also saw several people pulled over by Serbian police.
-
-Be wary of Serbian police. *"You are not in the EU now"* as they said to me.
-
-Overall, a horrible experience driving to Serbia and I would not do it again.
-
-You immediately feel like you've gone from Europe to some dangerous 3rd world country where you are more worried about
-the police themselves and corruption.
-
-#### Belgrade
-
-The capital is reasonable in the center. Overall it is slightly cheaper to dine than other European cities.
-
-The top end of the range is typically comparable to other european cities.
-
-The lower end is typically about half that.
-
-[Street Pasta Bar - Sremska](https://maps.app.goo.gl/woUhBnmt8973aEqH7) - is my top pick here - cheap, fresh juices,
-good wifi and young crowd (probably due to it being cheap).
-I've spent many hours on their wifi with regular top ups of juices and smoothies because they're so affordable,
-on top of lunch and dinner.
-Closes earlier than other restaurants at 9pm so it's better as a daytime place.
-Non-smoking, a rare find in Belgrade.
-
-[Elephant's Food House](https://maps.app.goo.gl/aK24TL7T6c3cm3xKA) - another good cheap lunch type place.
-Closes early at 6pm.
-
-[Kafeterija Magazin 1907](https://maps.app.goo.gl/PwaZbmMLMU7zTr1Z6) -
-good coffee shop with 2 levels right in the centre, often busy and open late until 11pm.
-
-[Fit Bar](https://maps.app.goo.gl/S6nsPw9Ckj9v34Jg8) - small healthy eat place - one of the rare no smoking places in
-Belgrade
-
-[Burger House Bros Centar](https://maps.app.goo.gl/C5FyhgFp16gPN11H9) - very good burger restaurant
-
-[Boutique #2](https://maps.app.goo.gl/1svhc4v3bq3aAwfh7) - prime location restaurant for drinks or food on the main
-parade, very popular and good
-
-[Trattoria Pepe](https://maps.app.goo.gl/gdP9dLWxAVzGYEdV6) - excellent Italian 5 minutes walk from the centre -
-worth the walk
-
-[Casa Nova](https://maps.app.goo.gl/mPPNKEYf2M5FKnm49) - has both outdoor and a non-smoking section on the upper level
-rear section (quiet section, everybody in Belgrade seems to smoke)
-
-[Velika Skadarlija](https://maps.app.goo.gl/jHfCipxrNiK4Bzg66) - good restaurant with great outdoor seating area, with
-the odd plug if you need it
-
-#### Novi Sad
-
-Good central district of restaurants.
-
-Cheaper Airbnbs as 1.5 hour drive from Belgrade.
-
-[Petrus Caffe](https://maps.app.goo.gl/1sZJoLAsLn5Vkq6m8) - excellent restaurant, very popular with large outdoor
-seating area and excellent drinks menus, good for dining or drinks, open until midnight
-
-[Kombinat](https://maps.app.goo.gl/6Z2CV3UbhZTDLAaCA) - cool late night cafe open until 11pm
-
-[Loft Downtown](https://maps.app.goo.gl/xQdXBJek5JBX17i49) - very popular cafe & restaurant with outdoor seating
-
-[Bistro " Pastai"](https://maps.app.goo.gl/Vro8m7vM3eiKFzKn7) - a local cheap eat pasta place with good juices
-
-### Slovakia
-
-#### Kosice
-
-Small city with a nice historic centre, but none of the venues I tried impressed me.
-
-Would try [Slavia](https://www.kaviarenslavia.sk/jedalny-listok/) if I were to visit gain.
-
-### South Africa
-
-A dangerous high crime country due to high inequality (the Gini coefficient of inequality correlates to crime).
-
-You will need a car in South Africa as its road infrastructure and distancing is similar to the US.
-
-Make sure to lock your doors immediately to reduce risk of carjacking.
-
-#### Johannesburg
-
-Johannesburg, the capital, is where the biz is, where people cite Cape Town by the beach for leisure.
-
-Houses have bars on their windows, barred gates with 2 dogs, and guns for good reason.
-Violent home invasions are a common problem -
-one of my colleauges in the UK emigrated from South Africa after a home invasion
-where they pulled the gate off and invaded a mere 30 minutes after his family had left.
-You may only get one close call like that in life.
-
-Stick to the foreigner areas of Sandton and Rosebank. Seriously.
-
-##### Sandton
-
-Has a good mall, restaurants and hotels. The Da Vinci hotel is nice for example.
-
-Nelson Mandela square should be relatively safe thanks to being surrounded by restaurants and mall with security.
-
-##### Rosebank
-
-Also has a mall and good restaurants.
-
-Restaurants on the street outside the mall are patrolled by street security to ensure you make it back to your car.
-
-### Sweden
-
-Ferry from Tallinn in Estonia to Sweden and then another ferry down to Gdanks, Poland, is a way out if your license gets suspended for speeding in Latvia.
-
-Police pulled me over coming off the ferry from Tallinn, Estonia,
-and did a very invasive search of my car and all luggage, they opened everything, down to my toiletries and car bonnet.
-
-Story here:
-
-<https://medium.com/@harisekhon/the-police-attention-you-get-driving-a-drug-dealer-looking-car-through-europe-d38c5919835f>
-
-#### Stockholm
-
-The centre of Stockholm is ok for a day or two, probably not more. It's weirdly broken up into small island-like lands,
-and lacks the impressive design and architecture of the central european capitals.
-The girls are pretty of course.
-
-The roads are not well designed and it's easy to take a wrong turn,
-and parking in a problem in the centre, unlike Warsaw for example.
-
-Do not stay in Kista. Mass immigrated and not one of the safest feeling places.
-The Memory Hotel in Kista was cheap for a reason - it was absolutely dead in August like I have never seen before,
-no staff most of the time or seeing other guests.
-
-[Restaurang Kryp In](https://restaurangkrypin.se/) is good in the centre.
-
-### Turkey
-
-Inflation and rent prices make this not a good value for money destination.
-
-Expensive restaurants and there are only so many times you can eat kebab / mixed grill / dips.
-
-#### Istanbul
-
-Istanbul is one big tourist trap.
-
-I am shocked how expensive Istanbul is, triply so arriving from Morocco.
-
-Restaurants will often cost £30 per head without alcohol for food that would be cheaper even in the UK.
-
-£6 for an orange juice when it was £1.50-£2 in Morocco the week earlier...
-£2-4 for a water. Meanwhile in the supermarkets a fresh squeezed juice in a bottle is £1.50 or a 500ml water bottle for 10-20p.
-
-The locals says it is because of the rent prices and that Antalya is even more expensive.
-
-It hardly even matters which restaurant you go to, it's like they're all roughly price fixing rather than competing.
-
-Google Maps reviews can't be trusted - almost everywhere seems to have 4.7, 4.8, 4.9, or 5.0 ratings for places that
-would be 4.1 - 4.3 in the rest of the world.
-
-You follow to a "recommended" place and find it even more overpriced than the others.
-Either reviews are not factoring in price or there is a lot of fake review inflation in Istanbul.
-
-The airport is, expectedly even worse.
-£17 for a bolognese that would be £5-8 anywhere else, £20 for a burger etc.
-The burgers look lowed grade compared to Gourmet Burger Kitchen back home.
-
-Taxis are bad too.
-
-One taxi driver quoted me "20 Euros" (not even their local currency) to go 1 mile down the road!
-
-I asked 2 taxi drivers
-to take me from Gayrettepe to Sultanahmet and they flat out refused in Turkish without speaking English.
-
-I tried the [BiTaxi](https://www.bitaksi.com/en) app and it failed to find drivers for me several times,
-even with tips pre-added.
-I ended up walking the last mile to my accommodation.
-
-I managed to get a taxi to the airport when leaving
-but the taxi driver charged me 1000 on the BiTaxi app and then another 1700 on card in person.
-
-### UAE
-
-The United Arab Emirates is one of the most civilized and safe societies I have ever seen.
-
-They have zero tolerance for criminals or welfares spongers.
-They would literally deport half of the UK, which is why it's a nicer place.
-
-#### Dubai
-
-Dubai is more of a city-state than a city as Europeans would understand it.
-
-It would be extremely difficult to walk due to the large distances and high heat.
-
-*"I don't walk anywhere in Dubai"* one of my Brit connections told me. I saw why after I arrived. Even a 15 minute walk
-to lunch will leave you a sweaty mess by the time you get there.
-People drive with air conditioning and dive into malls, offices and restaurants with air conditioning.
-
-I used Virgin Mobile on a prepaid contract for around £200 for the year which was the cheapest deal I could find.
-
-#### Dubai Taxis
-
-You will need a car or taxi everywhere.
-
-[Careem](https://www.careem.com/) is the everything app, including Taxis.
-
-It does everything from Uber-style taxis, to food delivery, to rental bicycles.
-
-#### Visa
-
-You are required to get a medical blood screening, chest x-ray, biometrics like fingerprinting to get a visa here.
-
-Once you have residence you are no longer allowed to use your UK driver's license
-and will get a shock as your car rental company refuses to release the car to you.
-
-You will then need to Careem around the city to get your Emirates ID and then your Drivers License which will require
-local bank or cash payment.
-
-#### Weather
-
-The weather is so hot even by May some people use sun umbrellas - so hot that it broke my car phone holder.
-Rich people usually leave Dubai and go to Europe for the summer.
-Copying them was how a lot of the European countries on this list were covered!
-
-#### Banking
-
-- [Mashreq](https://www.mashreq.com/) is the easiest to use, app-only like Starling or Monzo
-- [ADCB]() is the next best, but the premium account is a big hassle and has a minimum balance requirement
-- [Emirates NBD](https://www.emiratesnbd.com/en) has a bad reputation among my peers for being a lot of hassle
-  - they were a hassle to open, wanting salary certificate
-  - even closing the account is difficult apparently
-- [HSBC](https://www.hsbc.ae/) was a similar hassle to NBD above wanting salary certificate addressed specifically to them
-  - much more hassle, not like HSBC back in the UK, most UK banks just open accounts easily
-  - even already having an HSBC UK account doesn't help
-
-### United Kingdom
-
-See [The UK Decline - What I Learnt on UK Tour 2024](https://medium.com/@harisekhon/the-uk-decline-what-i-learnt-from-my-uk-tour-2024-84347efced9b).
-
-### USA
-
-You will get finger printed entering the country.
-
-#### California
-
-California, the once golden place is not what it used to be after doubling its population from mass immigration.
-
-Weather is great though, restaurants are decent (London's restaurants are better though).
-
-Many of these places are only places to go on company expense as the hotels will set you back quite a lot per night.
-
-Americans are now fleeing the failing Democrat state for Texas, which will then become the next domino to fall.
-
-##### Irvine
-
-A nicer more suburban manufactured city than LA, with decent shops and restaurants.
-
-##### Los Angeles
-
-A giant square grid of blocks. From the plane it looks like The Matrix.
-
-Hollywood boullivard is nothing fancy in the grand scheme of things.
-It's just a tourist strip of a few restaurants and shops.
-
-Rodeo Drive is the upmarket shopping road of expensive designer brands.
-
-Beverley Hills are not as fancy as one would believe from Beverley Hills Cop movies.
-More like a $1M+ middle class area.
-
-[Lucille's Smokehouse BBQ](https://lucillesbbq.com/menu) is the best BBQ I've had in the entire world.
-I've been searching for a BBQ place to match it across countries for over a decade now and nothing has come close.
-The warm apple-cinnamon bun starters are amazing as are the giant beef ribs with the best BBQ glaze I've ever had.
-My colleagues and I drove half way across LA to go to this because everybody knows it is the best.
-If you're in LA or one of their expanded locations, do not miss it.
-Looks like they now have a couple branches in Vegas and one in Phoenix, Arizona too.
-
-[Crustacean](https://crustaceanbh.com/menu/) in Beverley Hills is a good upmarket seafood restaurant with fish in the
-see-through floor as you enter. Impressive. Recommended if you want something a bit more upmarket.
-
-##### Palo Alto
-
-A tech hub town with serious tech millionaire money, as evidenced by things like the McLaren showroom.
-
-It was the first place I ever recall seeing a Tesla in 2013. When the traffic lights turned green,
-for a moment I thought our car wasn't even moving relative to seeing it take off and leaving us behind in our
-Infinity Q37.
-
-Quite nice area, if you can afford it.
-
-##### San Diego
-
-A somewhat more chill city than Los Angeles and San Francisco.
-
-Restaurants were not that cheap though.
-
-##### San Francisco
-
-Too expensive for even most of my engineer colleagues at Cloudera to live in.
-
-There were homeless people on every block in 2013 when I was there. It's apparently much worse now.
-
-Beware if you walk just one block west of the central shopping district you'll end up on the road of Tenderloin
-which is full of drug addicts in broad daylight.
-Walking through a group of 4 drug addicts on the pavement is not a pleasant experience
-even if you think you could take them.
-Not recommended for women.
-
-[Boudin](https://boudinbakery.com/) is a local chain famous for its sour dough bread and soup in bread bowls.
+-->

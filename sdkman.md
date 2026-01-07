@@ -1,6 +1,6 @@
 # SDKman
 
-SDK Manager installs and manages multiple versions od JDKs .
+SDK Manager installs and manages multiple versions of JDKs.
 
 Originally it was just for JDK languages and their main build systems,
 but has in recent years extended to a wider list of support technologies:
@@ -23,8 +23,13 @@ but has in recent years extended to a wider list of support technologies:
   - [Install another SDK version](#install-another-sdk-version)
   - [Switch to use another SDK Version](#switch-to-use-another-sdk-version)
   - [List all the selected SDKs](#list-all-the-selected-sdks)
+  - [List the Version of a Specific SDK](#list-the-version-of-a-specific-sdk)
   - [Delete a version of Java JDK installed](#delete-a-version-of-java-jdk-installed)
   - [Clean up temp space](#clean-up-temp-space)
+- [Auto switch to the correct SDK using `.sdkmanrc`](#auto-switch-to-the-correct-sdk-using-sdkmanrc)
+- [Troubleshooting](#troubleshooting)
+  - [Internet Not Reachable despite being online](#internet-not-reachable-despite-being-online)
+  - [Can't Find Java Version to Install That is Clearly There](#cant-find-java-version-to-install-that-is-clearly-there)
 
 <!-- INDEX_END -->
 
@@ -52,7 +57,7 @@ export SDKMAN_DIR="/Users/hari/.sdkman"
 
 Future shells will then automatically call `/Users/hari/.sdkman/bin/sdkman-init.sh` to add paths like this:
 
-```none
+```text
 /Users/hari/.sdkman/candidates/scala/current/bin
 /Users/hari/.sdkman/candidates/sbt/current/bin
 /Users/hari/.sdkman/candidates/maven/current/bin
@@ -64,13 +69,15 @@ Future shells will then automatically call `/Users/hari/.sdkman/bin/sdkman-init.
 early in your `$PATH` list to default to using whatever version of each SDK SDKman has installed and switched to
 internally via symlinks in each case to:
 
-```none
+```text
 /Users/hari/.sdkman/candidates/<name>/<version>
 ```
 
 and are atomically switched to different versions by the `sdk use` command.
 
 ## Using SDKman
+
+<https://sdkman.io/usage/>
 
 ### Help
 
@@ -100,6 +107,17 @@ sdk list
 sdk list java
 ```
 
+You will see a lot of different options for Java JVM implementations.
+
+See:
+
+- [Java](java.md) page's [JVM Distributions](java.md#jvm-distributions) section
+- SDKman [JDKs](https://sdkman.io/jdks) page
+- SDKman [SDKs](https://sdkman.io/sdks) page
+
+TL;DR just use the Temurin community-driven OpenJDK distribution as it has the most versions.
+The Java.net one doesn't have older JVM releases you may need.
+
 ### Install the latest Java SDK
 
 ```shell
@@ -108,16 +126,33 @@ sdk install java
 
 (can also shorten to `sdk i java`)
 
-### Install another SDK version
+You should see this puts the Java version first in your `$PATH`:
 
 ```shell
-sdk install java <version>
+which java
+```
+
+```text
+/Users/hari/.sdkman/candidates/java/current/bin/java
+```
+
+### Install another SDK version
+
+Choose from the `Version` column string from the `sdk list java` output -
+so it's not quite a semver `x.y.z` due to the suffix differentiator between different JDK distributions.
+
+```shell
+version="21.0.4-tem"
+```
+
+```shell
+sdk install java "$version"
 ```
 
 ### Switch to use another SDK Version
 
 ```shell
-sdk use java <version>
+sdk use java "$version"
 ```
 
 ### List all the selected SDKs
@@ -130,7 +165,7 @@ sdk current
 
 Output:
 
-```none
+```text
 Using:
 
 gradle: 7.3.3
@@ -152,7 +187,7 @@ sdk current java
 
 Output:
 
-```none
+```text
 Using java version 21.0.4-tem
 ```
 
@@ -162,7 +197,7 @@ Using java version 21.0.4-tem
 sdk rm java 21.0.4-tem
 ```
 
-```none
+```text
 Deselecting java 21.0.4-tem...
 
 Uninstalling java 21.0.4-tem...
@@ -176,8 +211,126 @@ sdk flush
 
 Output:
 
-```none
+```text
        9 archive(s) flushed, freeing 619M       /Users/hari/.sdkman/archives.
       20 archive(s) flushed, freeing 104K       /Users/hari/.sdkman/tmp.
        9 archive(s) flushed, freeing  48K       /Users/hari/.sdkman/var/metadata.
 ```
+
+## Auto switch to the correct SDK using `.sdkmanrc`
+
+Generate an `.sdkmanrc` file in the current directory:
+
+```shell
+sdk env init
+```
+
+Then either run this:
+
+```shell
+sdk env
+```
+
+or set `sdkman_auto_env=true` in `$HOME/.sdkman/etc/config` (this will only apply to new shells):
+
+```shell
+perl -pi -e 's/^\s*sdkman_auto_env=.*/sdkman_auto_env=true/' ~/.sdkman/etc/config
+grep sdkman_auto_env ~/.sdkman/etc/config
+```
+
+(`perl` is more portable than `sed -i` which requires an arg on Mac)
+
+## Troubleshooting
+
+### Internet Not Reachable despite being online
+
+If you get this error:
+
+```text
+$ sdk list
+==== INTERNET NOT REACHABLE! ===================================================
+
+ Some functionality is disabled or only partially available.
+ If this persists, please enable the offline mode:
+
+   $ sdk offline
+
+================================================================================
+
+This command is not available while offline.
+```
+
+Check your connection like this:
+
+```shell
+curl -I https://api.sdkman.io/2/healthcheck
+```
+
+```text
+HTTP/1.1 200 OK
+Server: nginx/1.19.10
+Date: Thu, 27 Feb 2025 08:02:39 GMT
+Content-Type: application/octet-stream
+Content-Length: 24
+Connection: keep-alive
+Content-Type: text/plain
+```
+
+Check if SDKman can fetch the list manually:
+
+```text
+curl -s https://api.sdkman.io/2/candidates/all
+```
+
+```text
+activemq,ant,asciidoctorj,ballerina,bld,bpipe,btrace,concurnas,connor,coursier,cuba,cxf,detekt,doctoolchain,flink,gaiden,gcn,grace,gradle,gradleprofiler,grails,groovy,groovyserv,hadoop,helidon,hsc,http4k,infrastructor,jarviz,java,jbake,jbang,jetty,jextract,jikkou,jmc,jmeter,joern,jreleaser,karaf,kcctl,ki,kobweb,kotlin,kscript,ktx,layrry,leiningen,liquibase,maven,mcs,micronaut,mulefd,mvnd,mybatis,neo4jmigrations,pierrot,pomchecker,quarkus,sbt,scala,scalacli,schemacrawler,skeletal,spark,springboot,sshoogr,taxi,test,tomcat,toolkit,vertx,visualvm,webtau,znai
+```
+
+Clear SDKman cache and then retry `sdk list`:
+
+```shell
+sdk flush candidates
+rm -rf ~/.sdkman/var
+sdk list
+```
+
+If all else fails:
+
+```shell
+rm -fr ~/.sdkman
+```
+
+and then re-install:
+
+```shell
+curl -s "https://get.sdkman.io" | bash
+```
+
+### Can't Find Java Version to Install That is Clearly There
+
+```shell
+sdk current
+```
+
+```text
+Using:
+
+java: 21.0.6-tem
+```
+
+```shell
+sdk install java 21.0.6-tem
+```
+
+```text
+Stop! java 21.0.6-tem is not available. Possible causes:
+ * is an invalid version
+ * java 21.0.6-tem binaries are incompatible with your platform
+ * java 21.0.6-tem has not been released yet
+
+Tip: see all available versions for your platform:
+
+  $ sdk list java 21.0.6-tem
+```
+
+Launch a new shell - it is a state problem with SDKman.

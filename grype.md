@@ -1,6 +1,6 @@
 # Grype
 
-<https://github.com/anchore/grype>
+[:octocat: anchore/grype](https://github.com/anchore/grype)
 
 Security scanning CLI tool for vulnerabilities, leaked secrets and misconfigurations.
 
@@ -61,8 +61,16 @@ grype image "$(docker inspect --format='{{.Image}}' "$container_id_or_name">)" -
 
 ## Jenkins CI/CD
 
+[HariSekhon/Jenkins](https://github.com/HariSekhon/Jenkins)
+
 Jenkins CI/CD functions for running Grype are available here:
 
 [HariSekhon/Jenkins - vars/grype.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/grype.groovy)
 
 [HariSekhon/Jenkins - vars/grypeFS.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/grypeFS.groovy)
+
+From
+[HariSekhon/Diagrams-as-Code](https://github.com/HariSekhon/Diagrams-as-Code#jenkins-cicd-on-kubernetes)
+repo:
+
+![](https://raw.githubusercontent.com/HariSekhon/Diagrams-as-Code/master/images/jenkins_kubernetes_cicd.svg)

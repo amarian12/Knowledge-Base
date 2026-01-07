@@ -13,6 +13,7 @@
 - [TOML](#toml)
 - [XML](#xml)
   - [XML Lint](#xml-lint)
+  - [XML Starlet](#xml-starlet)
 - [YAML](#yaml)
 - [HBase vs Parquet vs Avro](#hbase-vs-parquet-vs-avro)
 
@@ -62,7 +63,7 @@ See the [Parquet](parquet.md) doc page.
 - basic stats embedded (min, max, sum, count)
 - no schema evolution yet
 
-```none
+```text
 -d   dumps data rather than metadata Hive 0.15 / 1.1 onwards
 --rowindex <cols>
 -t  timezone of the writer  Hive 1.2 onwards
@@ -110,7 +111,7 @@ schema-compressed JSON - can omit some syntax which is inferred
 
 looks like there is a default cson module in Python 2.7
 
-<https://github.com/gt3389b/python-cson>
+[:octocat: gt3389b/python-cson](https://github.com/gt3389b/python-cson)
 
 ```shell
 pip install python-cson
@@ -152,6 +153,15 @@ Or pipe XML in via standard input to validate and and use `--format` to pretty p
 
 ```shell
 xmllint --format - < "$file.xml"
+```
+
+### XML Starlet
+
+An excellent program that can format, validate and select data from XML,
+and even escape / unescape special XML characters like `&amp;` vs `&`.
+
+```shell
+xmlstarlet --help
 ```
 
 ## YAML

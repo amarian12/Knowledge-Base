@@ -5,6 +5,7 @@ Visual Studio Code is a popular free IDE from Microsoft.
 <!-- INDEX_START -->
 
 - [Download](#download)
+- [Run](#run)
 - [VS Code CLI](#vs-code-cli)
 - [Extensions](#extensions)
   - [Install Extensions](#install-extensions)
@@ -15,11 +16,19 @@ Visual Studio Code is a popular free IDE from Microsoft.
 
 <https://code.visualstudio.com/docs/>
 
+## Run
+
+From the `Applications` icon or on the command line:
+
+```shell
+open -a "Visual Studio Code"
+```
+
 ## VS Code CLI
 
 Ensure the `code` CLI binary is in your `$PATH` by adding this directory to the `$PATH`:
 
-```none
+```text
 /Applications/Visual Studio Code.app/Contents/Resources/app/bin
 ```
 
@@ -70,6 +79,7 @@ ms-vscode.cmake-tools
 ms-vscode.makefile-tools
 ms-vscode.vscode-node-azure-pack
 ms-vscode.vscode-typescript-next
+terrastruct.d2
 vsciot-vscode.azure-iot-toolkit
 vscjava.vscode-maven
 vscjava.vscode-gradle
@@ -88,7 +98,7 @@ done
 
 output:
 
-```none
+```text
 Installing extensions...
 Installing extension 'mads-hartmann.bash-ide-vscode'...
 Extension 'mads-hartmann.bash-ide-vscode' v1.42.0 was successfully installed.

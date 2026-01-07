@@ -3,6 +3,7 @@
 <!-- INDEX_START -->
 
 - [PaaS - Platform as a Service](#paas---platform-as-a-service)
+- [URL Shorteners](#url-shorteners)
 - [SSG - Static Site Generators](#ssg---static-site-generators)
   - [Jekyll](#jekyll)
   - [Hugo](#hugo)
@@ -32,6 +33,11 @@
 
 See the [PaaS](paas.md) doc.
 
+## URL Shorteners
+
+- [TinyURL](https://tinyurl.com)
+- [Bit.ly](https://bit.ly)
+
 ## SSG - Static Site Generators
 
 Generate static HTML pages from code or markdown. Jekyll is an obvious example, used with GitHub Pages.
@@ -44,7 +50,7 @@ List of SSGs:
 
 <https://jekyllrb.com/>
 
-<https://github.com/jekyll/jekyll>
+[:octocat: jekyll/jekyll](https://github.com/jekyll/jekyll)
 
 GitHub Pages has native support for Jekyll.
 
@@ -58,7 +64,7 @@ And this resulting GitHub Page: <https://harisekhon.github.io/CI-CD/>
 
 <https://gohugo.io/>
 
-<https://github.com/gohugoio/hugo>
+[:octocat: gohugoio/hugo](https://github.com/gohugoio/hugo)
 
 Written in Go.
 
@@ -79,7 +85,7 @@ Builds [Jekyll](#jekyll) from GitHub repo integration for CI/CD upon pushes.
 
 <https://flyscrape.com>
 
-<https://github.com/philippta/flyscrape>
+[:octocat: philippta/flyscrape](https://github.com/philippta/flyscrape)
 
 *"Doesn't require advanced programming skills"*
 

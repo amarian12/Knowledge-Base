@@ -4,18 +4,27 @@
 
 - [GitHub `README.md`](#github-readmemd)
 - [MKDocs](#mkdocs)
+- [Obsidian](#obsidian)
+- [GitBook](#gitbook)
 - [Quarto](#quarto)
 - [Markdown Best Practices](#markdown-best-practices)
   - [Lint your Markdown](#lint-your-markdown)
+    - [Markdownlint Exceptions](#markdownlint-exceptions)
   - [URL Hyperlinking](#url-hyperlinking)
   - [Relative Link Paths](#relative-link-paths)
   - [Code Blocks vs Inline Code](#code-blocks-vs-inline-code)
+  - [Split Code Block Commands and Outputs to Separate Blocks](#split-code-block-commands-and-outputs-to-separate-blocks)
   - [Syntax Highlighting](#syntax-highlighting)
   - [IntelliJ Code Block Execution](#intellij-code-block-execution)
 - [Emojis](#emojis)
 - [Badges & Icons](#badges--icons)
   - [Badges](#badges)
+    - [Shields.io](#shieldsio)
+      - [Shields.io Tips](#shieldsio-tips)
+    - [GitHub Readme Stats](#github-readme-stats)
   - [Icons](#icons)
+    - [Simple Icons](#simple-icons)
+    - [More Icons](#more-icons)
     - [Removed Icons](#removed-icons)
       - [LinkedIn Icon](#linkedin-icon)
       - [Oracle Icon](#oracle-icon)
@@ -27,6 +36,8 @@
   - [Star Charts](#star-charts)
 - [Link Team Support Numbers to WhatsApp Desktop](#link-team-support-numbers-to-whatsapp-desktop)
 - [Online Markdown Preview Editors](#online-markdown-preview-editors)
+- [Memes](#memes)
+  - [Peacocking Your Code](#peacocking-your-code)
 
 <!-- INDEX_END -->
 
@@ -40,6 +51,14 @@ repo's home page - put links in it to your other markdown `*.md` doc files in yo
 ## MKDocs
 
 [MKDocs](mkdocs.md) converts standard markdown files into a website.
+
+## Obsidian
+
+<https://obsidian.md/>
+
+## GitBook
+
+<https://www.gitbook.com/>
 
 ## Quarto
 
@@ -67,6 +86,21 @@ Useful for auto-linting before committing as well as in CI/CD.
 
 See
 [GitHub Actions - Markdown reusable workflow](https://github.com/HariSekhon/GitHub-Actions/blob/master/.github/workflows/markdown.yaml).
+
+#### Markdownlint Exceptions
+
+If you run into a bug that you want to ignore,
+you can do so by putting this comment just before the offending line or table:
+
+```markdown
+<!-- mdl-disable MDnnn -->
+```
+
+eg.
+
+```markdown
+<!-- mdl-disable MD056 -->
+```
 
 ### URL Hyperlinking
 
@@ -110,6 +144,11 @@ pushes.
 
 (See also: [The Evils of Git Rebasing](https://medium.com/@harisekhon/the-evils-of-git-rebasing-beec34a607c7))
 
+### Split Code Block Commands and Outputs to Separate Blocks
+
+This way you can click the `Copy` symbol in IDEs like [IntelliJ](intellij.md) and paste to your terminal, otherwise it'll copy and paste the
+sample output too.
+
 ### Syntax Highlighting
 
 Put a language name immediately after the first triple backticks then you get syntax highlighting eg.
@@ -130,7 +169,7 @@ from generating comment comments into headings
 
 Compare the readability of this:
 
-```none
+```text
 if (isCommandAvailable('gcloud')) {
     echo 'Using GCloud SDK to configure Docker'
     // configures docker config with a token
@@ -155,11 +194,16 @@ if (isCommandAvailable('gcloud')) {
 If you run [IntelliJ](intellij.md) there is also a green triangle arrow next to `shell` blocks to execute them with
 only one click, code notebook style.
 
-````none
+<!-- this inline exclusion doesn't work, fix this -->
+
+<!-- markdownlint-disable MD031 -->
+````text
 ```shell
 echo "execute this command"
 ```
 ````
+
+<!-- markdownlint-enable -->
 
 ```shell
 echo "execute this command"
@@ -177,13 +221,43 @@ Lists of emojis `:shortcodes:` that will be rendered on GitHub flavoured markdow
 
 ### Badges
 
-Use [Shields.io](https://shields.io) to create many different types of badges.
+#### Shields.io
+
+<https://shields.io>
+
+Creates standard GitHub badges in this format:
+
+![](https://img.shields.io/badge/Hari-Sekhon-blue?logo=github)
+
+with custom writing, color and choice of [Simple Icon](#simple-icons)
+or custom icon passed in as a base64 encoded string
+(see the [LinkedIn Icon](#linkedin-icon) section below for how to do that).
+
+##### Shields.io Tips
+
+Since Shields.io breaks badge components on dashes (-) you need to escape dashes by doubling them up (--).
+
+#### GitHub Readme Stats
+
+[:octocat: anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+
+[Themes](https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md)
 
 ### Icons
+
+#### Simple Icons
 
 Use [Simple Icons](https://simpleicons.org) for a great selection of icons.
 
 These can be used with the `logo=` parameter in [Shields.io](https://shields.io) above.
+
+#### More Icons
+
+[:octocat: devicons/devicon](https://github.com/devicons/devicon)
+
+[:octocat: marwin1991/profile-technology-icons](https://github.com/marwin1991/profile-technology-icons)
+
+<https://marwin1991.github.io/profile-technology-icons/>
 
 #### Removed Icons
 
@@ -211,7 +285,7 @@ shields_embed_logo.sh https://raw.githubusercontent.com/simple-icons/simple-icon
 
 Either will result in an output like this:
 
-```none
+```text
 logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIGlmaWxsPSIjZmZmZmZmIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkxpbmtlZEluPC90aXRsZT48cGF0aCBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNjLTEuMTQ0IDAtMi4wNjMtLjkyNi0yLjA2My0yLjA2NSAwLTEuMTM4LjkyLTIuMDYzIDIuMDYzLTIuMDYzIDEuMTQgMCAyLjA2NC45MjUgMi4wNjQgMi4wNjMgMCAxLjEzOS0uOTI1IDIuMDY1LTIuMDY0IDIuMDY1em0xLjc4MiAxMy4wMTlIMy41NTVWOWgzLjU2NHYxMS40NTJ6TTIyLjIyNSAwSDEuNzcxQy43OTIgMCAwIC43NzQgMCAxLjcyOXYyMC41NDJDMCAyMy4yMjcuNzkyIDI0IDEuNzcxIDI0aDIwLjQ1MUMyMy4yIDI0IDI0IDIzLjIyNyAyNCAyMi4yNzFWMS43MjlDMjQgLjc3NCAyMy4yIDAgMjIuMjIyIDBoLjAwM3oiLz48L3N2Zz4K
 ```
 
@@ -267,7 +341,7 @@ shields_embed_logo.sh oracle_filled.svg
 
 Output:
 
-```none
+```text
 logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+T3JhY2xlPC90aXRsZT48cGF0aCBkPSJNMTYuNDEyIDQuNDEyaC04LjgyYTcuNTg4IDcuNTg4IDAgMCAwLS4wMDggMTUuMTc2aDguODI4YTcuNTg4IDcuNTg4IDAgMCAwIDAtMTUuMTc2em0tLjE5MyAxMi41MDJINy43ODZhNC45MTUgNC45MTUgMCAwIDEgMC05LjgyOGg4LjQzM2E0LjkxNCA0LjkxNCAwIDEgMSAwIDkuODI4eiIgZmlsbD0iI2ZmZmZmZiIgLz48L3N2Zz4K
 ```
 
@@ -382,3 +456,9 @@ In no particular order since I don't use these, I use the [IntelliJ](intellij.md
 <https://dillinger.io/>
 
 <https://stackedit.io/>
+
+## Memes
+
+### Peacocking Your Code
+
+![Peacocking Your Code](images/orly_peacocking_your_code.jpeg)

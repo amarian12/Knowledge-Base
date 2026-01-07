@@ -20,6 +20,8 @@ The legendary, mature widely used stable Linux distribution with the best most r
   - [Preseed Template](#preseed-template)
   - [HashiCorp Packer + Preseed Config](#hashicorp-packer--preseed-config)
 - [Debian Change Log tool](#debian-change-log-tool)
+- [Meme](#meme)
+  - [Standardizing on Distro](#standardizing-on-distro)
 
 <!-- INDEX_END -->
 
@@ -313,5 +315,11 @@ dch
 ```shell
 dch -i -c hadoop.log
 ```
+
+## Meme
+
+### Standardizing on Distro
+
+![Standardizing on Distro](images/orly_standardizing_on_debian_ubuntu_not_all_linux_distros_cool_any_more.png)
 
 **Ported from private Knowledge Base page 2010+ - not sure why so late given usage from 2002 - young guys don't know the value of documentation**

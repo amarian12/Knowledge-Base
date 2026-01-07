@@ -21,7 +21,9 @@ Feature rich and easy to use - the opposite end of [vim](vim.md)!
   - [Manual Plugin Installation](#manual-plugin-installation)
   - [Docker, Kubernetes and Terraform](#docker-kubernetes-and-terraform)
   - [Languages](#languages)
-  - [Core Editing, Git & File Formats](#core-editing-git--file-formats)
+  - [Git & Core Editing Features](#git--core-editing-features)
+  - [File Formats](#file-formats)
+  - [Diagrams-as-Code](#diagrams-as-code)
   - [Usage Stats](#usage-stats)
   - [Cloud](#cloud)
   - [CI/CD](#cicd)
@@ -29,15 +31,22 @@ Feature rich and easy to use - the opposite end of [vim](vim.md)!
   - [Python](#python)
   - [JavaScript](#javascript)
   - [Java / Groovy / Scala / Kotlin & JVM Tools](#java--groovy--scala--kotlin--jvm-tools)
+  - [Ruby](#ruby)
   - [Misc Languages](#misc-languages)
   - [Debugging](#debugging)
   - [AI Plugins](#ai-plugins)
   - [Pair Programming](#pair-programming)
   - [More Plugins](#more-plugins)
 - [Troubleshooting](#troubleshooting)
+  - [IntelliJ fails to open on Mac](#intellij-fails-to-open-on-mac)
   - [Markdown Images with Relative Paths Not Displaying in Preview](#markdown-images-with-relative-paths-not-displaying-in-preview)
   - [External Tool - unexpected EOF while looking for matching `''](#external-tool---unexpected-eof-while-looking-for-matching-)
 - [See Also](#see-also)
+- [Meme](#meme)
+  - [Light Theme IDE](#light-theme-ide)
+  - [Using Hardware to Solve Problems](#using-hardware-to-solve-problems)
+  - [So you can have 50G RAM of Chrome tabs](#so-you-can-have-50g-ram-of-chrome-tabs)
+  - [And IntelliJ hogging 20GB RAM](#and-intellij-hogging-20gb-ram)
 
 <!-- INDEX_END -->
 
@@ -51,6 +60,8 @@ In that case stick to full IntelliJ with plugins (see [Plugins](#plugins) sectio
 
 Plugins supported in PyCharm are usually also compatible with IntelliJ IDEA too as they're based on the same IDE
 framework by IntelliJ.
+
+For a more complete list of IntelliJ IDEA language-specific IDEs see the [Editors](editors.md#intellij-idea) page.
 
 ## Install
 
@@ -191,9 +202,8 @@ idea installPlugins \
   org.jetbrains.intellij.scripting-ruby
 ```
 
-### Core Editing, Git & File Formats
+### Git & Core Editing Features
 
-- [.ignore](https://plugins.jetbrains.com/plugin/7495--ignore) - supports various `.ignore` files for different technologies
 - [Code Glance](https://plugins.jetbrains.com/plugin/7275-codeglance/) - adds a minimap of the file
 - [Grep Console](https://plugins.jetbrains.com/plugin/7125-grep-console)
 - [Better Highlights](https://plugins.jetbrains.com/plugin/12895-better-highlights)
@@ -201,18 +211,12 @@ idea installPlugins \
 - [Editor Config](https://plugins.jetbrains.com/plugin/7294-editorconfig/)
 - [GitLink](https://plugins.jetbrains.com/plugin/8183-gitlink/) - shortcut to open files on GitHub and other hosted repo providers
 - [Git Toolbox](https://plugins.jetbrains.com/plugin/7499-gittoolbox/) - automatic fetches, show status vs upsteam origin
-- [CSV Editor](https://plugins.jetbrains.com/plugin/10037-csv-editor)
-- [JSON Parser](https://plugins.jetbrains.com/plugin/10650-json-parser) - validate & format JSON strings
 - [CamelCase](https://plugins.jetbrains.com/plugin/7160-camelcase)
 - [RegexpTester](https://plugins.jetbrains.com/plugin/2917-regexp-tester)
 - [Database Navigator](https://plugins.jetbrains.com/plugin/1800-database-navigator)
-- [Markdown Navigator Enhanced](https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced/)
-- [Mermaid](https://plugins.jetbrains.com/plugin/20146-mermaid)
 - [Zero Width Characters locator](https://plugins.jetbrains.com/plugin/7448-zero-width-characters-locator) - find characters that could break your code
-- [Env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
 - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
-- [Rainbow CSV](https://plugins.jetbrains.com/plugin/12896-rainbow-csv)
 - [Indent Rainbow](https://plugins.jetbrains.com/plugin/13308-indent-rainbow)
 - [Return Highlighter](https://plugins.jetbrains.com/plugin/13303-return-highlighter)
 
@@ -226,20 +230,43 @@ idea installPlugins \
   GrepConsole \
   com.clutcher.comments_highlighter \
   BrowseWordAtCaret \
-  net.seesharpsoft.intellij.plugins.csv \
-  com.godwin.json.parser \
   de.netnexus.camelcaseplugin \
   org.intellij.RegexpTester \
   DBN \
-  com.vladsch.idea.multimarkdown \
-  com.intellij.mermaid \
   com.ultrahob.zerolength.plugin \
-  ru.adelf.idea.dotenv \
   "String Manipulation" \
   izhangzhihao.rainbow.brackets \
-  com.andrey4623.rainbowcsv \
   indent-rainbow.indent-rainbow \
   com.github.lppedd.idea-return-highlighter
+```
+
+### File Formats
+
+- [.ignore](https://plugins.jetbrains.com/plugin/7495--ignore) - supports various `.ignore` files for different technologies
+- [CSV Editor](https://plugins.jetbrains.com/plugin/10037-csv-editor)
+- [JSON Parser](https://plugins.jetbrains.com/plugin/10650-json-parser) - validate & format JSON strings
+- [Markdown Navigator Enhanced](https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced/)
+- [Env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+- [Rainbow CSV](https://plugins.jetbrains.com/plugin/12896-rainbow-csv)
+
+```shell
+idea installPlugins \
+  net.seesharpsoft.intellij.plugins.csv \
+  com.godwin.json.parser \
+  com.vladsch.idea.multimarkdown \
+  ru.adelf.idea.dotenv \
+  com.andrey4623.rainbowcsv
+```
+
+### Diagrams-as-Code
+
+- [D2lang](https://plugins.jetbrains.com/plugin/20630-d2)
+- [Mermaid](https://plugins.jetbrains.com/plugin/20146-mermaid)
+
+```shell
+idea installPlugins \
+  com.dvd.intellij.d2 \
+  com.intellij.mermaid
 ```
 
 ### Usage Stats
@@ -252,7 +279,7 @@ idea installPlugins \
 idea installPlugins \
   com.wakatime.intellij.plugin \
   com.softwareco.intellij.plugin \
-  Statistic \
+  Statistic
 ```
 
 ### Cloud
@@ -286,6 +313,9 @@ idea installPlugins \
   io.snyk.snyk-intellij-plugin \
   org.sonarlint.idea  # use with SonarQube / SonarCloud
 ```
+
+See [SonarCloud](sonarcloud.md) doc to generate `sonar-project.properties` and
+`.sonarlint/connectedMode.json` configs.
 
 ### Optional - Nice to Haves
 
@@ -379,6 +409,19 @@ idea installPlugins \
   JRebelPlugin
 ```
 
+### Ruby
+
+Requires Ultimate (paid for) unfortunately:
+
+- [Ruby](https://plugins.jetbrains.com/plugin/1293-ruby)
+
+```shell
+idea installPlugins \
+  org.jetbrains.plugins.ruby
+```
+
+See alternative IDEs and Editors such as VS Code, Sublime or Gleany on the [Editors & IDEs](editors.md) page.
+
 ### Misc Languages
 
 - [Graph Database](https://plugins.jetbrains.com/plugin/20417-graph-database) - for Neo4J Cypher
@@ -409,7 +452,7 @@ idea installPlugins \
 
 - [JetBrains AI Assistant](https://plugins.jetbrains.com/plugin/22282-jetbrains-ai-assistant)
 - [AWS ToolKit](https://plugins.jetbrains.com/plugin/11349-aws-toolkit) - Amazon CodeWhisperer integration
-- [TabNine](https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion--chat-in-java-js-ts-python--more) - AI code suggestions
+- [TabNine](https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion--chat-in-java-js-ts-python--more) - AI code suggestions, no free tier any more
 - [Codota AI Autocomplete for Java and JavaScript](https://plugins.jetbrains.com/plugin/7638-codota-ai-autocomplete-for-java-and-javascript)
   - `idea installPlugins com.codota.csp.intellij`
 - [GitHub CoPilot](https://plugins.jetbrains.com/plugin/17718-github-copilot)
@@ -438,6 +481,23 @@ idea installPlugins \
 
 ## Troubleshooting
 
+### IntelliJ fails to open on Mac
+
+Clicking the IntelliJ icon does not open it, and running it from the command line:
+
+```shell
+command idea
+```
+
+logs but doesn't open.
+
+Even using the `open` command trick reveals [this common error on Mac](mac.md#various-applications-fail-to-open).
+
+```shell
+$ open -a "IntelliJ IDEA CE"
+The application /Applications/IntelliJ IDEA CE.app cannot be opened for an unexpected reason, error=Error Domain=NSOSStatusErrorDomain Code=-600 "procNotFound: no eligible process with specified descriptor" UserInfo={_LSLine=4141, _LSFunction=_LSOpenStuffCallLocal}
+```
+
 ### Markdown Images with Relative Paths Not Displaying in Preview
 
 This is caused by opening markdown files (eg. `README.md`) in the same IntelliJ that is already opened in another project.
@@ -453,13 +513,13 @@ window of IntelliJ.
 When configuring External Tools to run scripts (recommended with hotkeys), you may encounter this error
 running the external tool configuration if using single quotes.
 
-```none
+```text
 [: -c: line 1: unexpected EOF while looking for matching `''
 ```
 
 This is caused by an Args configuration like this (eg. for a Program: `bash`):
 
-```none
+```text
 -c '[ -f .envrc ] && . .envrc; markdown_replace_index.sh $FilePath$'
 ```
 
@@ -467,7 +527,7 @@ which works on the command line but not in IntelliJ.
 
 **Solution**: replace the single quotes with double quotes:
 
-```none
+```text
 -c "[ -f .envrc ] && . .envrc; markdown_replace_index.sh $FilePath$"
 ```
 
@@ -476,5 +536,30 @@ which works on the command line but not in IntelliJ.
 Expression Evaluation
 
 Productivity Guide (tracks how often you use each shortcut)
+
+## Meme
+
+### Light Theme IDE
+
+Any of you who advocate for light theme IDE are not to be trusted in my opinion... 😉😂
+
+![Light Theme IDE](images/light_theme_ide.jpeg)
+
+### Using Hardware to Solve Problems
+
+This includes your MacBook Pro - 128GB RAM ftw...
+
+![Using Hardware to Solve Problems](images/orly_using_hardware_to_solve_problems.png)
+
+### So you can have 50G RAM of Chrome tabs
+
+![Chrome RAM](images/chrome_ram.gif)
+
+ps. gif screencapture scripts for the two styles, above and below, are in the
+[DevOps-Bash-tools](devops-bash-tools.md) repo.
+
+### And IntelliJ hogging 20GB RAM
+
+![IntelliJ RAM](images/intellij_ram.gif)
 
 **Ported from various private Knowledge Base pages 2013+**

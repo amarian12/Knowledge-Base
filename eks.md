@@ -4,14 +4,25 @@ NOT PORTED YET
 
 <!-- INDEX_START -->
 
+- [Best Practices](#best-practices)
 - [EKS on Fargate](#eks-on-fargate)
 - [EKS Kubectl Access](#eks-kubectl-access)
+- [Eksctl](#eksctl)
+- [Get Cluster Version](#get-cluster-version)
+- [AWS Load Balancer](#aws-load-balancer)
 - [Grant IAM Roles EKS Access](#grant-iam-roles-eks-access)
   - [Newer Native IAM Method](#newer-native-iam-method)
   - [Old ConfigMap Method](#old-configmap-method)
-- [EKS Upgrades](#eks-upgrades)
+- [EKS Resizeable Disk](#eks-resizeable-disk)
+- [EKS Cluster Add-Ons](#eks-cluster-add-ons)
+- [EKS Cluster Upgrades](#eks-cluster-upgrades)
+- [Extended Support](#extended-support)
 
 <!-- INDEX_END -->
+
+## Best Practices
+
+<https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html>
 
 ## EKS on Fargate
 
@@ -46,6 +57,28 @@ kubectl get pods --all-namespaces
 ```
 
 Then see [Kubernetes](kubernetes.md) page for configs, scripts and `.envrc`.
+
+## Eksctl
+
+The official CLI of EKS.
+
+Easier to use than [AWS CLI](aws.md#aws-cli) for EKS.
+
+From [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+install_eksctl.sh
+```
+
+## Get Cluster Version
+
+```shell
+aws eks describe-cluster --name "$EKS_CLUSTER" --query "cluster.version" --output text
+```
+
+## AWS Load Balancer
+
+<https://kubernetes-sigs.github.io/aws-load-balancer-controller/latest/>
 
 ## Grant IAM Roles EKS Access
 
@@ -124,6 +157,105 @@ Raw old school editing method (DO NOT USE - see WARNING above):
 kubectl edit -n kube-system configmap aws-auth
 ```
 
-## EKS Upgrades
+## EKS Resizeable Disk
 
-See the [Kubernetes Upgrades](kubernetes-upgrades.md) page.
+Either create a new storageclass that is resizeable and use that for all future apps:
+
+[storageclass-aws-standard-resizeable.yaml](https://github.com/HariSekhon/Kubernetes-configs/blob/master/storageclass-aws-standard-resizeable.yaml)
+
+Or patch the default storageclass:
+
+```shell
+$ kubectl get sc
+NAME               PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+ebs-sc (default)   ebs.csi.aws.com         Retain          WaitForFirstConsumer   true                   134d
+```
+
+```shell
+kubectl patch sc ebs-sc -p '{"allowVolumeExpansion": true}'
+```
+
+I've patched the default storage class in production and resized Atlantis data pvc using the same procedure as the
+[Jenkins-on-Kubernetes](jenkins-on-kubernetes.md#increase-jenkins-server-disk-space-on-kubernetes)
+notes , it works.
+
+## EKS Cluster Add-Ons
+
+List clusters:
+
+```shell
+eksctl get cluster
+```
+
+or
+
+```shell
+aws eks list-clusters
+```
+
+List Available EKS cluster addons:
+
+```shell
+aws eks describe-addon-versions | jq -r '.addons[].addonName' | sort
+```
+
+List `eksctl` installed EKS cluster addons (may not show ones installed by charts):
+
+```shell
+eksctl get addons --cluster "$EKS_CLUSTER"
+```
+
+or
+
+```shell
+aws eks list-addons --cluster-name "$EKS_CLUSTER" --query 'addons[].addonName' --output text
+```
+
+List version of a specific addon:
+
+```shell
+aws eks describe-addon --cluster-name "$EKS_CLUSTER" --addon-name vpc-cni --query "addon.addonVersion" --output text
+```
+
+List addon pods:
+
+```shell
+kubectl get pods -n addons
+```
+
+## EKS Cluster Upgrades
+
+See the [EKS Cluster Upgrades](eks-upgrades.md) doc.
+
+## Extended Support
+
+[UserGuide - Extended Support](https://docs.aws.amazon.com/eks/latest/userguide/disable-extended-support.html)
+
+Extended support costs more, you may want to switch to standard support.
+
+Note: this will force upgrades earlier when the cluster's version falls out of standard support, which is only 14
+months, so you will need to plan
+and upgrade more regularly, which is recommended best practice anyway.
+See [upgrade policy](https://docs.aws.amazon.com/eks/latest/userguide/view-upgrade-policy.html).
+
+See the
+[Available Versions and Release Calender](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html#available-versions)
+for when you need to upgrade versions for Standard or Extended support.
+
+You can always see available versions and their status of standard vs extended and dates via the AWS CLI.
+
+(requires a fairly new version of AWS CLI)
+
+```shell
+brew upgrade awscli
+```
+
+```shell
+aws eks describe-cluster-versions --output table
+```
+
+Disable extended support and stay on the more recent versions only:
+
+```shell
+aws eks update-cluster-config --name "$EKS_CLUSTER" --upgrade-policy "supportType=STANDARD"
+```

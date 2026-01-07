@@ -7,19 +7,43 @@
   - [Neovim](#neovim)
   - [GNU Emacs](#gnu-emacs)
   - [Nano](#nano)
+  - [Brackets](#brackets)
+  - [Phoenix Code](#phoenix-code)
+  - [Komodo Edit](#komodo-edit)
+  - [Sublime](#sublime)
+  - [Atom](#atom)
 - [IDEs](#ides)
   - [IntelliJ IDEA](#intellij-idea)
-  - [PyCharm](#pycharm)
-  - [RubyMine](#rubymine)
+    - [PyCharm](#pycharm)
+    - [WebStorm](#webstorm)
+    - [RubyMine](#rubymine)
+    - [PHPStorm](#phpstorm)
+    - [GoLand](#goland)
+    - [RustRover](#rustrover)
+    - [CLion](#clion)
+    - [dotUltimate](#dotultimate)
+    - [Fleet](#fleet)
+    - [Compose MultiPlatform](#compose-multiplatform)
+    - [Datagrip](#datagrip)
+    - [Dataspell](#dataspell)
+    - [Aqua](#aqua)
+    - [WriterSide](#writerside)
   - [VS Code](#vs-code)
   - [Eclipse](#eclipse)
+  - [Geany](#geany)
 - [Editor Config](#editor-config)
-- [Misc Eclipse IDE Notes](#misc-eclipse-ide-notes)
-  - [Eclipse Plugins](#eclipse-plugins)
+- [IDE Details](#ide-details)
+  - [Eclipse Details](#eclipse-details)
+    - [Eclipse Plugins](#eclipse-plugins)
+- [Meme](#meme)
+  - [Light Theme IDE](#light-theme-ide)
+  - [Powerful Computer](#powerful-computer)
 
 <!-- INDEX_END -->
 
 ## Editors
+
+Tip: from `less`, you can hit the `v` key to open the file in the default `$EDITOR`.
 
 ### ViM
 
@@ -37,7 +61,7 @@ See [vim.md](vim.md) for more details.
 
 ### Neovim
 
-<https://github.com/neovim/neovim>
+[:octocat: neovim/neovim](https://github.com/neovim/neovim)
 
 Fork of vim above.
 
@@ -72,6 +96,42 @@ Easier to use than vim or emacs.
 
 Developed as an alternative to the pico text editor which was not entirely open source.
 
+### Brackets
+
+<https://brackets.io/.io>
+
+### Phoenix Code
+
+<https://phcode.io/>
+
+[:octocat:phcode-dev/phoenix](https://github.com/phcode-dev/phoenix)
+
+Next generation of the above Brackets editor that runs everywhere, even in web browser.
+
+Web Editor:
+
+<https://phcode.dev/>
+
+Desktop Editor:
+
+<https://phcode.io/#/home>
+
+### Komodo Edit
+
+<https://www.activestate.com/products/komodo-edit/>
+
+### Sublime
+
+<https://www.sublimetext.com/>
+
+Slick.
+
+### Atom
+
+Discontinued. Seemed slow on big files.
+
+<https://github.blog/news-insights/product-news/sunsetting-atom/>
+
 ## IDEs
 
 ### IntelliJ IDEA
@@ -91,19 +151,91 @@ The best of the best in my opinion.
 
 See the [IntelliJ IDEA](intellij.md) page for more.
 
-### PyCharm
+#### PyCharm
 
 <https://www.jetbrains.com/pycharm/>
 
 Python-focused version of the grand daddy IntelliJ IDEA.
 
-### RubyMine
+#### WebStorm
+
+<https://www.jetbrains.com/webstorm/>
+
+JavaScript-focused version of IntelliJ IDEA.
+
+#### RubyMine
 
 <https://www.jetbrains.com/ruby/>
 
 Ruby-focused version of the grand daddy IntelliJ IDEA.
 
 Unfortuntely, this is proprietary paid for only and doesn't have a free version like [PyCharm](#pycharm).
+
+#### PHPStorm
+
+<https://www.jetbrains.com/phpstorm/>
+
+Proprietary paid for IntelliJ IDEA for PHP developers.
+
+#### GoLand
+
+<https://www.jetbrains.com/go/>
+
+Paid for Golang version of IntelliJ IDEA.
+
+#### RustRover
+
+<https://www.jetbrains.com/rust/>
+
+Rust-focused version of IntelliJ IDEA.
+
+#### CLion
+
+<https://www.jetbrains.com/clion/>
+
+C / C++ IDE version of IntelliJ - paid for.
+
+#### dotUltimate
+
+<https://www.jetbrains.com/dotnet/>
+
+.NET IDE.
+
+#### Fleet
+
+<https://www.jetbrains.com/fleet/>
+
+AI-powered polyglot IDE, determines your project language.
+
+#### Compose MultiPlatform
+
+<https://www.jetbrains.com/compose-multiplatform/>
+
+UI IDE to create shared UIs for Android, iOS, desktop, and web.
+
+#### Datagrip
+
+<https://www.jetbrains.com/datagrip/>
+
+Paid for RDBMS & NoSQL client.
+
+#### Dataspell
+
+<https://www.jetbrains.com/dataspell/>
+
+Paid for data & analytics clients. A step further than Datagrip above.
+
+#### Aqua
+
+<https://www.jetbrains.com/aqua/>
+
+Focused on Test Automation.
+
+#### WriterSide
+
+<https://www.jetbrains.com/writerside/>
+
+Focused on writing API, SDKs, Documentation and Tutorials.
 
 ### VS Code
 
@@ -129,13 +261,21 @@ Old open source IDE.
 
 Most people prefer IntelliJ as it's much faster and slicker.
 
+### Geany
+
+<https://www.geany.org/>
+
+Flyweight - fast & small.
+
 ## Editor Config
 
 - `.editorconfig` - standard config file that many editors will read, including [GitHub](github.md) for displaying the `README.
   md` in the repo home page
   - see my [.editorconfig](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.editorconfig)
 
-## Misc Eclipse IDE Notes
+## IDE Details
+
+### Eclipse Details
 
 I haven't used eclipse enough to warrant its own page, so here are some minor bits.
 
@@ -161,7 +301,7 @@ Eclipse JSONTools validation plugin (Help -> MarketPlace), but needs files to be
 
 IntelliJ also has JSON error validation, but it's not as good as it's hard to see underscores not the big red cross eclipse puts in the left column.
 
-### Eclipse Plugins
+#### Eclipse Plugins
 
 - CheckStyle
 - Cucumber
@@ -169,5 +309,17 @@ IntelliJ also has JSON error validation, but it's not as good as it's hard to se
 - Findbugs
 - CodeTemplates
 - Mylyn
+
+## Meme
+
+### Light Theme IDE
+
+Any of you who advocate for light theme IDE are not to be trusted in my opinion... 😉😂
+
+![Light Theme IDE](images/light_theme_ide.jpeg)
+
+### Powerful Computer
+
+![Powerful Computer, IDE with Dark Theme, My Code](images/powerful_computer_ide_with_dark_theme_my_code.jpeg)
 
 **Ported from various private Knowledge Base pages 2013+**

@@ -10,6 +10,8 @@ It has good feature parity with GitHub.com, although less 3rd party CI/CD integr
 
 - [GitLab CLI](#gitlab-cli)
 - [GitLab CLI and API auth](#gitlab-cli-and-api-auth)
+- [Git Clone over HTTPS using API Token](#git-clone-over-https-using-api-token)
+  - [Credential Helper](#credential-helper)
 - [GitLab CI/CD](#gitlab-cicd)
 - [GitLab Official CI/CD Library](#gitlab-official-cicd-library)
 - [GitLab Profile Page](#gitlab-profile-page)
@@ -60,8 +62,37 @@ export GITLAB_TOKEN=...
 
 Gitlab CLI config can be found here:
 
-```none
+```text
  ~/.config/glab-cli/config.yml
+```
+
+## Git Clone over HTTPS using API Token
+
+Cloning with HTTPS then becomes:
+
+```shell
+git clone "https://GITLAB_TOKEN@gitlab.com/$ORG/$REPO.git"
+```
+
+or better using a credential helper...
+
+### Credential Helper
+
+Taken from my [.gitconfig](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.gitconfig):
+
+```properties
+[credential "https://gitlab.com"]
+    helper = "!f() { sleep 1; echo \"password=${GITLAB_TOKEN}\"; }; f"
+```
+
+```shell
+git clone "https://gitlab.com/$ORG/$REPO.git"
+```
+
+If you get a 401 or 403 authentication or authorization error, you can check Git debug output by setting:
+
+```shell
+export GIT_CURL_VERBOSE=1
 ```
 
 ## GitLab CI/CD

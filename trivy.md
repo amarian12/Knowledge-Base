@@ -1,6 +1,6 @@
 # Trivy
 
-<https://github.com/aquasecurity/trivy>
+[:octocat: aquasecurity/trivy](https://github.com/aquasecurity/trivy)
 
 Security scanning CLI tool for vulnerabilities, leaked secrets and misconfigurations.
 
@@ -15,8 +15,9 @@ Scans:
 - [Run](#run)
   - [Filesystem Scan](#filesystem-scan)
   - [Docker Image Scan](#docker-image-scan)
-- [Jenkins CI/CD](#jenkins-cicd)
+  - [Virtual Machine / AMI Scan](#virtual-machine--ami-scan)
 - [Ignoring False Positives](#ignoring-false-positives)
+- [Jenkins CI/CD](#jenkins-cicd)
 
 <!-- INDEX_END -->
 
@@ -68,15 +69,21 @@ Scan the docker image for a given running container:
 trivy image "$(docker inspect --format='{{.Image}}' "$container_id_or_name">)"
 ```
 
-## Jenkins CI/CD
+### Virtual Machine / AMI Scan
 
-Jenkins CI/CD functions for running Trivy are available here:
+<https://www.aquasec.com/blog/trivy-now-scans-amazon-machine-images-amis/>
 
-[HariSekhon/Jenkins - vars/trivy.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivy.groovy)
+```shell
+trivy vm export-ami.vmdk
+```
 
-[HariSekhon/Jenkins - vars/trivyFS.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivyFS.groovy)
+```shell
+trivy vm ebs:${your_ebs_snapshot_id}
+```
 
-[HariSekhon/Jenkins - vars/trivyImages.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivyImages.groovy)
+```shell
+trivy vm snapshot_id.img
+```
 
 ## Ignoring False Positives
 
@@ -94,3 +101,21 @@ Inline ignores in source files don't work:
 # false positive - trivy:ignore:gcp-service-account doesn't work
 # trivy:ignore:gcp-service-account
 ```
+
+## Jenkins CI/CD
+
+[HariSekhon/Jenkins](https://github.com/HariSekhon/Jenkins)
+
+Jenkins CI/CD functions for running Trivy are available here:
+
+[HariSekhon/Jenkins - vars/trivy.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivy.groovy)
+
+[HariSekhon/Jenkins - vars/trivyFS.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivyFS.groovy)
+
+[HariSekhon/Jenkins - vars/trivyImages.groovy](https://github.com/HariSekhon/Jenkins/blob/master/vars/trivyImages.groovy)
+
+From
+[HariSekhon/Diagrams-as-Code](https://github.com/HariSekhon/Diagrams-as-Code#jenkins-cicd-on-kubernetes)
+repo:
+
+![](https://raw.githubusercontent.com/HariSekhon/Diagrams-as-Code/master/images/jenkins_kubernetes_cicd.svg)

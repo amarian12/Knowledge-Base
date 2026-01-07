@@ -4,6 +4,10 @@
 
 - [List](#list)
 - [Fish](#fish)
+- [Shell One Liners](#shell-one-liners)
+- [Memes](#memes)
+  - [Opening a Shell, Non-Programmers](#opening-a-shell-non-programmers)
+  - [Bash Scripting: Essential DevOps](#bash-scripting-essential-devops)
 
 <!-- INDEX_END -->
 
@@ -37,5 +41,26 @@ Friendly Interactive Shell
 
 amazing website built-in
 fish_config
+
+## Shell One Liners
+
+See the [Shell One Liners](shell-one-liners.md) page.
+
+## More Resources
+
+- [DevOps-Bash-tools](devops-bash-tools.md)
+- [CommandLineFu](https://www.commandlinefu.com/)
+- [ShellDorado](http://www.shelldorado.com/)
+- [Bash Guide](https://mywiki.wooledge.org/BashGuide)
+
+## Memes
+
+### Opening a Shell, Non-Programmers
+
+![Opening a shell, Non-Programmers](images/opening_a_shell_non_programmers.jpeg)
+
+### Bash Scripting: Essential DevOps
+
+![Bash Scripting: Essential DevOps](images/orly_bash_scripting_essential_devops.png)
 
 **Ported from various private Knowledge Base pages 2002+**

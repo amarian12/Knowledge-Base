@@ -14,8 +14,10 @@ It's not as amazing for one-liners as [Perl](perl.md) is though, which can boost
 - [Shell scripts with Python](#shell-scripts-with-python)
 - [Nagios Plugins in Python](#nagios-plugins-in-python)
 - [Python Library with Unit Tests](#python-library-with-unit-tests)
+- [Python HTTP Server](#python-http-server)
 - [VirtualEnv](#virtualenv)
 - [Pipenv](#pipenv)
+- [Poetry](#poetry)
 - [Jupyter Notebook](#jupyter-notebook)
 - [Libraries](#libraries)
   - [General](#general)
@@ -33,10 +35,22 @@ It's not as amazing for one-liners as [Perl](perl.md) is though, which can boost
   - [Install](#install)
   - [Run](#run)
   - [Code](#code)
+- [Python Hosting Sites](#python-hosting-sites)
+  - [Hosted Python WebApps](#hosted-python-webapps)
+  - [Hosted Jupyter Notebooks](#hosted-jupyter-notebooks)
+  - [Other Hosted Python](#other-hosted-python)
 - [Troubleshooting](#troubleshooting)
   - [Python Fault Handler](#python-fault-handler)
     - [Enable Python Fault Handler](#enable-python-fault-handler)
   - [Alpine `ModuleNotFoundError: No module named 'pip._vendor.six.moves'`](#alpine-modulenotfounderror-no-module-named-pip_vendorsixmoves)
+  - [Small vs Big Integers - is vs ==](#small-vs-big-integers---is-vs-)
+- [Meme](#meme)
+  - [Programming Python](#programming-python)
+  - [Porting Your Language to the JVM](#porting-your-language-to-the-jvm)
+  - [ChatGPT Python - What I Expected vs What I Got](#chatgpt-python---what-i-expected-vs-what-i-got)
+  - [Imported Package Tariffs](#imported-package-tariffs)
+  - [Friend Showing C++ Code](#friend-showing-c-code)
+  - [Lines of Code vs Understanding Methods](#lines-of-code-vs-understanding-methods)
 
 <!-- INDEX_END -->
 
@@ -67,6 +81,19 @@ Shell scripts using Python and making it easier to install Python pip libraries 
 ## Python Library with Unit Tests
 
 [HariSekhon/pylib](https://github.com/HariSekhon/pylib)
+
+## Python HTTP Server
+
+When you need a quick HTTP server to serve out local files at:
+
+<http://$HOSTNAME:8000/>
+
+```shell
+python -m SimpleHTTPServer
+```
+
+This is useful for temporary file sharing for things like making automated installer configurations available, such as
+for [Redhat](redhat.md) Kickstart, [Debian](debian.md) Preseeding or [Ubuntu](ubuntu.md) Autoinstall.
 
 ## VirtualEnv
 
@@ -109,7 +136,7 @@ base-executable = /opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.fram
 
 <https://pipenv.pypa.io/en/latest/>
 
-<https://github.com/pypa/pipenv>
+[:octocat: pypa/pipenv](https://github.com/pypa/pipenv)
 
 Combines Pip and VirtualEnv into one command.
 
@@ -142,6 +169,14 @@ Dependency graph:
 pipenv graph
 ```
 
+## Poetry
+
+[:octocat: python-poetry/poetry](https://github.com/python-poetry/poetry)
+
+Replaces `pip` `requirements.txt` for PyPI library management with a simple `pyproject.yaml`:
+
+Writes a lockfile to save versions like `npm` and `go mod` do.
+
 ## Jupyter Notebook
 
 (formerly called IPython Notebook)
@@ -153,7 +188,11 @@ and form a page oriented workflow of results and analysis for sharing and demons
 
 ## Libraries
 
-You can see these used throughout these GitHub repos:
+You can search for libraries at [pypi.org](https://pypi.org/).
+
+Some libraries you may find useful are below.
+
+You can see most of these used throughout my GitHub repos, eg:
 
 - [HariSekhon/DevOps-Python-tools](https://github.com/HariSekhon/DevOps-Python-tools)
 - [HariSekhon/Nagios-Plugins](https://github.com/HariSekhon/Nagios-Plugins)
@@ -176,6 +215,8 @@ You can see these used throughout these GitHub repos:
 - `requests` - easy HTTP request library
 - `beautifulsoup4` - HTML parsing library
 - [Scrapy](https://scrapy.org/) - web scraping
+- [pycookiecheat](https://github.com/n8henrie/pycookiecheat) - use or extract cookies from your browser's cookie jar to
+  query websites directly or using curl
 - `selenium` - Selenium web testing framework
 
 ### Databases
@@ -325,6 +366,29 @@ jython -J-cp "$CLASSPATH" "file.py"
 Some Jython programs, such as those using [Hadoop](hadoop.md) [HDFS](hdfs.md) Java API can be found in the
 [DevOps-Python-tools](devops-python) repo.
 
+## Python Hosting Sites
+
+### Hosted Python WebApps
+
+- [Heroku](https://www.heroku.com/python/)
+- [Vercel](https://vercel.com/)
+- [Render](https://render.com/)
+- [PythonAnywhere](https://www.pythonanywhere.com/) - fully hosted Python apps / webapps with a
+  `<username>.pythonanywhere.com` domain and long list of libraries pre-installed
+  [batteries included](https://www.pythonanywhere.com/batteries_included/)
+
+### Hosted Jupyter Notebooks
+
+- [Google Collab](https://colab.research.google.com/) - Jupyter Notebooks in the cloud with free access to GPUs
+- [Binder](https://mybinder.org/) - run Jupyter Notebooks from GitHub repos
+
+### Other Hosted Python
+
+- [Replit](https://replit.com/) - cloud-base IDE with AI to generate code from ideas
+- [Glitch](https://glitch.com/) - good for prototyping small webapps
+- [fly.io](https://fly.io/) - code execution sandbox, runs any Docker image
+- [Code Ocean](https://codeocean.com/) - for scientific bioinformatics and R&D
+
 ## Troubleshooting
 
 ### Python Fault Handler
@@ -379,5 +443,61 @@ Fix:
 apk del py3-pip py-pip
 apk add py3-pip
 ```
+
+### Small vs Big Integers - is vs ==
+
+Consider:
+
+```python
+> a = 10
+> b = 10
+> a is b
+False
+```
+
+```python
+> a = 500
+> b = 500
+> a is b
+True
+```
+
+This is due to caching small integer objects but not integers over 256.
+
+This is rarely an issue in practice though since the `==` comparison operator works as expected and most people will
+only use that.
+
+Instead, people should try to maintain open source Python over a decade of bloody code changes and trying to keep it working in
+different CI/CD systems to try to retain portability across different environments...
+
+Python maintainability makes Java Null Pointer Exceptions look like the cheap “billion dollar mistake”.
+
+## Meme
+
+### Programming Python
+
+![Programming Python](images/orly_programming_python_maintenance_naive_guide.png)
+
+### Porting Your Language to the JVM
+
+I wish I had discovered [Groovy](groovy.md) before [Jython](#jython)...
+
+![Porting Your Language to the JVM](images/orly_porting_your_language_to_jvm.png)
+
+### ChatGPT Python - What I Expected vs What I Got
+
+![ChatGPT Python - What I Expected vs What I Got](images/chatgpt_python_what_expected_vs_got.jpeg)
+
+### Imported Package Tariffs
+
+![Imported Package Tariffs](images/imported_package_tariffs.jpeg)
+
+### Friend Showing C++ Code
+
+![Friend Showing C++ Code](images/friend_showing_c%2B%2B_code.jpeg)
+
+### Lines of Code vs Understanding Methods
+
+![Lines of Code vs Understanding Methods](images/python_developers_lines_of_code_vs_understanding_methods.jpeg)
 
 **Partial port from private Knowledge Base page 2008+**

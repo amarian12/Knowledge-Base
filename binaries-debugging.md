@@ -28,6 +28,8 @@ Tools for examining and working with compiled binaries.
     - [Dtruss](#dtruss)
     - [fs_usage](#fs_usage)
     - [Instruments](#instruments)
+- [Meme](#meme)
+  - [Debugging](#debugging)
 
 <!-- INDEX_END -->
 
@@ -172,7 +174,7 @@ pldd "pid"
 
 Since this often fails to attach to a process:
 
-```none
+```text
 pldd: cannot attach to process 32781: Operation not permitted
 ```
 
@@ -274,3 +276,9 @@ sudo fs_usage "$command"
 ```shell
 open /Applications/Xcode.app/Contents/Applications/Instruments.app
 ```
+
+## Meme
+
+### Debugging
+
+![Debugging](images/orly_debugging_how_to_sell_your_soul_to_it_working.png)

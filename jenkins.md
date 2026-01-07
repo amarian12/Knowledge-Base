@@ -4,7 +4,7 @@ The most powerful CI/CD ever.
 
 Simple at the shallow end (see [Jenkins in Docker in one command](#jenkins-in-docker-in-one-command)).
 
-Non-trivial at the advanced end (auto-scaling on [Kubernetes](#jenkins-on-kubernetes),
+Non-trivial at the advanced end (auto-scaling on [Kubernetes](jenkins-on-kubernetes.md).
 Jenkins [Plugins](#jenkins-plugins),
 Groovy [Shared Library](#jenkins-shared-libraries-groovy) programming).
 
@@ -27,10 +27,14 @@ Shared Libraries between pipelines, or even code snippets in the administration
 - [Jenkins Groovy](#jenkins-groovy)
   - [Jenkins Script Console - Groovy](#jenkins-script-console---groovy)
 - [Jenkins Shared Libraries (Groovy)](#jenkins-shared-libraries-groovy)
+  - [External Scripts](#external-scripts)
 - [Jenkins API](#jenkins-api)
 - [Desktop Menu Notifications](#desktop-menu-notifications)
   - [CCtray XML Plugin](#cctray-xml-plugin)
 - [Jenkins on Docker in one command](#jenkins-on-docker-in-one-command)
+- [Jenkins Scaling](#jenkins-scaling)
+  - [Jenkins Master](#jenkins-master)
+  - [Jenkins Workers / Slaves](#jenkins-workers--slaves)
 - [Jenkins Slaves on Bare Metal / VMs](#jenkins-slaves-on-bare-metal--vms)
 - [Jenkins on Kubernetes](#jenkins-on-kubernetes)
 - [Google Auth SSO](#google-auth-sso)
@@ -64,7 +68,7 @@ Shared Libraries between pipelines, or even code snippets in the administration
 
 ### Jenkinsfile Snippet Generator
 
-```none
+```text
 $JENKINS_URL/pipeline-syntax/
 ```
 
@@ -128,13 +132,13 @@ See here for a great list of plugins that I've used in production across compani
 
 Waits for builds to finish:
 
-```none
+```text
 $JENKINS_URL/safeRestart
 ```
 
 Doesn't wait for builds to finish:
 
-```none
+```text
 $JENKINS_URL/restart
 ```
 
@@ -184,7 +188,7 @@ Filename must be camelCase or lowercase to work.
 Configure the Jenkins Shared Library repo containing the Groovy code in the global System Configuration
 and give it a name for easy referencing:
 
-```none
+```text
 Configure Jenkins
 -> Configure System
     -> Global Pipeline Libraries
@@ -207,7 +211,7 @@ Trailing underscore `_` is required to import all functions, otherwise syntax er
  WorkflowScript: 3: unexpected token: pipeline @ line 3, column 1.
 
     pipeline {
- ```
+```
 
 Or using the [pipeline-github-lib](https://plugins.jenkins.io/pipeline-github-lib/) plugin you can use a dynamic repo via URL path
 to a public git repo - this is useful for development pointing to a dev repo / branch:
@@ -233,11 +237,11 @@ from another git repo as a separate step in the `Jenkinsfile` pipeline because o
 
 See [jenkins_api.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/jenkins/jenkins_api.sh)
 
-```none
+```text
 /api/json
 ```
 
-```none
+```text
 /job/$job/api/json
 ```
 
@@ -258,7 +262,7 @@ Provides the `/cc.xml/` endpoint for notification tools above.
 
 Then put this in your CCMenu or similar tool:
 
-```shell
+```text
 <JENKINS_URL>/cc.xml/
 ```
 
@@ -281,6 +285,40 @@ jenkins/jenkins.sh
   - can optionally edit config to:
     - use `JAVA_OPTS` to tweak heap size
     - mount `/var/jenkins_home` to local machine for persistence
+
+## Jenkins Scaling
+
+### Jenkins Master
+
+The Jenkins master is the scaling bottleneck for the job pipelines scheduling, metadata, logging, UI etc.
+
+It can only be scaled vertically by increasing the CPU, RAM and Disk.
+
+Utilizing more RAM requires increasing the [Java](java.md) Heap size of the Jenkins master process
+to be able to utilize the extra RAM via the usual `-Xmx` java argument.
+
+Typically, Jenkins masters start to degrade at around 100+ pipelines.
+
+You can only increase the CPU and RAM so much, and only tune the Java Heap so much,
+beyond which you will need to split different pipelines between different Jenkins installations.
+
+This becomes known as _"Islands of Jenkins"_ and the overarching management of these multiple Jenkins installations is
+why [CloudBees](#cloudbees) exists.
+
+### Jenkins Workers / Slaves
+
+Jenkins can run more worker / slaves to be able to scale out the pipeline processes themselves.
+
+Expensive pipeline content operations such as running commands,
+[Maven](maven.md), [Gradle](gradle.md), [SBT](sbt.md) or [Make](make.md) builds are carried out within a pipeline so are
+offloaded to a worker, and you can add as many worker / slaves as you can configure afford and configure in order to
+spread the load of different job pipelines between different machines.
+
+The limitation will be both on the overhead on the Jenkins master to organize and coordinate with all the slaves,
+as well as the scheduling, metadata and logging for the pipelines, as well as UI.
+
+The best way to scale Jenkins slaves is automatically on Kubernetes.
+See [Jenkins-on-Kubernetes](jenkins-on-kubernetes.md).
 
 ## Jenkins Slaves on Bare Metal / VMs
 

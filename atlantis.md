@@ -20,6 +20,10 @@ Terraform pull request automation on [GitHub](github.md) using [GitHub Actions](
 
 - [Usage](#usage)
 - [Do Not Merge Pull Requests Early](#do-not-merge-pull-requests-early)
+- [Back up Atlantis.db from StatefulSet pod](#back-up-atlantisdb-from-statefulset-pod)
+- [Troubleshooting](#troubleshooting)
+  - [Stale Error not picking up Terraform Module fix](#stale-error-not-picking-up-terraform-module-fix)
+  - [Checksum Mismatch in `.terraform.lock.hcl`](#checksum-mismatch-in-terraformlockhcl)
 
 <!-- INDEX_END -->
 
@@ -38,3 +42,58 @@ atlantis apply
 If you merge a pull request, Atlantis will refuse to operate and apply it.
 
 You will then need to revert the PR and raise it again.
+
+## Back up Atlantis.db from StatefulSet pod
+
+Take a copy to your local machine:
+
+```shell
+kubectl cp atlantis/atlantis-0:/atlantis-data/atlantis.db atlantis.db -c atlantis
+```
+
+## Troubleshooting
+
+### Stale Error not picking up Terraform Module fix
+
+You'll need to clear the state from the Atlantis kubernetes pod.
+
+Exec into the pod:
+
+```shell
+kubectl exec -ti -n atlantis atlantis-0 -c atlantis -- /bin/bash
+```
+
+Go to the data directory:
+
+```shell
+cd /atlantis-data/
+```
+
+`cd` into the `<owner>/<repo>` GitHub subdirectory.
+
+Delete the numbered subdirectory matching the GitHub pull request number.
+
+### Checksum Mismatch in `.terraform.lock.hcl`
+
+If you get an error like this when running Terraform or [Terragrunt](terragrunt.md):
+
+<!--
+
+```text
+Error: registry.terraform.io/hashicorp/aws: the cached package for registry.terraform.io/hashicorp/aws 4.67.0 (in .terraform/providers) does not match any of the checksums recorded in the dependency lock file
+```
+
+or
+
+-->
+
+```text
+Error: Required plugins are not installed
+
+The installed provider plugins are not consistent with the packages selected
+in the dependency lock file:
+  - registry.terraform.io/hashicorp/aws: the cached package for registry.terraform.io/hashicorp/aws 5.80.0 (in .terraform/providers) does not match any of the checksums recorded in the dependency lock file
+```
+
+See the [Terraform](terraform.md#checksum-mismatch-in-terraformlockhcl) or
+[Terragrunt](terragrunt.md#checksum-mismatch-in-terraformlockhcl) docs for the explanation and solution.
