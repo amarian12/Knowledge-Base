@@ -82,7 +82,9 @@ heavyweight IDEs like [IntelliJ](intellij.md).
   - [Launchctl](#launchctl)
   - [Start At Login](#start-at-login)
   - [Disk Management](#disk-management)
-    - [CLI Disk Management](#cli-disk-management)
+    - [Disk Utility](#disk-utility)
+    - [Disk Space Analysis](#disk-space-analysis)
+    - [Disk Space Commands](#disk-space-commands)
     - [Check USB Bus Speed](#check-usb-bus-speed)
     - [Disk Management Tutorials](#disk-management-tutorials)
     - [List disks](#list-disks)
@@ -1352,13 +1354,86 @@ EOF
 
 ### Disk Management
 
+#### Disk Utility
+
 Using graphical Disk Utility is easiest:
 
 ```shell
-open /System/Applications/Utilities/Disk\ Utility.app
+open -a 'Disk Utility'
 ```
 
-#### CLI Disk Management
+#### Disk Space Analysis
+
+Mac built in `System Settings` -> `General` -> `Storage` will give a good high-level overview of what
+is taking up your disk space:
+
+```shell
+open "x-apple.systempreferences:com.apple.settings.Storage"
+```
+
+You can see this [Apple support article](https://support.apple.com/en-us/102624) on optimizing space.
+
+My favourite of all time is [Disk Inventory X](https://www.derlien.com/):
+
+```shell
+brew install disk-inventory-x
+```
+
+```shell
+open -a 'Disk Inventory X' /
+```
+
+[GrandPerspective](https://grandperspectiv.sourceforge.net/) is another similar GUI disk space analysis app:
+
+```shell
+brew install --cask grandperspective
+```
+
+```shell
+open -a GrandPerspective /
+```
+
+[OmniDiskSweeper](https://www.omnigroup.com/more) is another option:
+
+```shell
+brew install --cask omnidisksweeper
+```
+
+```shell
+open -a OmniDiskSweeper /
+```
+
+[BaoBab](https://apps.gnome.org/Baobab/) is available on both Linux & Mac:
+
+```shell
+brew install baobab
+```
+
+```shell
+baobab /
+```
+
+But for CLI junkies there is also ...
+
+#### Disk Space Commands
+
+Aside from the classic portable unix `df` and `du` commands...
+
+... there is this cool interactive 'ncurses du'
+which allows you
+to easily drill down to find the biggest directories and files:
+
+```shell
+brew install ncdu
+```
+
+```shell
+sudo ncdu /
+```
+
+The biggest directories and files are automatically sorted to the top for convenience at each level you drill in to.
+
+Type `?` for the interactive help menu.
 
 #### Check USB Bus Speed
 
