@@ -22,6 +22,7 @@ heavyweight IDEs like [IntelliJ](intellij.md).
 - [Activity Monitor](#activity-monitor)
 - [Force Quit Applications](#force-quit-applications)
 - [Stats Bar](#stats-bar)
+- [Pingr](#pingr)
 - [Flux](#flux)
 - [Rearrange Status Bar Icons](#rearrange-status-bar-icons)
 - [Reducing Desktop Workspaces](#reducing-desktop-workspaces)
@@ -60,6 +61,7 @@ heavyweight IDEs like [IntelliJ](intellij.md).
     - [Set DNS Search Domain](#set-dns-search-domain)
     - [Set Hostname](#set-hostname)
     - [Flush the DNS Cache](#flush-the-dns-cache)
+  - [Network Quality](#network-quality)
   - [Wifi](#wifi)
     - [Get Current Wifi Network Name](#get-current-wifi-network-name)
     - [Get Current Wifi Network Password](#get-current-wifi-network-password)
@@ -247,6 +249,22 @@ Start `Stats.app` at login - configure this in its settings or run this command 
 ```shell
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Stats.app", hidden:false}'
 ```
+
+## Pingr
+
+Another useful menu app for constant wifi network monitoring for those unreliable hotel wifis:
+
+<https://getpingr.app/>
+
+Better than leaving a ping running in a terminal.
+
+This isn't available in Homebrew unfortunately as of time of writing
+so you actually have to click through and install it manually
+and then click the menu bar drop down to have it start automatically at login.
+
+The Stats bar's network tool gives far more detailed info such as connectivity history graph,
+latency, bandwith usage and per app network breakdowns.
+I like the green dot item, but for the graph directly in menu bar, this app is nice.
 
 ## Flux
 
@@ -931,6 +949,22 @@ scutil --get LocalHostName
 ```shell
 dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
+```
+
+### Network Quality
+
+Built-in available in macOS Monterey or later:
+
+```shell
+networkquality
+```
+
+```text
+==== SUMMARY ====
+Uplink capacity: 68.173 Mbps
+Downlink capacity: 77.023 Mbps
+Responsiveness: Low (322.581 milliseconds | 186 RPM)
+Idle Latency: 204.167 milliseconds | 294 RPM
 ```
 
 ### Wifi
