@@ -3,6 +3,7 @@
 <!-- INDEX_START -->
 
 - [Immigration Control & Exit Flight Required](#immigration-control--exit-flight-required)
+- [ATMs in Colombia](#atms-in-colombia)
 - [Bogota](#bogota)
   - [Best Areas to Stay in Bogota](#best-areas-to-stay-in-bogota)
   - [Bogota EL Dorado Airport](#bogota-el-dorado-airport)
@@ -36,6 +37,23 @@ They required:
 The immigration officer did not ask for an exit flight,
 possibly because they know the airlines check-in enforce it already.
 
+## ATMs in Colombia
+
+ATMs are notoriously expensive in Colombia.
+
+I just used my cards for everything because I couldn't find an ATM that wasn't a rip off.
+
+Bancolombia, Banco de Bogota, Banco de Occidente all tried to charge me 29,000 COP (\$8) for a withdrawal,
+while Servibanca and Davivienda tried to charge me 26,000 (\$7).
+
+If you really need cash, you might be better off exchanging dollars at a Bureau de Change,
+depending on the % loss and how much you need.
+
+I managed to get by without any cash in Colombia,
+although I did take taxis via Uber which was slightly more expensive than if I'd use my preferred InDrive with cash.
+However, to put this into perspective, the difference was only a few thousand COP, not 26,000 - 30,000.
+To put this into perspective, a taxi to/from the airport in Bogota was only around 40,000 in total.
+
 ## Bogota
 
 The capital.
@@ -58,6 +76,12 @@ Apparently it rains here a lot.
 
 Wifi at Bogota airport only gives 30 minutes free and it requires lots of personal captcha details.
 
+There are a good selection of cafes and shops before security and a good selection past security too.
+
+There were water coolers apparently but I forgot to refill as I had to run for the plane
+(the flight to Quito, Ecuador, wasn't busy and the gate was marked as closed and I was the last one when I got there
+3 minutes late, I nearly got left behind).
+
 ### Travel Between Bogota El Dorado Airport and Bogota
 
 While you can get TransMilenio / SITP buses from outside the airport (routes like 16-14 / K86), you need a Tullave
@@ -65,6 +89,9 @@ card to pay, so it's easier to just take a taxi, and affordable.
 
 The official yellow taxi from the airport was only 40,000 COP (\$10.60),
 which is only 1/3 of the price for the same Uber airport taxi I paid in Medellin.
+
+The taxi is a Kia though, so if you have two suitcases, order a bigger taxi,
+as I had to put my suitcase on the back seat as these cars have almost no trunk.
 
 ### Restaurants in Bogota
 
@@ -77,6 +104,52 @@ There is also no kitchen / not allowed to use the kitchen, it is for restaurant 
 Wifi 85/91 Mbit/s
 
 -->
+
+As a foreigner you'll probably spend most of your time in Zona T, which is where these restaurants are:
+
+- [Chef Burger](https://maps.app.goo.gl/sM3jmyHw7YZAXTuU8) - Medellin-based chain that has a few branches in Bogota and
+  one in Cali too.
+  The Sailor burger is their best seller for good reason - it was the best burger I'd had in a long time.
+  The tropical burger with a pineapple ring in it was good too, with a sweet fruity side sauce as well as a tasty
+  mayo-type sauce for dipping fries.
+  The 'rustic fries' are basically wedges but good quality crispy hot ones
+- [Ovejo Burgers & Fries](https://maps.app.goo.gl/76kAvEjUAXz7pQVB7) - good burger & fries at reasonable price,
+  but their steak is also very reasonably priced and comes with lots of fries
+  (so many that I actually left quite a lot of them).
+  Open late, so good option for 11-12pm eating since it's open until 1-2am.
+  Wifi captcha portal didn't load for me though
+- [Wok](https://maps.app.goo.gl/76kAvEjUAXz7pQVB7) - Colombia's answer to Wagamama, but with a bigger excellent menu -
+  asian fusion from various noodle & rice dishes to sushi.
+  Mid-tier priced similar prices to Wagamama in the UK, which is relatively expensive tourist priced for Colombia,
+  but this place is consistently busy as it's better than most of the surrounding restaurants,
+  especially for its price bracket.
+  The stir fried jumbo prawns and chicken was good, although the chicken was ground chicken.
+  Wifi 15/9 Mbit/s
+- [Blue Asher Trattoria](https://maps.app.goo.gl/X6pL3HRTKgHJuhLt5) - known for its pizza, but that is fattening so I
+  went with the lomo steak with 3 pepper sauce and mashed potatoes, which was very good.
+  They served a few small cubes of warm bread with olive oil and balsamic, which was a nice touch,
+  but it didn’t have enough olive oil and balsamic to dip all the bread in. WiFi 196/169 Mbit/s wifi
+- [Purple Flame Indian](https://maps.app.goo.gl/Hvq3ntkDqcB2Tzkd9) - a bit pricey by Colombian standards,
+  the food was decent but nothing special.
+  The Punjabi Ghosht with lamb had good quality lamb chunks in it, not fatty ones like some places, but the sauce was
+  greenish rather than red and it lacked something, some kick or something.
+  The mango lassi was good but small, 1/3 - 1/2 of the size of back home,
+  a sign of a restaurant that is optimizing for profits rather than experience.
+  This might be rated a 4.9 in Bogota but in London it'd be a 4.4 - 4.5.
+  Wifi 52/0.5 Mbit/s
+- [Andrino Mall](https://maps.app.goo.gl/xbKWWTzcJtACpLHi6) - very upmarket mall with Dubai style lighting throughout
+  and many expensive international brands.
+  Even the food court on the top level looks fancy, but it's still low brow food.
+  There are several good dessert places on the top floor though ranging from Oakberry acai to independent places serving
+  different desserts including ice creams, strawberries in chocolate etc.
+- [Atlantis Mall](https://maps.app.goo.gl/YcMsbQvEVVr1sE8c7) - mid-tier compared to Andrino
+- [El Retiro Mall](https://maps.app.goo.gl/ahYaudMNjAmohVf38) - small by comparison to Andrino but has some expensive
+  shops
+
+TODO:
+
+- [Je Veux Cafe] - was closed, not clear if it's closed down or was just temporarily closed early
+- [Astoria] - apparently the best rooftop in Colombia
 
 ## Travel Between Bogota and Medellin
 
@@ -203,6 +276,8 @@ It was actually cheaper to just take an Uber bike for 8,000 COP ($2) with a card
   and pork ones with pineapple in them, and the burrito was decent, the nachos with it were very crispy home made style
   ones. A little bit more expensive than The Altar above but good too.
   Wifi 97/75 Mbit/s
+- [Chef Burger] - excellent Medellin-based burger chain, see the food description in the
+  [Bogoto restaurants](#restaurants-in-bogota) section above
 - [Pigasus pig & Burgers](https://pigasus.com.co/) - good burger chain and reasonably priced for a burger and fries.
   The fries were a relatively small portion though.
   I tried the aphrodite burger, that fried cheese block thing on top was dipped in some thick sticky sweet sauce that
