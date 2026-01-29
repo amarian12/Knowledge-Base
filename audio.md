@@ -3,7 +3,7 @@
 <!-- INDEX_START -->
 
 - [Spotify](#spotify)
-  - [Clear Local Spotify Desktop Cache](#clear-local-spotify-desktop-cache)
+- [Migrate Playlists Between Music Platforms](#migrate-playlists-between-music-platforms)
 - [Shazam Songs while using Headphones on Mac](#shazam-songs-while-using-headphones-on-mac)
   - [Automatically Switch to Using Multi-Output Device when Connecting Headphones](#automatically-switch-to-using-multi-output-device-when-connecting-headphones)
 - [MP3 metadata editing](#mp3-metadata-editing)
@@ -12,6 +12,8 @@
   - [Recursively Set Metadata](#recursively-set-metadata)
     - [Recursively Set Artist and Album](#recursively-set-artist-and-album)
     - [Recursively Set Track Order](#recursively-set-track-order)
+- [Other Metadata Tools](#other-metadata-tools)
+  - [Picard by MusicBrainz](#picard-by-musicbrainz)
 - [Memes](#memes)
   - [Marketing Matters](#marketing-matters)
 
@@ -19,21 +21,11 @@
 
 ## Spotify
 
-### Clear Local Spotify Desktop Cache
+See the [Spotify](spotify.md) page.
 
-Close Spotify, delete the cache and then re-open the app.
+## Migrate Playlists Between Music Platforms
 
-On Mac:
-
-```shell
-rm -rf ~/Library/"Application Support"/Spotify/PersistentCache/Storage
-```
-
-On Linux:
-
-```shell
-rm -rf ~/.cache/spotify/Storage
-```
+See the [Spotify](spotify.md) page.
 
 ## Shazam Songs while using Headphones on Mac
 
@@ -170,6 +162,16 @@ find . -maxdepth 2 -iname '*.mp3' |
   done
 }
 ```
+
+## Other Metadata Tools
+
+### Picard by MusicBrainz
+
+<https://picard.musicbrainz.org/>
+
+[:octocat: metabrainz/picard](https://github.com/metabrainz/picard)
+
+Open source database that can be used to auto-tag music files.
 
 ## Memes
 

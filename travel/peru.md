@@ -13,6 +13,7 @@
 - [Cusco & Sacred Valley](#cusco--sacred-valley)
 - [Cusco](#cusco)
   - [Best Areas to Stay in Cusco](#best-areas-to-stay-in-cusco)
+  - [ATMs in Cusco](#atms-in-cusco)
   - [Restaurants in Cusco](#restaurants-in-cusco)
 - [Travel to Aguas Calientes & Machu Picchu](#travel-to-aguas-calientes--machu-picchu)
   - [Travel from Aguas Calientes to Machu Picchu](#travel-from-aguas-calientes-to-machu-picchu)
@@ -29,14 +30,22 @@
 
 ## Summary
 
-A lot of people have raved to me about Peru and a lot of westerners go there for the famous Machu Picchu.
+A lot of fellow travellers have raved to me about Peru.
+
+A lot of westerners go there for the famous Machu Picchu site.
 
 I was surprised how good the food was,
 and moderately priced by international standards (expect to pay \$25-30 for a decent steak meal as of Jan 2026).
 
+It turns out that Peru is quite the foodie destination.
+
 The currency is the Peruvian Sol which is roughly 3.3 per \$1 or 4.5 per £1 as of Jan 2026.
 
-I used the Saily e-sim 3GB for 30 days in Peru, which was actually more than I needed even for 10 days.
+I used Saily e-sim in Bolivia as it was the cheapest I could find at the time,
+but be sure to check all the [Mobile e-Sim providers](../travel.md#mobile-e-sims)
+I list in the travel overview page as prices can change.
+I purchased the 3GB for 30 days package, but that was actually more than I needed even for 10 days.
+I used less than 1GB by the time I was leaving and basically used the rest waiting at the airport in Cusco.
 
 ## ATMs in Peru
 
@@ -47,9 +56,9 @@ I used the Saily e-sim 3GB for 30 days in Peru, which was actually more than I n
 ## Lima
 
 The capital, I recommend at least 2-3 days to make use of the good restaurants and street gyms.
-There is also activities like surfing lessons.
+There are also activities like surfing lessons.
 
-I have never seen so many free calesthetic bar gyms in a city (mainly along the coast)
+I have never seen so many free calisthenic bar gyms in a city (mainly along the coast)
 and even a free open air gym with heavy bags and an MMA cage, which I have never seen anything else.
 
 Between the good affordable steaks food and free workout areas, this has got to be one of the cheapest cities in the
@@ -110,6 +119,8 @@ the Friday night BBQ with live DJ is so loud you can hear it all the way downsta
 
 ### Restaurants in Lima
 
+TODO: explore Barranco restaurants
+
 - [La Lucha Sangucheria](https://maps.app.goo.gl/ux1jm5WpqqQVPZPT7) /
   [La Lucha Sangucheria Criolla](https://maps.app.goo.gl/9D2r9Zq4tS4cTXTW8) -
   very popular & reasonably cheap Peruvian not-so-fast food place with burgers/sandwiches, fries and milkshakes.
@@ -150,6 +161,12 @@ Was the capital of the Inca Empire.
 
 A good base point for pilgrimages to the Sacred Valley & Machu Picchu.
 
+One of the greatest foodie cities I've ever seen by a mile -
+I wouldn't bother eating anywhere under a 4.8 here as the competition is so high.
+The restaurants here wipe the floor with the ones in Lima or Aguas Calientes (Machu Picchu town).
+
+It's a shame the altitude and weather can be uncomfortable, but one can't have everything.
+
 ### Best Areas to Stay in Cusco
 
 - [Historic Center](https://maps.app.goo.gl/oJijyxVCXb1JxSR28) near
@@ -163,12 +180,31 @@ A good base point for pilgrimages to the Sacred Valley & Machu Picchu.
 
 [Pariwana](https://maps.app.goo.gl/mmXXWdJvdJeNgPJQ9) is really nice, has a good bar with a free pool table,
 and is walking distance as Cusco is fairly small anyway. Kitchen is a bit limited though.
-Wifi 87/93 Mbit/s but it only works intermittently despite full signal bars
+Wifi 87/93 Mbit/s but it only works intermittently despite full signal bars.
+This is very frustrating and why I didn't stay here again
+
+[Blacky Hostel](https://maps.app.goo.gl/zTnfWakBHJyVtKJX6) - cheap at only £6 per night, has a full kitchen.
+Wifi 52/36 Mbit/s
 
 -->
 
+### ATMs in Cusco
+
+- [Cajero Banco de la Nación](https://maps.app.goo.gl/NELFyQMG5rDeGuqLA) - free cash withdrawals. You will need cash
+  for entrance tickets to historic sites like the Sacred Valley, as well as cheaper InDrive taxis and avoiding card
+  charges with cheaper accommodation or tour operators (I used Marina's in the main square as it was far cheaper than
+  what the tour operator embedded in my accommodation would charge).
+
 ### Restaurants in Cusco
 
+- [Kusykay Peruvian Craft Food](https://maps.app.goo.gl/cVkEDscgi7ZkYnZH7) - excellent restaurant - fine dining at
+  only moderate price.
+  The Andean soup starter was by far the best I had in Peru, fine dining with chicken, noodles,
+  and 5 green sauce dots around the plate.
+  The Lomo de Alpaca was also very good, with a bed of quinoa, crispy wafers, and double layered artistic sauce drizzles
+  ending in dollops with green dips on them.
+  I should have tried dessert here in hindsight as the food was top notch.
+  WiFi 138/152 Mbit/s
 - [Moray](https://maps.app.goo.gl/yRuM9YQm32H3RrPu7) - the food was amazing, this place deserves its 4.9 rating.
   The alpaca tenderloin with goldenberry sauce on it, potato millefeuille (triple layer potato square) and vegetables
   was excellent.
@@ -176,6 +212,55 @@ Wifi 87/93 Mbit/s but it only works intermittently despite full signal bars
   The 3 liquid truffle balls in batter with huacatay (peruvian mint) ice cream was also good,
   and also I could have eaten way more of it.
   Wifi 271/381 Mbit/s
+- [Ofrenda Peruvian Restaurant](https://maps.app.goo.gl/8TJFF1BLXfhVUrq39) - great menu, good decor & reasonable prices.
+  The quinoa chicken soup was not as good as Kushkay's though, so I'd skip that next time.
+  The guinea pig was fine dining, but the quarters had little meat, mostly mash base & fancy vegetables.
+  I would go with the alpaca next time.
+  The _"Despertar De La Luna"_ drink of blueberry, coconut cream and hierba buena (mixed herbs) was surprisingly good.
+  I was going to haggle over whether this deserved its 4.9 star rating until I tried their dessert.
+  The _"Give Me Chocolate"_ dessert was amazing - hot chocolate sponge (not cream as written) coated with pisco and
+  set on fire in front of me, with purple ice cream, fresh fruits, 2 different coulis (one yellow, one red), and
+  crumble - this is everything I could ever hope for in a dessert.
+  I was eating this with a rapid spooning frequency that must have made me look like a starving person who hadn't just
+  had 2 prior courses.
+  The waitress also gave me two samples of the cheesecake which was very good too,
+  but if you like chocolate, go with the _"Give Me Chocolate"_.
+  I hope they never change or discontinue this dessert.
+  It was the best dessert I'd had in ages.
+  I blew the budget at $40 here though, next time skip the soup, that wasn't worth the cost - get it at KusyKay instead
+  if you're in the mood for soup as it's the same price but much better there.
+  WiFi 69/70 Mbit/s
+- [Qampaq Restaurant](https://maps.app.goo.gl/yPhwECuPP1FX3gzL8) - excellent Alpaca skewers with crispy potatoes, but
+  a difficult walk uphill at low altitude.
+  Nice view from the upper level though.
+  Has wifi
+- [Yaku Restaurant](https://maps.app.goo.gl/qtJYgN51wbVAvX3h8) - the lomo saltado alpaca was very good quality, and the
+  chocolate brownie dessert was stuffing as it was 3 mid-sized brownie wedges with a small house made fruit ice cream
+  in the middle - 2 people who aren't greedy could share this one.
+  The venue itself is half open air and half outdoor shelter so not so warm depending on the weather.
+  Wifi 168/437 Mbit/s
+- [Oculto](https://maps.app.goo.gl/rfkJRVrAv5KZYYr4A) - prices look reasonable, until you find out they’re tapas and not
+  mains like the other restaurants in Cusco, so you are advised to order 2-3 dishes per person.
+  The plates near the top of the menu are smaller and the ones near the bottom are bigger.
+  Two of the bigger dishes,
+  the _"lomo fino de alpaca"_ (alpaca tenderloin steak strips with french fries) and _"pulpo a la parilla"_
+  (grilled octopus) with potatoes were enough food for me.
+  The alpaca sliced tenderloin meat was excellent and tender, and the octopus had good thick tentacles too.
+  The mousse de chocolate with olive oil, salt and cacao nibs was much better than I had anticipated -
+  the contrast of the saltiness with the chocolate makes you savour every small mouthful.
+  At first I thought why is this dessert on only exactly half of my plate,
+  but trust me, this dessert works and was trumped only by the chocolate dessert at Ofrenda above.
+  The venue was a candle lit date style restaurant. WiFi 112/311 Mbit/s
+
+TODO:
+
+- [Mare Restaurant](https://maps.app.goo.gl/v34Hrby1j9rJpYFb9) - 4.9, low key venue, must be a foodie place
+- [Artisano Regocijo Restaurant](https://maps.app.goo.gl/15gKFNhBkwcmshVx5) - 4.9 looks like fine dining but was noisy
+  with entertainment when I passed
+- [Kushka Restaurant](https://maps.app.goo.gl/v85gKpZh14gtwDgy5) - 4.8
+- [Organika Bakery & Coffee](https://maps.app.goo.gl/CXitHTBpJWZSGBC56) - 4.8
+- [Campo Cocina Andina](https://maps.app.goo.gl/6FR79MCjXvRK5Zdc7) - 4.8
+- [Casa Carbajal](https://maps.app.goo.gl/fdLS1A5tizufYHFf7) - 4.7
 
 ## Travel to Aguas Calientes & Machu Picchu
 
@@ -258,7 +343,7 @@ There are a lot of dogs lounging or trotting around the town.
 
 ### ATMs in Aguas Calientes
 
-- [Banco de la Nación](https://maps.app.goo.gl/zi2Kecw9dWfunJLT7) - no local fee cash withdrawals
+- [Banco de la Nación](https://maps.app.goo.gl/zi2Kecw9dWfunJLT7) - free cash withdrawals
 
 ### Attractions in Aguas Calientes
 
