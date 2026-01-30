@@ -208,12 +208,18 @@ Wifi 38/22 Mbit/s
 - [Llama Cafe](https://maps.app.goo.gl/oKFPxdX3pCcD2ABQ6) - gentrified cafe. The bruschetta was good with lots of fresh
   tomato on it, and the porridge with fruits was good too (mango, banana and strawberry).
   Has wifi
-- [Rufos Burger](https://maps.app.goo.gl/1jGrjquuaNun51JQ6) - the Lomito Rofos is basically a croissant with a very thin
-  beef strip, ham, egg and tomato
 - [Memos Coffee Bistro](https://maps.app.goo.gl/dB9irZjQMLARsQtm8) - I came for the acai bowl but they didn't have it.
   I tried the granola bowl instead and that was very good, up to gentrified coffee shop standards, yoghurt topped with
   a row of strawberry and banana slices, blueberries, a couple dried orange slices, syrup, and of course some granola.
   Wifi 15/1 Mbit/s
+- [Rufos Burger](https://maps.app.goo.gl/1jGrjquuaNun51JQ6) - the Lomito Rofos is basically a croissant with a very thin
+  beef strip, ham, egg and tomato.
+  I think I might have gotten bacterial food poisoning from here though as I developed a headache (rare for me), and it
+  seems unlikely to be from dehydration as it still lingered the next day
+  even though I was consciously hydrating from the night before.
+  Not going to risk trying the regular burger here when there are other places to try.
+  Doesn't really have wifi, the staff gave me an `Irene` network from a QR code on her phone for my phone that promptly
+  disappeared before I could use it on my laptop
 
 Not Recommended:
 
@@ -228,3 +234,13 @@ Not Recommended:
   but nobody I know who is a good cook or a good restaurant would serve this food.
   How you do anything is how you do everything.
   Has wifi
+
+TODO:
+
+- [Las Carmencitas](https://maps.app.goo.gl/mLAbz9mHjbFxUY617) - 4.8 cafe, drinks & desserts, didn't see any real food
+  on menu
+- [Vigus](https://maps.app.goo.gl/BL7Aez68b32RxbjeA) - 4.7
+- [Mr Taco Cafe](https://maps.app.goo.gl/sDcKhKhsskdth5tK7) - 4.9
+- [Esther barbecue](https://maps.app.goo.gl/WxD18fybKHhd9Kcj8) - 4.7
+- ["La chapaquita" Churrasquería](https://maps.app.goo.gl/VBvG7WRrp214EKATA) - 4.8
+- [Ensis](https://maps.app.goo.gl/Hk8XxE5gx9oj8gCn9) - 4.8, expensive here at over $20 per main but should be good

@@ -3,6 +3,7 @@
 <!-- INDEX_START -->
 
 - [Spotify](#spotify)
+- [Shazam](#shazam)
 - [Migrate Playlists Between Music Platforms](#migrate-playlists-between-music-platforms)
 - [Shazam Songs while using Headphones on Mac](#shazam-songs-while-using-headphones-on-mac)
   - [Automatically Switch to Using Multi-Output Device when Connecting Headphones](#automatically-switch-to-using-multi-output-device-when-connecting-headphones)
@@ -21,7 +22,15 @@
 
 ## Spotify
 
+Popular streaming music service.
+
 See the [Spotify](spotify.md) page.
+
+## Shazam
+
+Listens to a song and matches its name using an online database.
+
+See the [Shazam](shazam.md) page.
 
 ## Migrate Playlists Between Music Platforms
 

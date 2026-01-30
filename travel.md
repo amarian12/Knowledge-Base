@@ -4,15 +4,17 @@
 [![GitHub stars](https://img.shields.io/github/stars/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/stargazers)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/commits/main)
 
-[![Total Countries](https://img.shields.io/badge/Total%20Countries-54-blue)](https://nomads.com/@harisekhon)
+[![Total Countries](https://img.shields.io/badge/Total%20Countries-58-blue)](https://nomads.com/@harisekhon)
 [![Countries in 2024](https://img.shields.io/badge/in%202024-19-blue)](https://nomads.com/@harisekhon)
-[![Countries in 2025](https://img.shields.io/badge/in%202025-34-blue)](https://nomads.com/@harisekhon)
-[![Unique Countries 2024+](https://img.shields.io/badge/Unique%20Countries%202024+-45-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2025](https://img.shields.io/badge/in%202025-35-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2026](https://img.shields.io/badge/in%202026-4-blue)](https://nomads.com/@harisekhon)
+[![Unique Countries 2024+](https://img.shields.io/badge/Unique%20Countries%202024+-49-blue)](https://nomads.com/@harisekhon)
 
-[![Total Cities](https://img.shields.io/badge/Total%20Cities-174-blue)](https://nomads.com/@harisekhon)
+[![Total Cities](https://img.shields.io/badge/Total%20Cities-184-blue)](https://nomads.com/@harisekhon)
 [![Cities in 2024](https://img.shields.io/badge/in%202024-68-blue)](https://nomads.com/@harisekhon)
-[![Cities in 2025](https://img.shields.io/badge/in%202025-87-blue)](https://nomads.com/@harisekhon)
-[![Unique Cities 2024+](https://img.shields.io/badge/Unique%20Cities%202024+-149-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2025](https://img.shields.io/badge/in%202025-89-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2026](https://img.shields.io/badge/in%202026-9-blue)](https://nomads.com/@harisekhon)
+[![Unique Cities 2024+](https://img.shields.io/badge/Unique%20Cities%202024+-159-blue)](https://nomads.com/@harisekhon)
 
 Short links to this page:
 
@@ -99,24 +101,28 @@ Updated regularly as I travel the world 52 weeks a year.
 
 ## Countries
 
-Countries: 54
+Countries: 58
 
-Cities: 174
+Cities: 184
 
 - Countries in 2024: 19
   - Cities in 2024: 68
-  - Countries: UAE, France, Belgium, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia, Morocco,
-    Moldova, Turkey, Georgia, Thailand, Vietnam
+  - Countries: UAE, France, Belgium, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia,
+    Morocco, Moldova, Turkey, Georgia, Thailand, Vietnam
   - plus my extensive month long
     [Tour of England and Wales](https://medium.com/@harisekhon/the-uk-decline-what-i-learnt-from-my-uk-tour-2024-84347efced9b)
     (the latter was borderline a different country, there are actually Welsh signs I can't read)
-- Countries in 2025: 34
-  - Cities in 2025: 87
-  - Countries: Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria, Romania,
-    Hungary, Slovakia, Austria, Czechia, Poland, Germany, UK, Slovenia, Croatia, Montenegro, Albania, North Macedonia, Bosnia and
-    Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala, El Salvador, Costa Rica, Panama
-- Unique Countries since Emigrating from the UK in 2024: 45
-  - Unique Cities since Emigrating from the UK in 2024: 149
+- Countries in 2025: 35
+  - Cities in 2025: 89
+  - Countries: Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria,
+    Romania, Hungary, Slovakia, Austria, Czechia, Poland, Germany, UK, Slovenia, Croatia, Montenegro, Albania,
+    North Macedonia, Bosnia and Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala,
+    El Salvador, Costa Rica, Panama, Colombia
+- Countries in 2026: 4
+  - Cities in 2025: 89
+  - Countries: Colombia (continued), Ecuador, Peru, Bolivia
+- Unique Countries since Emigrating from the UK in 2024: 49
+  - Unique Cities since Emigrating from the UK in 2024: 159
 
 Country pages with specific tips for each country:
 
@@ -206,6 +212,18 @@ like much of the rest of the world
 - [Colombia](travel/colombia.md) ⭐
 - [Ecuador](travel/ecuador.md)
 - [Peru](travel/peru.md) ⭐
+- [Bolivia](travel/bolivia.md)
+
+<!--
+
+- [Chile](travel/chile.md) TODO
+- [Argentina](travel/argentina.md) TODO
+- [Uruguay](travel/uruguay.md) TODO
+- [Brazil](travel/brazil.md) TODO
+- [Paraguay](travel/paraguay.md) TODO
+- [Venezuela](travel/venezuela.md) TODO
+
+-->
 
 ## Booking Sites
 
@@ -327,14 +345,16 @@ which can leave you scrambling to book an outbound flight from your destination 
 
 This has hit me travelling to:
 
-- [Mexico](mexico.md) with Iberojet airline
-- [Costa Rica](costarica.md) with Avianca airline
-- [Panama](panama.md) with Copa airline
-- [Colombia](colombia.md) with Avianca airline
+- [Mexico](travel/mexico.md) with Iberojet airline
+- [Costa Rica](travel/costarica.md) with Avianca airline
+- [Panama](travel/panama.md) with Copa airline
+- [Colombia](travel/colombia.md) with Avianca airline
+- [Bolivia](travel/bolivia.md) with Aviana airline
 
-In [Panama](panama.md) and [Costa Rica](costarica.md) the immigration officer did ask for my outbound flight and
-accommodation, whereas in [Mexico](mexico.md) and [Colombia](colombia.md) they asked for my accommodation details but
-not my outbound flight.
+In [Panama](travel/panama.md) and [Costa Rica](travel/costarica.md)
+the immigration officer did ask for my outbound flight and accommodation,
+whereas in [Mexico](travel/mexico.md), [Colombia](travel/colombia.md) and [Bolivia](travel/bolivia.md)
+they asked for my accommodation details but not my outbound flight.
 
 Regardless, the airlines will not let you check-in without an outbound flight when travelling to some countries.
 
