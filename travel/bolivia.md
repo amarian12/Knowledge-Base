@@ -11,6 +11,7 @@
   - [Attractions in La Paz](#attractions-in-la-paz)
   - [Restaurants in La Paz](#restaurants-in-la-paz)
 - [Uyuni](#uyuni)
+  - [Uyuni Airport](#uyuni-airport)
   - [Taxis in Uyuni](#taxis-in-uyuni)
   - [Restaurants in Uyuni](#restaurants-in-uyuni)
 
@@ -18,7 +19,9 @@
 
 ## Summary
 
-Bolivia is a very 3rd world country, I struggle to finda reason to spent time and money visiting it.
+Bolivia is a very 3rd world country, I struggle to find a reason to spend time and money visiting it.
+
+The salt flats dessert in Uyuni is probably the only thing you might want to see once in your life for a 1 day trip.
 
 I used Saily e-sim in Bolivia as it was the cheapest I could find at the time,
 but be sure to check all the [Mobile e-Sim providers](../travel.md#mobile-e-sims)
@@ -185,7 +188,32 @@ which were flooded all over town making it hard to cross streets.
 
 After 55 countries I have never seen such a 3rd world place.
 
-People travel here only to see the salt flats. It is a desert.
+People travel here only to see the salt flats desert, which is a 1 day tour.
+The average price was around 300bs for the 1 day tour (\$40), although others in my group paid 500bs because they didn't
+check the prices with the other tour operators.
+The 2 day tours were much more expensive at 800-1400bs (\$115-\$200) with various tour operators.
+
+The 2 and 3 day tours visit other places,
+but the 1 day tour was quite tiring as it was, arriving back at around 8:20pm,
+so everyone in my group was glad we didn't commit to a 2-3 day long tour.
+
+### Uyuni Airport
+
+It's very small but functions.
+
+Uyuni such a one horse town that there is only 1 flight a day in or out in the early mornings
+(I think it's the same plane), and looking out the window there is nothing but dessert and mountains in the distance.
+
+There is an open wifi network `@Ruijie-sD67E` as of Jan 2026.
+
+There is 1 cafe before security on the upper level but they did not have the American Breakfast from the menu,
+only the vegetarian or quick breakfast sandwich.
+
+It's mainly a coffee stop but they do have good seating and power sockets for your phone or laptop.
+
+Their chai tea is unfortunately just a black tea without milk, not a chai latte,
+which is obvious in hindsight but I was sleepwalking at 7:50am to catch the only available flight out,
+and there is no chai latte option on the menu.
 
 ### Taxis in Uyuni
 
