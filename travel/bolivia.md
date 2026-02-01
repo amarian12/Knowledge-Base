@@ -15,6 +15,8 @@
   - [Taxis in Uyuni](#taxis-in-uyuni)
   - [The Salt Flats Tour](#the-salt-flats-tour)
   - [Restaurants in Uyuni](#restaurants-in-uyuni)
+- [Cochabamba](#cochabamba)
+- [Santa Cruz de la Sierra](#santa-cruz-de-la-sierra)
 
 <!-- INDEX_END -->
 
@@ -92,10 +94,16 @@ Don't stay in La Paz, transit through and go somewhere nice instead, but if you 
 
 <!--
 
-Greenhouse was pretty basic, the fridge gets locked and the taps only have cold water, which is horrible for shaving.
+[Greenhouse](https://maps.app.goo.gl/ZxwFGGKmbXfxeTut8) was pretty basic, the fridge gets locked and the taps only have
+cold water, which is horrible for shaving.
 The front gate cannot be opened from inside, there are electric release buttons at the reception desk and kitchen.
 Do not stay here again.
 Wifi 202/34 Mbit/s
+
+[Lobo](https://maps.app.goo.gl/pRXwxaABxn8BTTNm9) - the en-suite tap had only cold water and there was virtually no
+hot water because the water pressure on the hot water tap was too low pressure for it to come out.
+Do not stay here again.
+Wifi varied 2/3 Mbit/s to 54/3 Mbit/s but several of its 4-5 networks are unreliable
 
 -->
 
@@ -124,6 +132,11 @@ I am really struggling to make this section as this is not a tourist destination
 - [Plaza Murillo](https://maps.app.goo.gl/qRzPnRrBW3Dapjch6)
 - [Sagarnaga](https://maps.app.goo.gl/Ed5VRPfKrAaDBVNs7) - tourist shops street
 - [The Witches Market](https://maps.app.goo.gl/8DbmA3dwK8kjAbYx8)
+- [Plaza España](https://maps.app.goo.gl/2rGiCi2PqHf3U9iw7) - park
+  - [Circuito Público de Calistenia](https://maps.app.goo.gl/94mKSnPfSoVxdJvq9) - several free pull up bars and one pair
+    of olympic rings in the Plaza España park
+  - [Parque Urbano Central](https://maps.app.goo.gl/kbNdbqgxDxCQqyot6) - not as nice as expected due to main roads and
+    bridges running above it
 
 ### Restaurants in La Paz
 
@@ -135,19 +148,38 @@ I am really struggling to make this section as this is not a tourist destination
   The Acai Latte was decent.
   The classic bruschetta was one large toast with lots of tomatoes, it was good although could use more garlic and
   onion.
-  The Pistachio & Matcha Mouse is their most popular dessert but it was sold out.
+  The Pistachio & Matcha Mousse is their most popular dessert but it was sold out.
   The Bunuelos Biofilia with home made api was good though, just the right amount of sweetness, although I wish it was
   bigger.
   The Copoazu Lassi was really good, just the right amount of sweetness too, a local twist on an indian idea.
   I could eat here all day, the place is actually vegetarian and vegan but I didn't notice until later on because the
   menu was so good.
-  They also have acai bowl and tropical fruit bowl,
+  They also have acai bowl and tropical fruit bowl.
   I wish I had more time to eat my way through their menu as this was the highlight of La Paz.
+  I went back for a second visit to try their Pistachio & Matcha Mousse dessert but found it disappointing, although
+  The aguaymanto drink of dried goldenberry and peanut horchata in milk was reasonable if you're into milk-based drinks.
+  I enjoyed the bruchetta again, although they couldn't add more garlic as recommended as it was just using a garlic oil
+  which is why it was weak compared to a freshly chopped garlic like a pro would use, and I tried the sauteed andean
+  tubers (potato and sweet potato with 2 house sauces), which was supposed to be an appetizer and smaller portion but
+  turned out to be overkill as it came on a bigger plate than expected and I end up feeling bloated for a long time, so
+  after a long seated rest period ended up going straight to
+  [Circuito Público de Calistenia](https://maps.app.goo.gl/94mKSnPfSoVxdJvq9) described above to work it off before
+  dinner.
   WiFi 25/33 Mbit/s
 - [Beef & Beer](https://maps.app.goo.gl/nKqkXhhhbZqMHv7w8) - the Beef&Beer Sirloin steak was great, covered in fried
   onions and red peppers, with good fries and a side salad.
   The pineapple with ice cream and dulce de leche was good too
   I was very satisfied with the food here.
+  Has wifi
+- [La Rufina Restaurant](https://maps.app.goo.gl/1gqKQai727rwRjmr8) - upmarket restaurant at moderate price.
+  The Cole de Res was quite good - shredded oxtail in a demi-glaze sauce, with yuca puree
+  (similar to mashed potato made from mashed casava), sauteed vegetables and a smoky chimichurri sauce.
+  It's portion size was medium only so if you're very hungry you might be left wanting more
+  (I'd just had 3 courses at Biofilia so I was grateful for the reprieve).
+  The Mocochinchi drink made from peach was surprisingly nice, not too sweet,
+  with a half dehydrated peach in the glass too.
+  After the two more expensive restaurants in Uyuni, this place seemed like good value at only 85 BOB (just over \$12)
+  for a main and 15 BOB for a drink.
   Has wifi
 - [Inti Restaurant Café Bar](https://maps.app.goo.gl/WkqWwAB6PdbWiggX7) - the paiche prehistoric fish ceviche was red
   not white fish.
@@ -172,7 +204,6 @@ Not Recommended:
 TODO:
 
 - [Cafe Vida](https://maps.app.goo.gl/YEb3dS7KoRrhQCZk6) - 4.8, breakfast, smoothie bowls
-- [La Rufina Restaurant](https://maps.app.goo.gl/1gqKQai727rwRjmr8) - 4.5, upmarket restaurant
 - [El caldero inglés](El caldero inglés) - 4.8 - The English Cauldron cafe
 - [Yati Restaurant café bar](https://maps.app.goo.gl/Lo5XTcXPVvD8vyDb9) - 4.6
 - [Oliva Restaurant - Cocina Abierta](https://maps.app.goo.gl/GT8uUaDXZjgHd3Cg7) - 4.6
@@ -256,7 +287,8 @@ it can't possibly be any worse than the toilets at the salt scultures!
 <!--
 
 [Piedra Blanca Hostel](https://maps.app.goo.gl/DrShnMTTrcUcRnvx9) is on the southwest edge of town,
-about 10-15 minutes walk. Has hot water all day including the taps for shaving.
+about 10-15 minutes walk. Has hot water all day including the taps for shaving. Includes breakfast
+with scrambled eggs, juice, cereal and watermelon. Quite good overall.
 Wifi 38/22 Mbit/s
 
 -->
@@ -281,6 +313,7 @@ Wifi 38/22 Mbit/s
   There is also a 14bs charge for using a card payment.
   Overall, this was worth the experience given such an elaborate fine dining meal would have cost \$200 upwards in the
   West, so worth the merely internationally moderate price tag here.
+  Would be top pick if it wasn't for the price.
   WiFi 20/7 Mbit/s
 - [Vigus](https://maps.app.goo.gl/BL7Aez68b32RxbjeA) - they'd sold out of both the llama steak and the beef pepper
   steak, so I had to go with the lomo mantado (which is supposed to be similar to lomo saltado in Peru but wasn't).
@@ -314,9 +347,25 @@ Not Recommended:
 
 TODO:
 
-- [Ensis](https://maps.app.goo.gl/Hk8XxE5gx9oj8gCn9) - 4.8, expensive here at over $20 per main but should be good
+- [Ensis](https://maps.app.goo.gl/Hk8XxE5gx9oj8gCn9) - 4.8, the second most expensive restaurant I've seen in Uyuni
+  at over $20 per main but menu looks good, and it is quite a bit cheaper than Hotspot above
 - [Las Carmencitas](https://maps.app.goo.gl/mLAbz9mHjbFxUY617) - 4.8 cafe, drinks & desserts, didn't see any real food
   on menu
 - [Mr Taco Cafe](https://maps.app.goo.gl/sDcKhKhsskdth5tK7) - 4.9
 - [Esther barbecue](https://maps.app.goo.gl/WxD18fybKHhd9Kcj8) - 4.7
 - ["La chapaquita" Churrasquería](https://maps.app.goo.gl/VBvG7WRrp214EKATA) - 4.8
+
+## Cochabamba
+
+Apparently the gastronomic (food) capital of Bolivia.
+
+If I ever return to Bolivia I will want to put this to the test.
+
+The problem is that the cost of travel more than negates any food travel as you could instead just upgrade to high end
+or michelin star restaurants anywhere you happen to be in the world instead.
+
+## Santa Cruz de la Sierra
+
+Commercial centre.
+
+Only did a short layover here.
