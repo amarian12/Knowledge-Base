@@ -75,9 +75,17 @@ I would say 1 day stopover and then move on.
 
 ### El Alto Airport
 
-The airport is very small and the domestic departure lounge to Uyuni (for visiting the salt flats) has 3 cafes,
-one of which was closed at 7am, and a couple souvenir shops.
+The airport is very small with limited food options past security.
+
+There are better food options before security.
+
+The domestic departure lounge to Uyuni (for visiting the salt flats) has 3 cafes,
+one of which was closed at 7am, the main one was just a Juan Valdez coffee shop chain, and a couple souvenir shops.
 There was not much to eat.
+
+In the international lounge section there is one more cafe and 3 souvenir shops.
+
+There is free wifi on the `NAABOL` network with 5/80 Mbit/s speed.
 
 ### Best Areas to Stay in La Paz
 
@@ -102,6 +110,7 @@ Wifi 202/34 Mbit/s
 
 [Lobo](https://maps.app.goo.gl/pRXwxaABxn8BTTNm9) - the en-suite tap had only cold water and there was virtually no
 hot water because the water pressure on the hot water tap was too low pressure for it to come out.
+Noisy even at midnight due to the rooftop bar.
 Do not stay here again.
 Wifi varied 2/3 Mbit/s to 54/3 Mbit/s but several of its 4-5 networks are unreliable
 
