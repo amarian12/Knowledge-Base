@@ -8,6 +8,7 @@
     - [Travel from Ezeiza Airport to Buenos Aires City](#travel-from-ezeiza-airport-to-buenos-aires-city)
   - [Taxi Apps in Buenos Aires](#taxi-apps-in-buenos-aires)
   - [Best Areas to Stay in Buenos Aires](#best-areas-to-stay-in-buenos-aires)
+  - [Attractions in Buenos Aires](#attractions-in-buenos-aires)
   - [Restaurants in Buenos Aires](#restaurants-in-buenos-aires)
 
 <!-- INDEX_END -->
@@ -63,8 +64,8 @@ south.
   architecture
 - [Microcentro](https://www.google.com/maps/search/?api=1&query=Microcentro+Buenos+Aires) - central location close to
   major sights and transport, best for short stays
-- [San Telmo](https://maps.app.goo.gl/sWz53mGajVejM8kK7) - historic district known for tango, antiques and colonial
-  streets
+- [San Telmo](https://maps.app.goo.gl/sWz53mGajVejM8kK7) - near historic district,
+  with lots of restaurants and an antiques market, cheaper to stay in than Palmero
 - [Puerto Madero](https://maps.app.goo.gl/DJRA9uobRj7mVkYz7) - modern waterfront area with high-end hotels and
   restaurants
 - [Belgrano](https://maps.app.goo.gl/gJsQbhKoDhMRxUDbA) - residential and calm neighbourhood with good transport and
@@ -72,8 +73,52 @@ south.
 - [Villa Crespo](https://maps.app.goo.gl/bJVUaroNFs4Gvd1cA) - affordable, authentic area next to Palermo with growing
   food and bar scene
 
+### Attractions in Buenos Aires
+
+- [Plaza de Mayo](https://maps.app.goo.gl/yCaH1FXabYKRz7dQ8) - historic main square surrounded by key political and
+  cultural landmarks like the Presidential Palace and Bank of Argentina.
+  I don't really rate this area personally but you need to see it once as it is the heart of argentine power
+  - [Casa Rosada](https://maps.app.goo.gl/vwp7K3PKJc6xGMue9) - pink Presidential Palace, has tours
+  - [Plaza de calistenia - CORE Espacios](https://maps.app.goo.gl/hSyZBrdVKW3zuF6VA) - street workout calisthenic bars
+- [Av. Corrientes](https://maps.app.goo.gl/CV1B4Do3yfLFrkxM8) - broadway - street full of theatres and people
+  - [Teatro Colón](https://www.google.com/maps/search/?api=1&query=Teatro+Colon+Buenos+Aires) - famous opera house with
+    nice architecture
+  - [Mirador del Obelisco](Mirador del Obelisco)
+- [Recoleta](https://maps.app.goo.gl/YB9SayE22bHhTouj9) - affluent area with restaurants and several historical
+  attractions:
+  - [Recoleta Cemetery](https://maps.app.goo.gl/hCk4c8SojDeZj8Kk8) - famous cemetery known for ornate mausoleums including Eva Perón's tomb
+  - [Nacional Museum of Fine Arts](https://maps.app.goo.gl/96YivMQwtWCdzT1c6)
+  - [Facultad de Derecho (UBA)](https://maps.app.goo.gl/1vHwJNNjtfraJccF7) - university building
+  - [Floralis Genérica](https://maps.app.goo.gl/f27FLoBfqviqSSyM6) - large steel flower sculpture that opens and closes with daylight
+  - [Centauro Herido](https://maps.app.goo.gl/2dKAbmdPgPDLqdJT8)
+  - [Museo de Arte Latinoamericano de Buenos Aires](https://maps.app.goo.gl/S9fAAkgbiawBxa5W9) - art museum
+  - [Plaza Oriental Republic of Uruguay](https://maps.app.goo.gl/SrCjRvExdeenfeHy9)
+    - [Calistenia Park](https://maps.app.goo.gl/qtu3AKpYnzCbWVcH9) - street workout calisthenic bars
+- [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market with lots of food
+  places and arts & crafts
+- [Tres de Febrero Park](https://maps.app.goo.gl/2pnQjYTUpckVYXDw8) - large park with lake and calisthenics bars
+  - [Lago de Regatas](https://maps.app.goo.gl/34GiUcj8cq1YnF9P6) - lake
+  - [El Rosedal Garden](https://maps.app.goo.gl/sd7943niDGLknV3C8) - rose garden
+  - [Calisthenics Park](https://maps.app.goo.gl/iSMNc8bN2m6419Qx6) - street workout bars
+- [Puerto Madero](https://maps.app.goo.gl/vh8aRGTQSwmePvQw8) - gentrified waterfront with restaurants
+- [Caminito, La Boca](https://www.google.com/maps/search/?api=1&query=Caminito+La+Boca+Buenos+Aires) - street art area
+  with local performers
+- [Puerto Calistenia](https://maps.app.goo.gl/G8KppdFW1wLcivKo7) - street workout calisthenic bars,
+  between Puerto Madero and SAn Telmo
+
 ### Restaurants in Buenos Aires
 
+- [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market wiht lots of food
+  places and arts & crafts
+- [Hiro](https://maps.app.goo.gl/n9F1QoSv3xkkgPu96) - cafe with decent scrambled eggs breakfast,
+  unfortunately they were out of the salmon add on.
+  The squeeze orange juice was a good size without water or sugar, just as well since I forgot to specify that.
+  WiFi 284/188 Mbit/s
+- [Jay's](https://maps.app.goo.gl/rYymAK4bvph7gGU18) - american diner.
+  Decent spicy burger and thick cut fries.
+  Has US news playing on 2 TVs to add to the american atmosphere - not sure this is a plus point!
+  Reasonable prices but closes early in the day.
+  WiFi 16/32 Mbit/s
 - [Caracol](https://maps.app.goo.gl/xjjuatgyH4kuCUbSA) - was recommended to me as a decent local
   restaurant.
   The veal milanese with fries was decent and hit the spot after
@@ -82,3 +127,17 @@ south.
   The apple pie with vanilla ice cream was bigger than anticipated and filling.
   The place won't win any culinary awards but sits well as it's 4.4 star rating.
   Wifi didn't work for me even though it was connected at full signal strength
+
+TODO:
+
+- [El Banco Rojo](El Banco Rojo) - 4.5 burger
+- [Parrilla Bar Polo](https://maps.app.goo.gl/z4p1yZ8qncewP2TY7) - 4.5 steak closes at 5pm
+- [Je Suis Raclette](Je Suis Raclette) - 4.7 swiss
+- [Hierro Parrilla San Telmo](https://maps.app.goo.gl/QLC8dQXeZJMEqoWx6) - 4.7
+- [Rajatabla Café](https://maps.app.goo.gl/h5kqMuuTvv2AHfVZA) - 4.8
+- [Nica Mercado](https://maps.app.goo.gl/Y8nReHLmVtQX7ufa6) - 4.5
+- [Modular Café](https://maps.app.goo.gl/yURAdJyvkJcaQhwb7) - 4.7, stops serving food at 4pm
+- [Lo Del Francés Café Bistrot](Lo Del Francés Café Bistrot) - 4.4
+- [MARTINA restaurant parrilla](https://maps.app.goo.gl/x9Q6oYQ9e6xY6U7S9) - 4.4
+- [Sagardi Argentina](https://maps.app.goo.gl/31cerJzHWFooytHZA) - 4.5 pricier
+- [Che Taco Comida Mexicana](https://maps.app.goo.gl/AYz1SgkArjdBjEcw9) - 4.4 Chilaquiles!
