@@ -117,11 +117,11 @@ Cities: 184
   - Cities in 2025: 89
   - Countries: Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria,
     Romania, Hungary, Slovakia, Austria, Czechia, Poland, Germany, UK, Slovenia, Croatia, Montenegro, Albania,
-    North Macedonia, Bosnia and Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala,
+    North Macedonia, Bosnia & Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala,
     El Salvador, Costa Rica, Panama, Colombia
-- Countries in 2026: 4
+- Countries in 2026: 7
   - Cities in 2025: 89
-  - Countries: Colombia (continued), Ecuador, Peru, Bolivia
+  - Countries: Colombia (continued), Ecuador, Peru, Bolivia, Chile, Argentina, Uruguay
 - Unique Countries since Emigrating from the UK in 2024: 49
   - Unique Cities since Emigrating from the UK in 2024: 159
 
@@ -214,12 +214,13 @@ surprisingly still do not speak English.
 
 #### South America
 
-- [Argentina](travel/argentina.md) (in-progress)
+- [Argentina](travel/argentina.md)
 - [Chile](travel/chile.md)
 - [Colombia](travel/colombia.md) ⭐
 - [Ecuador](travel/ecuador.md)
 - [Peru](travel/peru.md) ⭐
 - [Bolivia](travel/bolivia.md)
+- [Uruguay](travel/uruguay.md) (in-progress)
 
 <!--
 

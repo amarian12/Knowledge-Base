@@ -23,7 +23,16 @@ Note this doesn't always work out so well so compare the price per GB
 as previously it worked out so expensive
 to get global data that it was cheaper for me to buy just enough data per country each time.
 
+It was $100 for 30 days of glucosamine supplements due to import taxes and in some places
+even the shaving cream was as expensive as Central American countries (\$12-\$15), so you'll save money if you bring
+all your own western supplies.
+
 ## Buenos Aires
+
+On the Eastern coast of South America, but really not a beach city...
+there is a large nature reserve blocking the east coast and a man made north-south rectangular bay at
+[Puerto Madero](https://maps.app.goo.gl/DJRA9uobRj7mVkYz7) which is considered the waterfront -
+Dubai Marina it is not, however.
 
 ### Buenos Aires Airport
 
@@ -57,15 +66,13 @@ south.
 
 ### Best Areas to Stay in Buenos Aires
 
-- [Palermo Soho](https://maps.app.goo.gl/T99rNHFCi1HtevbSA) - trendy area with cafes, nightlife and shopping
-- [Palermo Hollywood](https://maps.app.goo.gl/cswcLMR5Qz6b2EMfA) - restaurant & bar focused neighbourhood with a quieter
-  vibe than Soho
-- [Recoleta](https://maps.app.goo.gl/gnUHa5pXZ3LUCoh38) - elegant and safe area near parks, museums, with classic
-  architecture
-- [Microcentro](https://www.google.com/maps/search/?api=1&query=Microcentro+Buenos+Aires) - central location close to
-  major sights and transport, best for short stays
+- [Palermo Soho](https://maps.app.goo.gl/T99rNHFCi1HtevbSA) - gentrified suburb with cafes, nightlife and boutique shopping
+  - [Palermo Hollywood](https://maps.app.goo.gl/cswcLMR5Qz6b2EMfA) - restaurant & bar focused neighbourhood with a quieter
+    vibe than Soho - the wrong side of the track tracks
 - [San Telmo](https://maps.app.goo.gl/sWz53mGajVejM8kK7) - near historic district,
   with lots of restaurants and an antiques market, cheaper to stay in than Palmero
+- [Recoleta](https://maps.app.goo.gl/gnUHa5pXZ3LUCoh38) - elegant and safe area near parks, museums, with classic
+  architecture
 - [Puerto Madero](https://maps.app.goo.gl/DJRA9uobRj7mVkYz7) - modern waterfront area with high-end hotels and
   restaurants
 - [Belgrano](https://maps.app.goo.gl/gJsQbhKoDhMRxUDbA) - residential and calm neighbourhood with good transport and
@@ -108,36 +115,93 @@ south.
 
 ### Restaurants in Buenos Aires
 
-- [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market wiht lots of food
-  places and arts & crafts
-- [Hiro](https://maps.app.goo.gl/n9F1QoSv3xkkgPu96) - cafe with decent scrambled eggs breakfast,
-  unfortunately they were out of the salmon add on.
-  The squeeze orange juice was a good size without water or sugar, just as well since I forgot to specify that.
-  WiFi 284/188 Mbit/s
+Restaurants at the [Puerto Madero](https://maps.app.goo.gl/mtyYV2dDYqZMJZbW9) waterfront are noticably expensive as
+you're indirectly paying premium rents to landlords, and Dubai Marina it is not.
+The restaurants near the [Puente Azucena Villaflor bridge](https://maps.app.goo.gl/1UB72jsdhqRvbPd67) are particularly badly
+priced.
+
+- [Lucciano’s San Telmo](https://maps.app.goo.gl/6Ye8yZp64h8Qx46J9) - high quality ice cream gelateria, so good I went
+  back 3 days in a row.
+  There are two branches on broadway too at [Lucciano's Calle Corrientes](https://maps.app.goo.gl/hQUhMwHVvo5kacV58)
+  and a smaller takeaway only one at [Lucciano's Obelisco](https://maps.app.goo.gl/m9pTCENNtSzbVaYv6).
+  The Coco Rock with dessicated coconut is my favourite here,
+  although their pistacchio is decent too (not quite the best I've ever had),
+  and they have 3 chocolate flavours, I've tried one or two and they were good
+  (the hazelnut one was the least rich in flavour).
+  Like most pricey ice cream gelaterias you can try a 2-3 flavours before you buy.
+  Their waffle cones are also good, but I didn't try their coated ones as they look like calorie overkill
+- San Telmo:
+  - [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market wiht lots of food
+    places and arts & crafts, closes early around 7:30pm, it was locked up before the official 8pm closing time, so this
+    is a good place to get some lunch out of the midday sun
+    - [EL Hornero de San Telmo](https://maps.app.goo.gl/pQnNNnaMrfShpiJH7) - good empanadas (like small cornish pasties)
+      for 4200 AR each ($3).
+      The beef steak pieces and beef & potato ones were both so good I went back again for the same the next day
+  - [Hiro](https://maps.app.goo.gl/n9F1QoSv3xkkgPu96) - cafe with decent scrambled eggs breakfast,
+    unfortunately they were out of the salmon add on.
+    The squeeze orange juice was a good size without water or sugar, just as well since I forgot to specify that.
+    WiFi 284/188 Mbit/s
+  - [Nica Mercado](https://maps.app.goo.gl/Y8nReHLmVtQX7ufa6) - cafe opposite San Telmo market.
+    Their granola yoghurt fruit bowl appeared modestly sized but was very satisfying.
+    Has wifi but unreliable, especially at the outside seating (Speedtest kept failing)
+  - [Je Suis Raclette](https://maps.app.goo.gl/9bSikW9mjoKuysoP8) - swiss, inside the indoor market.
+    The beef raclette was ok, not sure it's worth the 24,000 AR (\$17).
+    It's really sold on the novelty of it being a cultural swiss dish,
+    which btw is heavy on cheese so if you're on a diet or not keen on cheese, you should skip this one.
+    Next time I'd go for the veal in white wine mushroom sauce which was also better priced at 18,000 AR (\$13).
+    Wifi 108/99 Mbit/s
+  - [Caracol](https://maps.app.goo.gl/xjjuatgyH4kuCUbSA) - was recommended to me as a decent local
+    restaurant.
+    The veal milanese with fries was decent and hit the spot after
+    a long day travelling into Buenos Aires.
+    The fries are the home made style.
+    The apple pie with vanilla ice cream was bigger than anticipated and filling.
+    The place won't win any culinary awards but sits well as it's 4.4 star rating.
+    Wifi didn't work for me even though it was connected at full signal strength
 - [Jay's](https://maps.app.goo.gl/rYymAK4bvph7gGU18) - american diner.
   Decent spicy burger and thick cut fries.
   Has US news playing on 2 TVs to add to the american atmosphere - not sure this is a plus point!
   Reasonable prices but closes early in the day.
   WiFi 16/32 Mbit/s
-- [Caracol](https://maps.app.goo.gl/xjjuatgyH4kuCUbSA) - was recommended to me as a decent local
-  restaurant.
-  The veal milanese with fries was decent and hit the spot after
-  a long day travelling into Buenos Aires.
-  The fries are the home made style.
-  The apple pie with vanilla ice cream was bigger than anticipated and filling.
-  The place won't win any culinary awards but sits well as it's 4.4 star rating.
-  Wifi didn't work for me even though it was connected at full signal strength
+- Puerto Madero:
+  - [Fabric Sushi](https://maps.app.goo.gl/mfTsQWn1z7Pr5Mbp7) - expensive, but as it's at the low footfall north end of
+    Puerto Madero it's not quite as expensive as the places by the central bridges.
+    The interior was nice but almost 100% empty as people chose to sit on the few outside waterfront seats.
+    They were completely out of all ceviches, which is what I went there to try, and they had no physical menu,
+    giving a QR code to the online menu, and no English menu at all, apparently the English translation online doesn’t
+    work.
+    There is lots of sushi and alcohol on the menu, sushi was ok - I wasn’t keen on the Kina,
+    but the 2 Sakes and Fabric sushi rolls were ok, although I wouldn’t revisit for these at these prices.
+    Has wifi
+
+Not Recommended:
+
+- [Big Pons](https://maps.app.goo.gl/6QxD51sZL5kCN8M67) - argentine burger chain, the Big Pons burger was less good than
+  a Burger King whopper. I'd skip this entirely next time, it's not worth the curiosity.
+  The outdoor seating is nicer at the [other one by the waterfront Puerto Madero waterfront](https://maps.app.goo.gl/YSXLoRvHgQpWQqrw5)
+  which is why it has a higher rating as it's one of the cheapest places to eat at the waterfront.
+  WiFi 23/166 Mbit/s
 
 TODO:
 
-- [El Banco Rojo](El Banco Rojo) - 4.5 burger
-- [Parrilla Bar Polo](https://maps.app.goo.gl/z4p1yZ8qncewP2TY7) - 4.5 steak closes at 5pm
-- [Je Suis Raclette](Je Suis Raclette) - 4.7 swiss
-- [Hierro Parrilla San Telmo](https://maps.app.goo.gl/QLC8dQXeZJMEqoWx6) - 4.7
-- [Rajatabla Café](https://maps.app.goo.gl/h5kqMuuTvv2AHfVZA) - 4.8
-- [Nica Mercado](https://maps.app.goo.gl/Y8nReHLmVtQX7ufa6) - 4.5
-- [Modular Café](https://maps.app.goo.gl/yURAdJyvkJcaQhwb7) - 4.7, stops serving food at 4pm
-- [Lo Del Francés Café Bistrot](Lo Del Francés Café Bistrot) - 4.4
+- [Persicco Teatros con Café Juan Valdez](https://maps.app.goo.gl/6HkpMX34UhXipYxd9) - ice cream shop on broadway
+  with the queue out the door at 11:30pm
+- Puerto Madero waterfront - Warning: restaurants here are the most expensive I've seen in Buenos Aires (most likely
+  due to high rent):
+  - [Lobo Café Puerto Madero](https://maps.app.goo.gl/a4WWbcYhSRKdrtCG6) - popular cafe with good outdoor seating facing
+    the waterfront, but tourist priced of course
+  - [Villegas Restó](https://maps.app.goo.gl/6q9S1NJVNG5e5wid6) - 4.7, expensive
+  - [Puerto Cristal](https://maps.app.goo.gl/v9NgFspncJxiBikc9) - 4.6 fine dining, expensive
+  - [MARE by Fran](https://maps.app.goo.gl/TaoGhFkXPhbQDWLc6) - 4.5 seafood, expensive
+- San Telmo:
+  - [La Choripanería](https://maps.app.goo.gl/8FMKm3vvuuz2UZrt8) - 4.6, bar seating, always full whenever I pass by
+  - [Parrilla Bar Polo](https://maps.app.goo.gl/z4p1yZ8qncewP2TY7) - 4.5 steak closes at 5pm
+  - [Rajatabla Café](https://maps.app.goo.gl/h5kqMuuTvv2AHfVZA) - 4.8 - cafe with sandwiches and yoghurt granola fruit
+  - [El Banco Rojo](https://maps.app.goo.gl/VSLHjjWhntnvUmjU8) - 4.5 burger
+  - [Hierro Parrilla San Telmo](https://maps.app.goo.gl/QLC8dQXeZJMEqoWx6) - 4.7
+  - [Modular Café](https://maps.app.goo.gl/yURAdJyvkJcaQhwb7) - 4.7, stops serving food at 4pm
+  - [Che Taco Comida Mexicana](https://maps.app.goo.gl/AYz1SgkArjdBjEcw9) - 4.4 mexican, nearer the edge of San Telmo,
+    basic decor. Has chilaquiles on the menu!
+  - [Sagardi Argentina](https://maps.app.goo.gl/31cerJzHWFooytHZA) - 4.5 pricier
+  - [Lo Del Francés Café Bistrot](https://maps.app.goo.gl/SDxNU7FE62mPcqUV8) - 4.4
 - [MARTINA restaurant parrilla](https://maps.app.goo.gl/x9Q6oYQ9e6xY6U7S9) - 4.4
-- [Sagardi Argentina](https://maps.app.goo.gl/31cerJzHWFooytHZA) - 4.5 pricier
-- [Che Taco Comida Mexicana](https://maps.app.goo.gl/AYz1SgkArjdBjEcw9) - 4.4 Chilaquiles!
