@@ -6,6 +6,7 @@
 - [Buenos Aires](#buenos-aires)
   - [Buenos Aires Airport](#buenos-aires-airport)
     - [Travel from Ezeiza Airport to Buenos Aires City](#travel-from-ezeiza-airport-to-buenos-aires-city)
+  - [Ferry to Uruguay Montevideo](#ferry-to-uruguay-montevideo)
   - [Taxi Apps in Buenos Aires](#taxi-apps-in-buenos-aires)
   - [Best Areas to Stay in Buenos Aires](#best-areas-to-stay-in-buenos-aires)
   - [Attractions in Buenos Aires](#attractions-in-buenos-aires)
@@ -59,6 +60,23 @@ you need the one that is going to Plaza de Mayo to take you to central Buenos Ai
 number 8 bus veer off slightly to different areas in the city near the end like La Boca which is several blocks to the
 south.
 
+### Ferry to Uruguay Montevideo
+
+You can take the ferry from Buenos Aires to Montevideo, the capital of Uruaguay, which is just across the water.
+
+It costs about 1/3 of the price of a plane ticket between the two cities, and you can buy it online here:
+
+<https://www.buquebus.com/ar>
+
+It may not be obvious from the online website but you should book the Turista class rather than the Economy class as it
+has a better view on the upper deck, and you should queue immediately to get through to pick your preferred seats
+as they are not pre-allocated like on planes.
+
+The [Buquebus Terminal](https://maps.app.goo.gl/YbYvAiSvcGGdT7p89) where you catch the ferry is in the north east of the
+city near the main areas and at the north end of Puerto Madero.
+
+The terminal has free open wifi `Buquebus_Wifi_Free` 11/35 Mbit/s, but not on the ferry.
+
 ### Taxi Apps in Buenos Aires
 
 - [InDrive](https://indrive.com/en-ar) - half the price of Uber
@@ -87,6 +105,11 @@ south.
   I don't really rate this area personally but you need to see it once as it is the heart of argentine power
   - [Casa Rosada](https://maps.app.goo.gl/vwp7K3PKJc6xGMue9) - pink Presidential Palace, has tours
   - [Plaza de calistenia - CORE Espacios](https://maps.app.goo.gl/hSyZBrdVKW3zuF6VA) - street workout calisthenic bars
+- San Telmo:
+  - [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market with lots of food
+    places and arts & crafts
+  - Weekend crafts market along [Defensa](https://maps.app.goo.gl/4gvuZWq6AJt44KuW6) street between Mercado San Telmo
+    and Plaza de Maya
 - [Av. Corrientes](https://maps.app.goo.gl/CV1B4Do3yfLFrkxM8) - broadway - street full of theatres and people
   - [Teatro Colón](https://www.google.com/maps/search/?api=1&query=Teatro+Colon+Buenos+Aires) - famous opera house with
     nice architecture
@@ -101,8 +124,10 @@ south.
   - [Museo de Arte Latinoamericano de Buenos Aires](https://maps.app.goo.gl/S9fAAkgbiawBxa5W9) - art museum
   - [Plaza Oriental Republic of Uruguay](https://maps.app.goo.gl/SrCjRvExdeenfeHy9)
     - [Calistenia Park](https://maps.app.goo.gl/qtu3AKpYnzCbWVcH9) - street workout calisthenic bars
-- [Mercado San Telmo](https://maps.app.goo.gl/fBNUcbUJr37z3QfEA) - permanent covered street market with lots of food
-  places and arts & crafts
+- Palmero:
+  - [Distrito Arcos](https://maps.app.goo.gl/HmAo68fg2A455KQ8A) - hip outdoor outlet shooping in a converted former
+    railway viaduct. Has free toilets
+  - [Plaza Serrano](https://maps.app.goo.gl/Svoif52yWAF6JS2n9) - has weekend crafts market
 - [Tres de Febrero Park](https://maps.app.goo.gl/2pnQjYTUpckVYXDw8) - large park with lake and calisthenics bars
   - [Lago de Regatas](https://maps.app.goo.gl/34GiUcj8cq1YnF9P6) - lake
   - [El Rosedal Garden](https://maps.app.goo.gl/sd7943niDGLknV3C8) - rose garden
@@ -158,6 +183,9 @@ priced.
     The apple pie with vanilla ice cream was bigger than anticipated and filling.
     The place won't win any culinary awards but sits well as it's 4.4 star rating.
     Wifi didn't work for me even though it was connected at full signal strength
+- Palmero:
+  - [Burger Joint](https://maps.app.goo.gl/gJmxJVF6VCA5f97CA) - Jamaican burger with pineapple and fries for 20,000AR
+    (\$14.50) was ok - has both indoor and outdoor seating. Wifi 4/3 Mbit/s
 - [Jay's](https://maps.app.goo.gl/rYymAK4bvph7gGU18) - american diner.
   Decent spicy burger and thick cut fries.
   Has US news playing on 2 TVs to add to the american atmosphere - not sure this is a plus point!
@@ -205,3 +233,9 @@ TODO:
   - [Sagardi Argentina](https://maps.app.goo.gl/31cerJzHWFooytHZA) - 4.5 pricier
   - [Lo Del Francés Café Bistrot](https://maps.app.goo.gl/SDxNU7FE62mPcqUV8) - 4.4
 - [MARTINA restaurant parrilla](https://maps.app.goo.gl/x9Q6oYQ9e6xY6U7S9) - 4.4
+- Palmero:
+  - [Warren Café & Brunch](https://maps.app.goo.gl/VTaEXbYzRz7KZv567) - 4.8
+  - [Pibä](https://maps.app.goo.gl/o1NJ3GgYgZ8TyF1b9) - 4.5 bar & grill
+- Palmero Hollywood - the wrong side of the train tracks:
+  - [UCO Restaurante](https://maps.app.goo.gl/rZAhPgCPpCKn83MN6) - 4.6 argentinian
+  - [Crizia Restaurante](https://maps.app.goo.gl/VYquGHQmvMSY7CRW6) - 4.6 expensive
