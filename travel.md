@@ -166,7 +166,7 @@ Country pages with specific tips for each country:
 ### Asia
 
 - [Cambodia](travel/cambodia.md)
-- [Indonesia](travel/indonesia.md) ⭐
+- [Indonesia](travel/indonesia.md) (Bali) ⭐
 - [Laos](travel/laos.md)
 - [Malaysia](travel/malaysia.md) ⭐
 - [Philippines](travel/philippines.md)
@@ -183,7 +183,7 @@ Country pages with specific tips for each country:
 - [South Africa](travel/south-africa.md)
 - [Turkey](travel/turkey.md)
 - [Tunisia](travel/tunisia.md)
-- [UAE](travel/uae.md) ⭐
+- [United Arab Emirates](travel/uae.md) (Dubai & Abu Dhabi) ⭐
 
 ### North America
 
@@ -215,17 +215,16 @@ surprisingly still do not speak English.
 #### South America
 
 - [Argentina](travel/argentina.md)
+- [Bolivia](travel/bolivia.md)
+- [Brazil](travel/brazil.md) ⭐ (in-progress)
 - [Chile](travel/chile.md)
 - [Colombia](travel/colombia.md) ⭐
 - [Ecuador](travel/ecuador.md)
 - [Peru](travel/peru.md) ⭐
-- [Bolivia](travel/bolivia.md)
-- [Uruguay](travel/uruguay.md) (in-progress)
+- [Uruguay](travel/uruguay.md)
 
 <!--
 
-- [Uruguay](travel/uruguay.md) TODO
-- [Brazil](travel/brazil.md) TODO
 - [Paraguay](travel/paraguay.md) TODO
 - [Venezuela](travel/venezuela.md) TODO
 
