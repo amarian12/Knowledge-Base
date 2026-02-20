@@ -45,20 +45,63 @@ Taxis were hard to come by at times, possibly due to the Rio Carnival
 ### Best Areas to Stay in Rio de Janeiro
 
 - [Copacabana](https://maps.app.goo.gl/5tmKCJLnZJnN8jLc9) -
-  this is the primary neighbourhood for tourists in the South East of the city.
-  It has the famous beach promenade as well as most of the well rated restaurants and better Zona Sul gentrified
-  supermarkets
+  upmarket neighbourhood with the famous beach as well as most of the well rated restaurants and better Zona Sul
+  gentrified supermarkets
+- [Ipanema](https://maps.app.goo.gl/cjSVKnqMP3GsXhkx5) - upmarket area just west of Copacabana with an extensive beach
+  and expensive restaurants
+- [São Conrado](https://maps.app.goo.gl/WGvTezc8zy2dfQJn8) - upmarket area with luxury condos and hotels further west
+  along the south coast from Copacabana
 
 Not Recommended:
 
-- Centro (smells)
-- North West
+- Centro or any neighbouring north eastern area (many places smell of urine and there are many homeless people)
+- North West - near the airport, the opposite end of the good part of town Copacabana
+- Rocinha - the favela (ghetto), where drug dealers roam around with guns
 
 ### Attractions in Rio de Janeiro
 
-- [Copacabana](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) - the main tourist area:
+- [Cristo Redentor](https://maps.app.goo.gl/KNfZtNU69oLpfh1Y9) - the famous giant statue of Jesus and viewpoint
+  overlooking the city
+- [Copacabana](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) Beach - the main tourist area with long beach, calisthenic bars, beach drink huts,
+  market stalls opposite the beach and many of the high end restaurants:
   - [Praia do Leme](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) - beach
   - [Praia de Copacabana](https://maps.app.goo.gl/27P5kLdYEcxvQiqo8) - beach
+  - [Mureta do Leme](https://maps.app.goo.gl/vyFww9BDRXtvSK8h6) - scenic spot
+- [Ipanema](https://maps.app.goo.gl/WTJVshd3gq6hhoPw7):
+  - [Praia de Ipanema](https://maps.app.goo.gl/aa4os6t6YXDc9KBN7) - beach
+  - [Praia do Leblon](https://maps.app.goo.gl/vEFNFs9s5XJtdLzK7) - beach
+  - [Mirante do Leblon](https://maps.app.goo.gl/r7wn6wFeTKJBGWAz7) - observation deck
+  - [Pedra do Arpoador](https://maps.app.goo.gl/NBJBoh34kSwAGTp29) - scenic spot
+- [São Conrado](https://maps.app.goo.gl/9kSnoV8DkRDoZcWY8):
+  - [Praia de São Conrado / Praia da Gávea](https://maps.app.goo.gl/wxNyaH8SJ4WQ1SseA) - beach
+  - [Praia do Pepino](https://maps.app.goo.gl/WkgDvTo3qBM8zev79) - beach
+  - [Fashion Mall](https://maps.app.goo.gl/MaViWRCTxgkWS3Br9) - small with a lot of vacant units, nothing compared to
+    fashion malls in other countries - I wouldn't travel to this again
+- [Rocinha](https://maps.app.goo.gl/2BX26gWchZmcTceK8) - favela with tours and a tourist market.
+  There are literally guys with guns and assault rifles walking down the alleyways, past you, so keep your phone and
+  sunglasses tucked away. One of them literally had a gold AK-47.
+  I'm not quite sure why anyone who has come from poverty would ever want to revisit such a place but my friend roped me
+  into it.
+  They love to mention how they are the only favela to have a metro subway stop 🙄 and how they have a free school for
+  all ages, a free hospital and free sports centre.
+  One astute tourist asked who pays for all that - to which the tour guide answered _"The Government"_ - as though that
+  wasn't just money stolen from productive people's earnings via taxes, thereby reducing their birthrates
+  (see [Idiocracy](https://www.youtube.com/watch?v=sP2tUW0HDHA)).
+  - Overall, you could just take the same public motorbike ride from the line of available drivers at
+    [this triangle](https://maps.app.goo.gl/xc21Ro6uoLn77G4h9) up to the top for 10 BRL
+    (5 BRL for a local, 10 BRL for a tourist = \$2) and then walk down from the viewpoints to the market by yourself
+    without having to pay \$26 for a tour guide to go to free places:
+  - [Via Ápia da Rocinha](https://maps.app.goo.gl/bSZyC3A8HDhGE6Kn8) - commercial tourist street with street stalls,
+    shops and restaurants.
+    This is a bit of a tourist place though as a t-shirt here costs 150 BRL (\$29) which is ridiculous given I rarely
+    pay more than \$5-\$7 around the world and for these and my friend bought one I recommended for 40 BRL (\$7.70) from
+    a stall opposite the nicer Copacabana beach
+  - [Terraço da Vila](https://maps.app.goo.gl/6q522R9w7EhqCHBn8) - rooftop viewpoint
+  - [Mirante Rocinha](https://maps.app.goo.gl/ZujiY1T5DmABYnZe7) - chic bar restaurant with a good view
+- [Sambadrome Marquês de Sapucaí](https://maps.app.goo.gl/nn8i4XwfXRVCJpDf9) - stadium that hosts the official
+  Rio Carnival dance competition
+- [Lagoa Rodrigo de Freitas](https://maps.app.goo.gl/PDCk36mhCowVAG1r5)
+  - [Pier da Lagoa](https://maps.app.goo.gl/36jsrkrj5PR66GBf6)
 
 #### Rio Carnival
 
@@ -91,6 +134,32 @@ The acai is also high in sugar and unhealthy as a result.
 - [Churrascaria Matinadas](https://maps.app.goo.gl/Dn5RskppfszzNGua7) - popular affordable barbeque meats and buffet
   serf-service restaurant. They weigh the meat, so only take what you want, and put it on a separate plate so it is
   weighed separately
+
+Not Recommended:
+
+- [Aconchego Carioca](https://maps.app.goo.gl/zqqPs2eKHLK7dbFy5) - they only had a single English menu,
+  which didn't have the prices, so you'd have to cross reference with the portugese menu.
+  For drinks we tried the Brazilian herb iced tea which was so bad my friend sent it back and got a cranberry house soda
+  instead.
+  The Peito Bovino com Pao de Alho starter was far too salty, I would not order that again.
+  The shrimp curry in a coconut is bland as hell,
+  although my Nigerian friend rated it highly as it reminded him of Nigerian food but according to him
+  with a Thai influence,
+  although I consider that an insult to Thai food which is never ever that bland, neither in London where we're from,
+  nor in Thailand.
+  The fried cassava powder was like mixing couscous and sand and then removing any flavour, it tasted of nothing -
+  I literally couldn't bring myself eat it as it just dried out my mouth without any benefit, and the starch-style
+  thickened bland shrimp curry wasn't helping to balance it.
+  The desserts were the best part - the Bolo Gelato de Coco (coconut _"cake"_) was moist like Triliche rather than
+  sponge like a cake as per the translation.
+  The Pudim de Cachaça (similar to white rum alcohol but made from sugarcane) dessert with hard caramelized top was my
+  favourite, although it is very sweet - my teeth were badly furred up from bacterial plaque within 5 minutes of eating
+  dessert.
+  WiFi 395/432 Mbit/s
+
+TODO:
+
+- [Bar e Restaurante Social Trapia](https://maps.app.goo.gl/4QTgWS1weHCo222P6) - recommended by my favela tour guide
 
 ### Supermarkets in Rio de Janeiro
 
