@@ -13,7 +13,13 @@
   - [Restaurants in Rio de Janeiro](#restaurants-in-rio-de-janeiro)
   - [Supermarkets in Rio de Janeiro](#supermarkets-in-rio-de-janeiro)
   - [Cautionary Stories from Rio de Janeiro](#cautionary-stories-from-rio-de-janeiro)
-- [Sao Paolo](#sao-paolo)
+- [Travelling Between Rio de Janeiro and Sao Paulo](#travelling-between-rio-de-janeiro-and-sao-paulo)
+  - [Bus Between Rio de Janeiro and Sao Paulo](#bus-between-rio-de-janeiro-and-sao-paulo)
+    - [Bus Food Stop](#bus-food-stop)
+- [Sao Paulo](#sao-paulo)
+  - [Best Areas to Stay in Sao Paulo](#best-areas-to-stay-in-sao-paulo)
+  - [Attractions in Sao Paulo](#attractions-in-sao-paulo)
+  - [Restaurants in Sao Paulo](#restaurants-in-sao-paulo)
 
 <!-- INDEX_END -->
 
@@ -22,12 +28,24 @@
 Brazil is a 3rd world country of great natural beauty but also stark wealth inequality,
 crime, homelessness and topless guys digging through trash bins in many locations across Rio.
 
+Brazil is the South Africa of Latin America - it consistently ranks as one of the most crime-ridden countries and
+will forever have serious social problems due to its demographics.
+
 It is easily one of the most mixed race countries in the world so you never know what "a brazilian" actually looks like
-as there is not a clear cut stereotype as there is in many other mostly homogenous countries.
+as there is not one clear cut stereotype look as there is in many other mostly homogenous countries.
+
+This is the only country in Latin America that speaks Portuguese instead of Spanish.
+
+You would be best served learning at least some basic Portuguese to get by as a lot of people do not speak English here,
+like most of Latin America.
 
 ## Rio de Janeiro
 
-A lot of places in Rio smell of urine, and there are a lot of homeless people asleep on the dirty streets.
+[Rio de Janeiro](https://maps.app.goo.gl/eBJE65JYm661Y5xG9) is most famous for it's southern beaches, such as
+Copacabana.
+
+Unfortunately, the rest of the city is not so great - a lot of places in Rio smell of urine, and there are a lot of
+homeless people asleep on the dirty streets and rummaging through trash bins.
 
 ### RIOgaleão International Airport
 
@@ -62,21 +80,26 @@ Not Recommended:
 
 - [Cristo Redentor](https://maps.app.goo.gl/KNfZtNU69oLpfh1Y9) - the famous giant statue of Jesus and viewpoint
   overlooking the city
-- [Copacabana](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) Beach - the main tourist area with long beach, calisthenic bars, beach drink huts,
-  market stalls opposite the beach and many of the high end restaurants:
-  - [Praia do Leme](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) - beach
-  - [Praia de Copacabana](https://maps.app.goo.gl/27P5kLdYEcxvQiqo8) - beach
-  - [Mureta do Leme](https://maps.app.goo.gl/vyFww9BDRXtvSK8h6) - scenic spot
-- [Ipanema](https://maps.app.goo.gl/WTJVshd3gq6hhoPw7):
-  - [Praia de Ipanema](https://maps.app.goo.gl/aa4os6t6YXDc9KBN7) - beach
-  - [Praia do Leblon](https://maps.app.goo.gl/vEFNFs9s5XJtdLzK7) - beach
-  - [Mirante do Leblon](https://maps.app.goo.gl/r7wn6wFeTKJBGWAz7) - observation deck
-  - [Pedra do Arpoador](https://maps.app.goo.gl/NBJBoh34kSwAGTp29) - scenic spot
-- [São Conrado](https://maps.app.goo.gl/9kSnoV8DkRDoZcWY8):
-  - [Praia de São Conrado / Praia da Gávea](https://maps.app.goo.gl/wxNyaH8SJ4WQ1SseA) - beach
-  - [Praia do Pepino](https://maps.app.goo.gl/WkgDvTo3qBM8zev79) - beach
-  - [Fashion Mall](https://maps.app.goo.gl/MaViWRCTxgkWS3Br9) - small with a lot of vacant units, nothing compared to
-    fashion malls in other countries - I wouldn't travel to this again
+- Zona Sul (South Zone):
+  - [Copacabana](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) Beach - the main tourist area with long beach,
+    calisthenic bars, beach drink huts, market stalls opposite the beach and many of the high end restaurants:
+    - [Praia do Leme](https://maps.app.goo.gl/LjCwzbvA5V57JPf87) - beach
+    - [Praia de Copacabana](https://maps.app.goo.gl/27P5kLdYEcxvQiqo8) - beach
+    - [Mureta do Leme](https://maps.app.goo.gl/vyFww9BDRXtvSK8h6) - scenic spot
+  - [Ipanema](https://maps.app.goo.gl/WTJVshd3gq6hhoPw7):
+    - [Praia de Ipanema](https://maps.app.goo.gl/aa4os6t6YXDc9KBN7) - beach
+    - [Praia do Leblon](https://maps.app.goo.gl/vEFNFs9s5XJtdLzK7) - beach
+    - [Leblon Mall](https://maps.app.goo.gl/EigzGkMv36jcttsk7) - upmarket multi-story mall with international designer
+      brand shops and a top floor of restaurants
+    - [Mirante do Leblon](https://maps.app.goo.gl/r7wn6wFeTKJBGWAz7) - observation deck
+    - [Pedra do Arpoador](https://maps.app.goo.gl/NBJBoh34kSwAGTp29) - scenic spot
+  - [São Conrado](https://maps.app.goo.gl/9kSnoV8DkRDoZcWY8):
+    - [Praia de São Conrado / Praia da Gávea](https://maps.app.goo.gl/wxNyaH8SJ4WQ1SseA) - beach
+    - [Praia do Pepino](https://maps.app.goo.gl/WkgDvTo3qBM8zev79) - beach
+    - [Fashion Mall](https://maps.app.goo.gl/MaViWRCTxgkWS3Br9) - small with a lot of vacant units, nothing compared to
+      fashion malls in other countries - I wouldn't travel to this again
+- [Lagoa Rodrigo de Freitas](https://maps.app.goo.gl/PDCk36mhCowVAG1r5)
+  - [Pier da Lagoa](https://maps.app.goo.gl/36jsrkrj5PR66GBf6)
 - [Rocinha](https://maps.app.goo.gl/2BX26gWchZmcTceK8) - favela with tours and a tourist market.
   There are literally guys with guns and assault rifles walking down the alleyways, past you, so keep your phone and
   sunglasses tucked away. One of them literally had a gold AK-47.
@@ -100,8 +123,6 @@ Not Recommended:
   - [Mirante Rocinha](https://maps.app.goo.gl/ZujiY1T5DmABYnZe7) - chic bar restaurant with a good view
 - [Sambadrome Marquês de Sapucaí](https://maps.app.goo.gl/nn8i4XwfXRVCJpDf9) - stadium that hosts the official
   Rio Carnival dance competition
-- [Lagoa Rodrigo de Freitas](https://maps.app.goo.gl/PDCk36mhCowVAG1r5)
-  - [Pier da Lagoa](https://maps.app.goo.gl/36jsrkrj5PR66GBf6)
 
 #### Rio Carnival
 
@@ -134,11 +155,16 @@ The acai is also high in sugar and unhealthy as a result.
 - [Churrascaria Matinadas](https://maps.app.goo.gl/Dn5RskppfszzNGua7) - popular affordable barbeque meats and buffet
   serf-service restaurant. They weigh the meat, so only take what you want, and put it on a separate plate so it is
   weighed separately
+- [Boa Praça](https://maps.app.goo.gl/2cvEMNtLfU9J4krt5) - popular busy bar & grill
+- [Café Zinn - Leblon](https://maps.app.goo.gl/zTRGzZ553BooZ3Bo7) - the vanilla golden milk was nice, albeit small for
+  24 BRL (\$4.60 - expensive for Brazilian standards considering you can get a big coconut for 9-12 BRL).
+  This place is likely marked down on stars due to price vs size, but was a good refuge in the mall to warm up during a
+  thunderstorm
 
 Not Recommended:
 
 - [Aconchego Carioca](https://maps.app.goo.gl/zqqPs2eKHLK7dbFy5) - they only had a single English menu,
-  which didn't have the prices, so you'd have to cross reference with the portugese menu.
+  which didn't have the prices, so you'd have to cross reference with the portuguese menu.
   For drinks we tried the Brazilian herb iced tea which was so bad my friend sent it back and got a cranberry house soda
   instead.
   The Peito Bovino com Pao de Alho starter was far too salty, I would not order that again.
@@ -197,6 +223,116 @@ is walking with us while we're exchanging travel tips and going to get dinner to
 I tell him I'll write the name of a travel place I recommended on his phone when he struggles to understand the spelling
 of the name, and he declines to take his phone out for fear of being mugged / it being snatched.
 
-## Sao Paolo
+## Travelling Between Rio de Janeiro and Sao Paulo
 
-TODO
+Flights were expensive, between £200-£400 at short notice, while buses were around £25, although takes longer at around
+6-7 hours.
+
+### Bus Between Rio de Janeiro and Sao Paulo
+
+You can catch buses from [Novo Rio Bus Terminal](https://maps.app.goo.gl/TB3Rt52a9LWvP2dE9) in Rio de Janeiro
+to São Paulo's [Tietê Bus Terminal](https://maps.app.goo.gl/yBctGwGG1dpgHRMEA).
+
+It's recommended to book online in advance as the tickets can sell out 24-48 hours in advance on the weekends.
+
+You can buy tickets at one of these websites:
+
+<https://www.busbud.com/en> - I find this site's listings much more clear due to chronological departure ordering
+
+<https://www.clickbus.com.br/>
+
+#### Bus Food Stop
+
+The bus stopped about half way at a pit stop with a buffet restaurant called Graal Resende.
+There was also a NYC burger restaurant there if you want a fixed cost meal.
+
+## Sao Paulo
+
+[São Paulo](https://maps.app.goo.gl/vQ5jfTN1scUbM41S9) is Brazil's capital with the largest population which was 12M as
+of 2025 estimates.
+
+### Best Areas to Stay in Sao Paulo
+
+- [Jardins](https://maps.app.goo.gl/4aVQ9MKaqPY6qdBP7) - upmarket area near Avenida Paulista with fancy restaurants,
+  boutique shopping, hotels and museums
+- [Itaim Bibi](https://maps.app.goo.gl/p9gLdR2bLt3ADvVZ9) - trendy neighborhood known for expensive nightlife
+  restaurants, luxury shopping, corporate offices and business hotels
+- [Vila Madalena](https://maps.app.goo.gl/mm1XYScEYwQ3U4je8) - bohemian district with street art, bars and creative vibe
+- [Pinheiros](https://maps.app.goo.gl/xe18PvkDQu9AHjAL6) - lively area with markets, cafes, restaurants and several busy
+  bars. Also has good metro connections
+- [Paulista / Bela Vista](https://maps.app.goo.gl/owDNCcLmMGgcWm527) - central location with cultural attractions
+  museums and public transport
+- [Higienópolis](https://maps.app.goo.gl/ihhbDDGicgTvt1Bc9) - quiet gentrified area of cafes, boutiques, restaurants and mall
+- [Moema](https://maps.app.goo.gl/qzKJaFchm4ybNT3o7) - safe residential area close to Ibirapuera Park and
+  Congonhas Airport, consider it for longer / family stays
+
+<!--
+
+[Mada Hostel](https://maps.app.goo.gl/bjkVHJ3nDwNrYmxX9) - cheap and decent - on the border of Vila and Pinheiros areas.
+It's in a private road -
+the south gate which is on the road with the bars is locked at 8pm (probably to keep drunks out?)
+you have to walk around the block to enter from the quieter north side
+Wifi 969/560 Mbit/s - stunningly fast!
+
+-->
+
+### Attractions in Sao Paulo
+
+- [São Paulo Cathedral](https://maps.app.goo.gl/PNmJxbzxA5L97Nv89) - grand neo Gothic cathedral located in the historic
+  city center
+- [Municipal Market of São Paulo](https://maps.app.goo.gl/5AtJEgch8DKXM3Sc7) - historic market and food court famous for
+  mortadella sandwiches and fresh produce
+- [São Paulo Museum of Art (MASP)](https://maps.app.goo.gl/9f2m7gtnsexvwPr69) - iconic modern art museum on
+  Avenida Paulista with striking suspended architecture
+- [Instituto Moreira Salles - IMS Paulista](https://maps.app.goo.gl/iuV4zTEFAeaHt8R97) - cultural museum in a fancy
+  glass-fronted building with photography shows, a library, a cafe & view over Avenida Paulista
+- [Liberdade](https://maps.app.goo.gl/nRiUvPWnUZ96mCPi9) - Japanese influenced district known for Asian cuisine &
+  cultural shops
+- [Ibirapuera Park](https://maps.app.goo.gl/eF9kF9bnQVV8nePt8) - large park with museums, lakes and walking trails,
+  just east of the Itaim Bibi upmarket business district
+- [Football Museum](https://maps.app.goo.gl/iazith1VyrHUAXet7) - interactive museum dedicated to Brazil’s football
+  history inside Pacaembu Stadium
+- [Pinacoteca de São Paulo](https://maps.app.goo.gl/PX4mswH9NED4xrPP6) - Brazilian art museum
+- [Theatro Municipal de São Paulo](https://maps.app.goo.gl/vafKdi3fTXT27ish8) - Ornate early 20th century opera house
+  inspired by European architecture
+- [Farol Santander](https://maps.app.goo.gl/5mGfidTDUNeL1ZX3A) - big 35-floor skyscraper with cultural exhibits & an
+  observation deck for city views
+- [Beco do Batman](https://maps.app.goo.gl/Xo7DJbTvZRNnRviw5) - alleyway of street art graffiti in Vila Madalena
+- [Shopping Pátio Higienópolis](https://maps.app.goo.gl/u67DeekZR2RKkXLeA) - upmarket mall in the Higienópolis area
+  mentioned above
+- [Iguatemi Shopping](https://maps.app.goo.gl/eMe1uyR5osmBtznu8) - upmarket mall in the Itaim Bibi area mentioned above
+
+### Restaurants in Sao Paulo
+
+- [Hamburgueria Bullguer](https://www.google.com/maps/search/Bullguer+sao+paulo) - surprisingly good and fresh burgers
+  at a reasonable price.
+  The Stencil burger was stacked with fresh lettuce, tomato and onions (I got it without cheese).
+  The burger bun even had that stencil burnt Bullguer branding on the top which was a nice touch.
+  The crinkle cut fries were crispy and well seasoned.
+  The chocolate milkshake was smaller than expected but very tasty, good quality ice cream, just the right amount of
+  sweetness, with chocolate sauce on the sides of the cup, perfect.
+  I actually went back the next night to try to it again but they had no milkshakes -
+  I was devastated and had to settle for another Stencil burger and a Kiro lemonade (tahiti lime, apple, and ginger
+  molasses) which was interesting but I wouldn't drink it every day.
+  There was 1 self-service terminal almost blocking the old human terminal leaving the female server with nothing to do!
+  There's a good amount of seating in the [Pinheiros one](https://maps.app.goo.gl/Bqh85bMvTybER19F7) that I originally
+  went to.
+  No wifi!
+- [GUA.CO](https://www.google.com/maps/search/GUA.CO+sao+paulo) - Mexican fast food style chain serving burritos, tacos,
+  salad bowls etc. - decent, reasonably priced.
+  Good barbacoa burrito with complete filling makes it juicy.
+  The nachos and red salsa dip is also good - the salsa is largely chopped tomatoes.
+  The chipotle sauce is medium spicy and worked well in a burrito.
+  The verde sauce was spicier than expected for a medium rated sauce and the habanero sauce was extremely spicy -
+  I’d avoid the habanero next time.
+  Wifi 104/35 Mbit/s
+
+TODO:
+
+- [Hirá Ramen Izakaya](https://maps.app.goo.gl/iQxHdaH2nAYvArup8) - 4.5, busy
+- [Motique](https://maps.app.goo.gl/3cXg4PQDCcbA4qNA9) - 4.9
+- [Casa Jardim Restaurante e Eventos](https://maps.app.goo.gl/1qVwK3GtMMjAHVJu9) - 4.7
+- [São Cristóvão Bar e Restaurante](https://maps.app.goo.gl/7vt1qxThqN8uqoy97) - 4.4 - soccer themed bar serving
+  Brazilian food
+- [O Escandinavo](https://maps.app.goo.gl/N4QAhUzvorS81mdo8) - 4.8, nordic, expensive
+- [Di Paolo Pinheiros](https://maps.app.goo.gl/V3bSjDPepfrmpDjw7) - 4.6, expensive
