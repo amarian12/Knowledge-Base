@@ -3,6 +3,8 @@
 <!-- INDEX_START -->
 
 - [Summary](#summary)
+  - [Prices & Restaurants](#prices--restaurants)
+- [Population](#population)
 - [Buenos Aires](#buenos-aires)
   - [Buenos Aires Airport](#buenos-aires-airport)
     - [Travel from Ezeiza Airport to Buenos Aires City](#travel-from-ezeiza-airport-to-buenos-aires-city)
@@ -11,6 +13,7 @@
   - [Best Areas to Stay in Buenos Aires](#best-areas-to-stay-in-buenos-aires)
   - [Attractions in Buenos Aires](#attractions-in-buenos-aires)
   - [Restaurants in Buenos Aires](#restaurants-in-buenos-aires)
+- [Areas Yet to Explore](#areas-yet-to-explore)
 
 <!-- INDEX_END -->
 
@@ -18,15 +21,45 @@
 
 Argentina uses the Argentine Peso (ARS) which is roughly 2,000 ARS per 1 GBP, or 1,400 ARS per 1 USD as of Feb 2026.
 
-I used Eskimo e-sim with 10GB of global data to reuse across countries as I got a good deal and it worked out cheaper
+I used [Eskimo e-sim](../travel.md#mobile-e-sims) with 10GB of global data to reuse across countries as I got a good deal and it worked out cheaper
 than buying a new e-sim for each country and potentially leaving behind remaining data each time.
 Note this doesn't always work out so well so compare the price per GB
 as previously it worked out so expensive
 to get global data that it was cheaper for me to buy just enough data per country each time.
 
-It was $100 for 30 days of glucosamine supplements due to import taxes and in some places
-even the shaving cream was as expensive as Central American countries (\$12-\$15), so you'll save money if you bring
-all your own western supplies.
+### Prices & Restaurants
+
+Argentina can be expensive, with many restaurants being relatively far pricier compared to its salaries.
+One american woman from New York complained to me in that she spent more in an Indian restaurant in Buenos Aires than
+she would in her local Indian restaurant in New York, and my travel buddy later pulled me up that apparently I didn't
+warn him enough that Argentina could be expensive, so consider yourself warned.
+
+Even around the world I have come to expect Argentinian restaurants to be relatively more expensive than others and
+usually avoid them for this reason - they seem to have a culture that is it expected for restaurants to be expensive.
+
+Supplements here are also outrageously expensive - $100 for 30 days of glucosamine due to import taxes and in some
+places even the shaving cream was as expensive as Central American countries (\$12-\$15), so you'll save money if you
+bring all your own western supplies.
+
+## Population
+
+[Argentina](https://en.wikipedia.org/wiki/Argentina) is the second largest country in South America, after
+[Brazil](brazil.md).
+
+I was pleasantly surprised by the attractiveness of Argentinian people
+due to having a large Spanish and Italian ethnic heritage.
+
+Its birthrates have only recently fallen below replenishment in 2019, now an unsustainably low 1.5 children per woman.
+
+Reminder: 2.1 children average per woman is needed just to replenish the current adult population,
+and much higher birthrates [or mass immigration replacement] is needed if you want to support an expensive democratic
+ponzi scheme welfare state & pensions long term.
+
+[![Birthrate Per Woman](https://ourworldindata.org/grapher/children-per-woman-un.svg?tab=line&country=~ARG)](https://ourworldindata.org/grapher/children-per-woman-un?tab=line&country=~ARG)
+
+Argentina's population has started to level off before it goes into decline:
+
+[![Population](https://ourworldindata.org/grapher/population.svg?tab=line&time=1950..2023&country=~ARG)](https://ourworldindata.org/grapher/population?tab=line&time=1950..2023&country=~ARG)
 
 ## Buenos Aires
 
@@ -239,3 +272,16 @@ TODO:
 - Palmero Hollywood - the wrong side of the train tracks:
   - [UCO Restaurante](https://maps.app.goo.gl/rZAhPgCPpCKn83MN6) - 4.6 argentinian
   - [Crizia Restaurante](https://maps.app.goo.gl/VYquGHQmvMSY7CRW6) - 4.6 expensive
+
+## Areas Yet to Explore
+
+- [Puerto Iguazú](https://maps.app.goo.gl/WcVsMmMjr9j1xPVy7)
+- [Cataratas del Iguazú](https://maps.app.goo.gl/pTMu2kfpgDMuz5qe9)
+- [Salta](https://maps.app.goo.gl/N2Emd1FhkWkPvHbx8)
+- [San Salvador de Jujuy](https://maps.app.goo.gl/ko4G15ntieDPerYx6)
+- [Mendoza Province](https://maps.app.goo.gl/z6ghxPAqe8EfAfqA9)
+- [San Martín de los Andes](https://maps.app.goo.gl/odQE3m3yn5biKPZe9)
+- [Villa La Angostura](https://maps.app.goo.gl/NNqSLGn9M98SjG4DA)
+- [San Carlos de Bariloche](https://maps.app.goo.gl/fhsvHtv5SJd1mV3Q6)
+- [El Bolsón](https://maps.app.goo.gl/R2kTdyP8WivZ7Gtf8)
+- [Perito Moreno Glacier](https://maps.app.goo.gl/vKMUKvLiuhH1hYtP9) - too cold for me!

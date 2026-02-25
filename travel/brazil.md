@@ -39,6 +39,11 @@ This is the only country in Latin America that speaks Portuguese instead of Span
 You would be best served learning at least some basic Portuguese to get by as a lot of people do not speak English here,
 like most of Latin America.
 
+Brazil also has birthrates below replenishment and [Idiocracy](https://www.youtube.com/watch?v=sP2tUW0HDHA)
+birthrate imbalance between groups.
+
+![Birthrate Per Woman - Brazil](https://ourworldindata.org/grapher/children-per-woman-un.svg?tab=line&country=~BRA)
+
 ## Rio de Janeiro
 
 [Rio de Janeiro](https://maps.app.goo.gl/eBJE65JYm661Y5xG9) is most famous for it's southern beaches, such as
@@ -278,25 +283,34 @@ Wifi 969/560 Mbit/s - stunningly fast!
 
 ### Attractions in Sao Paulo
 
-- [São Paulo Cathedral](https://maps.app.goo.gl/PNmJxbzxA5L97Nv89) - grand neo Gothic cathedral located in the historic
-  city center
-- [Municipal Market of São Paulo](https://maps.app.goo.gl/5AtJEgch8DKXM3Sc7) - historic market and food court famous for
-  mortadella sandwiches and fresh produce
-- [São Paulo Museum of Art (MASP)](https://maps.app.goo.gl/9f2m7gtnsexvwPr69) - iconic modern art museum on
-  Avenida Paulista with striking suspended architecture
-- [Instituto Moreira Salles - IMS Paulista](https://maps.app.goo.gl/iuV4zTEFAeaHt8R97) - cultural museum in a fancy
-  glass-fronted building with photography shows, a library, a cafe & view over Avenida Paulista
+- Historic Center - I wasn't that keen on this, after one pass through, I doubt I would return:
+  - [Theatro Municipal de São Paulo](https://maps.app.goo.gl/vafKdi3fTXT27ish8) - surprisingly impressive opera house
+    architecture for Brazil, clearly inspired by European design - the highlight of the center of the city
+  - [Farol Santander](https://maps.app.goo.gl/5mGfidTDUNeL1ZX3A) - big 35-floor skyscraper with cultural exhibits & an
+    observation deck for city views
+  - [São Paulo Cathedral](https://maps.app.goo.gl/PNmJxbzxA5L97Nv89) - grand neo-gothic cathedral
+  - [Municipal Market of São Paulo](https://maps.app.goo.gl/5AtJEgch8DKXM3Sc7) - historic market and food court famous for
+    mortadella sandwiches and fresh produce
+  - [Pinacoteca de São Paulo](https://maps.app.goo.gl/PX4mswH9NED4xrPP6) - Brazilian art museum
+- [Avenida Paulista](https://maps.app.goo.gl/bEwMfYphEzKbvG4f9) - Sao Paulo's major street full of high-rise corporate
+  office buildings and small malls:
+  - [Parque Tenente Siqueira Campos - Trianon](https://maps.app.goo.gl/6e6vxQ1Dyxd3uUbRA) - a small brazilian forest
+    city park in the middle of the city - a refuge if you're not enamored with the big city feel of Avenida Paulista.
+    It is split in two by a bridge over a road running through the middle of it, but it's still surprisingly nice
+  - [São Paulo Museum of Art (MASP)](https://maps.app.goo.gl/9f2m7gtnsexvwPr69) - iconic modern art museum on
+    Avenida Paulista with striking suspended architecture
+  - [Instituto Moreira Salles - IMS Paulista](https://maps.app.goo.gl/iuV4zTEFAeaHt8R97) - cultural museum in a fancy
+    glass-fronted building with photography shows, a library, a cafe & view over Avenida Paulista
 - [Liberdade](https://maps.app.goo.gl/nRiUvPWnUZ96mCPi9) - Japanese influenced district known for Asian cuisine &
   cultural shops
-- [Ibirapuera Park](https://maps.app.goo.gl/eF9kF9bnQVV8nePt8) - large park with museums, lakes and walking trails,
-  just east of the Itaim Bibi upmarket business district
+- [Ibirapuera Park](https://maps.app.goo.gl/eF9kF9bnQVV8nePt8) - large park with museums, lakes, running & bike trails,
+  just east of the Itaim Bibi upmarket business district.
+  Unfortunately it's surrounded by large busy multi-lane roads that aren't much fun to try to cross,
+  and it's not that well lit in the evenings.
+  I much preferred [Parque Tres de Febrero](https://maps.app.goo.gl/1DBr7VGHYzTnohqG8) in
+  [Buenos Aires](argentina.md#attractions-in-buenos-aires)
 - [Football Museum](https://maps.app.goo.gl/iazith1VyrHUAXet7) - interactive museum dedicated to Brazil’s football
   history inside Pacaembu Stadium
-- [Pinacoteca de São Paulo](https://maps.app.goo.gl/PX4mswH9NED4xrPP6) - Brazilian art museum
-- [Theatro Municipal de São Paulo](https://maps.app.goo.gl/vafKdi3fTXT27ish8) - Ornate early 20th century opera house
-  inspired by European architecture
-- [Farol Santander](https://maps.app.goo.gl/5mGfidTDUNeL1ZX3A) - big 35-floor skyscraper with cultural exhibits & an
-  observation deck for city views
 - [Beco do Batman](https://maps.app.goo.gl/Xo7DJbTvZRNnRviw5) - alleyway of street art graffiti in Vila Madalena
 - [Shopping Pátio Higienópolis](https://maps.app.goo.gl/u67DeekZR2RKkXLeA) - upmarket mall in the Higienópolis area
   mentioned above
@@ -304,6 +318,13 @@ Wifi 969/560 Mbit/s - stunningly fast!
 
 ### Restaurants in Sao Paulo
 
+- [Hirá Ramen Izakaya](https://maps.app.goo.gl/iQxHdaH2nAYvArup8) - busy Japanese ramen & sushi restaurant.
+  The Tony Lee Ramen was nice and spicy with a rich red paitan broth containing pork belly cubes, ramen, nori and raw
+  egg yolk in the middle. The ramens are around 70BRL ($13.50).
+  They also serve sushi and a range of appetizers, which can add up quickly as they're not cheap.
+  This restaurant is a bit upmarket and expensive compared to Brazilian earnings
+  as it's almost the price of Western restaurants.
+  WiFi 318/172 Mbit/s
 - [Hamburgueria Bullguer](https://www.google.com/maps/search/Bullguer+sao+paulo) - surprisingly good and fresh burgers
   at a reasonable price.
   The Stencil burger was stacked with fresh lettuce, tomato and onions (I got it without cheese).
@@ -329,7 +350,6 @@ Wifi 969/560 Mbit/s - stunningly fast!
 
 TODO:
 
-- [Hirá Ramen Izakaya](https://maps.app.goo.gl/iQxHdaH2nAYvArup8) - 4.5, busy
 - [Motique](https://maps.app.goo.gl/3cXg4PQDCcbA4qNA9) - 4.9
 - [Casa Jardim Restaurante e Eventos](https://maps.app.goo.gl/1qVwK3GtMMjAHVJu9) - 4.7
 - [São Cristóvão Bar e Restaurante](https://maps.app.goo.gl/7vt1qxThqN8uqoy97) - 4.4 - soccer themed bar serving

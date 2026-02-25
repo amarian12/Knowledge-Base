@@ -2,17 +2,23 @@
 
 <!-- INDEX_START -->
 
+- [Summary](#summary)
+- [Population](#population)
 - [ATMs in Albania](#atms-in-albania)
 - [Taxis in Albania](#taxis-in-albania)
 - [Driving in Albania](#driving-in-albania)
 - [Tirana](#tirana)
+  - [Restaurants in Tirana](#restaurants-in-tirana)
 - [Lake Bovilla](#lake-bovilla)
 - [Durres](#durres)
 - [Elbasan](#elbasan)
 - [Pogradec](#pogradec)
 - [Shkoder](#shkoder)
+- [Areas Yet to Explore](#areas-yet-to-explore)
 
 <!-- INDEX_END -->
+
+## Summary
 
 _"Cheap and good"_ was how several people I met on my travels described
 [Albania](https://maps.app.goo.gl/gEyUuDhZapAQ1b5dA). Get it before it changes.
@@ -20,7 +26,28 @@ _"Cheap and good"_ was how several people I met on my travels described
 I'm surprised how many Mercedes there were in Albania.
 Many 20 years old, but many modern designs with customizations, AMGs etc.
 
-Some of the roads aren't great though.
+Outside of the capital, some of the worst roads I've seen in Europe,
+though, with the worst _"road"_ being that leading to [Lake Bovilla](#lake-bovilla).
+
+I used the Nomad e-sim in Albania, see the [Mobile e-Sims](../travel.md#mobile-e-sims) section on the main parent Travel
+page.
+
+## Population
+
+[Albania](https://en.wikipedia.org/wiki/Albania) has a small population of less than 2.8 million people,
+nearly all ethnically Albanians - a surprisingly small country for its big reputation.
+
+Its birthrates have been below replenishment for over 20 years, now an unsustainably low 1.3 children per woman.
+
+Reminder: 2.1 children average per woman is needed just to replenish the current adult population,
+and much higher birthrates [or mass immigration replacement] is needed if you want to support an expensive democratic
+ponzi scheme welfare state & pensions long term.
+
+[![Birthrate Per Woman](https://ourworldindata.org/grapher/children-per-woman-un.svg?tab=line&country=~ALB)](https://ourworldindata.org/grapher/children-per-woman-un?tab=line&country=~ALB)
+
+Albania's population is already in decline:
+
+[![Population](https://ourworldindata.org/grapher/population.svg?tab=line&time=1950..2023&country=~ALB)](https://ourworldindata.org/grapher/population?tab=line&time=1950..2023&country=~ALB)
 
 ## ATMs in Albania
 
@@ -66,6 +93,8 @@ The [Hostel Albania Villa](https://maps.app.goo.gl/W3QgHAJusgWU9fY99) only had a
 I was lucky to get one.
 
 [Trip'n'Hostel](https://maps.app.goo.gl/wPZMw8J1ayfejN2C6) seemed to be more popular among those who didn't need parking.
+
+### Restaurants in Tirana
 
 - [Blloku](https://maps.app.goo.gl/h6vq5NJFVdBU7Cip6) - upmarket district with night life and boutique shopping, lots of
   Mercedes, Range Rovers and Porches there
@@ -373,3 +402,12 @@ Not Recommended:
   The fries were like those dry chokey crinkle cut oven fries you get from the supermarket.
   I wish I had managed to eat at Ricordi Burger above but they closed due to "family issues" at 11pm that day.
   If ever trying OPA again, next time I'd go with the 4x chicken skewers and fries, it doesn't cost much more
+
+## Areas Yet to Explore
+
+- [Vlorë](https://maps.app.goo.gl/kbsRSY65pNiKbePy6) - Popular beach town, recommended to me by several people
+- [Sarandë](https://maps.app.goo.gl/3G2CYTnVRbDdoaso7)
+  - [Leo's Grill House Sarande](https://maps.app.goo.gl/gEUJixnus4ziPp4z5) - was recommended to me here
+- [Berat](https://maps.app.goo.gl/r2mdiBBJaF9wJhx99)
+- [Ksamil](https://maps.app.goo.gl/7D5f5ySwP5LEfLhW9) - the Greek island of
+  [Corfu](https://maps.app.goo.gl/G6j3nRyHLDn6yY1q7) is just across the water!
